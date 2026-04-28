@@ -6,7 +6,7 @@ on:
 
 env:
   NEXT_PUBLIC_APP_NAME: Ameizin
-  NEXT_PUBLIC_BASE_PATH: /ameizin
+  NEXT_PUBLIC_BASE_PATH: /AmeizinC
   NEXT_PUBLIC_FIINTRADE_API_URL: https://fiin-core.ssi.com.vn/Master
   NEXT_PUBLIC_SIMPLIZE_API_URL: https://simplize.vn/api
   NEXT_PUBLIC_VPS_API_URL: https://bgapidatafeed.vps.com.vn
