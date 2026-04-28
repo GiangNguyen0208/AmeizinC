@@ -49,3 +49,9 @@ export interface TopStock {
   changePercent: number;
   volume: number;
 }
+
+export interface CrawlMeta {
+  crawledAt: string;
+  trackedSymbols: string[];
+  source: string;
+}

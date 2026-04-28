@@ -1,4 +1,4 @@
-import type { MarketIndex, TopStock, StockPrice, HistoricalPrice } from "@/types";
+import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta } from "@/types";
 
 const MOCK_DELAY = 300;
 
@@ -123,6 +123,31 @@ export async function mockFetchHistoricalPrices(symbol: string, days: number = 9
   const stock = MOCK_STOCKS.find((s) => s.symbol === symbol.toUpperCase());
   const basePrice = stock ? stock.price : 50 + Math.random() * 100;
   return generateHistorical(days, basePrice * 0.9);
+}
+
+export async function mockFetchMeta(): Promise<CrawlMeta> {
+  await delay();
+  return {
+    crawledAt: new Date().toISOString(),
+    trackedSymbols: MOCK_STOCKS.map((s) => s.symbol),
+    source: "Mock Data",
+  };
+}
+
+export async function mockFetchAllStockPrices(): Promise<StockPrice[]> {
+  await delay();
+  return MOCK_STOCKS.map((s) => ({
+    symbol: s.symbol,
+    price: s.price,
+    change: s.change,
+    changePercent: s.changePercent,
+    volume: s.volume,
+    high: +(s.price + Math.abs(s.change) * 1.5).toFixed(2),
+    low: +(s.price - Math.abs(s.change) * 1.2).toFixed(2),
+    open: +(s.price - s.change).toFixed(2),
+    previousClose: +(s.price - s.change).toFixed(2),
+    updatedAt: new Date().toISOString(),
+  }));
 }
 
 export async function mockSearchStocks(query: string): Promise<TopStock[]> {

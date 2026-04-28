@@ -4,9 +4,9 @@ export function formatNumber(value: number): string {
 
 export function formatPrice(value: number): string {
   return new Intl.NumberFormat("vi-VN", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(value);
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(value) + "đ";
 }
 
 export function formatVolume(value: number): string {
@@ -23,7 +23,7 @@ export function formatPercent(value: number): string {
 
 export function formatChange(value: number): string {
   const sign = value > 0 ? "+" : "";
-  return `${sign}${value.toFixed(2)}`;
+  return `${sign}${formatPrice(value)}`;
 }
 
 export function getChangeColor(value: number): string {
