@@ -36,11 +36,13 @@ export function ClientLayout({ children }: { children: ReactNode }) {
     <QueryClientProvider client={queryClient}>
       <ConfigProvider theme={antTheme}>
         <AntApp>
-          <Header />
-          <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
-            {children}
-          </main>
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
+              {children}
+            </main>
+            <Footer />
+          </div>
         </AntApp>
       </ConfigProvider>
     </QueryClientProvider>

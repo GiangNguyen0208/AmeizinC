@@ -24,12 +24,12 @@ import {
 } from "./providers/static-data";
 
 async function withFallback<T>(
-  realFn: () => Promise<T>,
+  primaryFn: () => Promise<T>,
   mockFn: () => Promise<T>
 ): Promise<T> {
   if (isMockEnabled) return mockFn();
   try {
-    return await realFn();
+    return await primaryFn();
   } catch (err) {
     console.warn("[Ameizin] Static data failed, falling back to mock:", err);
     return mockFn();
