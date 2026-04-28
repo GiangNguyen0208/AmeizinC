@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 env:
-  KBS_API_URL: ${{ secrets.KBS_API_URL }}
+  VNSTOCK_API_KEY: ${{ secrets.VNSTOCK_API_KEY }}
 
 jobs:
   crawl:
@@ -21,15 +21,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-python@v5
         with:
-          node-version: "20"
-          cache: "npm"
+          python-version: "3.12"
+          cache: "pip"
 
-      - run: npm ci
+      - run: pip install -r requirements.txt
 
       - name: Run crawler
-        run: npx tsx scripts/crawl.ts
+        run: python scripts/crawl.py
 
       - name: Check for changes
         id: changes

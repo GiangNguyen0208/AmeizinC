@@ -125,6 +125,14 @@ export async function mockFetchHistoricalPrices(symbol: string, days: number = 9
   return generateHistorical(days, basePrice * 0.9);
 }
 
+export async function mockSearchStocks(query: string): Promise<TopStock[]> {
+  await delay();
+  const q = query.toUpperCase();
+  return MOCK_STOCKS.filter(
+    (s) => s.symbol.includes(q) || s.companyName.toUpperCase().includes(q)
+  );
+}
+
 export async function mockFetchMeta(): Promise<CrawlMeta> {
   await delay();
   return {
@@ -148,12 +156,4 @@ export async function mockFetchAllStockPrices(): Promise<StockPrice[]> {
     previousClose: +(s.price - s.change).toFixed(2),
     updatedAt: new Date().toISOString(),
   }));
-}
-
-export async function mockSearchStocks(query: string): Promise<TopStock[]> {
-  await delay();
-  const q = query.toUpperCase();
-  return MOCK_STOCKS.filter(
-    (s) => s.symbol.includes(q) || s.companyName.toUpperCase().includes(q)
-  );
 }
