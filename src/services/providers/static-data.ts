@@ -1,4 +1,4 @@
-import type { MarketIndex, TopStock, StockPrice, HistoricalPrice } from "@/types";
+import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta } from "@/types";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -57,6 +57,15 @@ export async function staticFetchHistoricalPrices(
     return data.filter((d) => d.date >= cutoffStr);
   }
   return data;
+}
+
+export async function staticFetchMeta(): Promise<CrawlMeta> {
+  return fetchJSON<CrawlMeta>("_meta.json");
+}
+
+export async function staticFetchAllStockPrices(): Promise<StockPrice[]> {
+  const json = await fetchJSON<CrawledData<Record<string, StockPrice>>>("stock-prices.json");
+  return Object.values(json.data);
 }
 
 export async function staticSearchStocks(query: string): Promise<TopStock[]> {

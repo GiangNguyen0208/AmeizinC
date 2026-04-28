@@ -1,4 +1,4 @@
-import type { MarketIndex, TopStock, StockPrice, HistoricalPrice } from "@/types";
+import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta } from "@/types";
 import { isMockEnabled } from "./api-client";
 import {
   mockFetchMarketIndices,
@@ -8,6 +8,8 @@ import {
   mockFetchStockPrice,
   mockFetchHistoricalPrices,
   mockSearchStocks,
+  mockFetchMeta,
+  mockFetchAllStockPrices,
 } from "./providers/mock";
 import {
   staticFetchMarketIndices,
@@ -17,6 +19,8 @@ import {
   staticFetchStockPrice,
   staticFetchHistoricalPrices,
   staticSearchStocks,
+  staticFetchMeta,
+  staticFetchAllStockPrices,
 } from "./providers/static-data";
 
 async function withFallback<T>(
@@ -70,4 +74,12 @@ export function searchStocks(query: string): Promise<TopStock[]> {
     () => staticSearchStocks(query),
     () => mockSearchStocks(query)
   );
+}
+
+export function fetchMeta(): Promise<CrawlMeta> {
+  return withFallback(staticFetchMeta, mockFetchMeta);
+}
+
+export function fetchAllStockPrices(): Promise<StockPrice[]> {
+  return withFallback(staticFetchAllStockPrices, mockFetchAllStockPrices);
 }

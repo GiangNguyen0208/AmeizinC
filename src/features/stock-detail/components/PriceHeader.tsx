@@ -10,6 +10,7 @@ import {
 import type { StockPrice } from "@/types";
 import { formatPrice, formatVolume, formatChange, formatPercent, getChangeColor } from "@/utils";
 import { useAppStore } from "@/stores/app-store";
+import { WeekRange52 } from "@/components/ui";
 
 interface PriceHeaderProps {
   data: StockPrice;
@@ -55,18 +56,20 @@ export function PriceHeader({ data }: PriceHeaderProps) {
 
       <Row gutter={[24, 12]}>
         <Col xs={12} sm={6}>
-          <Statistic title="Mở cửa" value={data.open} precision={2} valueStyle={{ fontSize: 16 }} />
+          <Statistic title="Mở cửa" value={data.open} formatter={(val) => formatPrice(val as number)} valueStyle={{ fontSize: 16 }} />
         </Col>
         <Col xs={12} sm={6}>
-          <Statistic title="Cao nhất" value={data.high} precision={2} valueStyle={{ fontSize: 16, color: "#22c55e" }} />
+          <Statistic title="Cao nhất" value={data.high} formatter={(val) => formatPrice(val as number)} valueStyle={{ fontSize: 16, color: "#22c55e" }} />
         </Col>
         <Col xs={12} sm={6}>
-          <Statistic title="Thấp nhất" value={data.low} precision={2} valueStyle={{ fontSize: 16, color: "#ef4444" }} />
+          <Statistic title="Thấp nhất" value={data.low} formatter={(val) => formatPrice(val as number)} valueStyle={{ fontSize: 16, color: "#ef4444" }} />
         </Col>
         <Col xs={12} sm={6}>
           <Statistic title="Khối lượng" value={data.volume} formatter={(val) => formatVolume(val as number)} valueStyle={{ fontSize: 16 }} />
         </Col>
       </Row>
+
+      <WeekRange52 symbol={data.symbol} currentPrice={data.price} />
     </Card>
   );
 }
