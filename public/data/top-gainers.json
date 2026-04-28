@@ -1,0 +1,77 @@
+{
+  "data": [
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 151000,
+      "change": 9800,
+      "changePercent": 6.94,
+      "volume": 9348000
+    },
+    {
+      "symbol": "VRE",
+      "companyName": "VRE",
+      "price": 30800,
+      "change": 2000,
+      "changePercent": 6.94,
+      "volume": 16458400
+    },
+    {
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 225500,
+      "change": 13400,
+      "changePercent": 6.32,
+      "volume": 5194900
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 68100,
+      "change": 3200,
+      "changePercent": 4.93,
+      "volume": 8214800
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 48500,
+      "change": 1500,
+      "changePercent": 3.19,
+      "volume": 1524700
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 74400,
+      "change": 1000,
+      "changePercent": 1.36,
+      "volume": 9503800
+    },
+    {
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 34600,
+      "change": 350,
+      "changePercent": 1.02,
+      "volume": 16775400
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 23500,
+      "change": 100,
+      "changePercent": 0.43,
+      "volume": 7240400
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 77400,
+      "change": 200,
+      "changePercent": 0.26,
+      "volume": 3730200
+    }
+  ],
+  "crawledAt": "2026-04-28T15:30:55.397Z"
+}
