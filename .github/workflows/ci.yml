@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [main, master]
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   NEXT_PUBLIC_APP_NAME: Ameizin
   NEXT_PUBLIC_BASE_PATH: /AmeizinC
@@ -61,3 +65,22 @@ jobs:
           test -d out || (echo "Build output missing" && exit 1)
           test -f out/index.html || (echo "index.html missing" && exit 1)
           echo "Build output OK — $(find out -type f | wc -l) files generated"
+
+  ci-gate:
+    name: CI Gate
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [lint, typecheck, build]
+    steps:
+      - name: Check all jobs passed
+        run: |
+          if [ "${{ needs.lint.result }}" != "success" ] || \
+             [ "${{ needs.typecheck.result }}" != "success" ] || \
+             [ "${{ needs.build.result }}" != "success" ]; then
+            echo "❌ CI failed — one or more jobs did not pass"
+            echo "  lint:      ${{ needs.lint.result }}"
+            echo "  typecheck: ${{ needs.typecheck.result }}"
+            echo "  build:     ${{ needs.build.result }}"
+            exit 1
+          fi
+          echo "✅ All CI checks passed"
