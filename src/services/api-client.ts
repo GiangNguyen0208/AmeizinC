@@ -1,22 +1,25 @@
 import axios from "axios";
 
 export const fiintradeApi = axios.create({
-  baseURL: "https://fiin-core.ssi.com.vn/Master",
+  baseURL: process.env.NEXT_PUBLIC_FIINTRADE_API_URL,
   headers: {
     "Content-Type": "application/json",
   },
 });
 
 export const simplizeApi = axios.create({
-  baseURL: "https://simplize.vn/api",
+  baseURL: process.env.NEXT_PUBLIC_SIMPLIZE_API_URL,
   headers: {
     "Content-Type": "application/json",
   },
 });
 
 export const vpsApi = axios.create({
-  baseURL: "https://bgapidatafeed.vps.com.vn",
+  baseURL: process.env.NEXT_PUBLIC_VPS_API_URL,
   headers: {
     "Content-Type": "application/json",
   },
 });
+
+export const isMockEnabled =
+  process.env.NEXT_PUBLIC_ENABLE_MOCK_DATA === "true";
