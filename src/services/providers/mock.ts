@@ -1,4 +1,4 @@
-import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta } from "@/types";
+import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta, FinanceData, CompanyProfile } from "@/types";
 
 const MOCK_DELAY = 300;
 
@@ -156,4 +156,57 @@ export async function mockFetchAllStockPrices(): Promise<StockPrice[]> {
     previousClose: +(s.price - s.change).toFixed(2),
     updatedAt: new Date().toISOString(),
   }));
+}
+
+export async function mockFetchFinanceData(symbol: string): Promise<FinanceData> {
+  await delay();
+  const quarters = [
+    { year: 2025, quarter: 4 }, { year: 2025, quarter: 3 },
+    { year: 2025, quarter: 2 }, { year: 2025, quarter: 1 },
+    { year: 2024, quarter: 4 }, { year: 2024, quarter: 3 },
+    { year: 2024, quarter: 2 }, { year: 2024, quarter: 1 },
+  ];
+  return {
+    symbol: symbol.toUpperCase(),
+    incomeStatement: quarters.map((q) => ({
+      year: q.year, quarter: q.quarter,
+      revenue: 5000 + Math.random() * 3000,
+      cost_of_good_sold: 3000 + Math.random() * 1500,
+      gross_profit: 1500 + Math.random() * 1000,
+      operation_expense: 500 + Math.random() * 300,
+      operation_profit: 800 + Math.random() * 600,
+      net_profit: 600 + Math.random() * 500,
+    })),
+    balanceSheet: quarters.map((q) => ({
+      year: q.year, quarter: q.quarter,
+      total_asset: 30000 + Math.random() * 10000,
+      current_asset: 15000 + Math.random() * 5000,
+      long_term_asset: 15000 + Math.random() * 5000,
+      total_debt: 18000 + Math.random() * 5000,
+      current_debt: 10000 + Math.random() * 3000,
+      long_term_debt: 8000 + Math.random() * 2000,
+      equity: 12000 + Math.random() * 5000,
+    })),
+    cashFlow: quarters.map((q) => ({
+      year: q.year, quarter: q.quarter,
+      from_operation: 800 + Math.random() * 600,
+      from_invest: -(300 + Math.random() * 400),
+      from_financial: -(200 + Math.random() * 300),
+      net_cash_flow: 200 + Math.random() * 300,
+    })),
+    crawledAt: new Date().toISOString(),
+  };
+}
+
+export async function mockFetchCompanyProfile(symbol: string): Promise<CompanyProfile> {
+  await delay();
+  const stock = MOCK_STOCKS.find((s) => s.symbol === symbol.toUpperCase());
+  return {
+    symbol: symbol.toUpperCase(),
+    companyName: stock?.companyName || symbol,
+    shortName: stock?.companyName || symbol,
+    exchange: "HOSE",
+    industry: "Sản xuất",
+    sector: "Hàng tiêu dùng",
+  };
 }

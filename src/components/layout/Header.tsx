@@ -1,6 +1,6 @@
 "use client";
 
-import { Input, Space, Typography } from "antd";
+import { AutoComplete, Space, Typography } from "antd";
 import {
   SearchOutlined,
   StockOutlined,
@@ -9,19 +9,46 @@ import {
 } from "@ant-design/icons";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { fetchAllStockPrices } from "@/services";
+import { formatPrice, formatPercent, getChangeColor } from "@/utils";
 
 const { Title } = Typography;
 
 export function Header() {
   const router = useRouter();
   const [searchValue, setSearchValue] = useState("");
+  const { data: allStocks } = useQuery({
+    queryKey: ["all-stock-prices"],
+    queryFn: fetchAllStockPrices,
+  });
 
-  const handleSearch = (value: string) => {
-    if (value.trim()) {
-      router.push(`/stock/${value.trim().toUpperCase()}`);
-      setSearchValue("");
-    }
+  const options = useMemo(() => {
+    if (!searchValue.trim() || !allStocks) return [];
+    const q = searchValue.toUpperCase();
+    return allStocks
+      .filter((s) => s.symbol.includes(q))
+      .slice(0, 8)
+      .map((s) => ({
+        value: s.symbol,
+        label: (
+          <div className="flex justify-between items-center">
+            <span className="font-bold">{s.symbol}</span>
+            <span>
+              <span className="mr-2">{formatPrice(s.price)}</span>
+              <span style={{ color: getChangeColor(s.changePercent) }}>
+                {formatPercent(s.changePercent)}
+              </span>
+            </span>
+          </div>
+        ),
+      }));
+  }, [searchValue, allStocks]);
+
+  const handleSelect = (symbol: string) => {
+    router.push(`/stock/${symbol}`);
+    setSearchValue("");
   };
 
   return (
@@ -34,14 +61,19 @@ export function Header() {
           </Title>
         </Link>
 
-        <Input.Search
-          placeholder="Nhập mã CK (VD: VNM, FPT...)"
-          prefix={<SearchOutlined />}
+        <AutoComplete
           value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-          onSearch={handleSearch}
-          style={{ maxWidth: 360 }}
-          allowClear
+          options={options}
+          onSelect={handleSelect}
+          onChange={setSearchValue}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && searchValue.trim()) {
+              handleSelect(searchValue.trim().toUpperCase());
+            }
+          }}
+          placeholder="Nhập mã CK (VD: VNM, FPT...)"
+          style={{ maxWidth: 360, width: "100%" }}
+          suffixIcon={<SearchOutlined />}
         />
 
         <Space size="large">

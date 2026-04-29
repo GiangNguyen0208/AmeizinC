@@ -1,4 +1,4 @@
-import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta } from "@/types";
+import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta, FinanceData, CompanyProfile } from "@/types";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -73,4 +73,15 @@ export async function staticFetchMeta(): Promise<CrawlMeta> {
 export async function staticFetchAllStockPrices(): Promise<StockPrice[]> {
   const json = await fetchJSON<CrawledData<Record<string, StockPrice>>>("stock-prices.json");
   return Object.values(json.data);
+}
+
+export async function staticFetchFinanceData(symbol: string): Promise<FinanceData> {
+  return fetchJSON<FinanceData>(`finance-${symbol.toUpperCase()}.json`);
+}
+
+export async function staticFetchCompanyProfile(symbol: string): Promise<CompanyProfile> {
+  const json = await fetchJSON<CrawledData<Record<string, CompanyProfile>>>("company-info.json");
+  const company = json.data[symbol.toUpperCase()];
+  if (!company) throw new Error(`Company ${symbol} not found`);
+  return company;
 }
