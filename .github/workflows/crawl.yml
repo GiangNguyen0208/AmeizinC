@@ -52,8 +52,3 @@ jobs:
           git commit -m "data: update financial data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
 
-      - name: Trigger deploy
-        if: steps.changes.outputs.changed == 'true'
-        run: gh workflow run deploy.yml --ref main
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
