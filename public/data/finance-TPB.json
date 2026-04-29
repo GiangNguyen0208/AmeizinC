@@ -1,0 +1,334 @@
+{
+  "symbol": "TPB",
+  "incomeStatement": [
+    {
+      "item": "Tổng lợi nhuận/lỗ trước thuế",
+      "item_en": "Net Accounting Profit/(loss) before tax",
+      "item_id": "isa16",
+      "2025-Q4": 3182988000000.0,
+      "2025-Q3": 1901857000000.0,
+      "2025-Q2": 2037358000000.0,
+      "2025-Q1": 2108875000000.0
+    },
+    {
+      "item": "Chi phí thuế TNDN hiện hành",
+      "item_en": "Business income tax - current",
+      "item_id": "isa17",
+      "2025-Q4": -617922000000.0,
+      "2025-Q3": -381217000000.0,
+      "2025-Q2": -407754000000.0,
+      "2025-Q1": -422184000000.0
+    },
+    {
+      "item": "Chi phí thuế TNDN hoãn lại",
+      "item_en": "Business income tax - deferred",
+      "item_id": "isa18",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Chi phí thuế thu nhập doanh nghiệp",
+      "item_en": "Business income tax expenses",
+      "item_id": "isa19",
+      "2025-Q4": -617922000000.0,
+      "2025-Q3": -381217000000.0,
+      "2025-Q2": -407754000000.0,
+      "2025-Q1": -422184000000.0
+    },
+    {
+      "item": "Lợi nhuận sau thuế",
+      "item_en": "Net profit/(loss) after tax",
+      "item_id": "isa20",
+      "2025-Q4": 2565066000000.0,
+      "2025-Q3": 1520640000000.0,
+      "2025-Q2": 1629604000000.0,
+      "2025-Q1": 1686691000000.0
+    },
+    {
+      "item": "Lợi ích của cổ đông thiểu số",
+      "item_en": "Minority interest",
+      "item_id": "isa21",
+      "2025-Q4": -2000000.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 1000000.0
+    },
+    {
+      "item": "Cổ đông của Công ty mẹ",
+      "item_en": "Attributable to parent company",
+      "item_id": "isa22",
+      "2025-Q4": 2565064000000.0,
+      "2025-Q3": 1520640000000.0,
+      "2025-Q2": 1629604000000.0,
+      "2025-Q1": 1686692000000.0
+    },
+    {
+      "item": "Lãi cơ bản trên cổ phiếu (VND)",
+      "item_en": "EPS basic (VND)",
+      "item_id": "isa23",
+      "2025-Q4": 2668.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 1255.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Lãi trên cổ phiếu pha loãng (VND)",
+      "item_en": "EPS diluted (VND)",
+      "item_id": "isa24",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Thu nhập lãi và các khoản thu nhập tương tự",
+      "item_en": "Interest and Similar Income",
+      "item_id": "isb25",
+      "2025-Q4": 8833776000000.0,
+      "2025-Q3": 7731830000000.0,
+      "2025-Q2": 7383293000000.0,
+      "2025-Q1": 6801668000000.0
+    },
+    {
+      "item": "Chi phí lãi và các chi phí tương tự",
+      "item_en": "Interest and Similar Expenses",
+      "item_id": "isb26",
+      "2025-Q4": -5235177000000.0,
+      "2025-Q3": -4494211000000.0,
+      "2025-Q2": -4231968000000.0,
+      "2025-Q1": -3418050000000.0
+    },
+    {
+      "item": "Thu nhập lãi thuần",
+      "item_en": "Net Interest Income",
+      "item_id": "isb27",
+      "2025-Q4": 3598599000000.0,
+      "2025-Q3": 3237619000000.0,
+      "2025-Q2": 3151325000000.0,
+      "2025-Q1": 3383618000000.0
+    }
+  ],
+  "balanceSheet": [
+    {
+      "item": "Tiền mặt, vàng bạc, đá quý",
+      "item_en": "Cash and precious metals",
+      "item_id": "bsa2",
+      "2025-Q4": 1704704000000.0,
+      "2025-Q3": 1560071000000.0,
+      "2025-Q2": 1551561000000.0,
+      "2025-Q1": 1698877000000.0
+    },
+    {
+      "item": "Tài sản cố định",
+      "item_en": "Fixed assets",
+      "item_id": "bsa29",
+      "2025-Q4": 1212704000000.0,
+      "2025-Q3": 1253386000000.0,
+      "2025-Q2": 1189484000000.0,
+      "2025-Q1": 1172615000000.0
+    },
+    {
+      "item": "Tài sản cố định hữu hình",
+      "item_en": "Tangible fixed assets",
+      "item_id": "bsa30",
+      "2025-Q4": 748875000000.0,
+      "2025-Q3": 796929000000.0,
+      "2025-Q2": 856436000000.0,
+      "2025-Q1": 819860000000.0
+    },
+    {
+      "item": "Nguyên giá TSCĐ hữu hình",
+      "item_en": "Cost",
+      "item_id": "bsa31",
+      "2025-Q4": 2257192000000.0,
+      "2025-Q3": 2239827000000.0,
+      "2025-Q2": 2250898000000.0,
+      "2025-Q1": 2136513000000.0
+    },
+    {
+      "item": "Hao mòn TSCĐ hữu hình",
+      "item_en": "Accumulated depreciation",
+      "item_id": "bsa32",
+      "2025-Q4": -1508317000000.0,
+      "2025-Q3": -1442898000000.0,
+      "2025-Q2": -1394462000000.0,
+      "2025-Q1": -1316653000000.0
+    },
+    {
+      "item": "Tài sản cố định thuê tài chính",
+      "item_en": "Finance leased assets",
+      "item_id": "bsa33",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Nguyên giá TSCĐ thuê tài chính",
+      "item_en": "Cost",
+      "item_id": "bsa34",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Hao mòn TSCĐ thuê tài chính",
+      "item_en": "Accumulated depreciation",
+      "item_id": "bsa35",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Tài sản cố định vô hình",
+      "item_en": "Intangible fixed assets",
+      "item_id": "bsa36",
+      "2025-Q4": 463829000000.0,
+      "2025-Q3": 456457000000.0,
+      "2025-Q2": 333048000000.0,
+      "2025-Q1": 352755000000.0
+    },
+    {
+      "item": "Nguyên giá TSCĐ vô hình",
+      "item_en": "Cost",
+      "item_id": "bsa37",
+      "2025-Q4": 1203852000000.0,
+      "2025-Q3": 1198273000000.0,
+      "2025-Q2": 1039720000000.0,
+      "2025-Q1": 1029724000000.0
+    },
+    {
+      "item": "Hao mòn TSCĐ vô hình",
+      "item_en": "Accumulated amortization",
+      "item_id": "bsa38",
+      "2025-Q4": -740023000000.0,
+      "2025-Q3": -741816000000.0,
+      "2025-Q2": -706672000000.0,
+      "2025-Q1": -676969000000.0
+    },
+    {
+      "item": "Bất động sản đầu tư",
+      "item_en": "Investment properties",
+      "item_id": "bsa40",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    }
+  ],
+  "cashFlow": [
+    {
+      "item": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trước những thay đổi về tài sản và vốn lưu động",
+      "item_en": "Operating profit/(loss) before changes in Working Capital",
+      "item_id": "cfa9",
+      "2025-Q4": 4535699000000.0,
+      "2025-Q3": 3555351000000.0,
+      "2025-Q2": 2053489000000.0,
+      "2025-Q1": 1870090000000.0
+    },
+    {
+      "item": "Thuế thu nhập doanh nghiệp đã trả",
+      "item_en": "Corporate income tax paid",
+      "item_id": "cfa15",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Lưu chuyển tiền thuần từ các hoạt động sản xuất kinh doanh",
+      "item_en": "Net cash from operating activities",
+      "item_id": "cfa18",
+      "2025-Q4": 28136272000000.0,
+      "2025-Q3": 17762025000000.0,
+      "2025-Q2": 21755856000000.0,
+      "2025-Q1": -41476406000000.0
+    },
+    {
+      "item": "Mua sắm TSCĐ",
+      "item_en": "Purchases of fixed assets and other long term assets",
+      "item_id": "cfa19",
+      "2025-Q4": -222356000000.0,
+      "2025-Q3": -27885000000.0,
+      "2025-Q2": -62441000000.0,
+      "2025-Q1": -71757000000.0
+    },
+    {
+      "item": "Tiền thu được từ thanh lý, nhượng bán tài sản cố định",
+      "item_en": "Proceeds from disposal of fixed assets",
+      "item_id": "cfa20",
+      "2025-Q4": 0.0,
+      "2025-Q3": 182000000.0,
+      "2025-Q2": 2000000.0,
+      "2025-Q1": 1000000.0
+    },
+    {
+      "item": "Tiền chi đầu tư, góp vốn vào các đơn vị khác",
+      "item_en": "Investments in other entities",
+      "item_id": "cfa23",
+      "2025-Q4": 2432167000000.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Tiền thu từ đầu tư, góp vốn vào các đơn vị khác",
+      "item_en": "Proceeds from divestment in other entities",
+      "item_id": "cfa24",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Tiền thu cổ tức và lợi nhuận được chia từ các khoản đầu tư góp vốn dài hạn",
+      "item_en": "Dividends and interest received",
+      "item_id": "cfa25",
+      "2025-Q4": -251000000.0,
+      "2025-Q3": 372000000.0,
+      "2025-Q2": 60000000.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Lưu chuyển tiền thuần từ hoạt động đầu tư",
+      "item_en": "Net cash from investing activities",
+      "item_id": "cfa26",
+      "2025-Q4": 2209560000000.0,
+      "2025-Q3": -27331000000.0,
+      "2025-Q2": -62379000000.0,
+      "2025-Q1": -71756000000.0
+    },
+    {
+      "item": "Tăng vốn cổ phần từ góp vốn và/hoặc phát hành cổ phiếu",
+      "item_en": "Proceeds from issue of shares",
+      "item_id": "cfa27",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Cổ tức trả cho cổ đông, lợi nhuận đã chia",
+      "item_en": "Dividends paid",
+      "item_id": "cfa32",
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": -2641956000000.0,
+      "2025-Q1": 0.0
+    },
+    {
+      "item": "Lưu chuyển tiền thuần trong kỳ",
+      "item_en": "Net Increase/(Decrease) in cash and cash equivalents",
+      "item_id": "cfa34",
+      "2025-Q4": -958800000000.0,
+      "2025-Q3": 1347200000000.0,
+      "2025-Q2": 1014444000000.0,
+      "2025-Q1": -30000000000.0
+    }
+  ],
+  "crawledAt": "2026-04-29T14:07:33.351810"
+}

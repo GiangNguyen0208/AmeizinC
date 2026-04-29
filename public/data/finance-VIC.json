@@ -1,0 +1,334 @@
+{
+  "symbol": "VIC",
+  "incomeStatement": [
+    {
+      "item": "Doanh thu bán hàng và cung cấp dịch vụ",
+      "item_en": "Sales",
+      "item_id": "isa1",
+      "2026-Q1": 104371179000000.0,
+      "2025-Q4": 162238595000000.0,
+      "2025-Q3": 39143023000000.0,
+      "2025-Q2": 46435488000000.0
+    },
+    {
+      "item": "Các khoản giảm trừ doanh thu",
+      "item_en": "Sales deductions",
+      "item_id": "isa2",
+      "2026-Q1": -19161000000.0,
+      "2025-Q4": -11975000000.0,
+      "2025-Q3": -7920000000.0,
+      "2025-Q2": -12999000000.0
+    },
+    {
+      "item": "Doanh thu thuần",
+      "item_en": "Net sales",
+      "item_id": "isa3",
+      "2026-Q1": 104352018000000.0,
+      "2025-Q4": 162226620000000.0,
+      "2025-Q3": 39135103000000.0,
+      "2025-Q2": 46422489000000.0
+    },
+    {
+      "item": "Giá vốn hàng bán",
+      "item_en": "Cost of sales",
+      "item_id": "isa4",
+      "2026-Q1": -78414392000000.0,
+      "2025-Q4": -124874331000000.0,
+      "2025-Q3": -46425078000000.0,
+      "2025-Q2": -43007211000000.0
+    },
+    {
+      "item": "Lợi nhuận gộp",
+      "item_en": "Gross Profit",
+      "item_id": "isa5",
+      "2026-Q1": 25937626000000.0,
+      "2025-Q4": 37352289000000.0,
+      "2025-Q3": -7289975000000.0,
+      "2025-Q2": 3415278000000.0
+    },
+    {
+      "item": "Doanh thu hoạt động tài chính",
+      "item_en": "Financial income",
+      "item_id": "isa6",
+      "2026-Q1": 2237600000000.0,
+      "2025-Q4": 10569431000000.0,
+      "2025-Q3": 33505199000000.0,
+      "2025-Q2": 2506905000000.0
+    },
+    {
+      "item": "Chi phí tài chính",
+      "item_en": "Financial expenses",
+      "item_id": "isa7",
+      "2026-Q1": -12068007000000.0,
+      "2025-Q4": -15984778000000.0,
+      "2025-Q3": -11787443000000.0,
+      "2025-Q2": -11617305000000.0
+    },
+    {
+      "item": "Chi phí lãi vay",
+      "item_en": "Interest expenses",
+      "item_id": "isa8",
+      "2026-Q1": -7522882000000.0,
+      "2025-Q4": -6416020000000.0,
+      "2025-Q3": -9027158000000.0,
+      "2025-Q2": -7614201000000.0
+    },
+    {
+      "item": "Chi phí bán hàng",
+      "item_en": "Selling expenses",
+      "item_id": "isa9",
+      "2026-Q1": -7215472000000.0,
+      "2025-Q4": -15164880000000.0,
+      "2025-Q3": -5780237000000.0,
+      "2025-Q2": -5435610000000.0
+    },
+    {
+      "item": "Chi phí quản lý doanh nghiệp",
+      "item_en": "General and admin expenses",
+      "item_id": "isa10",
+      "2026-Q1": -4178386000000.0,
+      "2025-Q4": -5268157000000.0,
+      "2025-Q3": -4036012000000.0,
+      "2025-Q2": -3118332000000.0
+    },
+    {
+      "item": "Lãi/(lỗ) từ hoạt động kinh doanh",
+      "item_en": "Operating profit/(loss)",
+      "item_id": "isa11",
+      "2026-Q1": 5084455000000.0,
+      "2025-Q4": 12113489000000.0,
+      "2025-Q3": 4829457000000.0,
+      "2025-Q2": -14163430000000.0
+    },
+    {
+      "item": "Thu nhập khác",
+      "item_en": "Other incomes",
+      "item_id": "isa12",
+      "2026-Q1": 6956070000000.0,
+      "2025-Q4": 442338000000.0,
+      "2025-Q3": 676227000000.0,
+      "2025-Q2": 18692171000000.0
+    }
+  ],
+  "balanceSheet": [
+    {
+      "item": "TÀI SẢN NGẮN HẠN",
+      "item_en": "CURRENT ASSETS",
+      "item_id": "bsa1",
+      "2026-Q1": 669086072000000.0,
+      "2025-Q4": 658772464000000.0,
+      "2025-Q3": 590641891000000.0,
+      "2025-Q2": 529134246000000.0
+    },
+    {
+      "item": "Tiền và tương đương tiền",
+      "item_en": "Cash and cash equivalents",
+      "item_id": "bsa2",
+      "2026-Q1": 54750360000000.0,
+      "2025-Q4": 73542242000000.0,
+      "2025-Q3": 72150719000000.0,
+      "2025-Q2": 74759825000000.0
+    },
+    {
+      "item": "Tiền",
+      "item_en": "Cash",
+      "item_id": "bsa3",
+      "2026-Q1": 47992026000000.0,
+      "2025-Q4": 35989397000000.0,
+      "2025-Q3": 52451984000000.0,
+      "2025-Q2": 47085328000000.0
+    },
+    {
+      "item": "Các khoản tương đương tiền",
+      "item_en": "Cash equivalents",
+      "item_id": "bsa4",
+      "2026-Q1": 6758334000000.0,
+      "2025-Q4": 37552845000000.0,
+      "2025-Q3": 19698735000000.0,
+      "2025-Q2": 27674497000000.0
+    },
+    {
+      "item": "Đầu tư ngắn hạn",
+      "item_en": "Short-term investments",
+      "item_id": "bsa5",
+      "2026-Q1": 19157245000000.0,
+      "2025-Q4": 9838444000000.0,
+      "2025-Q3": 7918430000000.0,
+      "2025-Q2": 9592662000000.0
+    },
+    {
+      "item": "Đầu tư ngắn hạn",
+      "item_en": "Short-term investments",
+      "item_id": "bsa6",
+      "2026-Q1": 0.0,
+      "2025-Q4": 1583614000000.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 1999420000000.0
+    },
+    {
+      "item": "Dự phòng giảm giá",
+      "item_en": "Provision for diminution",
+      "item_id": "bsa7",
+      "2026-Q1": 0.0,
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0
+    },
+    {
+      "item": "Các khoản phải thu",
+      "item_en": "Accounts receivable",
+      "item_id": "bsa8",
+      "2026-Q1": 251349280000000.0,
+      "2025-Q4": 267209963000000.0,
+      "2025-Q3": 267274537000000.0,
+      "2025-Q2": 254128765000000.0
+    },
+    {
+      "item": "Phải thu khách hàng",
+      "item_en": "Trade accounts receivable",
+      "item_id": "bsa9",
+      "2026-Q1": 36575948000000.0,
+      "2025-Q4": 35747342000000.0,
+      "2025-Q3": 29339826000000.0,
+      "2025-Q2": 29238802000000.0
+    },
+    {
+      "item": "Trả trước người bán",
+      "item_en": "Prepayments to suppliers",
+      "item_id": "bsa10",
+      "2026-Q1": 84629574000000.0,
+      "2025-Q4": 84195016000000.0,
+      "2025-Q3": 72962931000000.0,
+      "2025-Q2": 59998585000000.0
+    },
+    {
+      "item": "Phải thu nội bộ",
+      "item_en": "Intercompany receivables",
+      "item_id": "bsa11",
+      "2026-Q1": 0.0,
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0
+    },
+    {
+      "item": "Phải thu hợp đồng xây dựng đang thực hiện",
+      "item_en": "Construction contract in progress receivables",
+      "item_id": "bsa12",
+      "2026-Q1": 0.0,
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0
+    }
+  ],
+  "cashFlow": [
+    {
+      "item": "Lợi nhuận/(lỗ) trước thuế",
+      "item_en": "Net profit/(loss) before tax",
+      "item_id": "cfa1",
+      "2026-Q1": 11536718000000.0,
+      "2025-Q4": 11254075000000.0,
+      "2025-Q3": 4024377000000.0,
+      "2025-Q2": 3777060000000.0
+    },
+    {
+      "item": "Khấu hao TSCĐ và BĐSĐT",
+      "item_en": "Depreciation and amortization",
+      "item_id": "cfa2",
+      "2026-Q1": 7913123000000.0,
+      "2025-Q4": 9663294000000.0,
+      "2025-Q3": 9008611000000.0,
+      "2025-Q2": 5944211000000.0
+    },
+    {
+      "item": "Chi phí dự phòng",
+      "item_en": "Provisions",
+      "item_id": "cfa3",
+      "2026-Q1": 4477515000000.0,
+      "2025-Q4": 9161600000000.0,
+      "2025-Q3": 787212000000.0,
+      "2025-Q2": 1157779000000.0
+    },
+    {
+      "item": "Lãi/lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ",
+      "item_en": "Unrealized foreign exchange gain/(loss)",
+      "item_id": "cfa4",
+      "2026-Q1": 165105000000.0,
+      "2025-Q4": -1140708000000.0,
+      "2025-Q3": 877376000000.0,
+      "2025-Q2": 633114000000.0
+    },
+    {
+      "item": "Lãi/(lỗ) từ thanh lý tài sản cố định",
+      "item_en": "Profit/loss from liquidating fixed assets",
+      "item_id": "cfa5",
+      "2026-Q1": 0.0,
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0
+    },
+    {
+      "item": "(Lãi)/lỗ từ hoạt động đầu tư",
+      "item_en": "Profit/loss from investing activities",
+      "item_id": "cfa6",
+      "2026-Q1": -3694095000000.0,
+      "2025-Q4": -7964745000000.0,
+      "2025-Q3": -34836687000000.0,
+      "2025-Q2": 1699406000000.0
+    },
+    {
+      "item": "Chi phí lãi vay",
+      "item_en": "Interest expense",
+      "item_id": "cfa7",
+      "2026-Q1": 7522882000000.0,
+      "2025-Q4": 6416020000000.0,
+      "2025-Q3": 9027158000000.0,
+      "2025-Q2": 7614201000000.0
+    },
+    {
+      "item": "Thu lãi và cổ tức",
+      "item_en": "Interest income and dividend",
+      "item_id": "cfa8",
+      "2026-Q1": 0.0,
+      "2025-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q2": 0.0
+    },
+    {
+      "item": "Lợi nhuận/(lỗ) từ hoạt động kinh doanh trước những thay đổi vốn lưu động",
+      "item_en": "Operating profit/(loss) before changes in Working Capital",
+      "item_id": "cfa9",
+      "2026-Q1": 27921248000000.0,
+      "2025-Q4": 27389536000000.0,
+      "2025-Q3": -11111953000000.0,
+      "2025-Q2": 20825771000000.0
+    },
+    {
+      "item": "(Tăng)/giảm các khoản phải thu",
+      "item_en": "(Increase)/decrease in receivables",
+      "item_id": "cfa10",
+      "2026-Q1": -11836014000000.0,
+      "2025-Q4": -41316254000000.0,
+      "2025-Q3": 18933777000000.0,
+      "2025-Q2": -3407884000000.0
+    },
+    {
+      "item": "(Tăng)/giảm hàng tồn kho",
+      "item_en": "(Increase)/decrease in inventories",
+      "item_id": "cfa11",
+      "2026-Q1": -11314593000000.0,
+      "2025-Q4": -1779271000000.0,
+      "2025-Q3": -52100255000000.0,
+      "2025-Q2": -16304160000000.0
+    },
+    {
+      "item": "Tăng/(giảm) các khoản phải trả",
+      "item_en": "Increase/(decrease) in payables",
+      "item_id": "cfa12",
+      "2026-Q1": 22063554000000.0,
+      "2025-Q4": 15295403000000.0,
+      "2025-Q3": 59767396000000.0,
+      "2025-Q2": 109954141000000.0
+    }
+  ],
+  "crawledAt": "2026-04-29T14:03:17.691013"
+}
