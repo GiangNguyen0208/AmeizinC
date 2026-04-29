@@ -3,10 +3,11 @@ export function formatNumber(value: number): string {
 }
 
 export function formatPrice(value: number): string {
+  const vnd = value * 1000;
   return new Intl.NumberFormat("vi-VN", {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
-  }).format(value) + "đ";
+  }).format(vnd) + "đ";
 }
 
 export function formatVolume(value: number): string {
