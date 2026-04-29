@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-04-28T15:31:02.184Z",
+  "crawledAt": "2026-04-29T03:36:42.661294",
   "trackedSymbols": [
     "VNM",
     "VIC",
@@ -22,5 +22,5 @@
     "VPB",
     "HDB"
   ],
-  "source": "KBS (KB Securities)"
+  "source": "vnstock (KBS)"
 }
