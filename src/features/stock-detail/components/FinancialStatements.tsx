@@ -16,6 +16,8 @@ const STATEMENT_OPTIONS = [
   { label: "LCTT", value: "cashFlow" as StatementType },
 ];
 
+const SKIP_KEYS = new Set(["year", "yearReport", "quarter", "lengthReport", "symbol", "ticker"]);
+
 const LABEL_MAP: Record<string, string> = {
   revenue: "Doanh thu",
   net_revenue: "Doanh thu thuần",
@@ -42,14 +44,24 @@ const LABEL_MAP: Record<string, string> = {
   net_cash_flow: "Lưu chuyển tiền thuần",
 };
 
-const SKIP_KEYS = new Set(["year", "yearReport", "quarter", "lengthReport", "symbol", "ticker"]);
-
 function fmtVal(val: string | number | null): React.ReactNode {
   if (val === null || val === undefined) return "—";
   if (typeof val === "string") return val;
   if (Math.abs(val) >= 1e9) return <span style={{ color: getChangeColor(val) }}>{(val / 1e9).toFixed(1)} tỷ</span>;
   if (Math.abs(val) >= 1e6) return <span style={{ color: getChangeColor(val) }}>{(val / 1e6).toFixed(1)} triệu</span>;
   return val.toLocaleString("vi-VN");
+}
+
+function isNewFormat(records: FinanceRecord[]): boolean {
+  return records.length > 0 && "item_id" in records[0];
+}
+
+function getQuarterColumns(records: FinanceRecord[]): string[] {
+  if (!records.length) return [];
+  return Object.keys(records[0])
+    .filter((k) => /^\d{4}-Q\d$/.test(k))
+    .sort()
+    .reverse();
 }
 
 function getPeriodLabel(record: FinanceRecord): string {
@@ -61,6 +73,8 @@ function getPeriodLabel(record: FinanceRecord): string {
 interface Props {
   data: FinanceData;
 }
+
+type RowData = Record<string, string | number | null>;
 
 export function FinancialStatements({ data }: Props) {
   const [stmtType, setStmtType] = useState<StatementType>("incomeStatement");
@@ -77,37 +91,73 @@ export function FinancialStatements({ data }: Props) {
     );
   }
 
-  const allKeys = Object.keys(records[0]).filter((k) => !SKIP_KEYS.has(k));
+  const newFmt = isNewFormat(records);
+  let columns: ColumnsType<RowData>;
+  let dataSource: RowData[];
 
-  type RowData = Record<string, string | number | null>;
-  const columns: ColumnsType<RowData> = [
-    {
-      title: "Chỉ tiêu",
-      dataIndex: "label",
-      key: "label",
-      fixed: "left",
-      width: 200,
-      render: (val: string) => <span className="font-medium">{val}</span>,
-    },
-    ...records.map((record, idx) => ({
-      title: getPeriodLabel(record),
-      dataIndex: `p${idx}`,
-      key: `p${idx}`,
-      align: "right" as const,
-      render: fmtVal,
-    })),
-  ];
+  if (newFmt) {
+    const quarters = getQuarterColumns(records);
 
-  const dataSource = allKeys.map((key) => {
-    const row: Record<string, string | number | null> = {
-      key,
-      label: LABEL_MAP[key] || key,
-    };
-    records.forEach((record, idx) => {
-      row[`p${idx}`] = record[key] ?? null;
+    columns = [
+      {
+        title: "Chỉ tiêu",
+        dataIndex: "label",
+        key: "label",
+        fixed: "left",
+        width: 220,
+        render: (val: string) => <span className="font-medium">{val}</span>,
+      },
+      ...quarters.map((q) => ({
+        title: q,
+        dataIndex: q,
+        key: q,
+        align: "right" as const,
+        render: fmtVal,
+      })),
+    ];
+
+    dataSource = records.map((record, idx) => {
+      const row: RowData = {
+        key: String(record.item_id || idx),
+        label: String(record.item || record.item_en || record.item_id || ""),
+      };
+      for (const q of quarters) {
+        row[q] = record[q] ?? null;
+      }
+      return row;
     });
-    return row;
-  });
+  } else {
+    const allKeys = Object.keys(records[0]).filter((k) => !SKIP_KEYS.has(k));
+
+    columns = [
+      {
+        title: "Chỉ tiêu",
+        dataIndex: "label",
+        key: "label",
+        fixed: "left",
+        width: 200,
+        render: (val: string) => <span className="font-medium">{val}</span>,
+      },
+      ...records.map((record, idx) => ({
+        title: getPeriodLabel(record),
+        dataIndex: `p${idx}`,
+        key: `p${idx}`,
+        align: "right" as const,
+        render: fmtVal,
+      })),
+    ];
+
+    dataSource = allKeys.map((key) => {
+      const row: RowData = {
+        key,
+        label: LABEL_MAP[key] || key,
+      };
+      records.forEach((record, idx) => {
+        row[`p${idx}`] = record[key] ?? null;
+      });
+      return row;
+    });
+  }
 
   return (
     <Card>
