@@ -33,15 +33,21 @@ def main():
 
     config.DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    api_key = os.environ.get("VNSTOCK_API_KEY")
+    api_key = os.environ.get("VNSTOCK_API_KEY", "").strip()
     if api_key:
         try:
-            from vnstock import register_user
-            register_user(api_key=api_key)
+            from vnstock.core.utils.auth import change_api_key
+            change_api_key(api_key)
             config.has_api_key = True
             print(f"Registered vnstock API key (60 req/min, delay={config.get_request_delay()}s)")
-        except Exception as e:
-            print(f"WARN: Could not register API key: {e}")
+        except Exception:
+            try:
+                from vnstock import register_user
+                register_user(api_key=api_key)
+                config.has_api_key = True
+                print(f"Registered vnstock API key via legacy method (60 req/min, delay={config.get_request_delay()}s)")
+            except Exception as e:
+                print(f"WARN: Could not register API key: {e}")
     else:
         print(f"No VNSTOCK_API_KEY set — using guest mode (20 req/min, delay={config.get_request_delay()}s)")
 

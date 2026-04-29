@@ -1,7 +1,7 @@
 """Crawl company profile information for all tracked symbols."""
 
 from datetime import datetime
-from vnstock import Vnstock
+from vnstock import Company
 
 from config import TRACKED_SYMBOLS, FINANCE_SOURCE
 from utils import write_json, fetch_with_retry, df_row_to_dict
@@ -12,22 +12,22 @@ def crawl_company_info():
     all_companies = {}
 
     for symbol in TRACKED_SYMBOLS:
-        stock = Vnstock().stock(symbol=symbol, source=FINANCE_SOURCE)
+        company = Company(symbol=symbol, source=FINANCE_SOURCE, show_log=False)
 
-        def _fetch(s=stock):
-            return s.company.profile()
+        def _fetch(c=company):
+            return c.overview()
 
         df = fetch_with_retry(_fetch, f"{symbol}/profile")
         if df is None or len(df) == 0:
             continue
 
         if hasattr(df, "columns"):
-            company = df_row_to_dict(df.iloc[0], df.columns)
+            profile = df_row_to_dict(df.iloc[0], df.columns)
         else:
-            company = dict(df) if isinstance(df, dict) else {"symbol": symbol}
+            profile = dict(df) if isinstance(df, dict) else {"symbol": symbol}
 
-        company["symbol"] = symbol
-        all_companies[symbol] = company
+        profile["symbol"] = symbol
+        all_companies[symbol] = profile
         print(f"  {symbol}: OK")
 
     if all_companies:

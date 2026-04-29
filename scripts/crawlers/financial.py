@@ -1,7 +1,7 @@
 """Crawl quarterly financial statements (BCTC) for all tracked symbols."""
 
 from datetime import datetime
-from vnstock import Vnstock
+from vnstock import Finance
 
 from config import TRACKED_SYMBOLS, FINANCE_SOURCE
 from utils import write_json, fetch_with_retry, df_row_to_dict
@@ -14,10 +14,10 @@ STATEMENT_TYPES = [
 ]
 
 
-def _crawl_statement(finance_api, symbol: str, method_name: str, label: str, max_rows: int = 12) -> list[dict]:
+def _crawl_statement(finance: Finance, symbol: str, method_name: str, label: str, max_rows: int = 12) -> list[dict]:
     """Fetch a single financial statement type and return as list of dicts."""
-    def _fetch(api=finance_api, m=method_name):
-        return getattr(api, m)(period="quarter")
+    def _fetch():
+        return getattr(finance, method_name)(period="quarter")
 
     df = fetch_with_retry(_fetch, f"{symbol}/{label}")
     if df is None or len(df) == 0:
@@ -30,7 +30,7 @@ def crawl_financial_statements():
     print("\n[5/6] Crawling financial statements (BCTC)...")
 
     for symbol in TRACKED_SYMBOLS:
-        stock = Vnstock().stock(symbol=symbol, source=FINANCE_SOURCE)
+        finance = Finance(symbol=symbol, source=FINANCE_SOURCE, show_log=False)
         finance_data = {
             "symbol": symbol,
             "incomeStatement": [],
@@ -40,7 +40,7 @@ def crawl_financial_statements():
         }
 
         for method_name, json_key, label in STATEMENT_TYPES:
-            finance_data[json_key] = _crawl_statement(stock.finance, symbol, method_name, label)
+            finance_data[json_key] = _crawl_statement(finance, symbol, method_name, label)
 
         has_data = any(finance_data[key] for _, key, _ in STATEMENT_TYPES)
         if has_data:
