@@ -28,13 +28,13 @@ function isTradingHours(): boolean {
 function formatRelativeTime(iso: string): string {
   const diff = Date.now() - new Date(iso).getTime();
   const mins = Math.floor(diff / 60_000);
-  const hours = Math.floor(mins / 60);
   if (mins < 1) {
     return "vừa xong";
   }
   if (mins < 60) {
     return `${mins} phút trước`;
   }
+  const hours = Math.floor(mins / 60);
   if (hours < 24) {
     return `${hours} giờ trước`;
   }
