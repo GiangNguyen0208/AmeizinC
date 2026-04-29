@@ -3,7 +3,7 @@
 import { Col, Row, Typography } from "antd";
 import { MarketIndexCards } from "./components/MarketIndexCards";
 import { StockTable } from "./components/StockTable";
-import { useTopGainers, useTopLosers, useTopVolume } from "./hooks/useMarketData";
+import { useTopGainers, useTopLosers, useTopVolume } from "@/hooks";
 import { DataUpdateNote, DataFreshness, MarketBreadth } from "@/components/ui";
 
 const { Title } = Typography;

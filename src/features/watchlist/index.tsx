@@ -4,7 +4,7 @@ import { Typography, Empty, Card } from "antd";
 import { StarOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { WatchlistTable } from "./components/WatchlistTable";
-import { useWatchlistPrices } from "./hooks/useWatchlistData";
+import { useWatchlistPrices } from "@/hooks";
 import type { StockPrice } from "@/types";
 
 const { Title } = Typography;

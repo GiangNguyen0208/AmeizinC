@@ -4,7 +4,7 @@ import { Card, Typography, Segmented } from "antd";
 import { useState } from "react";
 import { PriceHeader } from "./components/PriceHeader";
 import { PriceChart } from "@/components/charts/PriceChart";
-import { useStockPrice, useHistoricalPrices } from "./hooks/useStockData";
+import { useStockPrice, useHistoricalPrices } from "@/hooks";
 import { LoadingState, ErrorState } from "@/components/ui";
 
 const { Title } = Typography;
