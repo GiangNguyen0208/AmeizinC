@@ -30,13 +30,39 @@ INDEX_TICKERS = [
 ]
 
 SOURCE = "KBS"
-REQUEST_DELAY = 0.5
+MAX_RETRIES = 3
+RATE_LIMIT_WAIT = 60
+
+has_api_key = False
+
+
+def get_request_delay() -> float:
+    return 1.2 if has_api_key else 3.5
 
 
 def write_json(filename: str, data: dict):
     filepath = DATA_DIR / filename
     filepath.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  -> {filename}")
+
+
+def fetch_with_retry(fn, label: str):
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            result = fn()
+            time.sleep(get_request_delay())
+            return result
+        except Exception as e:
+            err_msg = str(e).lower()
+            if "rate limit" in err_msg or "429" in err_msg or "giới hạn" in err_msg:
+                wait = RATE_LIMIT_WAIT * attempt
+                print(f"  ⏳ {label}: rate limited, waiting {wait}s (attempt {attempt}/{MAX_RETRIES})...")
+                time.sleep(wait)
+            else:
+                print(f"  WARN: {label}: {e}")
+                return None
+    print(f"  ERROR: {label}: max retries exceeded")
+    return None
 
 
 def date_range(days: int) -> tuple[str, str]:
@@ -57,33 +83,33 @@ def crawl_market_indices():
 
     for idx in INDEX_TICKERS:
         ticker, name = idx["ticker"], idx["name"]
-        try:
-            quote = Quote(symbol=ticker, source=SOURCE)
-            df = quote.history(start=start_date, end=end_date, interval="1D")
-            df = df.sort_values("time").reset_index(drop=True)
 
-            if len(df) >= 2:
-                latest = df.iloc[-1]
-                prev = df.iloc[-2]
-                close_now = round(float(latest["close"]), 2)
-                close_prev = round(float(prev["close"]), 2)
-                change = round(close_now - close_prev, 2)
-                change_pct = round((change / close_prev) * 100, 2) if close_prev else 0
+        def _fetch(t=ticker, s=start_date, e=end_date):
+            q = Quote(symbol=t, source=SOURCE)
+            return q.history(start=s, end=e, interval="1D")
 
-                results.append({
-                    "name": name,
-                    "value": close_now,
-                    "change": change,
-                    "changePercent": change_pct,
-                    "volume": int(latest["volume"]),
-                    "updatedAt": to_date_str(latest["time"]),
-                })
-                sign = "+" if change >= 0 else ""
-                print(f"  {name}: {close_now:.2f} ({sign}{change})")
+        df = fetch_with_retry(_fetch, name)
+        if df is None or len(df) < 2:
+            continue
 
-            time.sleep(REQUEST_DELAY)
-        except Exception as e:
-            print(f"  WARN: {name}: {e}")
+        df = df.sort_values("time").reset_index(drop=True)
+        latest = df.iloc[-1]
+        prev = df.iloc[-2]
+        close_now = round(float(latest["close"]), 2)
+        close_prev = round(float(prev["close"]), 2)
+        change = round(close_now - close_prev, 2)
+        change_pct = round((change / close_prev) * 100, 2) if close_prev else 0
+
+        results.append({
+            "name": name,
+            "value": close_now,
+            "change": change,
+            "changePercent": change_pct,
+            "volume": int(latest["volume"]),
+            "updatedAt": to_date_str(latest["time"]),
+        })
+        sign = "+" if change >= 0 else ""
+        print(f"  {name}: {close_now:.2f} ({sign}{change})")
 
     write_json("market-indices.json", {
         "data": results,
@@ -98,37 +124,36 @@ def crawl_stock_prices() -> dict:
     start_date, end_date = date_range(7)
 
     for symbol in TRACKED_SYMBOLS:
-        try:
-            quote = Quote(symbol=symbol, source=SOURCE)
-            df = quote.history(start=start_date, end=end_date, interval="1D")
-            df = df.sort_values("time").reset_index(drop=True)
+        def _fetch(s=symbol, sd=start_date, ed=end_date):
+            q = Quote(symbol=s, source=SOURCE)
+            return q.history(start=sd, end=ed, interval="1D")
 
-            if len(df) >= 2:
-                latest = df.iloc[-1]
-                prev = df.iloc[-2]
-                close_now = float(latest["close"])
-                close_prev = float(prev["close"])
-                change = round(close_now - close_prev, 2)
-                change_pct = round((change / close_prev) * 100, 2) if close_prev else 0
+        df = fetch_with_retry(_fetch, symbol)
+        if df is None or len(df) < 2:
+            continue
 
-                all_prices[symbol] = {
-                    "symbol": symbol,
-                    "price": close_now,
-                    "change": change,
-                    "changePercent": change_pct,
-                    "volume": int(latest["volume"]),
-                    "high": float(latest["high"]),
-                    "low": float(latest["low"]),
-                    "open": float(latest["open"]),
-                    "previousClose": close_prev,
-                    "updatedAt": to_date_str(latest["time"]),
-                }
-                sign = "+" if change >= 0 else ""
-                print(f"  {symbol}: {close_now} ({sign}{change})")
+        df = df.sort_values("time").reset_index(drop=True)
+        latest = df.iloc[-1]
+        prev = df.iloc[-2]
+        close_now = float(latest["close"])
+        close_prev = float(prev["close"])
+        change = round(close_now - close_prev, 2)
+        change_pct = round((change / close_prev) * 100, 2) if close_prev else 0
 
-            time.sleep(REQUEST_DELAY)
-        except Exception as e:
-            print(f"  WARN: {symbol}: {e}")
+        all_prices[symbol] = {
+            "symbol": symbol,
+            "price": close_now,
+            "change": change,
+            "changePercent": change_pct,
+            "volume": int(latest["volume"]),
+            "high": float(latest["high"]),
+            "low": float(latest["low"]),
+            "open": float(latest["open"]),
+            "previousClose": close_prev,
+            "updatedAt": to_date_str(latest["time"]),
+        }
+        sign = "+" if change >= 0 else ""
+        print(f"  {symbol}: {close_now} ({sign}{change})")
 
     write_json("stock-prices.json", {
         "data": all_prices,
@@ -180,33 +205,32 @@ def crawl_historical_prices():
     start_date, end_date = date_range(365)
 
     for symbol in TRACKED_SYMBOLS:
-        try:
-            quote = Quote(symbol=symbol, source=SOURCE)
-            df = quote.history(start=start_date, end=end_date, interval="1D")
-            df = df.sort_values("time").reset_index(drop=True)
+        def _fetch(s=symbol, sd=start_date, ed=end_date):
+            q = Quote(symbol=s, source=SOURCE)
+            return q.history(start=sd, end=ed, interval="1D")
 
-            if len(df) > 0:
-                history = []
-                for _, row in df.iterrows():
-                    history.append({
-                        "date": to_date_str(row["time"]),
-                        "open": round(float(row["open"]), 2),
-                        "high": round(float(row["high"]), 2),
-                        "low": round(float(row["low"]), 2),
-                        "close": round(float(row["close"]), 2),
-                        "volume": int(row["volume"]),
-                    })
+        df = fetch_with_retry(_fetch, symbol)
+        if df is None or len(df) == 0:
+            continue
 
-                write_json(f"history-{symbol}.json", {
-                    "symbol": symbol,
-                    "data": history,
-                    "crawledAt": datetime.now().isoformat(),
-                })
-                print(f"  {symbol}: {len(history)} bars")
+        df = df.sort_values("time").reset_index(drop=True)
+        history = []
+        for _, row in df.iterrows():
+            history.append({
+                "date": to_date_str(row["time"]),
+                "open": round(float(row["open"]), 2),
+                "high": round(float(row["high"]), 2),
+                "low": round(float(row["low"]), 2),
+                "close": round(float(row["close"]), 2),
+                "volume": int(row["volume"]),
+            })
 
-            time.sleep(REQUEST_DELAY)
-        except Exception as e:
-            print(f"  WARN: {symbol}: {e}")
+        write_json(f"history-{symbol}.json", {
+            "symbol": symbol,
+            "data": history,
+            "crawledAt": datetime.now().isoformat(),
+        })
+        print(f"  {symbol}: {len(history)} bars")
 
 
 # ─── Main ──────────────────────────────────────────────────────
@@ -218,16 +242,18 @@ def main():
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
+    global has_api_key
     api_key = os.environ.get("VNSTOCK_API_KEY")
     if api_key:
         try:
             from vnstock import register_user
             register_user(api_key=api_key)
-            print("Registered vnstock API key (60 req/min)")
+            has_api_key = True
+            print(f"Registered vnstock API key (60 req/min, delay={get_request_delay()}s)")
         except Exception as e:
             print(f"WARN: Could not register API key: {e}")
     else:
-        print("No VNSTOCK_API_KEY set — using guest mode (20 req/min)")
+        print(f"No VNSTOCK_API_KEY set — using guest mode (20 req/min, delay={get_request_delay()}s)")
 
     crawl_market_indices()
     all_prices = crawl_stock_prices()
