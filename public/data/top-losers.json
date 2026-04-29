@@ -3,10 +3,10 @@
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 219.2,
-      "change": -6.3,
-      "changePercent": -2.79,
-      "volume": 1754200
+      "price": 217.9,
+      "change": -7.6,
+      "changePercent": -3.37,
+      "volume": 2410900
     },
     {
       "symbol": "TCB",
@@ -14,55 +14,63 @@
       "price": 33.9,
       "change": -0.7,
       "changePercent": -2.02,
-      "volume": 6036300
+      "volume": 7219000
     },
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 70.0,
-      "change": -1.0,
-      "changePercent": -1.41,
-      "volume": 71300
+      "price": 69.8,
+      "change": -1.2,
+      "changePercent": -1.69,
+      "volume": 132200
     },
     {
       "symbol": "SAB",
       "companyName": "SAB",
-      "price": 47.9,
-      "change": -0.6,
-      "changePercent": -1.24,
-      "volume": 241400
+      "price": 47.8,
+      "change": -0.7,
+      "changePercent": -1.44,
+      "volume": 292300
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 76.3,
+      "change": -1.1,
+      "changePercent": -1.42,
+      "volume": 1298100
     },
     {
       "symbol": "VPB",
       "companyName": "VPB",
-      "price": 26.75,
-      "change": -0.25,
-      "changePercent": -0.93,
-      "volume": 3553100
+      "price": 26.65,
+      "change": -0.35,
+      "changePercent": -1.3,
+      "volume": 5986800
     },
     {
       "symbol": "HDB",
       "companyName": "HDB",
-      "price": 26.4,
-      "change": -0.2,
-      "changePercent": -0.75,
-      "volume": 3162500
+      "price": 26.3,
+      "change": -0.3,
+      "changePercent": -1.13,
+      "volume": 4051100
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 73.9,
-      "change": -0.5,
-      "changePercent": -0.67,
-      "volume": 1314300
+      "price": 73.7,
+      "change": -0.7,
+      "changePercent": -0.94,
+      "volume": 2063300
     },
     {
       "symbol": "VNM",
       "companyName": "VNM",
-      "price": 60.8,
-      "change": -0.4,
-      "changePercent": -0.65,
-      "volume": 535000
+      "price": 60.7,
+      "change": -0.5,
+      "changePercent": -0.82,
+      "volume": 876800
     },
     {
       "symbol": "ACB",
@@ -70,16 +78,8 @@
       "price": 23.35,
       "change": -0.15,
       "changePercent": -0.64,
-      "volume": 2063500
-    },
-    {
-      "symbol": "MSN",
-      "companyName": "MSN",
-      "price": 77.0,
-      "change": -0.4,
-      "changePercent": -0.52,
-      "volume": 468400
+      "volume": 3651600
     }
   ],
-  "crawledAt": "2026-04-29T03:35:03.663790"
+  "crawledAt": "2026-04-29T05:34:37.782918"
 }
