@@ -17,8 +17,8 @@ function fmtPct(val: number | null): React.ReactNode {
 }
 
 function fmtBil(val: number): string {
-  if (Math.abs(val) >= 1000) return `${(val / 1000).toFixed(1)}K`;
-  return val.toFixed(0);
+  if (Math.abs(val) >= 1000) return `${(val / 1000).toFixed(1)}K tỷ`;
+  return `${val.toFixed(0)} tỷ`;
 }
 
 const columns: ColumnsType<FinancialRatios> = [

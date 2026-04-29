@@ -70,18 +70,20 @@ function computeFromNewFormat(data: FinanceData): FinancialRatios[] {
   const totalAssetsRow = findItem(balanceSheet, "total assets");
   const equityRow = findItem(balanceSheet, "owner's equity", "total owner's equity", "equity");
 
+  const toBil = (v: number) => v / 1e9;
+
   return quarters.map((qKey) => {
     const { year, quarter } = parseQuarter(qKey);
-    const revenue = itemVal(revenueRow, qKey);
-    const grossProfit = itemVal(grossProfitRow, qKey);
-    const operatingProfit = itemVal(operatingProfitRow, qKey);
-    const netProfit = itemVal(netProfitRow, qKey);
-    const totalAssets = itemVal(totalAssetsRow, qKey);
-    const equity = itemVal(equityRow, qKey);
+    const revenue = toBil(itemVal(revenueRow, qKey));
+    const grossProfit = toBil(itemVal(grossProfitRow, qKey));
+    const operatingProfit = toBil(itemVal(operatingProfitRow, qKey));
+    const netProfit = toBil(itemVal(netProfitRow, qKey));
+    const totalAssets = toBil(itemVal(totalAssetsRow, qKey));
+    const equity = toBil(itemVal(equityRow, qKey));
 
     const sameQuarterLastYear = `${year - 1}-Q${quarter}`;
-    const prevRevenue = itemVal(revenueRow, sameQuarterLastYear);
-    const prevNetProfit = itemVal(netProfitRow, sameQuarterLastYear);
+    const prevRevenue = toBil(itemVal(revenueRow, sameQuarterLastYear));
+    const prevNetProfit = toBil(itemVal(netProfitRow, sameQuarterLastYear));
 
     return {
       period: `Q${quarter}/${year}`,

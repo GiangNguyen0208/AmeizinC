@@ -33,8 +33,8 @@ export function FinanceTrendChart({ ratios }: Props) {
           orientation="left"
           tick={{ fill: "#9ca3af", fontSize: 12 }}
           tickFormatter={(val: number) => {
-            if (Math.abs(val) >= 1000) return `${(val / 1000).toFixed(0)}K`;
-            return val.toFixed(0);
+            if (Math.abs(val) >= 1000) return `${(val / 1000).toFixed(0)}K tỷ`;
+            return `${val.toFixed(0)} tỷ`;
           }}
         />
         <YAxis
@@ -54,7 +54,7 @@ export function FinanceTrendChart({ ratios }: Props) {
           formatter={(value, name) => {
             const num = Number(value);
             if (name === "netMargin" || name === "roe") return [`${num?.toFixed(2)}%`, name === "netMargin" ? "Biên LN ròng" : "ROE"];
-            return [num?.toLocaleString("vi-VN"), name === "revenue" ? "Doanh thu" : "LNST"];
+            return [`${num?.toLocaleString("vi-VN")} tỷ`, name === "revenue" ? "Doanh thu" : "LNST"];
           }}
         />
         <Legend
