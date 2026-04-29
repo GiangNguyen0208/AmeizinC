@@ -2,7 +2,7 @@
 
 import { Card, Col, Row, Statistic } from "antd";
 import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
-import { useMarketIndices } from "../hooks/useMarketData";
+import { useMarketIndices } from "@/hooks";
 import { formatVolume } from "@/utils";
 import { LoadingState } from "@/components/ui";
 

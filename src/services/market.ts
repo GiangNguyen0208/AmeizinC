@@ -1,4 +1,4 @@
-import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta } from "@/types";
+import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta, FinanceData, CompanyProfile } from "@/types";
 import { isMockEnabled } from "./api-client";
 import {
   mockFetchMarketIndices,
@@ -10,6 +10,8 @@ import {
   mockSearchStocks,
   mockFetchMeta,
   mockFetchAllStockPrices,
+  mockFetchFinanceData,
+  mockFetchCompanyProfile,
 } from "./providers/mock";
 import {
   staticFetchMarketIndices,
@@ -21,6 +23,8 @@ import {
   staticSearchStocks,
   staticFetchMeta,
   staticFetchAllStockPrices,
+  staticFetchFinanceData,
+  staticFetchCompanyProfile,
 } from "./providers/static-data";
 
 async function withFallback<T>(
@@ -82,4 +86,18 @@ export function fetchMeta(): Promise<CrawlMeta> {
 
 export function fetchAllStockPrices(): Promise<StockPrice[]> {
   return withFallback(staticFetchAllStockPrices, mockFetchAllStockPrices);
+}
+
+export function fetchFinanceData(symbol: string): Promise<FinanceData> {
+  return withFallback(
+    () => staticFetchFinanceData(symbol),
+    () => mockFetchFinanceData(symbol)
+  );
+}
+
+export function fetchCompanyProfile(symbol: string): Promise<CompanyProfile> {
+  return withFallback(
+    () => staticFetchCompanyProfile(symbol),
+    () => mockFetchCompanyProfile(symbol)
+  );
 }
