@@ -12,6 +12,7 @@ import {
   mockFetchAllStockPrices,
   mockFetchFinanceData,
   mockFetchCompanyProfile,
+  mockFetchHistoricalPricesByRange,
 } from "./providers/mock";
 import {
   staticFetchMarketIndices,
@@ -25,6 +26,7 @@ import {
   staticFetchAllStockPrices,
   staticFetchFinanceData,
   staticFetchCompanyProfile,
+  staticFetchHistoricalPricesByRange,
 } from "./providers/static-data";
 
 async function withFallback<T>(
@@ -65,11 +67,22 @@ export function fetchStockPrice(symbol: string): Promise<StockPrice> {
 
 export function fetchHistoricalPrices(
   symbol: string,
-  days: number = 90
+  days: number
 ): Promise<HistoricalPrice[]> {
   return withFallback(
     () => staticFetchHistoricalPrices(symbol, days),
     () => mockFetchHistoricalPrices(symbol, days)
+  );
+}
+
+export function fetchHistoricalPricesByRange(
+  symbol: string,
+  startDate: string,
+  endDate: string
+): Promise<HistoricalPrice[]> {
+  return withFallback(
+    () => staticFetchHistoricalPricesByRange(symbol, startDate, endDate),
+    () => mockFetchHistoricalPricesByRange(symbol, startDate, endDate)
   );
 }
 

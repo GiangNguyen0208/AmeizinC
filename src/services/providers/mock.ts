@@ -1,5 +1,5 @@
 import type { MarketIndex, TopStock, StockPrice, HistoricalPrice, CrawlMeta, FinanceData, CompanyProfile } from "@/types";
-
+import dayjs from "dayjs";
 const MOCK_DELAY = 300;
 
 function randomChange(base: number, maxPercent: number = 3): number {
@@ -123,6 +123,16 @@ export async function mockFetchHistoricalPrices(symbol: string, days: number = 9
   const stock = MOCK_STOCKS.find((s) => s.symbol === symbol.toUpperCase());
   const basePrice = stock ? stock.price : 50 + Math.random() * 100;
   return generateHistorical(days, basePrice * 0.9);
+}
+
+export async function mockFetchHistoricalPricesByRange(
+  symbol: string,
+  startDate: string,
+  endDate: string
+): Promise<HistoricalPrice[]> {
+  const days = dayjs(endDate).diff(dayjs(startDate), "day") + 1;
+  const all = await mockFetchHistoricalPrices(symbol, days);
+  return all.filter((h) => h.date >= startDate && h.date <= endDate);
 }
 
 export async function mockSearchStocks(query: string): Promise<TopStock[]> {
