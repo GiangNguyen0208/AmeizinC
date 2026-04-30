@@ -44,12 +44,26 @@ export async function staticFetchHistoricalPrices(symbol: string, days: number =
   const json = await fetchJSON<{ symbol: string; data: HistoricalPrice[]; crawledAt: string }>(
     `history-${symbol.toUpperCase()}.json`
   );
-  if (days >= 365) return json.data;
+  if (days >= 365) {
+    return json.data;
+  }
   const cutoff = new Date();
   cutoff.setDate(cutoff.getDate() - days);
   const cutoffStr = cutoff.toISOString().split("T")[0];
   return json.data.filter((h) => h.date >= cutoffStr);
 }
+
+export async function staticFetchHistoricalPricesByRange(
+  symbol: string,
+  startDate: string,
+  endDate: string
+): Promise<HistoricalPrice[]> {
+  const json = await fetchJSON<{ symbol: string; data: HistoricalPrice[]; crawledAt: string }>(
+    `history-${symbol.toUpperCase()}.json`
+  );
+  return json.data.filter((h) => h.date >= startDate && h.date <= endDate);
+}
+
 
 export async function staticSearchStocks(query: string): Promise<TopStock[]> {
   const json = await fetchJSON<CrawledData<Record<string, StockPrice>>>("stock-prices.json");
