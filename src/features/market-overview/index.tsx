@@ -5,7 +5,7 @@ import { DownloadOutlined } from "@ant-design/icons";
 import { MarketIndexCards } from "./components/MarketIndexCards";
 import { StockTable } from "./components/StockTable";
 import { useTopGainers, useTopLosers, useTopVolume } from "@/hooks";
-import { DataUpdateNote, DataFreshness, MarketBreadth } from "@/components/ui";
+import { DataUpdateNote, DataFreshness, MarketBreadth, VietnamHolidayNotice } from "@/components/ui";
 import { exportToCSV } from "@/utils";
 import type { TopStock } from "@/types";
 
@@ -45,6 +45,7 @@ export function MarketOverview() {
         </div>
       </div>
 
+      <VietnamHolidayNotice />
       <MarketIndexCards />
       <MarketBreadth />
       <DataUpdateNote />
