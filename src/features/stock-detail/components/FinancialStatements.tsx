@@ -1,19 +1,28 @@
 "use client";
 
-import { Card, Table, Segmented, Typography } from "antd";
+import { Card, Segmented, Table, Typography } from "antd";
 import type { ColumnsType } from "antd/es/table";
-import { useState } from "react";
+import type { ReactNode } from "react";
+import { useMemo, useState } from "react";
 import type { FinanceData, FinanceRecord } from "@/types";
 import { getChangeColor } from "@/utils";
 
-const { Title } = Typography;
+const { Text, Title } = Typography;
 
 type StatementType = "incomeStatement" | "balanceSheet" | "cashFlow";
+type PeriodWindow = "4" | "8" | "12" | "all";
 
 const STATEMENT_OPTIONS = [
   { label: "KQKD", value: "incomeStatement" as StatementType },
   { label: "CĐKT", value: "balanceSheet" as StatementType },
   { label: "LCTT", value: "cashFlow" as StatementType },
+];
+
+const PERIOD_OPTIONS = [
+  { label: "4 quý", value: "4" },
+  { label: "8 quý", value: "8" },
+  { label: "12 quý", value: "12" },
+  { label: "Tất cả", value: "all" },
 ];
 
 const SKIP_KEYS = new Set(["year", "yearReport", "quarter", "lengthReport", "symbol", "ticker"]);
@@ -44,12 +53,22 @@ const LABEL_MAP: Record<string, string> = {
   net_cash_flow: "Lưu chuyển tiền thuần",
 };
 
-function fmtVal(val: string | number | null): React.ReactNode {
-  if (val === null || val === undefined) return "—";
+type RowData = Record<string, string | number | null>;
+
+interface Props {
+  data: FinanceData;
+}
+
+function fmtVal(val: string | number | null): ReactNode {
+  if (val === null || val === undefined) return <span className="text-gray-500">-</span>;
   if (typeof val === "string") return val;
-  if (Math.abs(val) >= 1e9) return <span style={{ color: getChangeColor(val) }}>{(val / 1e9).toFixed(1)} tỷ</span>;
-  if (Math.abs(val) >= 1e6) return <span style={{ color: getChangeColor(val) }}>{(val / 1e6).toFixed(1)} triệu</span>;
-  return val.toLocaleString("vi-VN");
+
+  const formatted =
+    Math.abs(val) >= 1e9
+      ? `${(val / 1e9).toLocaleString("vi-VN", { maximumFractionDigits: 1 })} tỷ`
+      : val.toLocaleString("vi-VN", { maximumFractionDigits: 3 });
+
+  return <span style={val < 0 ? { color: getChangeColor(val) } : undefined}>{formatted}</span>;
 }
 
 function isNewFormat(records: FinanceRecord[]): boolean {
@@ -59,9 +78,15 @@ function isNewFormat(records: FinanceRecord[]): boolean {
 function getQuarterColumns(records: FinanceRecord[]): string[] {
   if (!records.length) return [];
   return Object.keys(records[0])
-    .filter((k) => /^\d{4}-Q\d$/.test(k))
+    .filter((key) => /^\d{4}-Q\d$/.test(key))
     .sort()
     .reverse();
+}
+
+function formatQuarterLabel(key: string): string {
+  const match = key.match(/^(\d{4})-Q(\d)$/);
+  if (!match) return key;
+  return `Q${match[2]}/${match[1]}`;
 }
 
 function getPeriodLabel(record: FinanceRecord): string {
@@ -70,35 +95,71 @@ function getPeriodLabel(record: FinanceRecord): string {
   return quarter ? `Q${quarter}/${year}` : `${year}`;
 }
 
-interface Props {
-  data: FinanceData;
+function limitPeriods<T>(periods: T[], periodWindow: PeriodWindow): T[] {
+  return periodWindow === "all" ? periods : periods.slice(0, Number(periodWindow));
 }
-
-type RowData = Record<string, string | number | null>;
 
 export function FinancialStatements({ data }: Props) {
   const [stmtType, setStmtType] = useState<StatementType>("incomeStatement");
+  const [periodWindow, setPeriodWindow] = useState<PeriodWindow>("8");
   const records = data[stmtType];
 
-  if (!records.length) {
-    return (
-      <Card>
-        <Title level={5} style={{ color: "#fff", margin: 0 }}>
-          Báo cáo tài chính
-        </Title>
-        <p className="text-gray-400 mt-4">Chưa có dữ liệu BCTC</p>
-      </Card>
-    );
-  }
+  const table = useMemo(() => {
+    if (!records.length) {
+      return {
+        columns: [] as ColumnsType<RowData>,
+        dataSource: [] as RowData[],
+        totalPeriods: 0,
+        visiblePeriods: 0,
+      };
+    }
 
-  const newFmt = isNewFormat(records);
-  let columns: ColumnsType<RowData>;
-  let dataSource: RowData[];
+    if (isNewFormat(records)) {
+      const quarters = getQuarterColumns(records);
+      const visibleQuarters = limitPeriods(quarters, periodWindow);
 
-  if (newFmt) {
-    const quarters = getQuarterColumns(records);
+      const columns: ColumnsType<RowData> = [
+        {
+          title: "Chỉ tiêu",
+          dataIndex: "label",
+          key: "label",
+          fixed: "left",
+          width: 240,
+          render: (val: string) => <span className="font-medium">{val}</span>,
+        },
+        ...visibleQuarters.map((quarter) => ({
+          title: formatQuarterLabel(quarter),
+          dataIndex: quarter,
+          key: quarter,
+          align: "right" as const,
+          width: 120,
+          render: fmtVal,
+        })),
+      ];
 
-    columns = [
+      const dataSource = records.map((record, idx) => {
+        const row: RowData = {
+          key: String(record.item_id || idx),
+          label: String(record.item || record.item_en || record.item_id || ""),
+        };
+        for (const quarter of visibleQuarters) {
+          row[quarter] = record[quarter] ?? null;
+        }
+        return row;
+      });
+
+      return {
+        columns,
+        dataSource,
+        totalPeriods: quarters.length,
+        visiblePeriods: visibleQuarters.length,
+      };
+    }
+
+    const visibleRecords = limitPeriods(records, periodWindow);
+    const allKeys = Object.keys(records[0]).filter((key) => !SKIP_KEYS.has(key));
+
+    const columns: ColumnsType<RowData> = [
       {
         title: "Chỉ tiêu",
         dataIndex: "label",
@@ -107,77 +168,81 @@ export function FinancialStatements({ data }: Props) {
         width: 220,
         render: (val: string) => <span className="font-medium">{val}</span>,
       },
-      ...quarters.map((q) => ({
-        title: q,
-        dataIndex: q,
-        key: q,
-        align: "right" as const,
-        render: fmtVal,
-      })),
-    ];
-
-    dataSource = records.map((record, idx) => {
-      const row: RowData = {
-        key: String(record.item_id || idx),
-        label: String(record.item || record.item_en || record.item_id || ""),
-      };
-      for (const q of quarters) {
-        row[q] = record[q] ?? null;
-      }
-      return row;
-    });
-  } else {
-    const allKeys = Object.keys(records[0]).filter((k) => !SKIP_KEYS.has(k));
-
-    columns = [
-      {
-        title: "Chỉ tiêu",
-        dataIndex: "label",
-        key: "label",
-        fixed: "left",
-        width: 200,
-        render: (val: string) => <span className="font-medium">{val}</span>,
-      },
-      ...records.map((record, idx) => ({
+      ...visibleRecords.map((record, idx) => ({
         title: getPeriodLabel(record),
         dataIndex: `p${idx}`,
         key: `p${idx}`,
         align: "right" as const,
+        width: 120,
         render: fmtVal,
       })),
     ];
 
-    dataSource = allKeys.map((key) => {
+    const dataSource = allKeys.map((key) => {
       const row: RowData = {
         key,
         label: LABEL_MAP[key] || key,
       };
-      records.forEach((record, idx) => {
+      visibleRecords.forEach((record, idx) => {
         row[`p${idx}`] = record[key] ?? null;
       });
       return row;
     });
+
+    return {
+      columns,
+      dataSource,
+      totalPeriods: records.length,
+      visiblePeriods: visibleRecords.length,
+    };
+  }, [periodWindow, records]);
+
+  if (!records.length) {
+    return (
+      <Card>
+        <Title level={5} style={{ color: "#fff", margin: 0 }}>
+          Báo cáo tài chính
+        </Title>
+        <p className="mt-4 text-gray-400">Chưa có dữ liệu BCTC</p>
+      </Card>
+    );
   }
 
   return (
     <Card>
-      <div className="flex items-center justify-between mb-4">
-        <Title level={5} style={{ color: "#fff", margin: 0 }}>
-          Báo cáo tài chính
-        </Title>
-        <Segmented
-          options={STATEMENT_OPTIONS}
-          value={stmtType}
-          onChange={(val) => setStmtType(val as StatementType)}
-        />
+      <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <Title level={5} style={{ color: "#fff", margin: 0 }}>
+            Báo cáo tài chính
+          </Title>
+          <Text className="text-xs text-gray-400">
+            Hiển thị {table.visiblePeriods}/{table.totalPeriods} quý gần nhất
+          </Text>
+        </div>
+
+        <div className="flex flex-wrap justify-end gap-2">
+          <Segmented
+            options={STATEMENT_OPTIONS}
+            value={stmtType}
+            onChange={(val) => setStmtType(val as StatementType)}
+          />
+          <Segmented
+            options={PERIOD_OPTIONS}
+            value={periodWindow}
+            onChange={(val) => setPeriodWindow(val as PeriodWindow)}
+          />
+        </div>
       </div>
+
       <Table
-        columns={columns}
-        dataSource={dataSource}
+        columns={table.columns}
+        dataSource={table.dataSource}
         rowKey="key"
         pagination={false}
         size="small"
-        scroll={{ x: 600 }}
+        sticky
+        tableLayout="fixed"
+        scroll={{ x: 240 + table.visiblePeriods * 120 }}
       />
     </Card>
   );

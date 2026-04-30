@@ -2,7 +2,13 @@
 
 import { Card, Typography } from "antd";
 import { useState } from "react";
-import { PriceHeader, FinancialRatiosCard, FinancialStatements, CompanyProfileCard } from "./components";
+import {
+  PriceHeader,
+  FinancialRatiosCard,
+  FinancialStatements,
+  CompanyProfileCard,
+  QuarterFinancialDetail,
+} from "./components";
 import { PeriodFilter, PeriodFilterValue } from "./components/PeriodFilter";
 import { PriceChart } from "@/components/charts/PriceChart";
 import { FinanceTrendChart } from "@/components/charts/FinanceTrendChart";
@@ -20,6 +26,7 @@ interface StockDetailProps {
 
 export function StockDetail({ symbol }: StockDetailProps) {
   const [filter, setFilter] = useState<PeriodFilterValue>(DEFAULT_FILTER);
+  const [selectedFinancePeriod, setSelectedFinancePeriod] = useState<string>();
 
   const { data: price, isLoading: loadingPrice, error: priceError, refetch } = useStockPrice(symbol);
   const { data: history, isLoading: loadingHistory } = useHistoricalPrices(symbol, filter);
@@ -71,7 +78,12 @@ export function StockDetail({ symbol }: StockDetailProps) {
                 <Title level={5} style={{ color: "#fff", margin: 0, marginBottom: 16 }}>
                   Xu hướng Doanh thu & Lợi nhuận
                 </Title>
-                <FinanceTrendChart ratios={ratios} />
+                <FinanceTrendChart ratios={ratios} onSelectPeriod={setSelectedFinancePeriod} />
+                <QuarterFinancialDetail
+                  ratios={ratios}
+                  selectedPeriod={selectedFinancePeriod}
+                  onSelectPeriod={setSelectedFinancePeriod}
+                />
               </Card>
             </>
           )}
