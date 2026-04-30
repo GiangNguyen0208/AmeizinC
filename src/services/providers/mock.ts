@@ -168,14 +168,30 @@ export async function mockFetchAllStockPrices(): Promise<StockPrice[]> {
   }));
 }
 
+function generateFinanceQuarters(count: number = 16): Array<{ year: number; quarter: number }> {
+  const now = new Date();
+  let year = now.getFullYear();
+  let quarter = Math.floor(now.getMonth() / 3);
+
+  if (quarter === 0) {
+    year -= 1;
+    quarter = 4;
+  }
+
+  return Array.from({ length: count }, () => {
+    const current = { year, quarter };
+    quarter -= 1;
+    if (quarter === 0) {
+      year -= 1;
+      quarter = 4;
+    }
+    return current;
+  });
+}
+
 export async function mockFetchFinanceData(symbol: string): Promise<FinanceData> {
   await delay();
-  const quarters = [
-    { year: 2025, quarter: 4 }, { year: 2025, quarter: 3 },
-    { year: 2025, quarter: 2 }, { year: 2025, quarter: 1 },
-    { year: 2024, quarter: 4 }, { year: 2024, quarter: 3 },
-    { year: 2024, quarter: 2 }, { year: 2024, quarter: 1 },
-  ];
+  const quarters = generateFinanceQuarters();
   return {
     symbol: symbol.toUpperCase(),
     incomeStatement: quarters.map((q) => ({

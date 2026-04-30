@@ -1,9 +1,10 @@
 """Crawl quarterly financial statements (BCTC) for all tracked symbols."""
 
 from datetime import datetime
+import re
 from vnstock import Finance
 
-from config import TRACKED_SYMBOLS, FINANCE_SOURCE
+from config import TRACKED_SYMBOLS, FINANCE_SOURCE, FINANCE_QUARTERS
 from utils import write_json, fetch_with_retry, df_row_to_dict
 
 
@@ -14,7 +15,17 @@ STATEMENT_TYPES = [
 ]
 
 
-def _crawl_statement(finance: Finance, symbol: str, method_name: str, label: str, max_rows: int = 12) -> list[dict]:
+def _has_quarter_columns(columns) -> bool:
+    return any(re.match(r"^\d{4}-Q\d$", str(col)) for col in columns)
+
+
+def _crawl_statement(
+    finance: Finance,
+    symbol: str,
+    method_name: str,
+    label: str,
+    max_quarters: int = FINANCE_QUARTERS,
+) -> list[dict]:
     """Fetch a single financial statement type and return as list of dicts."""
     def _fetch():
         return getattr(finance, method_name)(period="quarter")
@@ -23,7 +34,12 @@ def _crawl_statement(finance: Finance, symbol: str, method_name: str, label: str
     if df is None or len(df) == 0:
         return []
 
-    return [df_row_to_dict(row, df.columns) for _, row in df.head(max_rows).iterrows()]
+    # VCI-style data is item rows + quarter columns; keep all item rows so
+    # revenue/profit/equity rows are not accidentally dropped.
+    if not _has_quarter_columns(df.columns):
+        df = df.head(max_quarters)
+
+    return [df_row_to_dict(row, df.columns) for _, row in df.iterrows()]
 
 
 def crawl_financial_statements():

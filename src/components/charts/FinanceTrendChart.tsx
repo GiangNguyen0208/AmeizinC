@@ -15,18 +15,31 @@ import type { FinancialRatios } from "@/types";
 
 interface Props {
   ratios: FinancialRatios[];
+  selectedPeriod?: string;
+  onSelectPeriod?: (period: string) => void;
 }
 
-export function FinanceTrendChart({ ratios }: Props) {
+interface ChartClickState {
+  activePayload?: Array<{ payload?: FinancialRatios }>;
+}
+
+export function FinanceTrendChart({ ratios, onSelectPeriod }: Props) {
   const chartData = [...ratios].reverse();
+  const barSize = chartData.length > 16 ? 10 : chartData.length > 10 ? 14 : 20;
+  const handleClick = (state: unknown) => {
+    const chartState = state as ChartClickState;
+    const period = chartState.activePayload?.[0]?.payload?.period;
+    if (period) onSelectPeriod?.(period);
+  };
 
   return (
     <ResponsiveContainer width="100%" height={350}>
-      <ComposedChart data={chartData}>
+      <ComposedChart data={chartData} onClick={handleClick}>
         <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
         <XAxis
           dataKey="period"
           tick={{ fill: "#9ca3af", fontSize: 12 }}
+          minTickGap={12}
         />
         <YAxis
           yAxisId="amount"
@@ -63,8 +76,8 @@ export function FinanceTrendChart({ ratios }: Props) {
             return map[value] || value;
           }}
         />
-        <Bar yAxisId="amount" dataKey="revenue" fill="#3b82f6" opacity={0.7} barSize={20} />
-        <Bar yAxisId="amount" dataKey="netProfit" fill="#22c55e" opacity={0.7} barSize={20} />
+        <Bar yAxisId="amount" dataKey="revenue" fill="#3b82f6" opacity={0.7} barSize={barSize} />
+        <Bar yAxisId="amount" dataKey="netProfit" fill="#22c55e" opacity={0.7} barSize={barSize} />
         <Line yAxisId="pct" type="monotone" dataKey="netMargin" stroke="#fbbf24" strokeWidth={2} dot={{ r: 3 }} />
         <Line yAxisId="pct" type="monotone" dataKey="roe" stroke="#f472b6" strokeWidth={2} dot={{ r: 3 }} />
       </ComposedChart>
