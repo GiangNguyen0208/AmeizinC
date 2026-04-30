@@ -72,7 +72,7 @@ export function QuarterFinancialDetail({ ratios, selectedPeriod, onSelectPeriod 
 
   return (
     <div className="mt-4 border-t border-gray-800 pt-4">
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <Text className="block text-sm text-gray-400">Chi tiết từng quý</Text>
           <div className="text-xl font-semibold text-white">{selected.period}</div>
@@ -80,7 +80,7 @@ export function QuarterFinancialDetail({ ratios, selectedPeriod, onSelectPeriod 
         <Select
           value={selected.period}
           onChange={handleChange}
-          style={{ width: 150 }}
+          className="w-full sm:w-[150px]"
           options={ratios.map((ratio) => ({ label: ratio.period, value: ratio.period }))}
         />
       </div>
