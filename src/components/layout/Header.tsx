@@ -28,17 +28,17 @@ export function Header() {
     if (!searchValue.trim() || !allStocks) return [];
     const q = searchValue.toUpperCase();
     return allStocks
-      .filter((s) => s.symbol.includes(q))
+      .filter((stock) => stock.symbol.includes(q))
       .slice(0, 8)
-      .map((s) => ({
-        value: s.symbol,
+      .map((stock) => ({
+        value: stock.symbol,
         label: (
-          <div className="flex justify-between items-center">
-            <span className="font-bold">{s.symbol}</span>
-            <span>
-              <span className="mr-2">{formatPrice(s.price)}</span>
-              <span style={{ color: getChangeColor(s.changePercent) }}>
-                {formatPercent(s.changePercent)}
+          <div className="flex items-center justify-between gap-3">
+            <span className="font-bold">{stock.symbol}</span>
+            <span className="whitespace-nowrap text-right">
+              <span className="mr-2">{formatPrice(stock.price)}</span>
+              <span style={{ color: getChangeColor(stock.changePercent) }}>
+                {formatPercent(stock.changePercent)}
               </span>
             </span>
           </div>
@@ -52,8 +52,8 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-700 bg-gray-900/95 backdrop-blur px-6 py-3">
-      <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 border-b border-gray-700 bg-gray-900/95 px-3 py-3 backdrop-blur sm:px-6">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 sm:flex-nowrap sm:gap-4">
         <Link href="/" className="flex items-center gap-2 no-underline">
           <StockOutlined style={{ fontSize: 24, color: "#3b82f6" }} />
           <Title level={4} style={{ margin: 0, color: "#fff" }}>
@@ -61,27 +61,29 @@ export function Header() {
           </Title>
         </Link>
 
-        <AutoComplete
-          value={searchValue}
-          options={options}
-          onSelect={handleSelect}
-          onChange={setSearchValue}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" && searchValue.trim()) {
-              handleSelect(searchValue.trim().toUpperCase());
-            }
-          }}
-          placeholder="Nhập mã CK (VD: VNM, FPT...)"
-          style={{ maxWidth: 360, width: "100%" }}
-          suffixIcon={<SearchOutlined />}
-        />
+        <div className="order-3 w-full sm:order-none sm:max-w-[360px] sm:flex-1">
+          <AutoComplete
+            value={searchValue}
+            options={options}
+            onSelect={handleSelect}
+            onChange={setSearchValue}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" && searchValue.trim()) {
+                handleSelect(searchValue.trim().toUpperCase());
+              }
+            }}
+            placeholder="Nhập mã CK (VD: VNM, FPT...)"
+            style={{ width: "100%" }}
+            suffixIcon={<SearchOutlined />}
+          />
+        </div>
 
-        <Space size="large">
-          <Link href="/" className="text-gray-300 hover:text-white no-underline flex items-center gap-1">
-            <HomeOutlined /> Tổng quan
+        <Space size="middle" className="shrink-0">
+          <Link href="/" className="flex items-center gap-1 text-gray-300 no-underline hover:text-white">
+            <HomeOutlined /> <span className="hidden sm:inline">Tổng quan</span>
           </Link>
-          <Link href="/watchlist" className="text-gray-300 hover:text-white no-underline flex items-center gap-1">
-            <StarOutlined /> Watchlist
+          <Link href="/watchlist" className="flex items-center gap-1 text-gray-300 no-underline hover:text-white">
+            <StarOutlined /> <span className="hidden sm:inline">Watchlist</span>
           </Link>
         </Space>
       </div>

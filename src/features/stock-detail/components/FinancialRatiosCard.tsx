@@ -8,7 +8,7 @@ import { getChangeColor } from "@/utils";
 const { Title } = Typography;
 
 function fmtPct(val: number | null): React.ReactNode {
-  if (val === null) return <span className="text-gray-500">—</span>;
+  if (val === null) return <span className="text-gray-500">-</span>;
   return (
     <span style={{ color: getChangeColor(val) }}>
       {val > 0 ? "+" : ""}{val.toFixed(2)}%
@@ -28,6 +28,7 @@ const columns: ColumnsType<FinancialRatios> = [
     dataIndex: "revenue",
     key: "revenue",
     align: "right",
+    width: 120,
     render: fmtBil,
   },
   {
@@ -35,6 +36,7 @@ const columns: ColumnsType<FinancialRatios> = [
     dataIndex: "netProfit",
     key: "netProfit",
     align: "right",
+    width: 110,
     render: fmtBil,
   },
   {
@@ -42,6 +44,7 @@ const columns: ColumnsType<FinancialRatios> = [
     dataIndex: "netMargin",
     key: "netMargin",
     align: "right",
+    responsive: ["sm"],
     render: fmtPct,
   },
   {
@@ -49,6 +52,7 @@ const columns: ColumnsType<FinancialRatios> = [
     dataIndex: "roa",
     key: "roa",
     align: "right",
+    responsive: ["md"],
     render: fmtPct,
   },
   {
@@ -56,6 +60,7 @@ const columns: ColumnsType<FinancialRatios> = [
     dataIndex: "roe",
     key: "roe",
     align: "right",
+    responsive: ["sm"],
     render: fmtPct,
   },
   {
@@ -63,13 +68,14 @@ const columns: ColumnsType<FinancialRatios> = [
     dataIndex: "revenueGrowthYoY",
     key: "revenueGrowthYoY",
     align: "right",
+    responsive: ["md"],
     render: (val: number | null) =>
       val !== null ? (
         <Tag color={val > 0 ? "success" : val < 0 ? "error" : "warning"}>
           {val > 0 ? "+" : ""}{val.toFixed(2)}%
         </Tag>
       ) : (
-        <span className="text-gray-500">—</span>
+        <span className="text-gray-500">-</span>
       ),
   },
   {
@@ -77,13 +83,14 @@ const columns: ColumnsType<FinancialRatios> = [
     dataIndex: "netProfitGrowthYoY",
     key: "netProfitGrowthYoY",
     align: "right",
+    responsive: ["md"],
     render: (val: number | null) =>
       val !== null ? (
         <Tag color={val > 0 ? "success" : val < 0 ? "error" : "warning"}>
           {val > 0 ? "+" : ""}{val.toFixed(2)}%
         </Tag>
       ) : (
-        <span className="text-gray-500">—</span>
+        <span className="text-gray-500">-</span>
       ),
   },
 ];
@@ -104,6 +111,7 @@ export function FinancialRatiosCard({ ratios }: Props) {
         rowKey="period"
         pagination={false}
         size="small"
+        tableLayout="fixed"
         scroll={{ x: 800 }}
       />
     </Card>

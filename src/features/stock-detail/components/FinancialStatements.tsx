@@ -220,13 +220,15 @@ export function FinancialStatements({ data }: Props) {
           </Text>
         </div>
 
-        <div className="flex flex-wrap justify-end gap-2">
+        <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-end">
           <Segmented
+            block
             options={STATEMENT_OPTIONS}
             value={stmtType}
             onChange={(val) => setStmtType(val as StatementType)}
           />
           <Segmented
+            block
             options={PERIOD_OPTIONS}
             value={periodWindow}
             onChange={(val) => setPeriodWindow(val as PeriodWindow)}

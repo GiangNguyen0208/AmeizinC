@@ -1,9 +1,9 @@
 "use client";
 
-import { Table, Tag, Input, Slider, Space } from "antd";
+import { Input, Slider, Space, Table, Tag } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import Link from "next/link";
-import { useState, useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { TopStock } from "@/types";
 import { formatPrice, formatVolume, formatPercent, formatChange, getChangeColor } from "@/utils";
 
@@ -12,6 +12,7 @@ const columns: ColumnsType<TopStock> = [
     title: "Mã CK",
     dataIndex: "symbol",
     key: "symbol",
+    width: 82,
     sorter: (a, b) => a.symbol.localeCompare(b.symbol),
     render: (symbol: string) => (
       <Link href={`/stock/${symbol}`} className="font-bold text-blue-400 hover:text-blue-300">
@@ -30,6 +31,7 @@ const columns: ColumnsType<TopStock> = [
     dataIndex: "price",
     key: "price",
     align: "right",
+    width: 112,
     sorter: (a, b) => a.price - b.price,
     render: (price: number) => formatPrice(price),
   },
@@ -38,6 +40,7 @@ const columns: ColumnsType<TopStock> = [
     dataIndex: "change",
     key: "change",
     align: "right",
+    responsive: ["sm"],
     sorter: (a, b) => a.change - b.change,
     render: (_: number, record: TopStock) => (
       <span style={{ color: getChangeColor(record.change) }}>
@@ -50,6 +53,7 @@ const columns: ColumnsType<TopStock> = [
     dataIndex: "changePercent",
     key: "changePercent",
     align: "right",
+    width: 90,
     sorter: (a, b) => a.changePercent - b.changePercent,
     render: (val: number) => (
       <Tag color={val > 0 ? "success" : val < 0 ? "error" : "warning"}>
@@ -62,6 +66,7 @@ const columns: ColumnsType<TopStock> = [
     dataIndex: "volume",
     key: "volume",
     align: "right",
+    responsive: ["md"],
     sorter: (a, b) => a.volume - b.volume,
     render: (vol: number) => formatVolume(vol),
   },
@@ -83,53 +88,52 @@ export function StockTable({ data, loading, title, filterable = false }: StockTa
     let result = data;
     if (search) {
       const q = search.toUpperCase();
-      result = result.filter((s) => s.symbol.includes(q) || s.companyName?.toUpperCase().includes(q));
+      result = result.filter((stock) => stock.symbol.includes(q) || stock.companyName?.toUpperCase().includes(q));
     }
     if (pctRange[0] > -100 || pctRange[1] < 100) {
-      result = result.filter((s) => s.changePercent >= pctRange[0] && s.changePercent <= pctRange[1]);
+      result = result.filter((stock) => stock.changePercent >= pctRange[0] && stock.changePercent <= pctRange[1]);
     }
     return result;
   }, [data, filterable, search, pctRange]);
 
   return (
-    <div>
-      <Table
-        title={() => (
-          <div>
-            <span className="font-semibold text-base">{title}</span>
-            {filterable && (
-              <Space className="mt-2 w-full" direction="vertical" size="small">
-                <Input
-                  placeholder="Lọc mã CK..."
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  allowClear
-                  size="small"
+    <Table
+      title={() => (
+        <div>
+          <span className="font-semibold text-base">{title}</span>
+          {filterable && (
+            <Space className="mt-2 w-full" direction="vertical" size="small">
+              <Input
+                placeholder="Lọc mã CK..."
+                value={search}
+                onChange={(event) => setSearch(event.target.value)}
+                allowClear
+                size="small"
+              />
+              <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-2">
+                <span className="whitespace-nowrap text-xs text-gray-400">% thay đổi:</span>
+                <Slider
+                  range
+                  min={-20}
+                  max={20}
+                  step={0.5}
+                  value={pctRange}
+                  onChange={(val) => setPctRange(val as [number, number])}
+                  className="flex-1"
+                  tooltip={{ formatter: (val) => `${val}%` }}
                 />
-                <div className="flex items-center gap-2">
-                  <span className="text-xs text-gray-400 whitespace-nowrap">% thay đổi:</span>
-                  <Slider
-                    range
-                    min={-20}
-                    max={20}
-                    step={0.5}
-                    value={pctRange}
-                    onChange={(val) => setPctRange(val as [number, number])}
-                    className="flex-1"
-                    tooltip={{ formatter: (val) => `${val}%` }}
-                  />
-                </div>
-              </Space>
-            )}
-          </div>
-        )}
-        columns={columns}
-        dataSource={filtered}
-        rowKey="symbol"
-        loading={loading}
-        pagination={false}
-        size="small"
-      />
-    </div>
+              </div>
+            </Space>
+          )}
+        </div>
+      )}
+      columns={columns}
+      dataSource={filtered}
+      rowKey="symbol"
+      loading={loading}
+      pagination={false}
+      size="small"
+      tableLayout="fixed"
+    />
   );
 }

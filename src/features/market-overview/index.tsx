@@ -28,17 +28,18 @@ export function MarketOverview() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between flex-wrap gap-2">
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
         <Title level={3} style={{ color: "#fff", margin: 0 }}>
           Tổng quan thị trường
         </Title>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
           <DataFreshness />
           <Button
             icon={<DownloadOutlined />}
             size="small"
             onClick={() => handleExport(gainers, losers, topVol)}
             disabled={!gainers && !losers && !topVol}
+            className="w-full sm:w-auto"
           >
             Export CSV
           </Button>

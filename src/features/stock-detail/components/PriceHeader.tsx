@@ -23,19 +23,19 @@ export function PriceHeader({ data }: PriceHeaderProps) {
 
   return (
     <Card>
-      <div className="flex items-start justify-between mb-4">
-        <div>
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div className="min-w-0">
           <Space align="center" size="middle">
             <span className="text-2xl font-bold text-white">{data.symbol}</span>
             <Tag color={isUp ? "success" : "error"}>
               {formatPercent(data.changePercent)}
             </Tag>
           </Space>
-          <div className="mt-1">
-            <span className="text-3xl font-bold" style={{ color: getChangeColor(data.change) }}>
+          <div className="mt-1 flex flex-col gap-1 sm:block">
+            <span className="text-2xl font-bold sm:text-3xl" style={{ color: getChangeColor(data.change) }}>
               {formatPrice(data.price)}
             </span>
-            <span className="ml-3 text-lg" style={{ color: getChangeColor(data.change) }}>
+            <span className="text-base sm:ml-3 sm:text-lg" style={{ color: getChangeColor(data.change) }}>
               {isUp ? <ArrowUpOutlined /> : <ArrowDownOutlined />}
               {" "}{formatChange(data.change)}
             </span>
@@ -49,6 +49,7 @@ export function PriceHeader({ data }: PriceHeaderProps) {
               ? removeFromWatchlist(data.symbol)
               : addToWatchlist(data.symbol)
           }
+          className="w-full sm:w-auto"
         >
           {inWatchlist ? "Đã theo dõi" : "Theo dõi"}
         </Button>

@@ -208,7 +208,7 @@ export function StockDetail({ symbol }: StockDetailProps) {
     <div className="space-y-6">
       <PriceHeader data={price} />
 
-      <div className="flex justify-end">
+      <div className="flex justify-stretch sm:justify-end">
         <Button
           icon={<DownloadOutlined />}
           onClick={() =>
@@ -221,6 +221,7 @@ export function StockDetail({ symbol }: StockDetailProps) {
             })
           }
           disabled={loadingHistory || loadingFinance}
+          className="w-full sm:w-auto"
         >
           Export CSV
         </Button>
@@ -229,7 +230,7 @@ export function StockDetail({ symbol }: StockDetailProps) {
       {companyProfile && <CompanyProfileCard profile={companyProfile} />}
 
       <Card>
-        <div className="flex items-center justify-between mb-4 flex-wrap gap-3">
+        <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <Title level={5} style={{ color: "#fff", margin: 0 }}>
             Biểu đồ giá — {symbol}
           </Title>
