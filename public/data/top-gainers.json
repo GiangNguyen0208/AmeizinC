@@ -1,45 +1,4 @@
 {
-  "data": [
-    {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 32.3,
-      "change": 1.5,
-      "changePercent": 4.87,
-      "volume": 16939100
-    },
-    {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 75.2,
-      "change": 1.7,
-      "changePercent": 2.31,
-      "volume": 1268600
-    },
-    {
-      "symbol": "FPT",
-      "companyName": "FPT",
-      "price": 75.5,
-      "change": 1.1,
-      "changePercent": 1.48,
-      "volume": 9163000
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 37.15,
-      "change": 0.2,
-      "changePercent": 0.54,
-      "volume": 3564100
-    },
-    {
-      "symbol": "MBB",
-      "companyName": "MBB",
-      "price": 26.05,
-      "change": 0.05,
-      "changePercent": 0.19,
-      "volume": 13290000
-    }
-  ],
-  "crawledAt": "2026-04-29T14:23:42.313391"
+  "data": [],
+  "crawledAt": "2026-04-30T05:38:37.601221"
 }
