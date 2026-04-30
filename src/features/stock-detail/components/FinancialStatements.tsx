@@ -59,16 +59,16 @@ interface Props {
   data: FinanceData;
 }
 
-function fmtVal(val: string | number | null): ReactNode {
+function formatFinancialValue(val: string | number | null): ReactNode {
   if (val === null || val === undefined) return <span className="text-gray-500">-</span>;
   if (typeof val === "string") return val;
 
-  const formatted =
-    Math.abs(val) >= 1e9
-      ? `${(val / 1e9).toLocaleString("vi-VN", { maximumFractionDigits: 1 })} tỷ`
-      : val.toLocaleString("vi-VN", { maximumFractionDigits: 3 });
+  const valueInBillion = Math.abs(val) >= 1e9 ? val / 1e9 : val;
+  const formatted = valueInBillion.toLocaleString("vi-VN", {
+    maximumFractionDigits: 3,
+  });
 
-  return <span style={val < 0 ? { color: getChangeColor(val) } : undefined}>{formatted}</span>;
+  return <span style={valueInBillion < 0 ? { color: getChangeColor(valueInBillion) } : undefined}>{formatted}</span>;
 }
 
 function isNewFormat(records: FinanceRecord[]): boolean {
@@ -133,7 +133,7 @@ export function FinancialStatements({ data }: Props) {
           key: quarter,
           align: "right" as const,
           width: 120,
-          render: fmtVal,
+          render: formatFinancialValue,
         })),
       ];
 
@@ -174,7 +174,7 @@ export function FinancialStatements({ data }: Props) {
         key: `p${idx}`,
         align: "right" as const,
         width: 120,
-        render: fmtVal,
+        render: formatFinancialValue,
       })),
     ];
 
@@ -216,7 +216,7 @@ export function FinancialStatements({ data }: Props) {
             Báo cáo tài chính
           </Title>
           <Text className="text-xs text-gray-400">
-            Hiển thị {table.visiblePeriods}/{table.totalPeriods} quý gần nhất
+            Hiển thị {table.visiblePeriods}/{table.totalPeriods} quý gần nhất · Đơn vị: tỷ đồng
           </Text>
         </div>
 
