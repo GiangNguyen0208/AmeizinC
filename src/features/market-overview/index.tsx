@@ -51,14 +51,14 @@ export function MarketOverview() {
       <MarketBreadth />
       <DataUpdateNote />
 
-      <Row gutter={[16, 16]}>
-        <Col xs={24} lg={8}>
+      <Row gutter={[12, 16]}>
+        <Col xs={24} md={8}>
           <StockTable data={gainers} loading={loadingGainers} title="Top tăng giá" filterable />
         </Col>
-        <Col xs={24} lg={8}>
+        <Col xs={24} md={8}>
           <StockTable data={losers} loading={loadingLosers} title="Top giảm giá" filterable />
         </Col>
-        <Col xs={24} lg={8}>
+        <Col xs={24} md={8}>
           <StockTable data={topVol} loading={loadingVol} title="Top khối lượng" filterable />
         </Col>
       </Row>

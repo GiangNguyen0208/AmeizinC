@@ -12,7 +12,8 @@ const columns: ColumnsType<TopStock> = [
     title: "Mã CK",
     dataIndex: "symbol",
     key: "symbol",
-    width: 82,
+    width: 72,
+    fixed: "left",           // ← giữ cột mã khi scroll ngang
     sorter: (a, b) => a.symbol.localeCompare(b.symbol),
     render: (symbol: string) => (
       <Link href={`/stock/${symbol}`} className="font-bold text-blue-400 hover:text-blue-300">
@@ -24,6 +25,8 @@ const columns: ColumnsType<TopStock> = [
     title: "Công ty",
     dataIndex: "companyName",
     key: "companyName",
+    width: 130,
+    ellipsis: true,
     responsive: ["md"],
   },
   {
@@ -31,7 +34,7 @@ const columns: ColumnsType<TopStock> = [
     dataIndex: "price",
     key: "price",
     align: "right",
-    width: 112,
+    width: 95,
     sorter: (a, b) => a.price - b.price,
     render: (price: number) => formatPrice(price),
   },
@@ -40,6 +43,7 @@ const columns: ColumnsType<TopStock> = [
     dataIndex: "change",
     key: "change",
     align: "right",
+    width: 90,
     responsive: ["sm"],
     sorter: (a, b) => a.change - b.change,
     render: (_: number, record: TopStock) => (
@@ -53,7 +57,7 @@ const columns: ColumnsType<TopStock> = [
     dataIndex: "changePercent",
     key: "changePercent",
     align: "right",
-    width: 90,
+    width: 78,
     sorter: (a, b) => a.changePercent - b.changePercent,
     render: (val: number) => (
       <Tag color={val > 0 ? "success" : val < 0 ? "error" : "warning"}>
@@ -62,10 +66,11 @@ const columns: ColumnsType<TopStock> = [
     ),
   },
   {
-    title: "Khối lượng",
+    title: "KL",                // ← rút gọn "Khối lượng" → "KL" cho gọn
     dataIndex: "volume",
     key: "volume",
     align: "right",
+    width: 85,
     responsive: ["md"],
     sorter: (a, b) => a.volume - b.volume,
     render: (vol: number) => formatVolume(vol),
@@ -133,7 +138,7 @@ export function StockTable({ data, loading, title, filterable = false }: StockTa
       loading={loading}
       pagination={false}
       size="small"
-      tableLayout="fixed"
+      scroll={{ x: 550 }}
     />
   );
 }
