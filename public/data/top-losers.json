@@ -1,4 +1,29 @@
 {
-  "data": [],
-  "crawledAt": "2026-05-02T16:05:14.664428"
+  "data": [
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 46.9,
+      "change": -0.6,
+      "changePercent": -1.26,
+      "volume": 137700
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 74.6,
+      "change": -0.9,
+      "changePercent": -1.19,
+      "volume": 2083200
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 23.45,
+      "change": -0.05,
+      "changePercent": -0.21,
+      "volume": 1276400
+    }
+  ],
+  "crawledAt": "2026-05-04T02:56:16.914536"
 }
