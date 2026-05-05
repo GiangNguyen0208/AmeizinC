@@ -3,10 +3,10 @@
     {
       "symbol": "HPG",
       "companyName": "HPG",
-      "price": 27.25,
-      "change": -0.35,
-      "changePercent": -1.27,
-      "volume": 27829800
+      "price": 27.3,
+      "change": -0.3,
+      "changePercent": -1.09,
+      "volume": 30692800
     },
     {
       "symbol": "ACB",
@@ -14,63 +14,63 @@
       "price": 22.6,
       "change": -0.5,
       "changePercent": -2.16,
-      "volume": 26502800
+      "volume": 28808700
     },
     {
       "symbol": "VPB",
       "companyName": "VPB",
-      "price": 27.75,
-      "change": 0.8,
-      "changePercent": 2.97,
-      "volume": 19159300
+      "price": 28.0,
+      "change": 1.05,
+      "changePercent": 3.9,
+      "volume": 22244500
     },
     {
       "symbol": "VRE",
       "companyName": "VRE",
-      "price": 35.3,
-      "change": 1.6,
-      "changePercent": 4.75,
-      "volume": 15404900
+      "price": 35.2,
+      "change": 1.5,
+      "changePercent": 4.45,
+      "volume": 15997900
     },
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 27.25,
-      "change": -0.45,
-      "changePercent": -1.62,
-      "volume": 12988200
+      "price": 27.3,
+      "change": -0.4,
+      "changePercent": -1.44,
+      "volume": 14283800
     },
     {
       "symbol": "MBB",
       "companyName": "MBB",
-      "price": 25.9,
-      "change": -0.2,
-      "changePercent": -0.77,
-      "volume": 12023800
+      "price": 25.95,
+      "change": -0.15,
+      "changePercent": -0.57,
+      "volume": 12314500
     },
     {
       "symbol": "TPB",
       "companyName": "TPB",
-      "price": 16.1,
-      "change": -0.2,
-      "changePercent": -1.23,
-      "volume": 10503700
+      "price": 16.25,
+      "change": -0.05,
+      "changePercent": -0.31,
+      "volume": 11225300
     },
     {
       "symbol": "TCB",
       "companyName": "TCB",
-      "price": 33.05,
-      "change": -0.5,
-      "changePercent": -1.49,
-      "volume": 10111800
+      "price": 33.3,
+      "change": -0.25,
+      "changePercent": -0.75,
+      "volume": 10590600
     },
     {
       "symbol": "HDB",
       "companyName": "HDB",
-      "price": 26.25,
-      "change": -0.25,
-      "changePercent": -0.94,
-      "volume": 9216700
+      "price": 26.4,
+      "change": -0.1,
+      "changePercent": -0.38,
+      "volume": 10206900
     },
     {
       "symbol": "FPT",
@@ -78,8 +78,8 @@
       "price": 74.3,
       "change": 0.6,
       "changePercent": 0.81,
-      "volume": 6485800
+      "volume": 6841400
     }
   ],
-  "crawledAt": "2026-05-05T07:34:24.370050"
+  "crawledAt": "2026-05-05T09:34:22.848585"
 }
