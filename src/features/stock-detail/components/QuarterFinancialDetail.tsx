@@ -63,7 +63,9 @@ export function QuarterFinancialDetail({ ratios, selectedPeriod, onSelectPeriod 
     [requestedPeriod, ratios],
   );
 
-  if (!selected) return null;
+  if (!selected) {
+    return null;
+  }
 
   const handleChange = (period: string) => {
     setLocalPeriod(period);
@@ -80,7 +82,7 @@ export function QuarterFinancialDetail({ ratios, selectedPeriod, onSelectPeriod 
         <Select
           value={selected.period}
           onChange={handleChange}
-          className="w-full sm:w-[150px]"
+          className="w-full sm:w-40"
           options={ratios.map((ratio) => ({ label: ratio.period, value: ratio.period }))}
         />
       </div>
