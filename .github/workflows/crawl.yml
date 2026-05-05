@@ -2,10 +2,7 @@ name: Crawl Financial Data
 
 on:
   schedule:
-    # Chạy mỗi 15 phút trong giờ giao dịch VN (9:00-15:00 UTC+7 = 2:00-8:00 UTC)
-    # Thứ 2-6 only
     - cron: "*/15 2-8 * * 1-5"
-    # Chạy 1 lần/ngày ngoài giờ giao dịch (để có data cập nhật)
     - cron: "0 12 * * 1-5"
   workflow_dispatch:
 
