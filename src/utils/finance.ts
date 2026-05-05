@@ -62,10 +62,22 @@ function computeFromNewFormat(data: FinanceData): FinancialRatios[] {
   const quarters = getQuarterColumns(incomeStatement);
   if (!quarters.length) return [];
 
-  const revenueRow = findItem(incomeStatement, "net revenue", "revenue");
-  const grossProfitRow = findItem(incomeStatement, "gross profit");
-  const operatingProfitRow = findItem(incomeStatement, "operating profit", "net operating profit");
-  const netProfitRow = findItem(incomeStatement, "profit after tax", "net income", "net profit");
+  const isBank = incomeStatement.some(
+    (r) => String(r.item_en || "").toLowerCase() === "net interest income",
+  );
+
+  const revenueRow = isBank
+    ? findItem(incomeStatement, "total operating income", "interest and similar income")
+    : findItem(incomeStatement, "net revenue", "net sales", "revenue");
+  const grossProfitRow = isBank
+    ? findItem(incomeStatement, "net interest income")
+    : (findItem(incomeStatement, "gross profit") ??
+       findItem(incomeStatement, "gross insurance"));
+  const operatingProfitRow = isBank
+    ? (findItem(incomeStatement, "net operating profit before allowance") ??
+       findItem(incomeStatement, "total operating income"))
+    : findItem(incomeStatement, "net operating profit", "operating profit");
+  const netProfitRow = findItem(incomeStatement, "net profit", "profit after tax", "net income");
 
   const totalAssetsRow = findItem(balanceSheet, "total assets");
   const equityRow = findItem(balanceSheet, "owner's equity", "total owner's equity", "equity");
