@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "name": "VN-Index",
+      "value": 1874.85,
+      "change": 20.79,
+      "changePercent": 1.12,
+      "volume": 773453598,
+      "updatedAt": "2026-05-05"
+    },
+    {
+      "name": "HNX-Index",
+      "value": 247.42,
+      "change": -2.62,
+      "changePercent": -1.05,
+      "volume": 68278902,
+      "updatedAt": "2026-05-05"
+    },
+    {
+      "name": "UPCOM-Index",
+      "value": 127.26,
+      "change": -0.45,
+      "changePercent": -0.35,
+      "volume": 28311135,
+      "updatedAt": "2026-05-05"
+    }
+  ],
+  "crawledAt": "2026-05-05T11:51:55.500085"
+}

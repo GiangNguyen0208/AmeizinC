@@ -1,0 +1,26 @@
+{
+  "crawledAt": "2026-05-05T11:56:57.056057",
+  "trackedSymbols": [
+    "VNM",
+    "VIC",
+    "VHM",
+    "HPG",
+    "FPT",
+    "MBB",
+    "MSN",
+    "VCB",
+    "TCB",
+    "SSI",
+    "VRE",
+    "SAB",
+    "GAS",
+    "PLX",
+    "BVH",
+    "ACB",
+    "STB",
+    "TPB",
+    "VPB",
+    "HDB"
+  ],
+  "source": "vnstock (KBS)"
+}
