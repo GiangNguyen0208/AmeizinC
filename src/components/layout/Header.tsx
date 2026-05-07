@@ -1,11 +1,14 @@
 "use client";
 
-import { AutoComplete, Space, Typography } from "antd";
+import { AutoComplete, Space, Typography, Dropdown, Button } from "antd";
 import {
   SearchOutlined,
   StockOutlined,
   StarOutlined,
   HomeOutlined,
+  UserOutlined,
+  LoginOutlined,
+  LogoutOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -13,8 +16,65 @@ import { useState, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { fetchAllStockPrices } from "@/services";
 import { formatPrice, formatPercent, getChangeColor } from "@/utils";
+import { useAuthStore } from "@/stores/auth-store";
+import { logout } from "@/services/auth";
+import type { MenuProps } from "antd";
 
 const { Title } = Typography;
+
+function AuthButtons() {
+  const router = useRouter();
+  const user = useAuthStore((s) => s.user);
+  const isInitialized = useAuthStore((s) => s.isInitialized);
+
+  if (!isInitialized) return null;
+
+  if (!user) {
+    return (
+      <Space size="small">
+        <Link href="/login">
+          <Button size="small" icon={<LoginOutlined />}>
+            <span className="hidden sm:inline">Đăng nhập</span>
+          </Button>
+        </Link>
+      </Space>
+    );
+  }
+
+  const items: MenuProps["items"] = [
+    {
+      key: "info",
+      label: (
+        <div className="px-1 py-0.5">
+          <div className="font-medium">{user.fullName}</div>
+          <div className="text-xs text-gray-400">{user.email || user.phone}</div>
+        </div>
+      ),
+      disabled: true,
+    },
+    { type: "divider" },
+    {
+      key: "logout",
+      icon: <LogoutOutlined />,
+      label: "Đăng xuất",
+      danger: true,
+      onClick: () => {
+        logout();
+        router.push("/");
+      },
+    },
+  ];
+
+  return (
+    <Dropdown menu={{ items }} placement="bottomRight" trigger={["click"]}>
+      <Button size="small" icon={<UserOutlined />}>
+        <span className="hidden sm:inline max-w-[100px] truncate">
+          {user.fullName}
+        </span>
+      </Button>
+    </Dropdown>
+  );
+}
 
 export function Header() {
   const router = useRouter();
@@ -85,6 +145,7 @@ export function Header() {
           <Link href="/watchlist" className="flex items-center gap-1 text-gray-300 no-underline hover:text-white">
             <StarOutlined /> <span className="hidden sm:inline">Watchlist</span>
           </Link>
+          <AuthButtons />
         </Space>
       </div>
     </header>
