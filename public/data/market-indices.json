@@ -5,7 +5,7 @@
       "value": 1909.01,
       "change": 17.81,
       "changePercent": 0.94,
-      "volume": 938839980,
+      "volume": 961003323,
       "updatedAt": "2026-05-07"
     },
     {
@@ -13,7 +13,7 @@
       "value": 247.76,
       "change": -0.7,
       "changePercent": -0.28,
-      "volume": 62023494,
+      "volume": 62047494,
       "updatedAt": "2026-05-07"
     },
     {
@@ -25,5 +25,5 @@
       "updatedAt": "2026-05-07"
     }
   ],
-  "crawledAt": "2026-05-07T08:02:35.992426"
+  "crawledAt": "2026-05-07T10:34:38.431828"
 }
