@@ -22,58 +22,62 @@ import type { MenuProps } from "antd";
 
 const { Title } = Typography;
 
+// function AuthButtons() {
+//   const router = useRouter();
+//   const user = useAuthStore((s) => s.user);
+//   const isInitialized = useAuthStore((s) => s.isInitialized);
+
+//   if (!isInitialized) return null;
+
+//   if (!user) {
+//     return (
+//       <Space size="small">
+//         <Link href="/login">
+//           <Button size="small" icon={<LoginOutlined />}>
+//             <span className="hidden sm:inline">Đăng nhập</span>
+//           </Button>
+//         </Link>
+//       </Space>
+//     );
+//   }
+
+//   const items: MenuProps["items"] = [
+//     {
+//       key: "info",
+//       label: (
+//         <div className="px-1 py-0.5">
+//           <div className="font-medium">{user.fullName}</div>
+//           <div className="text-xs text-gray-400">{user.email || user.phone}</div>
+//         </div>
+//       ),
+//       disabled: true,
+//     },
+//     { type: "divider" },
+//     {
+//       key: "logout",
+//       icon: <LogoutOutlined />,
+//       label: "Đăng xuất",
+//       danger: true,
+//       onClick: () => {
+//         logout();
+//         router.push("/");
+//       },
+//     },
+//   ];
+
+//   return (
+//     <Dropdown menu={{ items }} placement="bottomRight" trigger={["click"]}>
+//       <Button size="small" icon={<UserOutlined />}>
+//         <span className="hidden sm:inline max-w-[100px] truncate">
+//           {user.fullName}
+//         </span>
+//       </Button>
+//     </Dropdown>
+//   );
+// }
+
 function AuthButtons() {
-  const router = useRouter();
-  const user = useAuthStore((s) => s.user);
-  const isInitialized = useAuthStore((s) => s.isInitialized);
-
-  if (!isInitialized) return null;
-
-  if (!user) {
-    return (
-      <Space size="small">
-        <Link href="/login">
-          <Button size="small" icon={<LoginOutlined />}>
-            <span className="hidden sm:inline">Đăng nhập</span>
-          </Button>
-        </Link>
-      </Space>
-    );
-  }
-
-  const items: MenuProps["items"] = [
-    {
-      key: "info",
-      label: (
-        <div className="px-1 py-0.5">
-          <div className="font-medium">{user.fullName}</div>
-          <div className="text-xs text-gray-400">{user.email || user.phone}</div>
-        </div>
-      ),
-      disabled: true,
-    },
-    { type: "divider" },
-    {
-      key: "logout",
-      icon: <LogoutOutlined />,
-      label: "Đăng xuất",
-      danger: true,
-      onClick: () => {
-        logout();
-        router.push("/");
-      },
-    },
-  ];
-
-  return (
-    <Dropdown menu={{ items }} placement="bottomRight" trigger={["click"]}>
-      <Button size="small" icon={<UserOutlined />}>
-        <span className="hidden sm:inline max-w-[100px] truncate">
-          {user.fullName}
-        </span>
-      </Button>
-    </Dropdown>
-  );
+  return null;
 }
 
 export function Header() {

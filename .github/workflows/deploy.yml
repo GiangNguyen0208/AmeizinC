@@ -21,6 +21,7 @@ env:
   NEXT_PUBLIC_APP_NAME: Ameizin
   NEXT_PUBLIC_BASE_PATH: /AmeizinC
   NEXT_PUBLIC_ENABLE_MOCK_DATA: "false"
+  NEXT_PUBLIC_API_URL: ${{ vars.NEXT_PUBLIC_API_URL || '' }}
 
 jobs:
   build:
