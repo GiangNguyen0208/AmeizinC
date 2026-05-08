@@ -48,7 +48,7 @@ function AuthButtons() {
       label: (
         <div className="px-1 py-0.5">
           <div className="font-medium">{user.fullName}</div>
-          <div className="text-xs text-gray-400">{user.email || user.phone}</div>
+          <div className="text-xs text-gray-400">{user.email}</div>
         </div>
       ),
       disabled: true,
@@ -82,7 +82,7 @@ function VerificationBanner() {
   const user = useAuthStore((s) => s.user);
   const [sending, setSending] = useState(false);
 
-  if (!user || user.isVerified !== false || user.authMethod !== "email") {
+  if (!user || user.isVerified !== false) {
     return null;
   }
 
