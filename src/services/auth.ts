@@ -5,9 +5,6 @@ import type {
   AuthTokens,
   LoginRequest,
   RegisterRequest,
-  SmsLoginRequest,
-  SmsRegisterRequest,
-  GoogleAuthRequest,
 } from "@/types";
 
 interface AuthResult {
@@ -29,48 +26,6 @@ export async function login(data: LoginRequest): Promise<AuthUser> {
 
 export async function register(data: RegisterRequest): Promise<AuthUser> {
   const result = await apiRequest<AuthResult>("/auth/register", {
-    method: "POST",
-    body: JSON.stringify(data),
-  });
-  useAuthStore.getState().setAuth(result.user, result.tokens);
-  return result.user;
-}
-
-// ── SMS / OTP ────────────────────────────────────────────
-
-export async function sendSmsOtp(phone: string): Promise<void> {
-  await apiRequest("/auth/sms/send-otp", {
-    method: "POST",
-    body: JSON.stringify({ phone }),
-  });
-}
-
-export async function loginWithSms(data: SmsLoginRequest): Promise<AuthUser> {
-  const result = await apiRequest<AuthResult>("/auth/sms/login", {
-    method: "POST",
-    body: JSON.stringify(data),
-  });
-  useAuthStore.getState().setAuth(result.user, result.tokens);
-  return result.user;
-}
-
-export async function registerWithSms(
-  data: SmsRegisterRequest
-): Promise<AuthUser> {
-  const result = await apiRequest<AuthResult>("/auth/sms/register", {
-    method: "POST",
-    body: JSON.stringify(data),
-  });
-  useAuthStore.getState().setAuth(result.user, result.tokens);
-  return result.user;
-}
-
-// ── Google ───────────────────────────────────────────────
-
-export async function authenticateWithGoogle(
-  data: GoogleAuthRequest
-): Promise<AuthUser> {
-  const result = await apiRequest<AuthResult>("/auth/google", {
     method: "POST",
     body: JSON.stringify(data),
   });

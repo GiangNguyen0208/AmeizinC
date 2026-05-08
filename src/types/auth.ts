@@ -2,9 +2,8 @@ export interface AuthUser {
   _id: string;
   email?: string;
   fullName: string;
-  phone?: string;
   avatar?: string;
-  authMethod?: "email" | "sms" | "google";
+  authMethod?: "email";
   role: "user" | "admin" | "super_admin";
   isActive: boolean;
   isVerified?: boolean;
@@ -31,23 +30,4 @@ export interface RegisterRequest {
   email: string;
   password: string;
   fullName: string;
-}
-
-export interface SmsOtpRequest {
-  phone: string;
-}
-
-export interface SmsLoginRequest {
-  phone: string;
-  otp: string;
-}
-
-export interface SmsRegisterRequest {
-  phone: string;
-  otp: string;
-  fullName: string;
-}
-
-export interface GoogleAuthRequest {
-  idToken: string;
 }
