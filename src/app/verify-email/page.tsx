@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Card, Result, Button, Spin } from "antd";
 import Link from "next/link";
@@ -8,7 +9,28 @@ import { verifyEmail, fetchProfile } from "@/services/auth";
 import { ApiError } from "@/services/api-client";
 import { useAuthStore } from "@/stores/auth-store";
 
+function VerifyEmailFallback() {
+  return (
+    <div className="flex items-center justify-center min-h-[60vh]">
+      <Card className="w-full max-w-md" styles={{ body: { padding: 32 } }}>
+        <div className="text-center py-8">
+          <Spin size="large" />
+          <p className="mt-4 text-gray-400">Đang xác nhận email...</p>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
 export default function VerifyEmailPage() {
+  return (
+    <Suspense fallback={<VerifyEmailFallback />}>
+      <VerifyEmailContent />
+    </Suspense>
+  );
+}
+
+function VerifyEmailContent() {
   const searchParams = useSearchParams();
   const token = searchParams.get("token");
 
