@@ -78,6 +78,16 @@ export async function authenticateWithGoogle(
   return result.user;
 }
 
+// ── Email Verification ──────────────────────────────────
+
+export async function verifyEmail(token: string): Promise<void> {
+  await apiRequest("/auth/verify-email?token=" + encodeURIComponent(token));
+}
+
+export async function resendVerification(): Promise<void> {
+  await apiRequest("/auth/resend-verification", { method: "POST" });
+}
+
 // ── Shared ───────────────────────────────────────────────
 
 export async function fetchProfile(): Promise<AuthUser> {

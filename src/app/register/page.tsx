@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Form, Input, Button, Typography, Card, App, Tabs } from "antd";
+import { Form, Input, Button, Typography, Card, App, Tabs, Result } from "antd";
 import {
   MailOutlined,
   LockOutlined,
@@ -26,6 +26,8 @@ function EmailRegisterForm() {
   const router = useRouter();
   const { message } = App.useApp();
   const [loading, setLoading] = useState(false);
+  const [registered, setRegistered] = useState(false);
+  const [registeredEmail, setRegisteredEmail] = useState("");
 
   const onFinish = async (values: {
     email: string;
@@ -35,8 +37,8 @@ function EmailRegisterForm() {
     setLoading(true);
     try {
       await register(values);
-      message.success("Đăng ký thành công!");
-      router.push("/");
+      setRegisteredEmail(values.email);
+      setRegistered(true);
     } catch (err) {
       message.error(
         err instanceof ApiError ? err.message : "Đăng ký thất bại"
@@ -45,6 +47,21 @@ function EmailRegisterForm() {
       setLoading(false);
     }
   };
+
+  if (registered) {
+    return (
+      <Result
+        status="success"
+        title="Đăng ký thành công!"
+        subTitle={`Chúng tôi đã gửi email xác nhận đến ${registeredEmail}. Vui lòng kiểm tra hộp thư và click link xác nhận để kích hoạt tài khoản.`}
+        extra={
+          <Button type="primary" onClick={() => router.push("/")}>
+            Về trang chủ
+          </Button>
+        }
+      />
+    );
+  }
 
   return (
     <Form layout="vertical" onFinish={onFinish} autoComplete="off">
