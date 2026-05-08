@@ -1,6 +1,6 @@
 "use client";
 
-import { AutoComplete, Space, Typography, Dropdown, Button } from "antd";
+import { AutoComplete, Space, Typography, Dropdown, Button, Alert, App } from "antd";
 import {
   SearchOutlined,
   StockOutlined,
@@ -17,67 +17,109 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchAllStockPrices } from "@/services";
 import { formatPrice, formatPercent, getChangeColor } from "@/utils";
 import { useAuthStore } from "@/stores/auth-store";
-import { logout } from "@/services/auth";
+import { logout, resendVerification } from "@/services/auth";
+import { ApiError } from "@/services/api-client";
 import type { MenuProps } from "antd";
 
 const { Title } = Typography;
 
-// function AuthButtons() {
-//   const router = useRouter();
-//   const user = useAuthStore((s) => s.user);
-//   const isInitialized = useAuthStore((s) => s.isInitialized);
-
-//   if (!isInitialized) return null;
-
-//   if (!user) {
-//     return (
-//       <Space size="small">
-//         <Link href="/login">
-//           <Button size="small" icon={<LoginOutlined />}>
-//             <span className="hidden sm:inline">Đăng nhập</span>
-//           </Button>
-//         </Link>
-//       </Space>
-//     );
-//   }
-
-//   const items: MenuProps["items"] = [
-//     {
-//       key: "info",
-//       label: (
-//         <div className="px-1 py-0.5">
-//           <div className="font-medium">{user.fullName}</div>
-//           <div className="text-xs text-gray-400">{user.email || user.phone}</div>
-//         </div>
-//       ),
-//       disabled: true,
-//     },
-//     { type: "divider" },
-//     {
-//       key: "logout",
-//       icon: <LogoutOutlined />,
-//       label: "Đăng xuất",
-//       danger: true,
-//       onClick: () => {
-//         logout();
-//         router.push("/");
-//       },
-//     },
-//   ];
-
-//   return (
-//     <Dropdown menu={{ items }} placement="bottomRight" trigger={["click"]}>
-//       <Button size="small" icon={<UserOutlined />}>
-//         <span className="hidden sm:inline max-w-[100px] truncate">
-//           {user.fullName}
-//         </span>
-//       </Button>
-//     </Dropdown>
-//   );
-// }
-
 function AuthButtons() {
-  return null;
+  const router = useRouter();
+  const user = useAuthStore((s) => s.user);
+  const isInitialized = useAuthStore((s) => s.isInitialized);
+
+  if (!isInitialized) return null;
+
+  if (!user) {
+    return (
+      <Space size="small">
+        <Link href="/login">
+          <Button size="small" icon={<LoginOutlined />}>
+            <span className="hidden sm:inline">Đăng nhập</span>
+          </Button>
+        </Link>
+      </Space>
+    );
+  }
+
+  const items: MenuProps["items"] = [
+    {
+      key: "info",
+      label: (
+        <div className="px-1 py-0.5">
+          <div className="font-medium">{user.fullName}</div>
+          <div className="text-xs text-gray-400">{user.email || user.phone}</div>
+        </div>
+      ),
+      disabled: true,
+    },
+    { type: "divider" },
+    {
+      key: "logout",
+      icon: <LogoutOutlined />,
+      label: "Đăng xuất",
+      danger: true,
+      onClick: () => {
+        logout();
+        router.push("/");
+      },
+    },
+  ];
+
+  return (
+    <Dropdown menu={{ items }} placement="bottomRight" trigger={["click"]}>
+      <Button size="small" icon={<UserOutlined />}>
+        <span className="hidden sm:inline max-w-[100px] truncate">
+          {user.fullName}
+        </span>
+      </Button>
+    </Dropdown>
+  );
+}
+
+function VerificationBanner() {
+  const { message } = App.useApp();
+  const user = useAuthStore((s) => s.user);
+  const [sending, setSending] = useState(false);
+
+  if (!user || user.isVerified !== false || user.authMethod !== "email") {
+    return null;
+  }
+
+  const handleResend = async () => {
+    setSending(true);
+    try {
+      await resendVerification();
+      message.success("Đã gửi lại email xác nhận!");
+    } catch (err) {
+      message.error(
+        err instanceof ApiError ? err.message : "Gửi lại thất bại"
+      );
+    } finally {
+      setSending(false);
+    }
+  };
+
+  return (
+    <Alert
+      type="warning"
+      banner
+      message={
+        <span>
+          Vui lòng xác nhận email để sử dụng đầy đủ tính năng.{" "}
+          <Button
+            type="link"
+            size="small"
+            loading={sending}
+            onClick={handleResend}
+            className="p-0!"
+          >
+            Gửi lại email xác nhận
+          </Button>
+        </span>
+      }
+    />
+  );
 }
 
 export function Header() {
@@ -116,8 +158,9 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-700 bg-gray-900/95 px-3 py-3 backdrop-blur sm:px-6">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 sm:flex-nowrap sm:gap-4">
+    <header className="sticky top-0 z-50 border-b border-gray-700 bg-gray-900/95 backdrop-blur">
+      <VerificationBanner />
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-3 py-3 sm:flex-nowrap sm:gap-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2 no-underline">
           <StockOutlined style={{ fontSize: 24, color: "#3b82f6" }} />
           <Title level={4} style={{ margin: 0, color: "#fff" }}>

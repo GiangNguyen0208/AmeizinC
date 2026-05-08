@@ -7,6 +7,7 @@ export interface AuthUser {
   authMethod?: "email" | "sms" | "google";
   role: "user" | "admin" | "super_admin";
   isActive: boolean;
+  isVerified?: boolean;
   createdAt: string;
 }
 
