@@ -1,77 +1,85 @@
 {
   "data": [
     {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 47.0,
-      "change": -0.6,
-      "changePercent": -1.26,
-      "volume": 656300
-    },
-    {
-      "symbol": "SSI",
-      "companyName": "SSI",
-      "price": 28.05,
-      "change": -0.25,
-      "changePercent": -0.88,
-      "volume": 12398600
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 60.1,
-      "change": -0.5,
-      "changePercent": -0.83,
-      "volume": 4102800
-    },
-    {
-      "symbol": "VCB",
-      "companyName": "VCB",
-      "price": 59.9,
-      "change": -0.4,
-      "changePercent": -0.66,
-      "volume": 6549200
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 74.5,
+      "change": -2.3,
+      "changePercent": -2.99,
+      "volume": 6501200
     },
     {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 160.2,
-      "change": -0.8,
-      "changePercent": -0.5,
-      "volume": 6467100
+      "price": 156.7,
+      "change": -3.5,
+      "changePercent": -2.18,
+      "volume": 2237100
+    },
+    {
+      "symbol": "VRE",
+      "companyName": "VRE",
+      "price": 34.8,
+      "change": -0.65,
+      "changePercent": -1.83,
+      "volume": 1902700
+    },
+    {
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 59.1,
+      "change": -1.0,
+      "changePercent": -1.66,
+      "volume": 4919600
     },
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 222.0,
-      "change": -1.0,
-      "changePercent": -0.45,
-      "volume": 4023400
-    },
-    {
-      "symbol": "MBB",
-      "companyName": "MBB",
-      "price": 25.9,
-      "change": -0.1,
-      "changePercent": -0.38,
-      "volume": 11264200
-    },
-    {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 26.9,
-      "change": -0.1,
-      "changePercent": -0.37,
-      "volume": 19170900
+      "price": 218.4,
+      "change": -3.6,
+      "changePercent": -1.62,
+      "volume": 911600
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 22.7,
-      "change": -0.05,
-      "changePercent": -0.22,
-      "volume": 10943200
+      "price": 22.45,
+      "change": -0.25,
+      "changePercent": -1.1,
+      "volume": 10716100
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 46.55,
+      "change": -0.45,
+      "changePercent": -0.96,
+      "volume": 248500
+    },
+    {
+      "symbol": "TPB",
+      "companyName": "TPB",
+      "price": 15.65,
+      "change": -0.15,
+      "changePercent": -0.95,
+      "volume": 1965100
+    },
+    {
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 59.4,
+      "change": -0.5,
+      "changePercent": -0.83,
+      "volume": 2888600
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 70.1,
+      "change": -0.5,
+      "changePercent": -0.71,
+      "volume": 4658100
     }
   ],
-  "crawledAt": "2026-05-12T14:31:40.225043"
+  "crawledAt": "2026-05-13T05:41:54.399696"
 }
