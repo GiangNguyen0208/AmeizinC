@@ -1,85 +1,21 @@
 {
   "data": [
     {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 33.0,
-      "change": -2.45,
-      "changePercent": -6.91,
-      "volume": 14370000
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 68.2,
+      "change": -0.5,
+      "changePercent": -0.73,
+      "volume": 217100
     },
     {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 152.5,
-      "change": -7.7,
-      "changePercent": -4.81,
-      "volume": 11413400
-    },
-    {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 73.5,
-      "change": -3.3,
-      "changePercent": -4.3,
-      "volume": 10029200
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 59.3,
-      "change": -0.8,
-      "changePercent": -1.33,
-      "volume": 8534300
-    },
-    {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 15.6,
-      "change": -0.2,
-      "changePercent": -1.27,
-      "volume": 7045100
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 46.55,
-      "change": -0.45,
-      "changePercent": -0.96,
-      "volume": 586800
-    },
-    {
-      "symbol": "SSI",
-      "companyName": "SSI",
-      "price": 27.8,
-      "change": -0.25,
-      "changePercent": -0.89,
-      "volume": 19129300
-    },
-    {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 22.5,
-      "change": -0.2,
-      "changePercent": -0.88,
-      "volume": 21238100
-    },
-    {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 33.6,
-      "change": -0.2,
-      "changePercent": -0.59,
-      "volume": 11500800
-    },
-    {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 221.0,
-      "change": -1.0,
-      "changePercent": -0.45,
-      "volume": 6456000
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 78.8,
+      "change": -0.1,
+      "changePercent": -0.13,
+      "volume": 1453800
     }
   ],
-  "crawledAt": "2026-05-13T14:40:39.930547"
+  "crawledAt": "2026-05-14T05:41:12.074330"
 }
