@@ -1,53 +1,53 @@
 {
   "data": [
     {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 89.4,
-      "change": 5.8,
-      "changePercent": 6.94,
-      "volume": 4986200
-    },
-    {
       "symbol": "PLX",
       "companyName": "PLX",
-      "price": 42.2,
-      "change": 2.35,
-      "changePercent": 5.9,
-      "volume": 9229000
+      "price": 45.15,
+      "change": 2.95,
+      "changePercent": 6.99,
+      "volume": 10819400
     },
     {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 48.55,
-      "change": 1.55,
-      "changePercent": 3.3,
-      "volume": 1646900
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 70.9,
+      "change": 3.8,
+      "changePercent": 5.66,
+      "volume": 810100
     },
     {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 23.3,
-      "change": 0.5,
-      "changePercent": 2.19,
-      "volume": 21591900
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 93.4,
+      "change": 4.0,
+      "changePercent": 4.47,
+      "volume": 2047400
     },
     {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 158.0,
-      "change": 1.0,
-      "changePercent": 0.64,
-      "volume": 4836400
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 62.3,
+      "change": 1.6,
+      "changePercent": 2.64,
+      "volume": 4761700
     },
     {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 34.05,
-      "change": 0.05,
-      "changePercent": 0.15,
-      "volume": 22577300
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 73.6,
+      "change": 0.7,
+      "changePercent": 0.96,
+      "volume": 4222700
+    },
+    {
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 59.9,
+      "change": 0.1,
+      "changePercent": 0.17,
+      "volume": 1554100
     }
   ],
-  "crawledAt": "2026-05-15T14:12:30.823339"
+  "crawledAt": "2026-05-18T06:04:39.426067"
 }
