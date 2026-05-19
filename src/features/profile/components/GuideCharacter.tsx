@@ -11,30 +11,41 @@ interface Props {
   onClose: () => void;
 }
 
-export function GuideCharacter({ content, onClose }: Props) {
-  const character = getCharacter(content.characterName);
+function useTypingAnimation(message: string, speed = 20) {
   const [displayedText, setDisplayedText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
+  const [prevMessage, setPrevMessage] = useState(message);
 
-  useEffect(() => {
+  if (prevMessage !== message) {
+    setPrevMessage(message);
     setDisplayedText("");
     setIsTyping(true);
+  }
+
+  useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
       i++;
-      setDisplayedText(content.message.slice(0, i));
-      if (i >= content.message.length) {
+      setDisplayedText(message.slice(0, i));
+      if (i >= message.length) {
         clearInterval(interval);
         setIsTyping(false);
       }
-    }, 20);
+    }, speed);
     return () => clearInterval(interval);
-  }, [content.message]);
+  }, [message, speed]);
 
-  const skipTyping = useCallback(() => {
-    setDisplayedText(content.message);
+  const skip = useCallback(() => {
+    setDisplayedText(message);
     setIsTyping(false);
-  }, [content.message]);
+  }, [message]);
+
+  return { displayedText, isTyping, skip };
+}
+
+export function GuideCharacter({ content, onClose }: Props) {
+  const character = getCharacter(content.characterName);
+  const { displayedText, isTyping, skip: skipTyping } = useTypingAnimation(content.message);
 
   return (
     <div
@@ -56,7 +67,7 @@ export function GuideCharacter({ content, onClose }: Props) {
           type="text"
           icon={<CloseOutlined />}
           onClick={onClose}
-          className="absolute top-3 right-3 z-10 text-gray-400 hover:text-white"
+          className="absolute top-1 -right-11/12 z-10 text-gray-400 hover:text-white"
         />
 
         {/* Character header */}
