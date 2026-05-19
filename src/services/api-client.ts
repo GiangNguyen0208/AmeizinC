@@ -103,3 +103,42 @@ export async function apiRequest<T>(
 
   return data.data as T;
 }
+
+export async function apiRequestFull<T>(
+  path: string,
+  options: RequestInit = {}
+): Promise<ApiResponse<T>> {
+  const { accessToken } = useAuthStore.getState();
+
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+    ...(options.headers as Record<string, string>),
+  };
+
+  if (accessToken) {
+    headers["Authorization"] = `Bearer ${accessToken}`;
+  }
+
+  let response = await fetch(`${API_URL}${path}`, { ...options, headers });
+
+  if (response.status === 401 && useAuthStore.getState().refreshToken) {
+    const refreshed = await tryRefresh();
+    if (refreshed) {
+      const { accessToken: newToken } = useAuthStore.getState();
+      headers["Authorization"] = `Bearer ${newToken}`;
+      response = await fetch(`${API_URL}${path}`, { ...options, headers });
+    }
+  }
+
+  const data: ApiResponse<T> = await response.json();
+
+  if (!response.ok || !data.success) {
+    throw new ApiError(
+      data.message || "Request failed",
+      response.status,
+      data
+    );
+  }
+
+  return data;
+}

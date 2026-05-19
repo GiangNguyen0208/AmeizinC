@@ -55,6 +55,13 @@ function AuthButtons() {
     },
     { type: "divider" },
     {
+      key: "profile",
+      icon: <UserOutlined />,
+      label: "Thông tin cá nhân",
+      onClick: () => router.push("/profile"),
+    },
+    { type: "divider" },
+    {
       key: "logout",
       icon: <LogoutOutlined />,
       label: "Đăng xuất",

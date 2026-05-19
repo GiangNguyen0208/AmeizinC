@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Form, Input, Button, Typography, Card, App, Result } from "antd";
+import { Form, Input, Button, Typography, Card, Result, Alert } from "antd";
 import { MailOutlined, LockOutlined, UserOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -10,12 +10,55 @@ import { ApiError } from "@/services/api-client";
 
 const { Title, Text } = Typography;
 
+interface RegisterError {
+  type: "warning" | "error";
+  message: string;
+  description?: string;
+}
+
+function getRegisterError(err: unknown): RegisterError {
+  if (err instanceof ApiError) {
+    if (err.status === 409) {
+      return {
+        type: "warning",
+        message: "Email đã được đăng ký",
+        description: "Tài khoản với email này đã tồn tại. Vui lòng đăng nhập hoặc sử dụng email khác.",
+      };
+    }
+    if (err.status === 400) {
+      const errors = (err.data as { errors?: string[] })?.errors;
+      return {
+        type: "error",
+        message: "Thông tin không hợp lệ",
+        description: errors?.join(". ") || err.message,
+      };
+    }
+    if (err.status >= 500) {
+      return {
+        type: "error",
+        message: "Lỗi hệ thống",
+        description: "Máy chủ gặp sự cố, vui lòng thử lại sau.",
+      };
+    }
+    return {
+      type: "error",
+      message: "Đăng ký thất bại",
+      description: err.message,
+    };
+  }
+  return {
+    type: "error",
+    message: "Không thể kết nối đến máy chủ",
+    description: "Vui lòng kiểm tra kết nối mạng và thử lại.",
+  };
+}
+
 export default function RegisterPage() {
   const router = useRouter();
-  const { message } = App.useApp();
   const [loading, setLoading] = useState(false);
   const [registered, setRegistered] = useState(false);
   const [registeredEmail, setRegisteredEmail] = useState("");
+  const [error, setError] = useState<RegisterError | null>(null);
 
   const onFinish = async (values: {
     email: string;
@@ -23,14 +66,13 @@ export default function RegisterPage() {
     fullName: string;
   }) => {
     setLoading(true);
+    setError(null);
     try {
       await register(values);
       setRegisteredEmail(values.email);
       setRegistered(true);
     } catch (err) {
-      message.error(
-        err instanceof ApiError ? err.message : "Đăng ký thất bại"
-      );
+      setError(getRegisterError(err));
     } finally {
       setLoading(false);
     }
@@ -61,6 +103,33 @@ export default function RegisterPage() {
         <Title level={3} className="text-center mb-6!">
           Đăng ký tài khoản
         </Title>
+
+        {error && (
+          <Alert
+            type={error.type}
+            message={error.message}
+            description={
+              <>
+                {error.description}
+                {error.type === "warning" && (
+                  <>
+                    {" "}
+                    <Link
+                      href="/login"
+                      className="text-blue-400 hover:text-blue-300"
+                    >
+                      Đăng nhập ngay
+                    </Link>
+                  </>
+                )}
+              </>
+            }
+            showIcon
+            closable
+            onClose={() => setError(null)}
+            className="mb-4"
+          />
+        )}
 
         <Form layout="vertical" onFinish={onFinish} autoComplete="off">
           <Form.Item
