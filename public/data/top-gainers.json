@@ -1,61 +1,77 @@
 {
   "data": [
     {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 45.15,
-      "change": 2.95,
-      "changePercent": 6.99,
-      "volume": 11418400
-    },
-    {
-      "symbol": "BVH",
-      "companyName": "BVH",
-      "price": 71.7,
-      "change": 4.6,
-      "changePercent": 6.86,
-      "volume": 1824600
-    },
-    {
       "symbol": "VCB",
       "companyName": "VCB",
-      "price": 63.2,
-      "change": 2.5,
-      "changePercent": 4.12,
-      "volume": 18877600
+      "price": 64.7,
+      "change": 1.5,
+      "changePercent": 2.37,
+      "volume": 12398500
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 45.8,
+      "change": 0.65,
+      "changePercent": 1.44,
+      "volume": 4272600
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 72.6,
+      "change": 0.5,
+      "changePercent": 0.69,
+      "volume": 2307100
     },
     {
       "symbol": "GAS",
       "companyName": "GAS",
-      "price": 93.0,
-      "change": 3.6,
-      "changePercent": 4.03,
-      "volume": 4078700
+      "price": 93.4,
+      "change": 0.4,
+      "changePercent": 0.43,
+      "volume": 1070200
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 76.8,
+      "change": 0.3,
+      "changePercent": 0.39,
+      "volume": 2388600
+    },
+    {
+      "symbol": "VRE",
+      "companyName": "VRE",
+      "price": 33.2,
+      "change": 0.1,
+      "changePercent": 0.3,
+      "volume": 3778500
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 74.9,
-      "change": 2.0,
-      "changePercent": 2.74,
-      "volume": 18323700
+      "price": 75.1,
+      "change": 0.2,
+      "changePercent": 0.27,
+      "volume": 5992800
     },
     {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 60.5,
-      "change": 0.7,
-      "changePercent": 1.17,
-      "volume": 4850600
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 26.5,
+      "change": 0.05,
+      "changePercent": 0.19,
+      "volume": 10033800
     },
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 28.15,
-      "change": 0.25,
-      "changePercent": 0.9,
-      "volume": 14829800
+      "price": 28.2,
+      "change": 0.05,
+      "changePercent": 0.18,
+      "volume": 21631500
     }
   ],
-  "crawledAt": "2026-05-18T15:38:32.655403"
+  "crawledAt": "2026-05-19T05:59:21.049768"
 }

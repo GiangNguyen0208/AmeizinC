@@ -1,85 +1,69 @@
 {
   "data": [
     {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 33.1,
-      "change": -0.9,
-      "changePercent": -2.65,
-      "volume": 8326000
+      "symbol": "HDB",
+      "companyName": "HDB",
+      "price": 26.9,
+      "change": -0.55,
+      "changePercent": -2.0,
+      "volume": 7050100
     },
     {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 154.0,
-      "change": -4.0,
-      "changePercent": -2.53,
-      "volume": 5253200
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 70.7,
+      "change": -1.0,
+      "changePercent": -1.39,
+      "volume": 276600
     },
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 225.0,
-      "change": -3.0,
-      "changePercent": -1.32,
-      "volume": 2674600
-    },
-    {
-      "symbol": "MSN",
-      "companyName": "MSN",
-      "price": 76.5,
-      "change": -1.0,
-      "changePercent": -1.29,
-      "volume": 5621700
-    },
-    {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 23.0,
-      "change": -0.3,
-      "changePercent": -1.29,
-      "volume": 11124600
-    },
-    {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 15.5,
-      "change": -0.2,
-      "changePercent": -1.27,
-      "volume": 7794500
-    },
-    {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 72.1,
-      "change": -0.8,
-      "changePercent": -1.1,
-      "volume": 5605300
-    },
-    {
-      "symbol": "MBB",
-      "companyName": "MBB",
-      "price": 25.5,
-      "change": -0.15,
-      "changePercent": -0.58,
-      "volume": 18793500
-    },
-    {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 26.45,
-      "change": -0.1,
-      "changePercent": -0.38,
-      "volume": 27485500
+      "price": 222.5,
+      "change": -2.5,
+      "changePercent": -1.11,
+      "volume": 1423600
     },
     {
       "symbol": "VPB",
       "companyName": "VPB",
-      "price": 27.45,
+      "price": 27.15,
+      "change": -0.3,
+      "changePercent": -1.09,
+      "volume": 6675500
+    },
+    {
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 25.3,
+      "change": -0.2,
+      "changePercent": -0.78,
+      "volume": 12216600
+    },
+    {
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 60.1,
+      "change": -0.4,
+      "changePercent": -0.66,
+      "volume": 1241000
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 48.3,
       "change": -0.1,
-      "changePercent": -0.36,
-      "volume": 15227700
+      "changePercent": -0.21,
+      "volume": 375100
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 153.9,
+      "change": -0.1,
+      "changePercent": -0.06,
+      "volume": 1869400
     }
   ],
-  "crawledAt": "2026-05-18T15:38:32.655403"
+  "crawledAt": "2026-05-19T05:59:21.049768"
 }
