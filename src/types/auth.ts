@@ -3,6 +3,8 @@ export interface AuthUser {
   email?: string;
   fullName: string;
   avatar?: string;
+  phone?: string;
+  dateOfBirth?: string;
   authMethod?: "email";
   role: "user" | "admin" | "super_admin";
   isActive: boolean;
@@ -19,6 +21,12 @@ export interface ApiResponse<T = unknown> {
   success: boolean;
   data?: T;
   message?: string;
+  meta?: {
+    page: number;
+    limit: number;
+    total: number;
+    totalPages: number;
+  };
 }
 
 export interface LoginRequest {
