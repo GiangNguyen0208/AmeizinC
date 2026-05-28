@@ -1,37 +1,37 @@
 {
   "data": [
     {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 83.3,
-      "change": 1.8,
-      "changePercent": 2.21,
-      "volume": 1852000
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 40.1,
-      "change": 0.65,
-      "changePercent": 1.65,
-      "volume": 2647100
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 157.7,
+      "change": 10.3,
+      "changePercent": 6.99,
+      "volume": 8918500
     },
     {
       "symbol": "VRE",
       "companyName": "VRE",
-      "price": 31.6,
-      "change": 0.35,
-      "changePercent": 1.12,
-      "volume": 1443200
+      "price": 32.25,
+      "change": 1.0,
+      "changePercent": 3.2,
+      "volume": 6400700
     },
     {
       "symbol": "VNM",
       "companyName": "VNM",
-      "price": 59.4,
-      "change": 0.6,
-      "changePercent": 1.02,
-      "volume": 1731900
+      "price": 59.0,
+      "change": 0.2,
+      "changePercent": 0.34,
+      "volume": 3798600
+    },
+    {
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 81.7,
+      "change": 0.2,
+      "changePercent": 0.25,
+      "volume": 2476900
     }
   ],
-  "crawledAt": "2026-05-28T06:02:34.344885"
+  "crawledAt": "2026-05-28T10:24:16.753514"
 }
