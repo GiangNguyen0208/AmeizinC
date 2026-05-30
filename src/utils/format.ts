@@ -11,9 +11,9 @@ export function formatPrice(value: number): string {
 }
 
 export function formatVolume(value: number): string {
-  if (value >= 1_000_000_000) return `${(value / 1_000_000_000).toFixed(1)}B`;
-  if (value >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M`;
-  if (value >= 1_000) return `${(value / 1_000).toFixed(1)}K`;
+  if (value >= 1_000_000_000) { return `${(value / 1_000_000_000).toFixed(1)}B`; }
+  if (value >= 1_000_000) { return `${(value / 1_000_000).toFixed(1)}M`; }
+  if (value >= 1_000) { return `${(value / 1_000).toFixed(1)}K`; }
   return value.toString();
 }
 
@@ -28,8 +28,8 @@ export function formatChange(value: number): string {
 }
 
 export function getChangeColor(value: number): string {
-  if (value > 0) return "#22c55e";
-  if (value < 0) return "#ef4444";
+  if (value > 0) { return "#22c55e"; }
+  if (value < 0) { return "#ef4444"; }
   return "#fbbf24";
 }
 
@@ -75,16 +75,16 @@ export function formatRelativeTime(iso: string): string {
 
   const diff = toTs(nowParts) - toTs(tgtParts);
   const mins = Math.floor(diff / 60_000);
-  if (mins < 1) return "vừa xong";
-  if (mins < 60) return `${mins} phút trước`;
+  if (mins < 1) { return "vừa xong"; }
+  if (mins < 60) { return `${mins} phút trước`; }
   const hours = Math.floor(mins / 60);
-  if (hours < 24) return `${hours} giờ trước`;
+  if (hours < 24) { return `${hours} giờ trước`; }
   return `${Math.floor(hours / 24)} ngày trước`;
 }
 
 export function isTradingHours(): boolean {
   const { hour, minute, day } = getVnNow();
-  if (day === 0 || day === 6) return false;
+  if (day === 0 || day === 6) { return false; }
   const vnMinutes = hour * 60 + minute;
   return (vnMinutes >= 540 && vnMinutes <= 690) || (vnMinutes >= 780 && vnMinutes <= 900);
 }

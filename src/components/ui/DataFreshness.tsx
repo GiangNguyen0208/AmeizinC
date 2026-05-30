@@ -25,7 +25,7 @@ export function DataFreshness() {
         icon={trading ? <SyncOutlined spin /> : <CheckCircleOutlined />}
         color={trading ? "processing" : "default"}
       >
-        {trading ? "Đang giao dịch" : "Ngoài giờ GD"} &mdash; Cập nhật {relTime}
+        {trading ? "Đang giao dịch" : "Ngoài giờ GD"} &mdash; Cập nhật {relTime} (GMT+7)
       </Tag>
     </Tooltip>
   );
