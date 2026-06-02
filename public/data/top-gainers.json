@@ -3,51 +3,27 @@
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 69.0,
-      "change": 1.9,
-      "changePercent": 2.83,
-      "volume": 560100
+      "price": 69.7,
+      "change": 2.6,
+      "changePercent": 3.87,
+      "volume": 1032500
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 74.7,
-      "change": 1.8,
-      "changePercent": 2.47,
-      "volume": 10478700
+      "price": 74.8,
+      "change": 1.9,
+      "changePercent": 2.61,
+      "volume": 17368000
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 25.0,
-      "change": 0.1,
-      "changePercent": 0.4,
-      "volume": 20612400
-    },
-    {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 152.5,
-      "change": 0.5,
-      "changePercent": 0.33,
-      "volume": 2107400
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 39.8,
-      "change": 0.05,
-      "changePercent": 0.13,
-      "volume": 1115800
-    },
-    {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 84.3,
-      "change": 0.1,
-      "changePercent": 0.12,
-      "volume": 683400
+      "price": 25.1,
+      "change": 0.2,
+      "changePercent": 0.8,
+      "volume": 33097100
     }
   ],
-  "crawledAt": "2026-06-02T06:28:13.008067"
+  "crawledAt": "2026-06-02T11:03:40.953484"
 }
