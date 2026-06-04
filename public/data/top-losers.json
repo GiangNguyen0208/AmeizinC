@@ -1,53 +1,53 @@
 {
   "data": [
     {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 197.6,
-      "change": -7.3,
-      "changePercent": -3.56,
-      "volume": 5110300
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 74.2,
+      "change": -0.9,
+      "changePercent": -1.2,
+      "volume": 1106700
     },
     {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 30.05,
-      "change": -0.95,
-      "changePercent": -3.06,
-      "volume": 6191400
+      "symbol": "SSI",
+      "companyName": "SSI",
+      "price": 27.1,
+      "change": -0.2,
+      "changePercent": -0.73,
+      "volume": 5847000
     },
     {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 148.4,
-      "change": -2.4,
-      "changePercent": -1.59,
-      "volume": 6310300
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 24.0,
+      "change": -0.15,
+      "changePercent": -0.62,
+      "volume": 6101400
     },
     {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 31.55,
-      "change": -0.35,
-      "changePercent": -1.1,
-      "volume": 11052800
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 25.05,
+      "change": -0.15,
+      "changePercent": -0.6,
+      "volume": 5626400
     },
     {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 66.1,
-      "change": -0.5,
-      "changePercent": -0.75,
-      "volume": 5310300
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 58.3,
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 76.2,
       "change": -0.3,
-      "changePercent": -0.51,
-      "volume": 3814300
+      "changePercent": -0.39,
+      "volume": 8396700
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 26.35,
+      "change": -0.1,
+      "changePercent": -0.38,
+      "volume": 4200000
     }
   ],
-  "crawledAt": "2026-06-03T16:54:15.812286"
+  "crawledAt": "2026-06-04T06:29:06.764760"
 }
