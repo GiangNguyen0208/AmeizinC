@@ -6,6 +6,7 @@ import { useState, type ReactNode } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AuthProvider } from "@/components/providers/AuthProvider";
+import { StoreProvider } from "@/components/providers/StoreProvider";
 
 const antTheme = {
   algorithm: theme.darkAlgorithm,
@@ -34,20 +35,22 @@ export function ClientLayout({ children }: { children: ReactNode }) {
   );
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <ConfigProvider theme={antTheme}>
-        <AntApp>
-          <AuthProvider>
-            <div className="flex flex-col min-h-screen">
-              <Header />
-              <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
-                {children}
-              </main>
-              <Footer />
-            </div>
-          </AuthProvider>
-        </AntApp>
-      </ConfigProvider>
-    </QueryClientProvider>
+    <StoreProvider>
+      <QueryClientProvider client={queryClient}>
+        <ConfigProvider theme={antTheme}>
+          <AntApp>
+            <AuthProvider>
+              <div className="flex flex-col min-h-screen">
+                <Header />
+                <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
+                  {children}
+                </main>
+                <Footer />
+              </div>
+            </AuthProvider>
+          </AntApp>
+        </ConfigProvider>
+      </QueryClientProvider>
+    </StoreProvider>
   );
 }
