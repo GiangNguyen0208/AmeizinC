@@ -5,7 +5,7 @@
 - [x] Enrichment Service with Gemini (`src/services/enrichment.service.ts`)
 - [x] Brief Service (`src/services/brief.service.ts`)
 - [x] News API Routes (`src/routes/news.routes.ts`)
-- [ ] Implement News Crawler/Importer (Admin UI or script)
+- [x] Implement News Crawler/Importer (Admin UI or script)
 - [x] Notification Integration (Discord/Telegram)
 
 ## 2. Frontend Features (ameizin)
@@ -18,7 +18,7 @@
 - [x] Admin News Management UI
 
 ## 3. Deployment & Integration
-- [ ] Environment variables setup (GEMINI_API_KEY)
+- [x] Environment variables setup (GEMINI_API_KEY)
 - [ ] Verification of full pipeline
 
 ---
