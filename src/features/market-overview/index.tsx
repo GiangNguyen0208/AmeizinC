@@ -4,7 +4,6 @@ import { Col, Row, Typography, Button } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 import { MarketIndexCards } from "./components/MarketIndexCards";
 import { StockTable } from "./components/StockTable";
-import { AIDailyBriefCard } from "./components/AIDailyBriefCard";
 import { useTopGainers, useTopLosers, useTopVolume } from "@/hooks";
 import { DataUpdateNote, DataFreshness, MarketBreadth, VietnamHolidayNotice } from "@/components/ui";
 import { exportToCSV } from "@/utils";
@@ -50,7 +49,6 @@ export function MarketOverview() {
       <VietnamHolidayNotice />
       <MarketIndexCards />
       <MarketBreadth />
-      <AIDailyBriefCard />
       <DataUpdateNote />
 
       <Row gutter={[12, 16]}>

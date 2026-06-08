@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, Typography, Empty, Tabs } from "antd";
+import { Button, Card, Typography } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import {
@@ -9,7 +9,6 @@ import {
   FinancialStatements,
   CompanyProfileCard,
   QuarterFinancialDetail,
-  StockNewsTab,
 } from "./components";
 import { PeriodFilter, PeriodFilterValue } from "./components/PeriodFilter";
 import { PriceChart } from "@/components/charts/PriceChart";
@@ -209,72 +208,66 @@ export function StockDetail({ symbol }: StockDetailProps) {
     <div className="space-y-6">
       <PriceHeader data={price} />
 
-      <Tabs
-        defaultActiveKey="overview"
-        items={[
-          {
-            key: 'overview',
-            label: 'Tổng quan',
-            children: (
-              <div className="space-y-6">
-                {companyProfile && <CompanyProfileCard profile={companyProfile} />}
+      <div className="flex justify-stretch sm:justify-end">
+        <Button
+          icon={<DownloadOutlined />}
+          onClick={() =>
+            handleExportStockDetail({
+              price,
+              history,
+              ratios,
+              financeData,
+              companyProfile,
+            })
+          }
+          disabled={loadingHistory || loadingFinance}
+          className="w-full sm:w-auto"
+        >
+          Export CSV
+        </Button>
+      </div>
 
-                <Card>
-                  <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                    <Title level={5} style={{ color: "#fff", margin: 0 }}>
-                      Biểu đồ giá — {symbol}
-                    </Title>
+      {companyProfile && <CompanyProfileCard profile={companyProfile} />}
 
-                    <PeriodFilter value={filter} onChange={setFilter} />
-                  </div>
+      <Card>
+        <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <Title level={5} style={{ color: "#fff", margin: 0 }}>
+            Biểu đồ giá — {symbol}
+          </Title>
 
-                  {loadingHistory ? (
-                    <LoadingState tip="Đang tải biểu đồ..." />
-                  ) : history ? (
-                    <PriceChart data={history} />
-                  ) : null}
-                </Card>
-              </div>
-            ),
-          },
-          {
-            key: 'financials',
-            label: 'Tài chính',
-            children: (
-              <div className="space-y-6">
-                {loadingFinance ? (
-                  <LoadingState tip="Đang tải dữ liệu tài chính..." />
-                ) : financeData ? (
-                  <>
-                    {ratios.length > 0 && (
-                      <>
-                        <FinancialRatiosCard ratios={ratios} />
-                        <Card>
-                          <Title level={5} style={{ color: "#fff", margin: 0, marginBottom: 16 }}>
-                            Xu hướng Doanh thu & Lợi nhuận
-                          </Title>
-                          <FinanceTrendChart ratios={ratios} onSelectPeriod={setSelectedFinancePeriod} />
-                          <QuarterFinancialDetail
-                            ratios={ratios}
-                            selectedPeriod={selectedFinancePeriod}
-                            onSelectPeriod={setSelectedFinancePeriod}
-                          />
-                        </Card>
-                      </>
-                    )}
-                    <FinancialStatements data={financeData} />
-                  </>
-                ) : null}
-              </div>
-            ),
-          },
-          {
-            key: 'ai-news',
-            label: 'AI News',
-            children: <StockNewsTab symbol={symbol} />,
-          },
-        ]}
-      />
+          <PeriodFilter value={filter} onChange={setFilter} />
+        </div>
+
+        {loadingHistory ? (
+          <LoadingState tip="Đang tải biểu đồ..." />
+        ) : history ? (
+          <PriceChart data={history} />
+        ) : null}
+      </Card>
+
+      {loadingFinance ? (
+        <LoadingState tip="Đang tải dữ liệu tài chính..." />
+      ) : financeData ? (
+        <>
+          {ratios.length > 0 && (
+            <>
+              <FinancialRatiosCard ratios={ratios} />
+              <Card>
+                <Title level={5} style={{ color: "#fff", margin: 0, marginBottom: 16 }}>
+                  Xu hướng Doanh thu & Lợi nhuận
+                </Title>
+                <FinanceTrendChart ratios={ratios} onSelectPeriod={setSelectedFinancePeriod} />
+                <QuarterFinancialDetail
+                  ratios={ratios}
+                  selectedPeriod={selectedFinancePeriod}
+                  onSelectPeriod={setSelectedFinancePeriod}
+                />
+              </Card>
+            </>
+          )}
+          <FinancialStatements data={financeData} />
+        </>
+      ) : null}
     </div>
   );
 }
