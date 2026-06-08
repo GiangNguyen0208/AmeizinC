@@ -5,13 +5,12 @@ import { useQuery } from "@tanstack/react-query";
 import { Typography, List, Card, Tag, Select, Input } from "antd";
 import { fetchNews } from "@/services/news";
 import { LoadingState } from "@/components/ui";
-import { NewsFilterParams } from "@/types/news";
 
 const { Title, Text } = Typography;
 const { Search } = Input;
 
 export default function NewsFeedPage() {
-  const [params, setParams] = useState<NewsFilterParams>({ page: 1, limit: 10, sort: 'latest' });
+  const [params, setParams] = useState({ page: 1, limit: 10, sort: 'latest' as const });
   const { data, isLoading } = useQuery({
     queryKey: ['news', params],
     queryFn: () => fetchNews(params),
@@ -23,10 +22,7 @@ export default function NewsFeedPage() {
       
       <div className="flex gap-4">
         <Search placeholder="Search news..." onSearch={(q) => setParams(p => ({...p, q}))} style={{ width: 300 }} />
-        <Select 
-          defaultValue="latest" 
-          onChange={(sort: NewsFilterParams['sort']) => setParams(p => ({...p, sort}))}
-        >
+        <Select defaultValue="latest" onChange={(sort) => setParams(p => ({...p, sort}))}>
           <Select.Option value="latest">Latest</Select.Option>
           <Select.Option value="relevance">Relevance</Select.Option>
           <Select.Option value="sentiment">Sentiment</Select.Option>

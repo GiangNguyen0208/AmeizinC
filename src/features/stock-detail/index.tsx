@@ -9,7 +9,6 @@ import {
   FinancialStatements,
   CompanyProfileCard,
   QuarterFinancialDetail,
-  StockNewsTab,
 } from "./components";
 import { PeriodFilter, PeriodFilterValue } from "./components/PeriodFilter";
 import { PriceChart } from "@/components/charts/PriceChart";
@@ -271,7 +270,11 @@ export function StockDetail({ symbol }: StockDetailProps) {
           {
             key: 'ai-news',
             label: 'AI News',
-            children: <StockNewsTab symbol={symbol} />,
+            children: (
+              <Card>
+                <Empty description="Tính năng AI News đang được phát triển" />
+              </Card>
+            ),
           },
         ]}
       />

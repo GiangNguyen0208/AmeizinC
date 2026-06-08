@@ -16,7 +16,7 @@ export default function SentimentDashboard() {
 
   if (isLoading) return <LoadingState />;
 
-  const sentimentData = data?.sentimentDistribution.map((item: { _id: string, count: number }) => ({
+  const sentimentData = data?.sentimentDistribution.map((item: any) => ({
     type: item._id,
     value: item.count,
   })) || [];
