@@ -1,13 +1,4 @@
 {
-  "data": [
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 42.25,
-      "change": 0.25,
-      "changePercent": 0.6,
-      "volume": 2699800
-    }
-  ],
-  "crawledAt": "2026-06-08T06:29:45.620657"
+  "data": [],
+  "crawledAt": "2026-06-08T11:25:28.574738"
 }
