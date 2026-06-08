@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Table, Button, Card, Typography, message } from "antd";
+import { Button, Card, Typography, message } from "antd";
 import axios from "axios";
 
 const { Title } = Typography;
@@ -18,7 +18,7 @@ export default function AdminNewsManagement() {
         enrichImmediately: true
       });
       message.success("Import triggered");
-    } catch (e) {
+    } catch (_) {
       message.error("Import failed");
     } finally {
       setLoading(false);
