@@ -4,7 +4,7 @@
     {
       "item": "Doanh thu bán hàng và cung cấp dịch vụ",
       "item_en": "Sales",
-      "item_id": "isa1",
+      "item_id": "sales",
       "2026-Q1": 12485836704352.0,
       "2025-Q4": 20258865670867.0,
       "2025-Q3": 17225507121683.0,
@@ -17,7 +17,7 @@
     {
       "item": "Các khoản giảm trừ doanh thu",
       "item_en": "Sales deductions",
-      "item_id": "isa2",
+      "item_id": "sales_deductions",
       "2026-Q1": -5839497577.0,
       "2025-Q4": -33415777986.0,
       "2025-Q3": -20985896381.0,
@@ -30,7 +30,7 @@
     {
       "item": "Doanh thu thuần",
       "item_en": "Net sales",
-      "item_id": "isa3",
+      "item_id": "net_sales",
       "2026-Q1": 12479997206775.0,
       "2025-Q4": 20225449892881.0,
       "2025-Q3": 17204521225302.0,
@@ -43,7 +43,7 @@
     {
       "item": "Giá vốn hàng bán",
       "item_en": "Cost of sales",
-      "item_id": "isa4",
+      "item_id": "cost_of_sales",
       "2026-Q1": -8235107316087.0,
       "2025-Q4": -13178174806719.0,
       "2025-Q3": -10685654746292.0,
@@ -56,7 +56,7 @@
     {
       "item": "Lợi nhuận gộp",
       "item_en": "Gross Profit",
-      "item_id": "isa5",
+      "item_id": "gross_profit",
       "2026-Q1": 4244889890688.0,
       "2025-Q4": 7047275086162.0,
       "2025-Q3": 6518866479010.0,
@@ -69,7 +69,7 @@
     {
       "item": "Doanh thu hoạt động tài chính",
       "item_en": "Financial income",
-      "item_id": "isa6",
+      "item_id": "financial_income",
       "2026-Q1": 415863869179.0,
       "2025-Q4": 553701922193.0,
       "2025-Q3": 613110473502.0,
@@ -82,7 +82,7 @@
     {
       "item": "Chi phí tài chính",
       "item_en": "Financial expenses",
-      "item_id": "isa7",
+      "item_id": "financial_expenses",
       "2026-Q1": -367211384721.0,
       "2025-Q4": -476744596151.0,
       "2025-Q3": -352575079871.0,
@@ -95,7 +95,7 @@
     {
       "item": "Chi phí lãi vay",
       "item_en": "Interest expenses",
-      "item_id": "isa8",
+      "item_id": "interest_expenses",
       "2026-Q1": -179461207664.0,
       "2025-Q4": -207025852637.0,
       "2025-Q3": -233582914481.0,
@@ -108,7 +108,7 @@
     {
       "item": "Chi phí bán hàng",
       "item_en": "Selling expenses",
-      "item_id": "isa9",
+      "item_id": "selling_expenses",
       "2026-Q1": -1002337155317.0,
       "2025-Q4": -2026995981641.0,
       "2025-Q3": -1916582832643.0,
@@ -121,7 +121,7 @@
     {
       "item": "Chi phí quản lý doanh nghiệp",
       "item_en": "General and admin expenses",
-      "item_id": "isa10",
+      "item_id": "general_and_admin_expenses",
       "2026-Q1": -1210282662926.0,
       "2025-Q4": -1898934296550.0,
       "2025-Q3": -1647276732839.0,
@@ -134,7 +134,7 @@
     {
       "item": "Lãi/(lỗ) từ hoạt động kinh doanh",
       "item_en": "Operating profit/(loss)",
-      "item_id": "isa11",
+      "item_id": "operating_profit_loss",
       "2026-Q1": 2747763827050.0,
       "2025-Q4": 3482048271187.0,
       "2025-Q3": 3346375732746.0,
@@ -147,7 +147,7 @@
     {
       "item": "Thu nhập khác",
       "item_en": "Other incomes",
-      "item_id": "isa12",
+      "item_id": "other_incomes",
       "2026-Q1": 61674012142.0,
       "2025-Q4": 40089602924.0,
       "2025-Q3": 34839399621.0,
@@ -160,7 +160,7 @@
     {
       "item": "Chi phí khác",
       "item_en": "Other expenses",
-      "item_id": "isa13",
+      "item_id": "other_expenses",
       "2026-Q1": -5593557516.0,
       "2025-Q4": -18969733714.0,
       "2025-Q3": -6476534277.0,
@@ -173,7 +173,7 @@
     {
       "item": "Thu nhập khác, ròng",
       "item_en": "Net other income/(expenses)",
-      "item_id": "isa14",
+      "item_id": "net_other_income_expenses",
       "2026-Q1": 56080454626.0,
       "2025-Q4": 21119869210.0,
       "2025-Q3": 28362865344.0,
@@ -186,7 +186,7 @@
     {
       "item": "Lãi/(lỗ) từ công ty liên doanh",
       "item_en": "Income from investments in other entities",
-      "item_id": "isa15",
+      "item_id": "income_from_investments_in_other_entities",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -199,7 +199,7 @@
     {
       "item": "Lãi/(lỗ) trước thuế",
       "item_en": "Net accounting profit/(loss) before tax",
-      "item_id": "isa16",
+      "item_id": "net_accounting_profit_loss_before_tax",
       "2026-Q1": 2803844281676.0,
       "2025-Q4": 3503168140397.0,
       "2025-Q3": 3374738598090.0,
@@ -212,7 +212,7 @@
     {
       "item": "Thuế thu nhập doanh nghiệp - hiện thời",
       "item_en": "Business income tax - current",
-      "item_id": "isa17",
+      "item_id": "business_income_tax_current",
       "2026-Q1": -454678597413.0,
       "2025-Q4": -486195215444.0,
       "2025-Q3": -589553627034.0,
@@ -225,7 +225,7 @@
     {
       "item": "Thuế thu nhập doanh nghiệp - hoãn lại",
       "item_en": "Business income tax - deferred",
-      "item_id": "isa18",
+      "item_id": "business_income_tax_deferred",
       "2026-Q1": 127624149218.0,
       "2025-Q4": -22008107857.0,
       "2025-Q3": 116360781594.0,
@@ -238,7 +238,7 @@
     {
       "item": "Chi phí thuế thu nhập doanh nghiệp",
       "item_en": "Corporate income tax expenses",
-      "item_id": "isa19",
+      "item_id": "corporate_income_tax_expenses",
       "2026-Q1": -327054448195.0,
       "2025-Q4": -508203323301.0,
       "2025-Q3": -473192845440.0,
@@ -251,7 +251,7 @@
     {
       "item": "Lãi/(lỗ) thuần sau thuế",
       "item_en": "Net profit/(loss) after tax",
-      "item_id": "isa20",
+      "item_id": "net_profit_loss_after_tax",
       "2026-Q1": 2476789833481.0,
       "2025-Q4": 2994964817096.0,
       "2025-Q3": 2901545752650.0,
@@ -264,7 +264,7 @@
     {
       "item": "Lợi ích của cổ đông thiểu số",
       "item_en": "Minority interests",
-      "item_id": "isa21",
+      "item_id": "minority_interests",
       "2026-Q1": -10581753618.0,
       "2025-Q4": 485442596976.0,
       "2025-Q3": 466704317918.0,
@@ -277,7 +277,7 @@
     {
       "item": "Lợi nhuận của Cổ đông của Công ty mẹ",
       "item_en": "Attributable to parent company",
-      "item_id": "isa22",
+      "item_id": "attributable_to_parent_company",
       "2026-Q1": 2487371587099.0,
       "2025-Q4": 2509522220120.0,
       "2025-Q3": 2434841434732.0,
@@ -290,7 +290,7 @@
     {
       "item": "Lãi cơ bản trên cổ phiếu (VND)",
       "item_en": "EPS basic (VND)",
-      "item_id": "isa23",
+      "item_id": "eps_basic_vnd",
       "2026-Q1": 1460.0,
       "2025-Q4": 1173.0,
       "2025-Q3": 1036.0,
@@ -303,7 +303,7 @@
     {
       "item": "Lãi trên cổ phiếu pha loãng (VND)",
       "item_en": "EPS diluted (VND)",
-      "item_id": "isa24",
+      "item_id": "eps_diluted_vnd",
       "2026-Q1": 1460.0,
       "2025-Q4": 1173.0,
       "2025-Q3": 1036.0,
@@ -316,7 +316,7 @@
     {
       "item": "Lãi/(lỗ) từ công ty liên doanh (từ năm 2015)",
       "item_en": "Gain/(loss) from joint ventures (from 2015)",
-      "item_id": "isa102",
+      "item_id": "gain_loss_from_joint_ventures_from_2015",
       "2026-Q1": 666841270147.0,
       "2025-Q4": 283746137174.0,
       "2025-Q3": 130833425587.0,
@@ -331,7 +331,7 @@
     {
       "item": "TÀI SẢN NGẮN HẠN",
       "item_en": "CURRENT ASSETS",
-      "item_id": "bsa1",
+      "item_id": "current_assets",
       "2026-Q1": 41527873060120.0,
       "2025-Q4": 58137438254908.0,
       "2025-Q3": 53632976863548.0,
@@ -344,7 +344,7 @@
     {
       "item": "Tiền và tương đương tiền",
       "item_en": "Cash and cash equivalents",
-      "item_id": "bsa2",
+      "item_id": "cash_and_cash_equivalents",
       "2026-Q1": 7993577611642.0,
       "2025-Q4": 10522105729992.0,
       "2025-Q3": 9853512731370.0,
@@ -357,7 +357,7 @@
     {
       "item": "Tiền",
       "item_en": "Cash",
-      "item_id": "bsa3",
+      "item_id": "cash",
       "2026-Q1": 5022685693032.0,
       "2025-Q4": 8084751080186.0,
       "2025-Q3": 7677693654613.0,
@@ -370,7 +370,7 @@
     {
       "item": "Các khoản tương đương tiền",
       "item_en": "Cash equivalents",
-      "item_id": "bsa4",
+      "item_id": "cash_equivalents",
       "2026-Q1": 2970891918610.0,
       "2025-Q4": 2437354649806.0,
       "2025-Q3": 2175819076757.0,
@@ -383,7 +383,7 @@
     {
       "item": "Đầu tư ngắn hạn",
       "item_en": "Short-term investments",
-      "item_id": "bsa5",
+      "item_id": "short_term_investments",
       "2026-Q1": 18751535880407.0,
       "2025-Q4": 29630986737440.0,
       "2025-Q3": 27125585559832.0,
@@ -396,7 +396,7 @@
     {
       "item": "Đầu tư ngắn hạn",
       "item_en": "Short-term investments",
-      "item_id": "bsa6",
+      "item_id": "short_term_investments",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -409,7 +409,7 @@
     {
       "item": "Dự phòng giảm giá",
       "item_en": "Provision for diminution",
-      "item_id": "bsa7",
+      "item_id": "provision_for_diminution",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -422,7 +422,7 @@
     {
       "item": "Các khoản phải thu",
       "item_en": "Accounts receivable",
-      "item_id": "bsa8",
+      "item_id": "accounts_receivable",
       "2026-Q1": 12347990314058.0,
       "2025-Q4": 14402017450105.0,
       "2025-Q3": 13077014449004.0,
@@ -435,7 +435,7 @@
     {
       "item": "Phải thu khách hàng",
       "item_en": "Trade accounts receivable",
-      "item_id": "bsa9",
+      "item_id": "trade_accounts_receivable",
       "2026-Q1": 10175295201576.0,
       "2025-Q4": 12734600596550.0,
       "2025-Q3": 11454536291628.0,
@@ -448,7 +448,7 @@
     {
       "item": "Trả trước người bán",
       "item_en": "Prepayments to suppliers",
-      "item_id": "bsa10",
+      "item_id": "prepayments_to_suppliers",
       "2026-Q1": 1476727313028.0,
       "2025-Q4": 952737932722.0,
       "2025-Q3": 801251699142.0,
@@ -461,7 +461,7 @@
     {
       "item": "Phải thu nội bộ",
       "item_en": "Intercompany receivables",
-      "item_id": "bsa11",
+      "item_id": "intercompany_receivables",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -474,7 +474,7 @@
     {
       "item": "Phải thu hợp đồng xây dựng đang thực hiện",
       "item_en": "Construction contract in progress receivables",
-      "item_id": "bsa12",
+      "item_id": "construction_contract_in_progress_receivables",
       "2026-Q1": 255231754306.0,
       "2025-Q4": 200405269967.0,
       "2025-Q3": 192402178808.0,
@@ -487,7 +487,7 @@
     {
       "item": "Phải thu khác",
       "item_en": "Other receivables",
-      "item_id": "bsa13",
+      "item_id": "other_receivables",
       "2026-Q1": 783125213986.0,
       "2025-Q4": 1091244484321.0,
       "2025-Q3": 1196855208054.0,
@@ -500,7 +500,7 @@
     {
       "item": "Dự phòng nợ khó đòi",
       "item_en": "Provision for doubtful debts",
-      "item_id": "bsa14",
+      "item_id": "provision_for_doubtful_debts",
       "2026-Q1": -342389168838.0,
       "2025-Q4": -586166744274.0,
       "2025-Q3": -613258400119.0,
@@ -513,7 +513,7 @@
     {
       "item": "Hàng tồn kho, ròng",
       "item_en": "Inventories, Net",
-      "item_id": "bsa15",
+      "item_id": "inventories_net",
       "2026-Q1": 1094571460159.0,
       "2025-Q4": 2193769802339.0,
       "2025-Q3": 2050315910017.0,
@@ -526,7 +526,7 @@
     {
       "item": "Hàng tồn kho",
       "item_en": "Inventories",
-      "item_id": "bsa16",
+      "item_id": "inventories",
       "2026-Q1": 1163844658543.0,
       "2025-Q4": 2277393610177.0,
       "2025-Q3": 2134346913983.0,
@@ -539,7 +539,7 @@
     {
       "item": "Dự phòng giảm giá hàng tồn kho",
       "item_en": "Provision for decline in inventories",
-      "item_id": "bsa17",
+      "item_id": "provision_for_decline_in_inventories",
       "2026-Q1": -69273198384.0,
       "2025-Q4": -83623807838.0,
       "2025-Q3": -84031003966.0,
@@ -552,7 +552,7 @@
     {
       "item": "Tài sản lưu động khác",
       "item_en": "Other current assets",
-      "item_id": "bsa18",
+      "item_id": "other_current_assets",
       "2026-Q1": 1340197793854.0,
       "2025-Q4": 1388558535032.0,
       "2025-Q3": 1526548213325.0,
@@ -565,7 +565,7 @@
     {
       "item": "Chi phí trả trước ngắn hạn",
       "item_en": "Short-term prepayments",
-      "item_id": "bsa19",
+      "item_id": "short_term_prepayments",
       "2026-Q1": 592431670183.0,
       "2025-Q4": 641974035769.0,
       "2025-Q3": 727367088616.0,
@@ -578,7 +578,7 @@
     {
       "item": "Thuế GTGT được khấu trừ",
       "item_en": "VAT to be claimed",
-      "item_id": "bsa20",
+      "item_id": "vat_to_be_claimed",
       "2026-Q1": 626239248109.0,
       "2025-Q4": 609517465104.0,
       "2025-Q3": 665436755637.0,
@@ -591,7 +591,7 @@
     {
       "item": "Phải thu thuế khác",
       "item_en": "Other taxes receivable",
-      "item_id": "bsa21",
+      "item_id": "other_taxes_receivable",
       "2026-Q1": 121526875562.0,
       "2025-Q4": 137067034159.0,
       "2025-Q3": 133744369072.0,
@@ -604,7 +604,7 @@
     {
       "item": "Tài sản lưu động khác",
       "item_en": "Other current assets",
-      "item_id": "bsa22",
+      "item_id": "other_current_assets",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -617,7 +617,7 @@
     {
       "item": "TÀI SẢN DÀI HẠN",
       "item_en": "LONG-TERM ASSETS",
-      "item_id": "bsa23",
+      "item_id": "long_term_assets",
       "2026-Q1": 27058221725097.0,
       "2025-Q4": 30004553379717.0,
       "2025-Q3": 29105328066901.0,
@@ -630,7 +630,7 @@
     {
       "item": "Phải thu dài hạn",
       "item_en": "Long-term trade receivables",
-      "item_id": "bsa24",
+      "item_id": "long_term_trade_receivables",
       "2026-Q1": 529064080853.0,
       "2025-Q4": 564342065270.0,
       "2025-Q3": 576978545154.0,
@@ -643,7 +643,7 @@
     {
       "item": "Phải thu khách hàng dài hạn",
       "item_en": "Long-term trade receivables from customers",
-      "item_id": "bsa25",
+      "item_id": "long_term_trade_receivables_from_customers",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -656,7 +656,7 @@
     {
       "item": "Phải thu nội bộ dài hạn",
       "item_en": "Long-term intercompany receivables",
-      "item_id": "bsa26",
+      "item_id": "long_term_intercompany_receivables",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -669,7 +669,7 @@
     {
       "item": "Phải thu dài hạn khác",
       "item_en": "Other long-term receivables",
-      "item_id": "bsa27",
+      "item_id": "other_long_term_receivables",
       "2026-Q1": 581436563490.0,
       "2025-Q4": 611435814893.0,
       "2025-Q3": 624504027254.0,
@@ -682,7 +682,7 @@
     {
       "item": "Dự phòng phải thu dài hạn",
       "item_en": "Provision for doubtful LT receivable",
-      "item_id": "bsa28",
+      "item_id": "provision_for_doubtful_lt_receivable",
       "2026-Q1": -52372482637.0,
       "2025-Q4": -52372482637.0,
       "2025-Q3": -52372482637.0,
@@ -695,7 +695,7 @@
     {
       "item": "Tài sản cố định",
       "item_en": "Fixed assets",
-      "item_id": "bsa29",
+      "item_id": "fixed_assets",
       "2026-Q1": 11625313235550.0,
       "2025-Q4": 17288541848861.0,
       "2025-Q3": 16990519914677.0,
@@ -708,7 +708,7 @@
     {
       "item": "GTCL TSCĐ hữu hình",
       "item_en": "Tangible fixed assets",
-      "item_id": "bsa30",
+      "item_id": "tangible_fixed_assets",
       "2026-Q1": 10218840964598.0,
       "2025-Q4": 15359168484059.0,
       "2025-Q3": 15156746699358.0,
@@ -721,7 +721,7 @@
     {
       "item": "Nguyên giá TSCĐ hữu hình",
       "item_en": "Cost",
-      "item_id": "bsa31",
+      "item_id": "cost",
       "2026-Q1": 14897139420348.0,
       "2025-Q4": 29122042372002.0,
       "2025-Q3": 28394940253483.0,
@@ -734,7 +734,7 @@
     {
       "item": "Khấu hao lũy kế TSCĐ hữu hình",
       "item_en": "Accumulated depreciation",
-      "item_id": "bsa32",
+      "item_id": "accumulated_depreciation",
       "2026-Q1": -4678298455750.0,
       "2025-Q4": -13762873887943.0,
       "2025-Q3": -13238193554125.0,
@@ -747,7 +747,7 @@
     {
       "item": "GTCL tài sản thuê tài chính",
       "item_en": "Finance lease assets",
-      "item_id": "bsa33",
+      "item_id": "finance_lease_assets",
       "2026-Q1": 1049774612.0,
       "2025-Q4": 1277212606.0,
       "2025-Q3": 1574138434.0,
@@ -760,7 +760,7 @@
     {
       "item": "Nguyên giá tài sản thuê tài chính",
       "item_en": "Cost",
-      "item_id": "bsa34",
+      "item_id": "cost",
       "2026-Q1": 5791871860.0,
       "2025-Q4": 5871006196.0,
       "2025-Q3": 6143580020.0,
@@ -773,7 +773,7 @@
     {
       "item": "Khấu hao lũy kế tài sản thuê tài chính",
       "item_en": "Accumulated depreciation",
-      "item_id": "bsa35",
+      "item_id": "accumulated_depreciation",
       "2026-Q1": -4742097248.0,
       "2025-Q4": -4593793590.0,
       "2025-Q3": -4569441586.0,
@@ -786,7 +786,7 @@
     {
       "item": "GTCL tài sản cố định vô hình",
       "item_en": "Intangible fixed assets",
-      "item_id": "bsa36",
+      "item_id": "intangible_fixed_assets",
       "2026-Q1": 1405422496340.0,
       "2025-Q4": 1928096152196.0,
       "2025-Q3": 1832199076885.0,
@@ -799,7 +799,7 @@
     {
       "item": "Nguyên giá TSCĐ vô hình",
       "item_en": "Cost",
-      "item_id": "bsa37",
+      "item_id": "cost",
       "2026-Q1": 2741680041457.0,
       "2025-Q4": 3868883110367.0,
       "2025-Q3": 3682298917937.0,
@@ -812,7 +812,7 @@
     {
       "item": "Khấu hao lũy kế TSCĐ vô hình",
       "item_en": "Accumulated depreciation",
-      "item_id": "bsa38",
+      "item_id": "accumulated_depreciation",
       "2026-Q1": -1336257545117.0,
       "2025-Q4": -1940786958171.0,
       "2025-Q3": -1850099841052.0,
@@ -825,7 +825,7 @@
     {
       "item": "Xây dựng cơ bản đang dang dở (trước 2015)",
       "item_en": "Construction in progress (before 2015)",
-      "item_id": "bsa39",
+      "item_id": "construction_in_progress_before_2015",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -838,7 +838,7 @@
     {
       "item": "Giá trị ròng tài sản đầu tư",
       "item_en": "Investment properties",
-      "item_id": "bsa40",
+      "item_id": "investment_properties",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -851,7 +851,7 @@
     {
       "item": "Nguyên giá tài sản đầu tư",
       "item_en": "Cost",
-      "item_id": "bsa41",
+      "item_id": "cost",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -864,7 +864,7 @@
     {
       "item": "Khấu hao lũy kế tài sản đầu tư",
       "item_en": "Accumulated depreciation",
-      "item_id": "bsa42",
+      "item_id": "accumulated_depreciation",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -877,7 +877,7 @@
     {
       "item": "Đầu tư dài hạn",
       "item_en": "Long-term investments",
-      "item_id": "bsa43",
+      "item_id": "long_term_investments",
       "2026-Q1": 10525098646332.0,
       "2025-Q4": 4737863994182.0,
       "2025-Q3": 3982982376038.0,
@@ -890,7 +890,7 @@
     {
       "item": "Đầu tư vào các công ty con",
       "item_en": "Investments in subsidiaries",
-      "item_id": "bsa44",
+      "item_id": "investments_in_subsidiaries",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -903,7 +903,7 @@
     {
       "item": "Đầu tư vào các công ty liên kết",
       "item_en": "Investments in associates",
-      "item_id": "bsa45",
+      "item_id": "investments_in_associates",
       "2026-Q1": 9410217695173.0,
       "2025-Q4": 3581128517425.0,
       "2025-Q3": 2926769962921.0,
@@ -916,7 +916,7 @@
     {
       "item": "Đầu tư dài hạn khác",
       "item_en": "Other long-term investments",
-      "item_id": "bsa46",
+      "item_id": "other_long_term_investments",
       "2026-Q1": 3822196436118.0,
       "2025-Q4": 3823762975906.0,
       "2025-Q3": 3467604969734.0,
@@ -929,7 +929,7 @@
     {
       "item": "Dự phòng giảm giá đầu tư dài hạn",
       "item_en": "Provision for long-term investments",
-      "item_id": "bsa47",
+      "item_id": "provision_for_long_term_investments",
       "2026-Q1": -2710089987125.0,
       "2025-Q4": -2667027499149.0,
       "2025-Q3": -2411392556617.0,
@@ -942,7 +942,7 @@
     {
       "item": "Lợi thế thương mại (trước 2015)",
       "item_en": "Goodwill (before 2015)",
-      "item_id": "bsa48",
+      "item_id": "goodwill_before_2015",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -955,7 +955,7 @@
     {
       "item": "Tài sản dài hạn khác",
       "item_en": "Other long-term assets",
-      "item_id": "bsa49",
+      "item_id": "other_long_term_assets",
       "2026-Q1": 3399067564489.0,
       "2025-Q4": 5808727466506.0,
       "2025-Q3": 5915455046818.0,
@@ -968,7 +968,7 @@
     {
       "item": "Trả trước dài hạn",
       "item_en": "Long-term prepayments",
-      "item_id": "bsa50",
+      "item_id": "long_term_prepayments",
       "2026-Q1": 1748044165862.0,
       "2025-Q4": 4200230383066.0,
       "2025-Q3": 4112639286448.0,
@@ -981,7 +981,7 @@
     {
       "item": "Thuế thu nhập hoãn lại",
       "item_en": "Deferred income tax assets",
-      "item_id": "bsa51",
+      "item_id": "deferred_income_tax_assets",
       "2026-Q1": 672886877165.0,
       "2025-Q4": 592766817279.0,
       "2025-Q3": 626835110443.0,
@@ -994,7 +994,7 @@
     {
       "item": "Các tài sản dài hạn khác",
       "item_en": "Other long-term assets",
-      "item_id": "bsa52",
+      "item_id": "other_long_term_assets",
       "2026-Q1": 978136521462.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1007,7 +1007,7 @@
     {
       "item": "TỔNG CỘNG TÀI SẢN",
       "item_en": "Total Assets",
-      "item_id": "bsa53",
+      "item_id": "total_assets",
       "2026-Q1": 68586094785217.0,
       "2025-Q4": 88141991634625.0,
       "2025-Q3": 82738304930449.0,
@@ -1020,7 +1020,7 @@
     {
       "item": "NỢ PHẢI TRẢ",
       "item_en": "Liabilities",
-      "item_id": "bsa54",
+      "item_id": "liabilities",
       "2026-Q1": 28464058214856.0,
       "2025-Q4": 44393950887086.0,
       "2025-Q3": 39907781019976.0,
@@ -1033,7 +1033,7 @@
     {
       "item": "Nợ ngắn hạn",
       "item_en": "Current liabilities",
-      "item_id": "bsa55",
+      "item_id": "current_liabilities",
       "2026-Q1": 25696151990523.0,
       "2025-Q4": 41524928721230.0,
       "2025-Q3": 36285959995924.0,
@@ -1046,7 +1046,7 @@
     {
       "item": "Vay ngắn hạn",
       "item_en": "Short-term borrowings",
-      "item_id": "bsa56",
+      "item_id": "short_term_borrowings",
       "2026-Q1": 14491358043012.0,
       "2025-Q4": 19169697497955.0,
       "2025-Q3": 16906417104678.0,
@@ -1059,7 +1059,7 @@
     {
       "item": "Phải trả người bán",
       "item_en": "Trade accounts payable",
-      "item_id": "bsa57",
+      "item_id": "trade_accounts_payable",
       "2026-Q1": 1852714940817.0,
       "2025-Q4": 3837081314767.0,
       "2025-Q3": 2987803426808.0,
@@ -1072,7 +1072,7 @@
     {
       "item": "Người mua trả tiền trước",
       "item_en": "Advances from customers",
-      "item_id": "bsa58",
+      "item_id": "advances_from_customers",
       "2026-Q1": 824581395679.0,
       "2025-Q4": 734726007595.0,
       "2025-Q3": 889386954751.0,
@@ -1085,7 +1085,7 @@
     {
       "item": "Thuế và các khoản phải trả Nhà nước",
       "item_en": "Taxes and other payable to State Budget",
-      "item_id": "bsa59",
+      "item_id": "taxes_and_other_payable_to_state_budget",
       "2026-Q1": 930835170311.0,
       "2025-Q4": 2199487107880.0,
       "2025-Q3": 1688953475754.0,
@@ -1098,7 +1098,7 @@
     {
       "item": "Phải trả người lao động",
       "item_en": "Payable to employees",
-      "item_id": "bsa60",
+      "item_id": "payable_to_employees",
       "2026-Q1": 2381460234023.0,
       "2025-Q4": 5724811126353.0,
       "2025-Q3": 5855479855263.0,
@@ -1111,7 +1111,7 @@
     {
       "item": "Chi phí phải trả",
       "item_en": "Accrued expenses",
-      "item_id": "bsa61",
+      "item_id": "accrued_expenses",
       "2026-Q1": 1297318040710.0,
       "2025-Q4": 1765446702057.0,
       "2025-Q3": 1288325325852.0,
@@ -1124,7 +1124,7 @@
     {
       "item": "Phải trả nội bộ",
       "item_en": "Intercompany payables",
-      "item_id": "bsa62",
+      "item_id": "intercompany_payables",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1137,7 +1137,7 @@
     {
       "item": "Phải trả về xây dựng cơ bản",
       "item_en": "Construction contract in progress payables",
-      "item_id": "bsa63",
+      "item_id": "construction_contract_in_progress_payables",
       "2026-Q1": 72097049140.0,
       "2025-Q4": 85650109236.0,
       "2025-Q3": 97274560617.0,
@@ -1150,7 +1150,7 @@
     {
       "item": "Phải trả khác",
       "item_en": "Other payables",
-      "item_id": "bsa64",
+      "item_id": "other_payables",
       "2026-Q1": 586509033785.0,
       "2025-Q4": 1014754880632.0,
       "2025-Q3": 886287256355.0,
@@ -1163,7 +1163,7 @@
     {
       "item": "Dự phòng các khoản phải trả ngắn hạn",
       "item_en": "Provision for ST liabilities",
-      "item_id": "bsa65",
+      "item_id": "provision_for_st_liabilities",
       "2026-Q1": 568429169238.0,
       "2025-Q4": 599498384069.0,
       "2025-Q3": 447281435201.0,
@@ -1176,7 +1176,7 @@
     {
       "item": "Quỹ khen thưởng, phúc lợi",
       "item_en": "Bonus and welfare funds",
-      "item_id": "bsa66",
+      "item_id": "bonus_and_welfare_funds",
       "2026-Q1": 1576181989047.0,
       "2025-Q4": 2160076871985.0,
       "2025-Q3": 1466277560451.0,
@@ -1189,7 +1189,7 @@
     {
       "item": "Nợ dài hạn",
       "item_en": "Long-term liabilities",
-      "item_id": "bsa67",
+      "item_id": "long_term_liabilities",
       "2026-Q1": 2767906224333.0,
       "2025-Q4": 2869022165856.0,
       "2025-Q3": 3621821024052.0,
@@ -1202,7 +1202,7 @@
     {
       "item": "Phải trả nhà cung cấp dài hạn",
       "item_en": "Long-term trade payables",
-      "item_id": "bsa68",
+      "item_id": "long_term_trade_payables",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1215,7 +1215,7 @@
     {
       "item": "Phải trả nội bộ dài hạn",
       "item_en": "Long-term intercompany payables",
-      "item_id": "bsa69",
+      "item_id": "long_term_intercompany_payables",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1228,7 +1228,7 @@
     {
       "item": "Phải trả dài hạn khác",
       "item_en": "Other long-term payables",
-      "item_id": "bsa70",
+      "item_id": "other_long_term_payables",
       "2026-Q1": 144425098064.0,
       "2025-Q4": 149213186822.0,
       "2025-Q3": 148623774023.0,
@@ -1241,7 +1241,7 @@
     {
       "item": "Vay dài hạn",
       "item_en": "Long-term borrowings",
-      "item_id": "bsa71",
+      "item_id": "long_term_borrowings",
       "2026-Q1": 1605069048520.0,
       "2025-Q4": 1903789988184.0,
       "2025-Q3": 2681435422290.0,
@@ -1254,7 +1254,7 @@
     {
       "item": "Thuế thu nhập hoãn lại",
       "item_en": "Deferred income tax liabilities",
-      "item_id": "bsa72",
+      "item_id": "deferred_income_tax_liabilities",
       "2026-Q1": 225408582305.0,
       "2025-Q4": 257727308967.0,
       "2025-Q3": 251711896960.0,
@@ -1267,7 +1267,7 @@
     {
       "item": "Dự phòng trợ cấp thôi việc",
       "item_en": "Provision for severance allowances",
-      "item_id": "bsa73",
+      "item_id": "provision_for_severance_allowances",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1280,7 +1280,7 @@
     {
       "item": "Dự phòng các khoản nợ dài hạn",
       "item_en": "Provision for long-term liabilities",
-      "item_id": "bsa74",
+      "item_id": "provision_for_long_term_liabilities",
       "2026-Q1": 441640477170.0,
       "2025-Q4": 405858410471.0,
       "2025-Q3": 382749454108.0,
@@ -1293,7 +1293,7 @@
     {
       "item": "Doanh thu chưa thực hiện",
       "item_en": "Deferred revenue",
-      "item_id": "bsa76",
+      "item_id": "deferred_revenue",
       "2026-Q1": 351170921991.0,
       "2025-Q4": 152241175129.0,
       "2025-Q3": 157108380388.0,
@@ -1306,7 +1306,7 @@
     {
       "item": "Quỹ phát triển khoa học công nghệ",
       "item_en": "Technology-science development fund",
-      "item_id": "bsa77",
+      "item_id": "technology_science_development_fund",
       "2026-Q1": 192096283.0,
       "2025-Q4": 192096283.0,
       "2025-Q3": 192096283.0,
@@ -1319,7 +1319,7 @@
     {
       "item": "Vốn chủ sở hữu",
       "item_en": "Owner's Equity",
-      "item_id": "bsa78",
+      "item_id": "owners_equity",
       "2026-Q1": 40122036570361.0,
       "2025-Q4": 43748040747539.0,
       "2025-Q3": 42830523910473.0,
@@ -1332,7 +1332,7 @@
     {
       "item": "Vốn và các quỹ",
       "item_en": "Capital and reserves",
-      "item_id": "bsa79",
+      "item_id": "capital_and_reserves",
       "2026-Q1": 40122036570361.0,
       "2025-Q4": 43745290747539.0,
       "2025-Q3": 42827773910473.0,
@@ -1345,7 +1345,7 @@
     {
       "item": "Vốn góp",
       "item_en": "Paid-in capital",
-      "item_id": "bsa80",
+      "item_id": "paid_in_capital",
       "2026-Q1": 17035071210000.0,
       "2025-Q4": 17035071210000.0,
       "2025-Q3": 17035071210000.0,
@@ -1358,7 +1358,7 @@
     {
       "item": "Thặng dư vốn cổ phần",
       "item_en": "Share premium",
-      "item_id": "bsa81",
+      "item_id": "share_premium",
       "2026-Q1": 49713213411.0,
       "2025-Q4": 49713213411.0,
       "2025-Q3": 49713213411.0,
@@ -1371,7 +1371,7 @@
     {
       "item": "Vốn khác",
       "item_en": "Owner's other capital",
-      "item_id": "bsa82",
+      "item_id": "owners_other_capital",
       "2026-Q1": 855267876251.0,
       "2025-Q4": 3499547369952.0,
       "2025-Q3": 3499547369952.0,
@@ -1384,7 +1384,7 @@
     {
       "item": "Cổ phiếu quỹ",
       "item_en": "Treasury shares",
-      "item_id": "bsa83",
+      "item_id": "treasury_shares",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1397,7 +1397,7 @@
     {
       "item": "Chênh lệch đánh giá lại tài sản",
       "item_en": "Differences upon asset revaluation",
-      "item_id": "bsa84",
+      "item_id": "differences_upon_asset_revaluation",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1410,7 +1410,7 @@
     {
       "item": "Chênh lệch tỷ giá",
       "item_en": "Foreign exchange differences",
-      "item_id": "bsa85",
+      "item_id": "foreign_exchange_differences",
       "2026-Q1": -108259470829.0,
       "2025-Q4": -70185856586.0,
       "2025-Q3": -27681339351.0,
@@ -1423,7 +1423,7 @@
     {
       "item": "Quỹ đầu tư và phát triển",
       "item_en": "Investment and development funds",
-      "item_id": "bsa86",
+      "item_id": "investment_and_development_funds",
       "2026-Q1": 1326445413495.0,
       "2025-Q4": 1575367587172.0,
       "2025-Q3": 1237865469600.0,
@@ -1436,7 +1436,7 @@
     {
       "item": "Quỹ dự phòng tài chính",
       "item_en": "Financial reserve funds",
-      "item_id": "bsa87",
+      "item_id": "financial_reserve_funds",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1449,7 +1449,7 @@
     {
       "item": "Quỹ khác",
       "item_en": "Other funds",
-      "item_id": "bsa89",
+      "item_id": "other_funds",
       "2026-Q1": 91013628887.0,
       "2025-Q4": 88263628887.0,
       "2025-Q3": 88263628887.0,
@@ -1462,7 +1462,7 @@
     {
       "item": "Lãi chưa phân phối",
       "item_en": "Undistributed earnings",
-      "item_id": "bsa90",
+      "item_id": "undistributed_earnings",
       "2026-Q1": 19702755221930.0,
       "2025-Q4": 14302416791936.0,
       "2025-Q3": 13905342142939.0,
@@ -1475,7 +1475,7 @@
     {
       "item": "Quỹ hỗ trợ sắp xếp doanh nghiệp",
       "item_en": "Enterprise arrangement fund",
-      "item_id": "bsa91",
+      "item_id": "enterprise_arrangement_fund",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1488,7 +1488,7 @@
     {
       "item": "Vốn Ngân sách nhà nước và quỹ khác",
       "item_en": "Budget sources and other funds",
-      "item_id": "bsa92",
+      "item_id": "budget_sources_and_other_funds",
       "2026-Q1": 0.0,
       "2025-Q4": 2750000000.0,
       "2025-Q3": 2750000000.0,
@@ -1501,7 +1501,7 @@
     {
       "item": "Quỹ khen thưởng, phúc lợi (trước 2010)",
       "item_en": "Bonus and welfare funds (Before 2010)",
-      "item_id": "bsa93",
+      "item_id": "bonus_and_welfare_funds_before_2010",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1514,7 +1514,7 @@
     {
       "item": "Vốn ngân sách nhà nước và quỹ khác",
       "item_en": "Budget sources and other funds",
-      "item_id": "bsa94",
+      "item_id": "budget_sources_and_other_funds",
       "2026-Q1": 0.0,
       "2025-Q4": 2750000000.0,
       "2025-Q3": 2750000000.0,
@@ -1527,7 +1527,7 @@
     {
       "item": "Lợi ích của cổ đông thiểu số",
       "item_en": "Minority interests (Before 2015)",
-      "item_id": "bsa95",
+      "item_id": "minority_interests_before_2015",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1540,7 +1540,7 @@
     {
       "item": "Tổng cộng nguồn vốn",
       "item_en": "Total resource",
-      "item_id": "bsa96",
+      "item_id": "total_resource",
       "2026-Q1": 68586094785217.0,
       "2025-Q4": 88141991634625.0,
       "2025-Q3": 82738304930449.0,
@@ -1553,7 +1553,7 @@
     {
       "item": "Cổ phiếu ưu đãi",
       "item_en": "Preferred shares",
-      "item_id": "bsa120",
+      "item_id": "preferred_shares",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1566,7 +1566,7 @@
     {
       "item": "Đầu tư nắm giữ đến ngày đáo hạn",
       "item_en": "Held-to-maturity investment",
-      "item_id": "bsb108",
+      "item_id": "held_to_maturity_investment",
       "2026-Q1": 18787408055631.0,
       "2025-Q4": 29630986737440.0,
       "2025-Q3": 27125585559832.0,
@@ -1579,7 +1579,7 @@
     {
       "item": "Vốn kinh doanh ở các đơn vị trực thuộc",
       "item_en": "Paid-in capital in wholly-owned subsidiaries",
-      "item_id": "bss134",
+      "item_id": "paid_in_capital_in_wholly_owned_subsidiaries",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1592,7 +1592,7 @@
     {
       "item": "Tài sản thiếu cần xử lý",
       "item_en": "Shortage of current assets waiting for solution",
-      "item_id": "bsi141",
+      "item_id": "shortage_of_current_assets_waiting_for_solution",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1605,7 +1605,7 @@
     {
       "item": "Phải thu cho vay ngắn hạn",
       "item_en": "Short-term loans receivables",
-      "item_id": "bsa159",
+      "item_id": "short_term_loans_receivables",
       "2026-Q1": 0.0,
       "2025-Q4": 9195910819.0,
       "2025-Q3": 45227471491.0,
@@ -1618,7 +1618,7 @@
     {
       "item": "Giao dịch mua bán lại trái phiếu Chính phủ",
       "item_en": "Government bonds purchased for resale",
-      "item_id": "bsa160",
+      "item_id": "government_bonds_purchased_for_resale",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1631,7 +1631,7 @@
     {
       "item": "Trả trước người bán dài hạn",
       "item_en": "Long-term prepayments to suppliers",
-      "item_id": "bsa161",
+      "item_id": "long_term_prepayments_to_suppliers",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1644,7 +1644,7 @@
     {
       "item": "Phải thu cho vay dài hạn",
       "item_en": "Long-term loans receivables",
-      "item_id": "bsa162",
+      "item_id": "long_term_loans_receivables",
       "2026-Q1": 0.0,
       "2025-Q4": 5278733014.0,
       "2025-Q3": 4847000537.0,
@@ -1657,7 +1657,7 @@
     {
       "item": "Tài sản dở dang dài hạn",
       "item_en": "Long-term incomplete assets",
-      "item_id": "bsa163",
+      "item_id": "long_term_incomplete_assets",
       "2026-Q1": 979678197873.0,
       "2025-Q4": 1605078004898.0,
       "2025-Q3": 1639392184214.0,
@@ -1670,7 +1670,7 @@
     {
       "item": "Chi phí sản xuất, kinh doanh dở dang dài hạn",
       "item_en": "Long-term cost of work in progress",
-      "item_id": "bsa164",
+      "item_id": "long_term_cost_of_work_in_progress",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1683,7 +1683,7 @@
     {
       "item": "Đầu tư nắm giữ đến ngày đáo hạn",
       "item_en": "Held-to-maturity investment",
-      "item_id": "bsa165",
+      "item_id": "held_to_maturity_investment",
       "2026-Q1": 2774502166.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1696,7 +1696,7 @@
     {
       "item": "Thiết bị, vật tư, phụ tùng thay thế dài hạn",
       "item_en": "Long-term equipment, material and spare parts",
-      "item_id": "bsa166",
+      "item_id": "long_term_equipment_material_and_spare_parts",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1709,7 +1709,7 @@
     {
       "item": "Doanh thu chưa thực hiện ngắn hạn",
       "item_en": "Short-term unrealized revenue",
-      "item_id": "bsa167",
+      "item_id": "short_term_unrealized_revenue",
       "2026-Q1": 1095442672376.0,
       "2025-Q4": 4233698718701.0,
       "2025-Q3": 3772473040194.0,
@@ -1722,7 +1722,7 @@
     {
       "item": "Quỹ bình ổn giá",
       "item_en": "Price stabilization fund",
-      "item_id": "bsa168",
+      "item_id": "price_stabilization_fund",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1735,7 +1735,7 @@
     {
       "item": "Giao dịch mua bán lại trái phiếu chính phủ",
       "item_en": "Government bonds purchased for resale",
-      "item_id": "bsa169",
+      "item_id": "government_bonds_purchased_for_resale",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1748,7 +1748,7 @@
     {
       "item": "Người mua trả tiền trước dài hạn",
       "item_en": "Long-term advances from customers",
-      "item_id": "bsa170",
+      "item_id": "long_term_advances_from_customers",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1761,7 +1761,7 @@
     {
       "item": "Chi phí phải trả dài hạn",
       "item_en": "Long-term accrued expenses",
-      "item_id": "bsa171",
+      "item_id": "long_term_accrued_expenses",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1774,7 +1774,7 @@
     {
       "item": "Phải trả nội bộ về vốn kinh doanh",
       "item_en": "Intra-company payables for operating capital received",
-      "item_id": "bsa172",
+      "item_id": "intra_company_payables_for_operating_capital_received",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1787,7 +1787,7 @@
     {
       "item": "Trái phiếu chuyển đổi",
       "item_en": "Convertible bonds",
-      "item_id": "bsa173",
+      "item_id": "convertible_bonds",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1800,7 +1800,7 @@
     {
       "item": "Cổ phiếu ưu đãi",
       "item_en": "Preferred shares",
-      "item_id": "bsa174",
+      "item_id": "preferred_shares",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1813,7 +1813,7 @@
     {
       "item": "Cổ phiếu phổ thông",
       "item_en": "Common shares",
-      "item_id": "bsa175",
+      "item_id": "common_shares",
       "2026-Q1": 17035071210000.0,
       "2025-Q4": 17035071210000.0,
       "2025-Q3": 17035071210000.0,
@@ -1826,7 +1826,7 @@
     {
       "item": "Quyền chọn chuyển đổi trái phiếu",
       "item_en": "Conversion options on convertible bonds",
-      "item_id": "bsa176",
+      "item_id": "conversion_options_on_convertible_bonds",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1839,7 +1839,7 @@
     {
       "item": "LNST chưa phân phối lũy kế đến cuối kỳ trước",
       "item_en": "Beginning accumulated undistributed earnings",
-      "item_id": "bsa177",
+      "item_id": "beginning_accumulated_undistributed_earnings",
       "2026-Q1": 17215383634831.0,
       "2025-Q4": 7369582215178.0,
       "2025-Q3": 7034262059129.0,
@@ -1852,7 +1852,7 @@
     {
       "item": "LNST chưa phân phối kỳ này",
       "item_en": "Current period undistributed earnings",
-      "item_id": "bsa178",
+      "item_id": "current_period_undistributed_earnings",
       "2026-Q1": 2487371587099.0,
       "2025-Q4": 6932834576758.0,
       "2025-Q3": 6871080083810.0,
@@ -1865,7 +1865,7 @@
     {
       "item": "Xây dựng cơ bản đang dở dang",
       "item_en": "Construction in progress",
-      "item_id": "bsa188",
+      "item_id": "construction_in_progress",
       "2026-Q1": 979678197873.0,
       "2025-Q4": 1605078004898.0,
       "2025-Q3": 1639392184214.0,
@@ -1878,7 +1878,7 @@
     {
       "item": "Lợi thế thương mại",
       "item_en": "Goodwill",
-      "item_id": "bsa209",
+      "item_id": "goodwill",
       "2026-Q1": 0.0,
       "2025-Q4": 1015730266161.0,
       "2025-Q3": 1175980649927.0,
@@ -1891,7 +1891,7 @@
     {
       "item": "Lợi ích cổ đông không kiểm soát",
       "item_en": "Minority interests",
-      "item_id": "bsa210",
+      "item_id": "minority_interests",
       "2026-Q1": 1170029477216.0,
       "2025-Q4": 7265096802767.0,
       "2025-Q3": 7039652215035.0,
@@ -1904,7 +1904,7 @@
     {
       "item": "Nguồn kinh phí đã hình thành TSCĐ",
       "item_en": "Funds used for fixed asset acquisitions",
-      "item_id": "bsa211",
+      "item_id": "funds_used_for_fixed_asset_acquisitions",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1919,7 +1919,7 @@
     {
       "item": "Lợi nhuận/(lỗ) trước thuế",
       "item_en": "Net profit/(loss) before tax",
-      "item_id": "cfa1",
+      "item_id": "net_profit_loss_before_tax",
       "2026-Q1": 2803844281676.0,
       "2025-Q4": 3503168140398.0,
       "2025-Q3": 3374738598090.0,
@@ -1932,7 +1932,7 @@
     {
       "item": "Khấu hao TSCĐ và BĐSĐT",
       "item_en": "Depreciation and amortization",
-      "item_id": "cfa2",
+      "item_id": "depreciation_and_amortization",
       "2026-Q1": 409926454508.0,
       "2025-Q4": 814010946633.0,
       "2025-Q3": 734178712672.0,
@@ -1945,7 +1945,7 @@
     {
       "item": "Chi phí dự phòng",
       "item_en": "Provisions",
-      "item_id": "cfa3",
+      "item_id": "provisions",
       "2026-Q1": 67698461987.0,
       "2025-Q4": 460839826670.0,
       "2025-Q3": 47498611636.0,
@@ -1958,7 +1958,7 @@
     {
       "item": "Lãi/lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ",
       "item_en": "Unrealized foreign exchange gain/(loss)",
-      "item_id": "cfa4",
+      "item_id": "unrealized_foreign_exchange_gain_loss",
       "2026-Q1": 64372325595.0,
       "2025-Q4": 79604350765.0,
       "2025-Q3": 29175508927.0,
@@ -1971,7 +1971,7 @@
     {
       "item": "Lãi/(lỗ) từ thanh lý tài sản cố định",
       "item_en": "Profit/loss from liquidating fixed assets",
-      "item_id": "cfa5",
+      "item_id": "profit_loss_from_liquidating_fixed_assets",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -1984,7 +1984,7 @@
     {
       "item": "(Lãi)/lỗ từ hoạt động đầu tư",
       "item_en": "Profit/loss from investing activities",
-      "item_id": "cfa6",
+      "item_id": "profit_loss_from_investing_activities",
       "2026-Q1": -1039456492471.0,
       "2025-Q4": -747606912187.0,
       "2025-Q3": -588504116817.0,
@@ -1997,7 +1997,7 @@
     {
       "item": "Chi phí lãi vay",
       "item_en": "Interest expense",
-      "item_id": "cfa7",
+      "item_id": "interest_expense",
       "2026-Q1": 179461207664.0,
       "2025-Q4": 207025852637.0,
       "2025-Q3": 233582914481.0,
@@ -2010,7 +2010,7 @@
     {
       "item": "Thu lãi và cổ tức",
       "item_en": "Interest income and dividend",
-      "item_id": "cfa8",
+      "item_id": "interest_income_and_dividend",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -2023,7 +2023,7 @@
     {
       "item": "Lợi nhuận/(lỗ) từ hoạt động kinh doanh trước những thay đổi vốn lưu động",
       "item_en": "Operating profit/(loss) before changes in Working Capital",
-      "item_id": "cfa9",
+      "item_id": "operating_profit_loss_before_changes_in_working_capital",
       "2026-Q1": 2485846238959.0,
       "2025-Q4": 4317042204916.0,
       "2025-Q3": 3830670228989.0,
@@ -2036,7 +2036,7 @@
     {
       "item": "(Tăng)/giảm các khoản phải thu",
       "item_en": "(Increase)/decrease in receivables",
-      "item_id": "cfa10",
+      "item_id": "increase_decrease_in_receivables",
       "2026-Q1": -884569389703.0,
       "2025-Q4": -1438926498554.0,
       "2025-Q3": -532628876071.0,
@@ -2049,7 +2049,7 @@
     {
       "item": "(Tăng)/giảm hàng tồn kho",
       "item_en": "(Increase)/decrease in inventories",
-      "item_id": "cfa11",
+      "item_id": "increase_decrease_in_inventories",
       "2026-Q1": -328180087981.0,
       "2025-Q4": -143046696194.0,
       "2025-Q3": 23467202956.0,
@@ -2062,7 +2062,7 @@
     {
       "item": "Tăng/(giảm) các khoản phải trả",
       "item_en": "Increase/(decrease) in payables",
-      "item_id": "cfa12",
+      "item_id": "increase_decrease_in_payables",
       "2026-Q1": -2597208629257.0,
       "2025-Q4": 1872793733609.0,
       "2025-Q3": 1915125309361.0,
@@ -2075,7 +2075,7 @@
     {
       "item": "(Tăng)/giảm chi phí trả trước",
       "item_en": "(Increase)/decrease in prepaid expenses",
-      "item_id": "cfa13",
+      "item_id": "increase_decrease_in_prepaid_expenses",
       "2026-Q1": -364231426766.0,
       "2025-Q4": -2198043771.0,
       "2025-Q3": -155675161774.0,
@@ -2088,7 +2088,7 @@
     {
       "item": "Tiền lãi vay đã trả",
       "item_en": "Interest paid",
-      "item_id": "cfa14",
+      "item_id": "interest_paid",
       "2026-Q1": -156930706535.0,
       "2025-Q4": -229165608776.0,
       "2025-Q3": -244250547102.0,
@@ -2101,7 +2101,7 @@
     {
       "item": "Thuế thu nhập doanh nghiệp đã nộp",
       "item_en": "Corporate Income Tax paid",
-      "item_id": "cfa15",
+      "item_id": "corporate_income_tax_paid",
       "2026-Q1": -979468791211.0,
       "2025-Q4": -257197692890.0,
       "2025-Q3": -452247490721.0,
@@ -2114,7 +2114,7 @@
     {
       "item": "Tiền thu khác từ hoạt động kinh doanh",
       "item_en": "Other receipts from operating activities",
-      "item_id": "cfa16",
+      "item_id": "other_receipts_from_operating_activities",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -2127,7 +2127,7 @@
     {
       "item": "Tiền chi khác cho hoạt động kinh doanh",
       "item_en": "Other payments on operating activities",
-      "item_id": "cfa17",
+      "item_id": "other_payments_on_operating_activities",
       "2026-Q1": -23070924698.0,
       "2025-Q4": -10850821537.0,
       "2025-Q3": -40440604859.0,
@@ -2140,7 +2140,7 @@
     {
       "item": "Lưu chuyển tiền tệ ròng từ các hoạt động sản xuất kinh doanh",
       "item_en": "Net cash inflows/(outflows) from operating activities",
-      "item_id": "cfa18",
+      "item_id": "net_cash_inflows_outflows_from_operating_activities",
       "2026-Q1": -2847813717192.0,
       "2025-Q4": 4108450576803.0,
       "2025-Q3": 4344020060779.0,
@@ -2153,7 +2153,7 @@
     {
       "item": "Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác",
       "item_en": "Purchases of fixed assets and other long term assets",
-      "item_id": "cfa19",
+      "item_id": "purchases_of_fixed_assets_and_other_long_term_assets",
       "2026-Q1": -589068929719.0,
       "2025-Q4": -972289444130.0,
       "2025-Q3": -830371040007.0,
@@ -2166,7 +2166,7 @@
     {
       "item": "Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác",
       "item_en": "Proceeds from disposal of fixed assets",
-      "item_id": "cfa20",
+      "item_id": "proceeds_from_disposal_of_fixed_assets",
       "2026-Q1": 2080740035.0,
       "2025-Q4": 782056649.0,
       "2025-Q3": 2509745476.0,
@@ -2179,7 +2179,7 @@
     {
       "item": "Tiền chi cho vay, mua các công cụ nợ của đơn vị khác",
       "item_en": "Loans granted, purchases of debt instruments",
-      "item_id": "cfa21",
+      "item_id": "loans_granted_purchases_of_debt_instruments",
       "2026-Q1": -8105033405809.0,
       "2025-Q4": -19515962555746.0,
       "2025-Q3": -10246875400883.0,
@@ -2192,7 +2192,7 @@
     {
       "item": "Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác",
       "item_en": "Collection of loans, proceeds from sales of debts instruments",
-      "item_id": "cfa22",
+      "item_id": "collection_of_loans_proceeds_from_sales_of_debts_instruments",
       "2026-Q1": 6907782688785.0,
       "2025-Q4": 17046161206333.0,
       "2025-Q3": 9706147048362.0,
@@ -2205,7 +2205,7 @@
     {
       "item": "Tiền chi đầu tư góp vốn vào đơn vị khác",
       "item_en": "Investments in other entities",
-      "item_id": "cfa23",
+      "item_id": "investments_in_other_entities",
       "2026-Q1": -737724460792.0,
       "2025-Q4": -415590467225.0,
       "2025-Q3": -69458442668.0,
@@ -2218,7 +2218,7 @@
     {
       "item": "Tiền thu hồi đầu tư góp vốn vào đơn vị khác",
       "item_en": "Proceeds from divestment in other entities",
-      "item_id": "cfa24",
+      "item_id": "proceeds_from_divestment_in_other_entities",
       "2026-Q1": 3660000000.0,
       "2025-Q4": 358779074.0,
       "2025-Q3": 0.0,
@@ -2231,7 +2231,7 @@
     {
       "item": "Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia",
       "item_en": "Dividends and interest received",
-      "item_id": "cfa25",
+      "item_id": "dividends_and_interest_received",
       "2026-Q1": 263408177152.0,
       "2025-Q4": 563048466611.0,
       "2025-Q3": 340788225860.0,
@@ -2244,7 +2244,7 @@
     {
       "item": "Lưu chuyển tiền thuần từ hoạt động đầu tư",
       "item_en": "Net cash inflows/(outflows) from investing activities",
-      "item_id": "cfa26",
+      "item_id": "net_cash_inflows_outflows_from_investing_activities",
       "2026-Q1": -2254895190348.0,
       "2025-Q4": -3293491958434.0,
       "2025-Q3": -1097259863860.0,
@@ -2257,7 +2257,7 @@
     {
       "item": "Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu",
       "item_en": "Proceeds from issue of shares",
-      "item_id": "cfa27",
+      "item_id": "proceeds_from_issue_of_shares",
       "2026-Q1": 2000000.0,
       "2025-Q4": 2794778.0,
       "2025-Q3": 3000000.0,
@@ -2270,7 +2270,7 @@
     {
       "item": "Tiền chi trả vốn góp cho các chủ sở hữu, mua lại cổ phiếu của doanh nghiệp đã phát hành",
       "item_en": "Payments for share returns and repurchases",
-      "item_id": "cfa28",
+      "item_id": "payments_for_share_returns_and_repurchases",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -2283,7 +2283,7 @@
     {
       "item": "Tiền thu được các khoản đi vay",
       "item_en": "Proceeds from loans",
-      "item_id": "cfa29",
+      "item_id": "proceeds_from_loans",
       "2026-Q1": 6750787827303.0,
       "2025-Q4": 11517570319652.0,
       "2025-Q3": 7824889714007.0,
@@ -2296,7 +2296,7 @@
     {
       "item": "Tiền trả nợ gốc vay",
       "item_en": "Repayment of loans",
-      "item_id": "cfa30",
+      "item_id": "repayment_of_loans",
       "2026-Q1": -4164356153983.0,
       "2025-Q4": -9866402296591.0,
       "2025-Q3": -11220806613192.0,
@@ -2309,7 +2309,7 @@
     {
       "item": "Tiền trả nợ gốc thuê tài chính",
       "item_en": "Finance lease principal payments",
-      "item_id": "cfa31",
+      "item_id": "finance_lease_principal_payments",
       "2026-Q1": -239550104.0,
       "2025-Q4": -241007595.0,
       "2025-Q3": -252389781.0,
@@ -2322,7 +2322,7 @@
     {
       "item": "Cổ tức, lợi nhuận đã trả cho chủ sở hữu",
       "item_en": "Dividends paid",
-      "item_id": "cfa32",
+      "item_id": "dividends_paid",
       "2026-Q1": -2529850.0,
       "2025-Q4": -1702079053200.0,
       "2025-Q3": -6194605275.0,
@@ -2335,7 +2335,7 @@
     {
       "item": "Tiền lãi đã nhận",
       "item_en": "Interests, dividends, profits received",
-      "item_id": "cfa33",
+      "item_id": "interests_dividends_profits_received",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -2348,7 +2348,7 @@
     {
       "item": "Lưu chuyển tiền thuần từ hoạt động tài chính",
       "item_en": "Net cash inflows/(outflows) from financing activities",
-      "item_id": "cfa34",
+      "item_id": "net_cash_inflows_outflows_from_financing_activities",
       "2026-Q1": 2586191593366.0,
       "2025-Q4": -51149242956.0,
       "2025-Q3": -3402360894241.0,
@@ -2361,7 +2361,7 @@
     {
       "item": "Lưu chuyển tiền thuần trong kỳ",
       "item_en": "Net increase in cash and cash equivalents",
-      "item_id": "cfa35",
+      "item_id": "net_increase_in_cash_and_cash_equivalents",
       "2026-Q1": -2516517314174.0,
       "2025-Q4": 763809375413.0,
       "2025-Q3": -155600697322.0,
@@ -2374,7 +2374,7 @@
     {
       "item": "Tiền và tương đương tiền đầu kỳ",
       "item_en": "Cash and cash equivalents at the beginning of period",
-      "item_id": "cfa36",
+      "item_id": "cash_and_cash_equivalents_at_the_beginning_of_period",
       "2026-Q1": 10522105729992.0,
       "2025-Q4": 9853512731370.0,
       "2025-Q3": 10019630995136.0,
@@ -2387,7 +2387,7 @@
     {
       "item": "Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ",
       "item_en": "Effect of foreign exchange differences",
-      "item_id": "cfa37",
+      "item_id": "effect_of_foreign_exchange_differences",
       "2026-Q1": -12010804176.0,
       "2025-Q4": -95216376791.0,
       "2025-Q3": -10517566444.0,
@@ -2400,7 +2400,7 @@
     {
       "item": "Tiền và tương đương tiền cuối kỳ",
       "item_en": "Cash and cash equivalents at the end of period",
-      "item_id": "cfa38",
+      "item_id": "cash_and_cash_equivalents_at_the_end_of_period",
       "2026-Q1": 7993577611642.0,
       "2025-Q4": 10522105729992.0,
       "2025-Q3": 9853512731370.0,
@@ -2413,7 +2413,7 @@
     {
       "item": "Phân bổ lợi thế thương mại",
       "item_en": "Amortization of goodwill",
-      "item_id": "cfa103",
+      "item_id": "amortization_of_goodwill",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -2426,7 +2426,7 @@
     {
       "item": "Các khoản điều chỉnh khác",
       "item_en": "Other adjustments",
-      "item_id": "cfa104",
+      "item_id": "other_adjustments",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -2439,7 +2439,7 @@
     {
       "item": "(Tăng)/giảm chứng khoán kinh doanh",
       "item_en": "(Increase)/decrease in trading securities",
-      "item_id": "cfa105",
+      "item_id": "increase_decrease_in_trading_securities",
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -2450,5 +2450,5 @@
       "2024-Q2": 0.0
     }
   ],
-  "crawledAt": "2026-05-05T11:54:11.346955"
+  "crawledAt": "2026-06-08T11:26:59.140111"
 }
