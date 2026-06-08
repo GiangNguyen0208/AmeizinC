@@ -9,7 +9,6 @@ import {
   UserOutlined,
   LoginOutlined,
   LogoutOutlined,
-  ThunderboltOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -199,9 +198,6 @@ export function Header() {
           </Link>
           <Link href="/watchlist" className="flex items-center gap-1 text-gray-300 no-underline hover:text-white">
             <StarOutlined /> <span className="hidden sm:inline">Watchlist</span>
-          </Link>
-          <Link href="/news" className="flex items-center gap-1 text-gray-300 no-underline hover:text-white">
-            <ThunderboltOutlined className="text-yellow-500" /> <span className="hidden sm:inline">Tin tức AI</span>
           </Link>
           <AuthButtons />
         </Space>
