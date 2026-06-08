@@ -15,7 +15,7 @@ async function crawlNews() {
 
   const dom = new JSDOM(response.data);
   const doc = dom.window.document;
-  const articles: any[] = [];
+  const articles: { title: string; url: string; source: string; publishedAt: Date; language: string; }[] = [];
   
   const headings = Array.from(doc.querySelectorAll('h2 a, h3 a')) as HTMLAnchorElement[];
   

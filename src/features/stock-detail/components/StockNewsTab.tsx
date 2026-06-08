@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Typography, Card, Row, Col, Statistic, Empty, Spin, Space, Tag } from 'antd';
+import { Typography, Card, Row, Col, Statistic, Tag } from 'antd';
 import { NewsList } from '@/components/news/NewsList';
 import { fetchNewsByTicker, fetchSentimentTimeline } from '@/services/news';
 import { NewsArticle, SentimentTimelineResponse } from '@/types/news';
