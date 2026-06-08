@@ -22,7 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd ameizin
           npm install
 
       - name: Run News Crawler
