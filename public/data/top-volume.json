@@ -3,18 +3,18 @@
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 25.95,
-      "change": 0.7,
-      "changePercent": 2.77,
-      "volume": 23765500
+      "price": 26.0,
+      "change": 0.75,
+      "changePercent": 2.97,
+      "volume": 23907700
     },
     {
       "symbol": "HPG",
       "companyName": "HPG",
-      "price": 23.45,
-      "change": 0.15,
-      "changePercent": 0.64,
-      "volume": 5937800
+      "price": 23.5,
+      "change": 0.2,
+      "changePercent": 0.86,
+      "volume": 6036000
     },
     {
       "symbol": "SSI",
@@ -22,7 +22,7 @@
       "price": 26.65,
       "change": 0.3,
       "changePercent": 1.14,
-      "volume": 5781900
+      "volume": 5857000
     },
     {
       "symbol": "FPT",
@@ -30,7 +30,7 @@
       "price": 73.6,
       "change": 0.7,
       "changePercent": 0.96,
-      "volume": 4672300
+      "volume": 4734400
     },
     {
       "symbol": "VPB",
@@ -38,15 +38,15 @@
       "price": 26.0,
       "change": 0.4,
       "changePercent": 1.56,
-      "volume": 4284600
+      "volume": 4373800
     },
     {
       "symbol": "MBB",
       "companyName": "MBB",
-      "price": 24.65,
-      "change": 0.05,
-      "changePercent": 0.2,
-      "volume": 3909800
+      "price": 24.7,
+      "change": 0.1,
+      "changePercent": 0.41,
+      "volume": 3958700
     },
     {
       "symbol": "TCB",
@@ -54,7 +54,15 @@
       "price": 30.9,
       "change": 0.05,
       "changePercent": 0.16,
-      "volume": 3706500
+      "volume": 3763300
+    },
+    {
+      "symbol": "TPB",
+      "companyName": "TPB",
+      "price": 15.9,
+      "change": 0.1,
+      "changePercent": 0.63,
+      "volume": 2868900
     },
     {
       "symbol": "HDB",
@@ -62,24 +70,16 @@
       "price": 25.2,
       "change": 0.1,
       "changePercent": 0.4,
-      "volume": 2743600
-    },
-    {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 15.85,
-      "change": 0.05,
-      "changePercent": 0.32,
-      "volume": 2687300
+      "volume": 2817900
     },
     {
       "symbol": "VRE",
       "companyName": "VRE",
-      "price": 29.4,
-      "change": -0.2,
-      "changePercent": -0.68,
-      "volume": 1872100
+      "price": 29.5,
+      "change": -0.1,
+      "changePercent": -0.34,
+      "volume": 1909500
     }
   ],
-  "crawledAt": "2026-06-09T05:34:42.727386"
+  "crawledAt": "2026-06-09T06:01:19.839446"
 }
