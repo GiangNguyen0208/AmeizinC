@@ -1,37 +1,45 @@
 {
   "data": [
     {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 70.6,
+      "change": -1.4,
+      "changePercent": -1.94,
+      "volume": 3159300
+    },
+    {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 66.5,
-      "change": -1.0,
-      "changePercent": -1.48,
-      "volume": 196600
+      "price": 66.2,
+      "change": -1.3,
+      "changePercent": -1.93,
+      "volume": 392100
     },
     {
       "symbol": "PLX",
       "companyName": "PLX",
-      "price": 40.15,
-      "change": -0.35,
-      "changePercent": -0.86,
-      "volume": 1290400
+      "price": 40.05,
+      "change": -0.45,
+      "changePercent": -1.11,
+      "volume": 2594400
     },
     {
       "symbol": "MSN",
       "companyName": "MSN",
-      "price": 72.0,
-      "change": -0.4,
-      "changePercent": -0.55,
-      "volume": 788000
+      "price": 71.9,
+      "change": -0.5,
+      "changePercent": -0.69,
+      "volume": 1527900
     },
     {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 71.9,
-      "change": -0.1,
-      "changePercent": -0.14,
-      "volume": 1215600
+      "symbol": "TPB",
+      "companyName": "TPB",
+      "price": 15.95,
+      "change": -0.05,
+      "changePercent": -0.31,
+      "volume": 6641500
     }
   ],
-  "crawledAt": "2026-06-10T06:14:11.307995"
+  "crawledAt": "2026-06-10T10:33:12.652924"
 }
