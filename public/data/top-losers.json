@@ -3,35 +3,11 @@
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 66.6,
-      "change": -0.9,
-      "changePercent": -1.33,
-      "volume": 63400
-    },
-    {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 29.05,
-      "change": -0.1,
-      "changePercent": -0.34,
-      "volume": 1300300
-    },
-    {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 195.6,
-      "change": -0.4,
-      "changePercent": -0.2,
-      "volume": 710500
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 39.8,
-      "change": -0.05,
-      "changePercent": -0.13,
-      "volume": 828700
+      "price": 66.5,
+      "change": -1.0,
+      "changePercent": -1.48,
+      "volume": 79900
     }
   ],
-  "crawledAt": "2026-06-12T06:04:18.873099+00:00"
+  "crawledAt": "2026-06-12T06:25:40.306402+00:00"
 }

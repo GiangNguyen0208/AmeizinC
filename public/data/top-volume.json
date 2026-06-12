@@ -6,7 +6,7 @@
       "price": 26.9,
       "change": 0.4,
       "changePercent": 1.51,
-      "volume": 39037500
+      "volume": 41701800
     },
     {
       "symbol": "TPB",
@@ -14,15 +14,15 @@
       "price": 16.4,
       "change": 0.55,
       "changePercent": 3.47,
-      "volume": 35223900
+      "volume": 36717800
     },
     {
       "symbol": "MBB",
       "companyName": "MBB",
-      "price": 25.15,
-      "change": 0.4,
-      "changePercent": 1.62,
-      "volume": 13166300
+      "price": 25.1,
+      "change": 0.35,
+      "changePercent": 1.41,
+      "volume": 14137900
     },
     {
       "symbol": "VPB",
@@ -30,7 +30,7 @@
       "price": 26.1,
       "change": 0.1,
       "changePercent": 0.38,
-      "volume": 7974700
+      "volume": 8476600
     },
     {
       "symbol": "TCB",
@@ -38,7 +38,7 @@
       "price": 31.4,
       "change": 0.55,
       "changePercent": 1.78,
-      "volume": 7369700
+      "volume": 8140000
     },
     {
       "symbol": "SSI",
@@ -46,15 +46,15 @@
       "price": 26.35,
       "change": 0.05,
       "changePercent": 0.19,
-      "volume": 7239000
+      "volume": 7794700
     },
     {
       "symbol": "HDB",
       "companyName": "HDB",
-      "price": 25.1,
-      "change": 0.0,
-      "changePercent": 0.0,
-      "volume": 5269000
+      "price": 25.2,
+      "change": 0.1,
+      "changePercent": 0.4,
+      "volume": 5997800
     },
     {
       "symbol": "HPG",
@@ -62,24 +62,24 @@
       "price": 23.4,
       "change": 0.1,
       "changePercent": 0.43,
-      "volume": 4755000
+      "volume": 5451800
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 73.8,
-      "change": 0.7,
-      "changePercent": 0.96,
-      "volume": 2608600
+      "price": 74.0,
+      "change": 0.9,
+      "changePercent": 1.23,
+      "volume": 2941700
     },
     {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 59.6,
-      "change": 0.4,
-      "changePercent": 0.68,
-      "volume": 1547600
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 72.4,
+      "change": 1.1,
+      "changePercent": 1.54,
+      "volume": 2381200
     }
   ],
-  "crawledAt": "2026-06-12T06:04:18.873099+00:00"
+  "crawledAt": "2026-06-12T06:25:40.306402+00:00"
 }
