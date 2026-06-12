@@ -10,14 +10,71 @@ import {
   Tooltip,
   CartesianGrid,
 } from "recharts";
-import type { HistoricalPrice } from "@/types";
+import type { HistoricalPrice, NewsArticle } from "@/types";
 import { formatPrice, formatVolume } from "@/utils";
 
 interface PriceChartProps {
   data: HistoricalPrice[];
+  news?: NewsArticle[];
+  onSelectNews?: (news: NewsArticle) => void;
 }
 
-export function PriceChart({ data }: PriceChartProps) {
+interface CustomNewsDotProps {
+  cx?: number;
+  cy?: number;
+  payload?: { date: string; [key: string]: unknown };
+  news?: NewsArticle[];
+  onSelectNews?: (news: NewsArticle) => void;
+}
+
+export function CustomNewsDot(props: CustomNewsDotProps) {
+  const { cx, cy, payload, news, onSelectNews } = props;
+  if (!news || cx === undefined || cy === undefined || !payload) return null;
+
+  // Format date to compare (YYYY-MM-DD)
+  const priceDate = new Date(payload.date).toISOString().split("T")[0];
+
+  // Find articles for this date with relevance >= 0.7
+  const dayArticles = news.filter((art) => {
+    const artDate = new Date(art.publishedAt).toISOString().split("T")[0];
+    return artDate === priceDate && (art.relevanceScore ?? 0) >= 0.7;
+  });
+
+  if (dayArticles.length === 0) return null;
+
+  // Sort by relevance score to get the most important news of the day
+  const topArticle = [...dayArticles].sort(
+    (a, b) => (b.relevanceScore ?? 0) - (a.relevanceScore ?? 0)
+  )[0];
+
+  let dotColor = "#9ca3af"; // Gray
+  if (topArticle.sentiment === "positive") dotColor = "#10b981"; // Green
+  else if (topArticle.sentiment === "negative") dotColor = "#ef4444"; // Red
+
+  return (
+    <g
+      onClick={(e) => {
+        e.stopPropagation();
+        if (onSelectNews) onSelectNews(topArticle);
+      }}
+      style={{ cursor: "pointer" }}
+    >
+      <circle
+        cx={cx}
+        cy={cy}
+        r={7}
+        fill={dotColor}
+        stroke="#111827"
+        strokeWidth={2}
+        className="transition-all hover:scale-130"
+      />
+      {/* Small dot inside to make it pop */}
+      <circle cx={cx} cy={cy} r={2} fill="#fff" />
+    </g>
+  );
+}
+
+export function PriceChart({ data, news, onSelectNews }: PriceChartProps) {
   return (
     <ResponsiveContainer width="100%" height={400}>
       <ComposedChart data={data}>
@@ -70,7 +127,8 @@ export function PriceChart({ data }: PriceChartProps) {
           dataKey="close"
           stroke="#3b82f6"
           strokeWidth={2}
-          dot={false}
+          dot={<CustomNewsDot news={news} onSelectNews={onSelectNews} />}
+          activeDot={{ r: 6 }}
         />
       </ComposedChart>
     </ResponsiveContainer>

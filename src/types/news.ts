@@ -46,6 +46,7 @@ export interface NewsArticle {
   viewCount?: number;
   disclaimer: string;
   sourceAttribution: string;
+  strategicImplication?: string;
   dataRetentionDays: number;
   createdAt: string;
   updatedAt: string;
@@ -99,6 +100,8 @@ export interface NewsFilterParams {
   source?: string;
   sentiment?: string;
   topic?: string;
+  macroTag?: string;
+  policyTag?: string;
   minRelevanceScore?: number;
   minSentimentScore?: number;
   language?: Language;

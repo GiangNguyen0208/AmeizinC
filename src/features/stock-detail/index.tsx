@@ -1,8 +1,10 @@
 "use client";
 
-import { Button, Card, Typography } from "antd";
+import { Button, Card, Typography, Tag } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { fetchNewsByTicker } from "@/services/news";
 import {
   PriceHeader,
   FinancialRatiosCard,
@@ -17,9 +19,9 @@ import { useStockPrice, useHistoricalPrices, useFinanceData, useCompanyProfile }
 import { LoadingState, ErrorState } from "@/components/ui";
 import { computeFinancialRatios, exportSectionsToCSV } from "@/utils";
 import type { CSVSection } from "@/utils";
-import type { CompanyProfile, FinanceData, FinanceRecord, FinancialRatios, HistoricalPrice, StockPrice } from "@/types";
+import type { CompanyProfile, FinanceData, FinanceRecord, FinancialRatios, HistoricalPrice, StockPrice, NewsArticle } from "@/types";
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 
 const DEFAULT_FILTER: PeriodFilterValue = { mode: "preset", days: 90 };
 const SKIP_STATEMENT_KEYS = new Set(["year", "yearReport", "quarter", "lengthReport", "symbol", "ticker"]);
@@ -186,11 +188,19 @@ function handleExportStockDetail({
 export function StockDetail({ symbol }: StockDetailProps) {
   const [filter, setFilter] = useState<PeriodFilterValue>(DEFAULT_FILTER);
   const [selectedFinancePeriod, setSelectedFinancePeriod] = useState<string>();
+  const [selectedNews, setSelectedNews] = useState<NewsArticle | null>(null);
 
   const { data: price, isLoading: loadingPrice, error: priceError, refetch } = useStockPrice(symbol);
   const { data: history, isLoading: loadingHistory } = useHistoricalPrices(symbol, filter);
   const { data: financeData, isLoading: loadingFinance } = useFinanceData(symbol);
   const { data: companyProfile } = useCompanyProfile(symbol);
+
+  // Fetch news for ticker to correlate with chart price dots
+  const { data: newsData } = useQuery({
+    queryKey: ["stock-news-timeline", symbol],
+    queryFn: () => fetchNewsByTicker(symbol, 1, 100),
+    enabled: !!symbol,
+  });
 
   if (loadingPrice) {
     return <LoadingState />;
@@ -231,9 +241,14 @@ export function StockDetail({ symbol }: StockDetailProps) {
 
       <Card>
         <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <Title level={5} style={{ color: "#fff", margin: 0 }}>
-            Biểu đồ giá — {symbol}
-          </Title>
+          <div className="space-y-1">
+            <Title level={5} style={{ color: "#fff", margin: 0 }}>
+              Biểu đồ giá tương quan tin tức — {symbol}
+            </Title>
+            <Text type="secondary" style={{ fontSize: 12 }}>
+              *Các chấm tròn <span className="text-emerald-400 font-semibold">xanh</span>/<span className="text-red-400 font-semibold">đỏ</span> trên đường giá biểu thị tin tức AI có ảnh hưởng lớn. Click để xem chi tiết.
+            </Text>
+          </div>
 
           <PeriodFilter value={filter} onChange={setFilter} />
         </div>
@@ -241,8 +256,65 @@ export function StockDetail({ symbol }: StockDetailProps) {
         {loadingHistory ? (
           <LoadingState tip="Đang tải biểu đồ..." />
         ) : history ? (
-          <PriceChart data={history} />
+          <PriceChart
+            data={history}
+            news={newsData?.data}
+            onSelectNews={(news) => setSelectedNews(news)}
+          />
         ) : null}
+
+        {/* Selected news correlation card */}
+        {selectedNews && (
+          <div className="mt-4 p-5 bg-gray-900/40 rounded-xl border border-gray-800 space-y-3 relative transition-all duration-300">
+            <button
+              onClick={() => setSelectedNews(null)}
+              className="absolute top-3 right-4 text-gray-400 hover:text-white font-bold cursor-pointer border-0 bg-transparent text-sm"
+            >
+              ✕ Close
+            </button>
+            <div className="flex flex-wrap items-center gap-2 text-xs">
+              <span className="text-gray-400 font-medium uppercase tracking-wider">AI PRICE CORRELATION INSIGHT</span>
+              <span className="text-gray-600">•</span>
+              <Tag color={selectedNews.sentiment === "positive" ? "green" : selectedNews.sentiment === "negative" ? "red" : "blue"}>
+                {selectedNews.sentiment === "positive" ? "Tích cực" : selectedNews.sentiment === "negative" ? "Tiêu cực" : "Trung lập"}
+              </Tag>
+              <Tag color="purple">Độ liên quan: {((selectedNews.relevanceScore || 0.5) * 100).toFixed(0)}%</Tag>
+              <span className="text-gray-500">{new Date(selectedNews.publishedAt).toLocaleDateString("vi-VN")}</span>
+            </div>
+
+            <Title level={5} className="!text-white !m-0">
+              <a href={selectedNews.url} target="_blank" rel="noreferrer" className="hover:underline text-blue-400">
+                {selectedNews.title}
+              </a>
+            </Title>
+
+            <p className="text-gray-300 text-sm m-0">{selectedNews.sapo}</p>
+
+            {selectedNews.strategicImplication && (
+              <div className="p-3 bg-blue-950/20 border-l-4 border-blue-500 rounded-r-lg">
+                <div className="text-xs text-blue-400 font-bold uppercase tracking-wider mb-1">Tác động chiến lược (AI):</div>
+                <div className="text-gray-300 text-sm">{selectedNews.strategicImplication}</div>
+              </div>
+            )}
+
+            <div className="flex flex-wrap gap-1 items-center mt-2">
+              <span className="text-xs text-gray-500 mr-2">Nhãn vĩ mô / chính sách:</span>
+              {(selectedNews.macroTags || []).map((t) => (
+                <Tag key={t} color="cyan" className="m-0">
+                  {t}
+                </Tag>
+              ))}
+              {(selectedNews.policyTags || []).map((t) => (
+                <Tag key={t} color="volcano" className="m-0">
+                  {t}
+                </Tag>
+              ))}
+              {(!selectedNews.macroTags?.length && !selectedNews.policyTags?.length) && (
+                <span className="text-xs text-gray-600 italic">Không có nhãn</span>
+              )}
+            </div>
+          </div>
+        )}
       </Card>
 
       {loadingFinance ? (

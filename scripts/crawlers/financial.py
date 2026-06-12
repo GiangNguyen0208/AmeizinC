@@ -1,6 +1,6 @@
 """Crawl quarterly financial statements (BCTC) for all tracked symbols."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 import re
 from vnstock import Finance
 
@@ -52,7 +52,7 @@ def crawl_financial_statements():
             "incomeStatement": [],
             "balanceSheet": [],
             "cashFlow": [],
-            "crawledAt": datetime.now().isoformat(),
+            "crawledAt": datetime.now(timezone.utc).isoformat(),
         }
 
         for method_name, json_key, label in STATEMENT_TYPES:

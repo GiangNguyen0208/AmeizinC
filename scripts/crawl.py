@@ -8,7 +8,7 @@ Entry point that orchestrates all crawler modules.
 
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -27,7 +27,7 @@ from crawlers import (
 
 def main():
     print("=== Ameizin Data Crawler (vnstock) ===")
-    print(f"Timestamp: {datetime.now().isoformat()}")
+    print(f"Timestamp: {datetime.now(timezone.utc).isoformat()}")
     print(f"Data dir:  {config.DATA_DIR}")
     print(f"Source:    {config.SOURCE}")
 
@@ -59,7 +59,7 @@ def main():
     crawl_company_info()
 
     write_json("_meta.json", {
-        "crawledAt": datetime.now().isoformat(),
+        "crawledAt": datetime.now(timezone.utc).isoformat(),
         "trackedSymbols": config.TRACKED_SYMBOLS,
         "source": "vnstock (KBS)",
     })

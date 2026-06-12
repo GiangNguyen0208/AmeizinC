@@ -1,6 +1,6 @@
 """Crawl 365-day historical prices for all tracked symbols."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from vnstock import Quote
 
 from config import TRACKED_SYMBOLS, SOURCE
@@ -35,6 +35,6 @@ def crawl_historical_prices():
         write_json(f"history-{symbol}.json", {
             "symbol": symbol,
             "data": history,
-            "crawledAt": datetime.now().isoformat(),
+            "crawledAt": datetime.now(timezone.utc).isoformat(),
         })
         print(f"  {symbol}: {len(history)} bars")

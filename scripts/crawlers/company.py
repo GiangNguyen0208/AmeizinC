@@ -1,6 +1,6 @@
 """Crawl company profile information for all tracked symbols."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from vnstock import Company
 
 from config import TRACKED_SYMBOLS, FINANCE_SOURCE
@@ -33,5 +33,5 @@ def crawl_company_info():
     if all_companies:
         write_json("company-info.json", {
             "data": all_companies,
-            "crawledAt": datetime.now().isoformat(),
+            "crawledAt": datetime.now(timezone.utc).isoformat(),
         })
