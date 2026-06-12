@@ -124,7 +124,7 @@ export default function PublisherDashboard() {
         <Select
           defaultValue="30d"
           value={period}
-          onChange={(v) => setPeriod(v)}
+          onChange={(v: "today" | "7d" | "30d") => setPeriod(v)}
           dropdownStyle={{ backgroundColor: "#1f1f1f" }}
           style={{ width: 140 }}
         >
