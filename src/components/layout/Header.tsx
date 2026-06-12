@@ -9,6 +9,8 @@ import {
   UserOutlined,
   LoginOutlined,
   LogoutOutlined,
+  FileTextOutlined,
+  BarChartOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -198,6 +200,12 @@ export function Header() {
           </Link>
           <Link href="/watchlist" className="flex items-center gap-1 text-gray-300 no-underline hover:text-white">
             <StarOutlined /> <span className="hidden sm:inline">Watchlist</span>
+          </Link>
+          <Link href="/news" className="flex items-center gap-1 text-gray-300 no-underline hover:text-white">
+            <FileTextOutlined /> <span className="hidden sm:inline">Tin tức AI</span>
+          </Link>
+          <Link href="/dashboard/publishers" className="flex items-center gap-1 text-gray-300 no-underline hover:text-white">
+            <BarChartOutlined /> <span className="hidden sm:inline">Đặc tính báo chí</span>
           </Link>
           <AuthButtons />
         </Space>

@@ -21,16 +21,44 @@ export default function NewsFeedPage() {
     <div className="space-y-6">
       <Title level={2} style={{ color: "#fff" }}>AI News Feed</Title>
       
-      <div className="flex gap-4">
-        <Search placeholder="Search news..." onSearch={(q) => setParams(p => ({...p, q}))} style={{ width: 300 }} />
+      <div className="flex flex-wrap gap-4">
+        <Search placeholder="Tìm kiếm tin tức..." onSearch={(q) => setParams(p => ({...p, q}))} style={{ width: 300 }} allowClear />
         <Select 
           defaultValue="latest" 
           onChange={(sort: NewsFilterParams['sort']) => setParams(p => ({...p, sort}))}
+          style={{ minWidth: 120 }}
         >
-          <Select.Option value="latest">Latest</Select.Option>
-          <Select.Option value="relevance">Relevance</Select.Option>
-          <Select.Option value="sentiment">Sentiment</Select.Option>
+          <Select.Option value="latest">Mới nhất</Select.Option>
+          <Select.Option value="relevance">Độ liên quan</Select.Option>
+          <Select.Option value="sentiment">Cảm xúc</Select.Option>
         </Select>
+        <Select 
+          placeholder="Lọc theo Vĩ mô" 
+          allowClear
+          onChange={(macroTag: string) => setParams(p => ({...p, macroTag}))}
+          style={{ minWidth: 160 }}
+          options={[
+            { value: 'Lạm phát', label: 'Lạm phát' },
+            { value: 'Tỷ giá', label: 'Tỷ giá' },
+            { value: 'Lãi suất', label: 'Lãi suất' },
+            { value: 'FDI', label: 'FDI' },
+            { value: 'GDP', label: 'GDP' },
+            { value: 'Xuất nhập khẩu', label: 'Xuất nhập khẩu' },
+          ]}
+        />
+        <Select 
+          placeholder="Lọc theo Chính sách" 
+          allowClear
+          onChange={(policyTag: string) => setParams(p => ({...p, policyTag}))}
+          style={{ minWidth: 160 }}
+          options={[
+            { value: 'Ngân hàng Nhà nước', label: 'Ngân hàng Nhà nước' },
+            { value: 'Bộ Tài chính', label: 'Bộ Tài chính' },
+            { value: 'Dự thảo luật', label: 'Dự thảo luật' },
+            { value: 'Thông tư', label: 'Thông tư' },
+            { value: 'Chính phủ', label: 'Chính phủ' },
+          ]}
+        />
       </div>
 
       {isLoading ? (

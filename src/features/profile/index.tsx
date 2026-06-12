@@ -6,6 +6,7 @@ import {
   BookOutlined,
   FileTextOutlined,
   LockOutlined,
+  AlertOutlined,
 } from "@ant-design/icons";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -15,11 +16,13 @@ import { PersonalInfo } from "./components/PersonalInfo";
 import { NotesManager } from "./components/NotesManager";
 import { ChangePassword } from "./components/ChangePassword";
 import { GuideMap } from "./components/GuideMap";
+import { NotificationSettings } from "./components/NotificationSettings";
 
 const { Sider, Content } = Layout;
 
 const menuItems = [
   { key: "info", icon: <UserOutlined />, label: "Thông tin" },
+  { key: "notifications", icon: <AlertOutlined />, label: "Thông báo & Webhook" },
   { key: "guide", icon: <BookOutlined />, label: "Hướng dẫn" },
   { key: "notes", icon: <FileTextOutlined />, label: "Ghi chú" },
   { key: "password", icon: <LockOutlined />, label: "Đổi mật khẩu" },
@@ -64,6 +67,7 @@ export function ProfilePage() {
         </Sider>
         <Content className="p-6">
           {activeTab === "info" && <PersonalInfo />}
+          {activeTab === "notifications" && <NotificationSettings />}
           {activeTab === "guide" && <GuideMap />}
           {activeTab === "notes" && <NotesManager />}
           {activeTab === "password" && <ChangePassword />}

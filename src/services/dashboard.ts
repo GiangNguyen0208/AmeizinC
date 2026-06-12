@@ -15,3 +15,10 @@ export const fetchDashboardStats = async (period: 'today' | '7d' | '30d' = '7d')
   });
   return response.data;
 };
+
+export const fetchPublisherStats = async (period: 'today' | '7d' | '30d' = '30d') => {
+  const response = await apiClient.get('/dashboard/publisher-stats', {
+    params: { period },
+  });
+  return response.data;
+};
