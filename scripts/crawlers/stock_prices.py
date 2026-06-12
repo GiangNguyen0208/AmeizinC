@@ -1,6 +1,6 @@
 """Crawl individual stock prices and derive top movers."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from vnstock import Quote
 
 from config import TRACKED_SYMBOLS, SOURCE
@@ -45,7 +45,7 @@ def crawl_stock_prices() -> dict:
 
     write_json("stock-prices.json", {
         "data": all_prices,
-        "crawledAt": datetime.now().isoformat(),
+        "crawledAt": datetime.now(timezone.utc).isoformat(),
     })
 
     return all_prices
@@ -78,7 +78,7 @@ def derive_top_movers(all_prices: dict):
 
     top_vol = sorted(stocks, key=lambda x: x["volume"], reverse=True)[:10]
 
-    now = datetime.now().isoformat()
+    now = datetime.now(timezone.utc).isoformat()
     write_json("top-gainers.json", {"data": gainers, "crawledAt": now})
     write_json("top-losers.json", {"data": losers, "crawledAt": now})
     write_json("top-volume.json", {"data": top_vol, "crawledAt": now})

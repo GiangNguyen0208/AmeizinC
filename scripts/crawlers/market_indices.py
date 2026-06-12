@@ -1,6 +1,6 @@
 """Crawl Vietnamese market indices (VN-Index, HNX-Index, UPCOM-Index)."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from vnstock import Quote
 
 from config import INDEX_TICKERS, SOURCE
@@ -43,5 +43,5 @@ def crawl_market_indices():
 
     write_json("market-indices.json", {
         "data": results,
-        "crawledAt": datetime.now().isoformat(),
+        "crawledAt": datetime.now(timezone.utc).isoformat(),
     })
