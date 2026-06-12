@@ -28,4 +28,5 @@ jobs:
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BACKEND_API_URL: ${{ secrets.BACKEND_API_URL }}
         run: npx tsx scripts/crawlers/ai_news_crawler.ts
