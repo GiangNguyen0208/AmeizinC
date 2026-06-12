@@ -6,7 +6,7 @@ import path from 'path';
 // Load backend env to get API URL if needed, or fallback to default
 dotenv.config({ path: path.resolve(__dirname, '../../ameizin-be/.env') });
 
-const API_URL = process.env.BACKEND_API_URL || 'http://localhost:3001/api/news/admin/news/import';
+const API_URL = process.env.BACKEND_API_URL || 'https://ameizin-c-be.vercel.app/api/news/admin/news/import';
 
 async function crawlCafeFNews() {
   console.log('Crawling CafeF...');
