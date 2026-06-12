@@ -43,7 +43,7 @@ export interface ChangePasswordRequest {
   newPassword: string;
 }
 
-export type ProfileTab = "info" | "guide" | "notes" | "password";
+export type ProfileTab = "info" | "notifications" | "guide" | "notes" | "password";
 
 export interface GuideNode {
   id: string;
