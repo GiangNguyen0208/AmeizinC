@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Card, Typography, Row, Col, Tag, Select, Spin, Table, Tooltip, Progress, Badge } from "antd";
+import { Card, Typography, Row, Col, Tag, Select, Table, Tooltip, Progress, Badge } from "antd";
 import { fetchPublisherStats } from "@/services/dashboard";
 import { LoadingState } from "@/components/ui";
 
@@ -83,13 +83,10 @@ export default function PublisherDashboard() {
       sorter: (a: PublisherData, b: PublisherData) => a.avgSentimentScore - b.avgSentimentScore,
       render: (val: number) => {
         let label = "Trung lập";
-        let color = "gold";
         if (val > 0.1) {
           label = `Tích cực (+${val})`;
-          color = "green";
         } else if (val < -0.1) {
           label = `Tiêu cực (${val})`;
-          color = "red";
         }
         return <Badge status={val > 0.1 ? "success" : val < -0.1 ? "error" : "warning"} text={<span style={{ color: "#d9d9d9" }}>{label}</span>} />;
       },
@@ -171,7 +168,7 @@ export default function PublisherDashboard() {
 
               {/* Bubbles Mapping */}
               <div className="relative w-full h-full">
-                {statsList.map((pub, idx) => {
+                {statsList.map((pub) => {
                   // Normalize Title Length (Y-axis: 30 to 100) -> Percentage (10% to 90%)
                   const titleMin = 30;
                   const titleMax = 100;

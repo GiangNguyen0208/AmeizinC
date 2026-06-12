@@ -22,7 +22,7 @@ interface PriceChartProps {
 interface CustomNewsDotProps {
   cx?: number;
   cy?: number;
-  payload?: any;
+  payload?: { date: string; [key: string]: unknown };
   news?: NewsArticle[];
   onSelectNews?: (news: NewsArticle) => void;
 }

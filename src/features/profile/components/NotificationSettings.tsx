@@ -10,7 +10,7 @@ export function NotificationSettings() {
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
 
-  const handleSave = async (values: any) => {
+  const handleSave = async (values: Record<string, unknown>) => {
     setLoading(true);
     try {
       // TODO: Connect to backend API to save these settings
@@ -21,6 +21,7 @@ export function NotificationSettings() {
       
       message.success("Lưu cấu hình thông báo thành công!");
     } catch (error) {
+      console.error(error);
       message.error("Có lỗi xảy ra khi lưu cấu hình");
     } finally {
       setLoading(false);

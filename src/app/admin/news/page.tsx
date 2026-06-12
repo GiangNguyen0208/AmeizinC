@@ -18,7 +18,8 @@ export default function AdminNewsManagement() {
         enrichImmediately: true
       });
       message.success("Import triggered");
-    } catch (_) {
+    } catch (err) {
+      console.error(err);
       message.error("Import failed");
     } finally {
       setLoading(false);

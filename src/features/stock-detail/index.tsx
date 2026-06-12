@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, Typography, Tag, Badge } from "antd";
+import { Button, Card, Typography, Tag } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
