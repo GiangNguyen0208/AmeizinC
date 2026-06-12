@@ -28,4 +28,4 @@ jobs:
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: npx ts-node -r tsconfig-paths/register scripts/crawlers/ai_news_crawler.ts
+        run: npx tsx scripts/crawlers/ai_news_crawler.ts
