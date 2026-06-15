@@ -17,6 +17,14 @@
       "volume": 24099500
     },
     {
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 85.1,
+      "change": 2.6,
+      "changePercent": 3.15,
+      "volume": 1976800
+    },
+    {
       "symbol": "MSN",
       "companyName": "MSN",
       "price": 72.2,
@@ -41,30 +49,6 @@
       "volume": 15663000
     },
     {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 71.8,
-      "change": 0.9,
-      "changePercent": 1.27,
-      "volume": 4486600
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 59.7,
-      "change": 0.7,
-      "changePercent": 1.19,
-      "volume": 2021700
-    },
-    {
-      "symbol": "VPB",
-      "companyName": "VPB",
-      "price": 26.25,
-      "change": 0.25,
-      "changePercent": 0.96,
-      "volume": 19473200
-    },
-    {
       "symbol": "TPB",
       "companyName": "TPB",
       "price": 16.45,
@@ -75,11 +59,11 @@
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 73.6,
-      "change": 0.1,
-      "changePercent": 0.14,
-      "volume": 6422700
+      "price": 73.5,
+      "change": 0.4,
+      "changePercent": 0.55,
+      "volume": 5688200
     }
   ],
-  "crawledAt": "2026-06-15T13:26:27.356167+00:00"
+  "crawledAt": "2026-06-15T17:18:10.424036+00:00"
 }
