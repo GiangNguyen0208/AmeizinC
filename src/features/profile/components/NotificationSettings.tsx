@@ -103,14 +103,23 @@ export function NotificationSettings() {
 
           <Form.Item 
             name="discordWebhook" 
-            label={<span className="text-gray-300">Webhook URL</span>}
-            tooltip="Lấy từ Server Settings > Integrations > Webhooks trên Discord"
+            label={<span className="text-gray-300 font-semibold">Webhook URL</span>}
+            className="mb-2"
           >
             <Input 
               placeholder="https://discord.com/api/webhooks/..." 
-              className="bg-gray-800 border-gray-700 text-white" 
+              className="bg-gray-800 border-gray-700 text-white py-2" 
             />
           </Form.Item>
+          
+          <div className="bg-gray-800/50 rounded-lg p-3 mb-4 border border-gray-700/50">
+            <Text className="text-gray-300 text-xs block mb-1 font-semibold">💡 Cách lấy Webhook URL:</Text>
+            <Text className="text-gray-400 text-xs block">
+              1. Mở Discord, vào <b>Server Settings</b> của server bạn quản lý.<br/>
+              2. Chọn <b>Integrations</b> &gt; <b>Webhooks</b> &gt; <b>New Webhook</b>.<br/>
+              3. Chọn kênh muốn nhận tin, bấm <b>Copy Webhook URL</b> và dán vào ô bên trên.
+            </Text>
+          </div>
           
           <Button 
             type="dashed" 
@@ -141,14 +150,24 @@ export function NotificationSettings() {
 
           <Form.Item 
             name="telegramChatId" 
-            label={<span className="text-gray-300">Chat ID</span>}
-            tooltip="Chat ID của cá nhân hoặc Channel/Group"
+            label={<span className="text-gray-300 font-semibold">Chat ID của bạn</span>}
+            className="mb-2"
           >
             <Input 
-              placeholder="-100123456789 hoặc 123456789" 
-              className="bg-gray-800 border-gray-700 text-white" 
+              placeholder="Ví dụ: 123456789" 
+              className="bg-gray-800 border-gray-700 text-white py-2" 
             />
           </Form.Item>
+
+          <div className="bg-gray-800/50 rounded-lg p-3 mb-4 border border-gray-700/50">
+            <Text className="text-gray-300 text-xs block mb-1 font-semibold">💡 Hướng dẫn nhận tin qua Telegram:</Text>
+            <Text className="text-gray-400 text-xs block">
+              1. Mở Telegram, tìm kiếm bot <b>@userinfobot</b> và bấm Start để lấy chuỗi số <b>Id</b> của bạn (Vd: 123456789). Dán ID đó vào ô trên.<br/>
+              2. Tìm kiếm bot của hệ thống: <a href="https://t.me/ameizinC_bot" target="_blank" rel="noreferrer" className="text-blue-400 font-bold hover:underline">@ameizinC_bot</a>.<br/>
+              3. Bấm <b>/start</b> với @ameizinC_bot (Bắt buộc để bot có quyền nhắn tin cho bạn).<br/>
+              4. Quay lại đây bấm <b>Gửi thử nghiệm</b>.
+            </Text>
+          </div>
 
           <Button 
             type="dashed" 
