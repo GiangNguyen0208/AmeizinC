@@ -75,3 +75,10 @@ export async function deleteNote(id: string) {
     method: "DELETE",
   });
 }
+
+export async function testNotification(channel: "discord" | "telegram", destination: string) {
+  return apiRequest<null>("/auth/test-notification", {
+    method: "POST",
+    body: JSON.stringify({ channel, destination }),
+  });
+}

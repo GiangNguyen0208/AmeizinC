@@ -2,8 +2,9 @@
 
 import { Card, Typography, Form, Input, Switch, Button, message, Divider } from "antd";
 import { useState } from "react";
+import { useMutation } from "@tanstack/react-query";
 import { SaveOutlined, SendOutlined } from "@ant-design/icons";
-import { apiRequest } from "@/services/api-client";
+import { testNotification } from "@/services/profile";
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -29,42 +30,36 @@ export function NotificationSettings() {
     }
   };
 
-  const handleTestDiscord = async () => {
+  const testMutation = useMutation({
+    mutationFn: ({ channel, destination }: { channel: "discord" | "telegram"; destination: string }) =>
+      testNotification(channel, destination),
+    onMutate: (variables) => {
+      message.loading({ content: `Đang gửi tin nhắn thử nghiệm tới ${variables.channel === "discord" ? "Discord" : "Telegram"}...`, key: "test_notification" });
+    },
+    onSuccess: (_, variables) => {
+      message.success({ content: `Gửi tin nhắn thử nghiệm thành công! Vui lòng kiểm tra ${variables.channel === "discord" ? "Discord" : "Telegram"} của bạn.`, key: "test_notification" });
+    },
+    onError: (error: any, variables) => {
+      message.error({ content: error.message || `Không thể gửi tin nhắn thử nghiệm tới ${variables.channel === "discord" ? "Discord" : "Telegram"}`, key: "test_notification" });
+    },
+  });
+
+  const handleTestDiscord = () => {
     const webhookUrl = form.getFieldValue("discordWebhook");
     if (!webhookUrl) {
       message.warning("Vui lòng nhập Webhook URL trước khi thử nghiệm");
       return;
     }
-    
-    try {
-      message.loading({ content: "Đang gửi tin nhắn thử nghiệm tới Discord...", key: "test_discord" });
-      await apiRequest("/auth/test-notification", {
-        method: "POST",
-        body: JSON.stringify({ channel: "discord", destination: webhookUrl }),
-      });
-      message.success({ content: "Gửi tin nhắn thử nghiệm thành công! Vui lòng kiểm tra Discord của bạn.", key: "test_discord" });
-    } catch (error: any) {
-      message.error({ content: error.message || "Không thể gửi tin nhắn thử nghiệm tới Discord", key: "test_discord" });
-    }
+    testMutation.mutate({ channel: "discord", destination: webhookUrl });
   };
 
-  const handleTestTelegram = async () => {
+  const handleTestTelegram = () => {
     const chatId = form.getFieldValue("telegramChatId");
     if (!chatId) {
       message.warning("Vui lòng nhập Chat ID trước khi thử nghiệm");
       return;
     }
-    
-    try {
-      message.loading({ content: "Đang gửi tin nhắn thử nghiệm tới Telegram...", key: "test_telegram" });
-      await apiRequest("/auth/test-notification", {
-        method: "POST",
-        body: JSON.stringify({ channel: "telegram", destination: chatId }),
-      });
-      message.success({ content: "Gửi tin nhắn thử nghiệm thành công! Vui lòng kiểm tra Telegram của bạn.", key: "test_telegram" });
-    } catch (error: any) {
-      message.error({ content: error.message || "Không thể gửi tin nhắn thử nghiệm tới Telegram", key: "test_telegram" });
-    }
+    testMutation.mutate({ channel: "telegram", destination: chatId });
   };
 
   return (
@@ -121,6 +116,7 @@ export function NotificationSettings() {
             type="dashed" 
             icon={<SendOutlined />} 
             onClick={handleTestDiscord}
+            loading={testMutation.isPending && testMutation.variables?.channel === "discord"}
             className="border-gray-600 text-gray-300 hover:text-white"
           >
             Gửi thử nghiệm
@@ -158,6 +154,7 @@ export function NotificationSettings() {
             type="dashed" 
             icon={<SendOutlined />} 
             onClick={handleTestTelegram}
+            loading={testMutation.isPending && testMutation.variables?.channel === "telegram"}
             className="border-gray-600 text-gray-300 hover:text-white"
           >
             Gửi thử nghiệm
