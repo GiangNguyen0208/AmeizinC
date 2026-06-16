@@ -86,12 +86,12 @@ async function crawlCafeFNews() {
 
   if (articles.length > 0) {
     try {
-      await axios.post(API_URL, {
+      const resp = await axios.post(API_URL, {
         articles,
         provider: 'gemini',
         enrichImmediately: true,
       });
-      console.log('✅ Articles sent for enrichment.');
+      console.log('✅ Articles sent for enrichment. Results:', resp.data);
     } catch (error) {
       console.error('❌ Failed to send articles to backend:', error);
     }
