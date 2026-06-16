@@ -3,6 +3,7 @@
 import { Card, Typography, Form, Input, Switch, Button, message, Divider } from "antd";
 import { useState } from "react";
 import { SaveOutlined, SendOutlined } from "@ant-design/icons";
+import { apiRequest } from "@/services/api-client";
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -28,24 +29,42 @@ export function NotificationSettings() {
     }
   };
 
-  const handleTestDiscord = () => {
+  const handleTestDiscord = async () => {
     const webhookUrl = form.getFieldValue("discordWebhook");
     if (!webhookUrl) {
       message.warning("Vui lòng nhập Webhook URL trước khi thử nghiệm");
       return;
     }
-    message.info("Đang gửi tin nhắn thử nghiệm tới Discord...");
-    // TODO: Trigger backend to send test message
+    
+    try {
+      message.loading({ content: "Đang gửi tin nhắn thử nghiệm tới Discord...", key: "test_discord" });
+      await apiRequest("/auth/test-notification", {
+        method: "POST",
+        body: JSON.stringify({ channel: "discord", destination: webhookUrl }),
+      });
+      message.success({ content: "Gửi tin nhắn thử nghiệm thành công! Vui lòng kiểm tra Discord của bạn.", key: "test_discord" });
+    } catch (error: any) {
+      message.error({ content: error.message || "Không thể gửi tin nhắn thử nghiệm tới Discord", key: "test_discord" });
+    }
   };
 
-  const handleTestTelegram = () => {
+  const handleTestTelegram = async () => {
     const chatId = form.getFieldValue("telegramChatId");
     if (!chatId) {
       message.warning("Vui lòng nhập Chat ID trước khi thử nghiệm");
       return;
     }
-    message.info("Đang gửi tin nhắn thử nghiệm tới Telegram...");
-    // TODO: Trigger backend to send test message
+    
+    try {
+      message.loading({ content: "Đang gửi tin nhắn thử nghiệm tới Telegram...", key: "test_telegram" });
+      await apiRequest("/auth/test-notification", {
+        method: "POST",
+        body: JSON.stringify({ channel: "telegram", destination: chatId }),
+      });
+      message.success({ content: "Gửi tin nhắn thử nghiệm thành công! Vui lòng kiểm tra Telegram của bạn.", key: "test_telegram" });
+    } catch (error: any) {
+      message.error({ content: error.message || "Không thể gửi tin nhắn thử nghiệm tới Telegram", key: "test_telegram" });
+    }
   };
 
   return (
