@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Card, Typography, Row, Col, Tag, Select, Table, Tooltip, Progress, Badge } from "antd";
+import { Card, Typography, Row, Col, Select, Tooltip, Progress } from "antd";
 import { fetchPublisherStats } from "@/services/dashboard";
 import { LoadingState } from "@/components/ui";
 
@@ -27,276 +27,296 @@ export default function PublisherDashboard() {
     queryFn: () => fetchPublisherStats(period),
   });
 
-  if (isLoading) return <LoadingState />;
+  if (isLoading) return <div className="py-20"><LoadingState /></div>;
 
   const statsList = data || [];
 
-  // Table Columns
-  const columns = [
-    {
-      title: "Nguồn Báo",
-      dataIndex: "source",
-      key: "source",
-      render: (text: string) => <strong className="text-white">{text}</strong>,
-    },
-    {
-      title: "Tổng số bài",
-      dataIndex: "totalArticles",
-      key: "totalArticles",
-      sorter: (a: PublisherData, b: PublisherData) => a.totalArticles - b.totalArticles,
-    },
-    {
-      title: "Độ dài tiêu đề (Ký tự)",
-      dataIndex: "avgTitleLength",
-      key: "avgTitleLength",
-      sorter: (a: PublisherData, b: PublisherData) => a.avgTitleLength - b.avgTitleLength,
-      render: (val: number) => <Text style={{ color: "#d9d9d9" }}>{val} ký tự</Text>,
-    },
-    {
-      title: "Độ dài bài viết (Số từ)",
-      dataIndex: "avgWordCount",
-      key: "avgWordCount",
-      sorter: (a: PublisherData, b: PublisherData) => a.avgWordCount - b.avgWordCount,
-      render: (val: number) => <Text style={{ color: "#d9d9d9" }}>{val} từ</Text>,
-    },
-    {
-      title: "Tỷ lệ Giật tít (Clickbait)",
-      dataIndex: "clickbaitRatio",
-      key: "clickbaitRatio",
-      sorter: (a: PublisherData, b: PublisherData) => a.clickbaitRatio - b.clickbaitRatio,
-      render: (val: number) => {
-        let color = "green";
-        if (val > 30) color = "red";
-        else if (val > 15) color = "orange";
-        return (
-          <div className="flex items-center gap-2">
-            <Progress percent={val} size="small" status={val > 30 ? "exception" : "normal"} showInfo={false} style={{ width: 60 }} />
-            <Tag color={color}>{val}%</Tag>
-          </div>
-        );
-      },
-    },
-    {
-      title: "Xu hướng Cảm xúc",
-      dataIndex: "avgSentimentScore",
-      key: "avgSentimentScore",
-      sorter: (a: PublisherData, b: PublisherData) => a.avgSentimentScore - b.avgSentimentScore,
-      render: (val: number) => {
-        let label = "Trung lập";
-        if (val > 0.1) {
-          label = `Tích cực (+${val})`;
-        } else if (val < -0.1) {
-          label = `Tiêu cực (${val})`;
-        }
-        return <Badge status={val > 0.1 ? "success" : val < -0.1 ? "error" : "warning"} text={<span style={{ color: "#d9d9d9" }}>{label}</span>} />;
-      },
-    },
-    {
-      title: "Chủ đề viết nhiều",
-      dataIndex: "topTopics",
-      key: "topTopics",
-      render: (topics: string[]) => (
-        <div className="flex flex-wrap gap-1">
-          {(topics || []).map((t) => (
-            <Tag key={t} color="blue" bordered={false}>
-              {t}
-            </Tag>
-          ))}
-        </div>
-      ),
-    },
-  ];
-
   return (
-    <div className="space-y-6 p-4">
-      <div className="flex justify-between items-center bg-gray-900/60 p-6 rounded-2xl border border-gray-800">
-        <div>
-          <Title level={2} style={{ color: "#fff", margin: 0 }}>
-            📊 Phân Tích Thiên Kiến & Đặc Tính Báo Chí
+    <div className="space-y-8 min-h-screen pb-12">
+      {/* Header Section */}
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-gray-950 via-[#0f172a] to-gray-950 border border-gray-800/60 p-8 shadow-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
+        
+        <div className="relative z-10 max-w-3xl space-y-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-2">
+            AI Profiling Engine
+          </div>
+          <Title level={1} className="!text-white !m-0 !text-3xl md:!text-4xl font-bold tracking-tight">
+            Publisher <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-sky-300">Bias Radar</span>
           </Title>
-          <Paragraph className="text-gray-400 mt-1 mb-0">
-            Khám phá thói quen đưa tin, tỷ lệ clickbait và xu hướng cảm xúc của các tờ báo tài chính lớn tại Việt Nam.
+          <Paragraph className="text-gray-400 text-base md:text-lg m-0">
+            Hồ sơ hóa đặc tính đưa tin, tỷ lệ clickbait và thiên kiến thị trường của các trang báo tài chính Việt Nam.
           </Paragraph>
         </div>
+        
         <Select
-          defaultValue="30d"
           value={period}
           onChange={(v: "today" | "7d" | "30d") => setPeriod(v)}
-          dropdownStyle={{ backgroundColor: "#1f1f1f" }}
-          style={{ width: 140 }}
+          className="min-w-[150px] relative z-10 custom-dark-select"
+          popupClassName="dark-dropdown"
+          variant="borderless"
         >
-          <Select.Option value="today">Hôm nay</Select.Option>
-          <Select.Option value="7d">7 ngày qua</Select.Option>
-          <Select.Option value="30d">30 ngày qua</Select.Option>
+          <Select.Option value="today">⚡ Hôm nay</Select.Option>
+          <Select.Option value="7d">📅 7 ngày qua</Select.Option>
+          <Select.Option value="30d">🗓️ 30 ngày qua</Select.Option>
         </Select>
       </div>
 
-      <Row gutter={[20, 20]}>
+      <Row gutter={[24, 24]}>
         {/* Clickbait Analyzer Quadrant Chart */}
         <Col xs={24} lg={14}>
-          <Card
-            title={<span className="text-white font-semibold">🎯 Biểu đồ Định vị Đặc Tính Nguồn Tin (Clickbait Map)</span>}
-            bordered={false}
-            className="bg-gray-950 border border-gray-800 rounded-2xl"
-          >
-            <div className="relative w-full h-[400px] bg-gray-900/30 rounded-xl border border-gray-800/80 p-4 flex flex-col justify-between">
+          <div className="bg-gray-900/40 backdrop-blur-sm border border-gray-800/80 rounded-3xl p-6 h-full flex flex-col">
+            <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">🎯</span>
+              Clickbait Topology Map
+            </h3>
+            <p className="text-gray-400 text-sm mb-6">Mô hình phân bố đặc tính viết bài (Tít vs Số từ) để nhận diện báo tin nhanh, giật tít hay chuyên sâu.</p>
+            
+            <div className="relative w-full h-[450px] bg-gray-950/50 rounded-2xl border border-gray-800/50 flex-grow p-6 overflow-hidden">
+              {/* Animated Radar Grid Background */}
+              <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at center, #3b82f6 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+              
               {/* Quadrant Titles */}
-              <div className="absolute top-2 left-2 text-red-400/60 text-xs font-bold uppercase tracking-wider">
+              <div className="absolute top-4 left-4 px-3 py-1 rounded bg-rose-500/10 text-rose-400 text-xs font-bold uppercase tracking-wider border border-rose-500/20 backdrop-blur-md">
                 Giật tít (Clickbait)
               </div>
-              <div className="absolute top-2 right-2 text-cyan-400/60 text-xs font-bold uppercase tracking-wider">
+              <div className="absolute top-4 right-4 px-3 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider border border-emerald-500/20 backdrop-blur-md">
                 Chuyên sâu (Analytical)
               </div>
-              <div className="absolute bottom-2 left-2 text-gray-500/60 text-xs font-bold uppercase tracking-wider">
+              <div className="absolute bottom-4 left-4 px-3 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-bold uppercase tracking-wider border border-amber-500/20 backdrop-blur-md">
                 Tin nhanh (Flash News)
               </div>
-              <div className="absolute bottom-2 right-2 text-amber-400/60 text-xs font-bold uppercase tracking-wider">
+              <div className="absolute bottom-4 right-4 px-3 py-1 rounded bg-sky-500/10 text-sky-400 text-xs font-bold uppercase tracking-wider border border-sky-500/20 backdrop-blur-md">
                 Khô khan (Concise)
               </div>
 
               {/* Axis Labels */}
-              <div className="absolute top-1/2 left-4 -translate-y-1/2 -rotate-90 text-[10px] text-gray-500 font-bold uppercase tracking-wider Origin-left">
+              <div className="absolute top-1/2 left-4 -translate-y-1/2 -rotate-90 text-[10px] text-gray-500 font-bold uppercase tracking-widest origin-left bg-gray-950/80 px-2 py-1 rounded">
                 Độ dài Tiêu đề (Ngắn ➔ Dài)
               </div>
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-[10px] text-gray-500 font-bold uppercase tracking-wider">
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-[10px] text-gray-500 font-bold uppercase tracking-widest bg-gray-950/80 px-2 py-1 rounded">
                 Độ dài Bài viết (Ít từ ➔ Nhiều từ)
               </div>
 
-              {/* Grid Lines */}
-              <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-gray-800/60 dashed"></div>
-              <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gray-800/60 dashed"></div>
+              {/* Glowing Crosshairs */}
+              <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+              <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-blue-500/50 to-transparent"></div>
+              <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-blue-400 rounded-full blur-[4px] -translate-x-1/2 -translate-y-1/2"></div>
 
               {/* Bubbles Mapping */}
               <div className="relative w-full h-full">
                 {statsList.map((pub) => {
-                  // Normalize Title Length (Y-axis: 30 to 100) -> Percentage (10% to 90%)
-                  const titleMin = 30;
-                  const titleMax = 100;
-                  const titlePerc = Math.max(10, Math.min(90, ((pub.avgTitleLength - titleMin) / (titleMax - titleMin)) * 100));
+                  const titleMin = 30, titleMax = 100;
+                  const titlePerc = Math.max(15, Math.min(85, ((pub.avgTitleLength - titleMin) / (titleMax - titleMin)) * 100));
 
-                  // Normalize Word Count (X-axis: 50 to 400) -> Percentage (10% to 90%)
-                  const wordMin = 50;
-                  const wordMax = 400;
-                  const wordPerc = Math.max(10, Math.min(90, ((pub.avgWordCount - wordMin) / (wordMax - wordMin)) * 100));
+                  const wordMin = 50, wordMax = 400;
+                  const wordPerc = Math.max(15, Math.min(85, ((pub.avgWordCount - wordMin) / (wordMax - wordMin)) * 100));
 
-                  // Sentiment determines bubble color (green for positive, red for negative, blue for neutral)
-                  let bubbleBg = "bg-blue-500/30 border-blue-400 shadow-blue-500/10";
-                  if (pub.avgSentimentScore > 0.05) {
-                    bubbleBg = "bg-green-500/30 border-green-400 shadow-green-500/10";
-                  } else if (pub.avgSentimentScore < -0.05) {
-                    bubbleBg = "bg-red-500/30 border-red-400 shadow-red-500/10";
-                  }
+                  let bubbleColor = "sky";
+                  if (pub.avgSentimentScore > 0.05) bubbleColor = "emerald";
+                  else if (pub.avgSentimentScore < -0.05) bubbleColor = "rose";
+
+                  const bubbleSize = Math.max(40, Math.min(80, 40 + (pub.totalArticles / 100) * 40));
 
                   return (
                     <Tooltip
                       key={pub.source}
+                      color="#0f172a"
+                      overlayInnerStyle={{ borderRadius: '12px', border: '1px solid #334155', padding: '12px' }}
                       title={
-                        <div className="p-2 space-y-1">
-                          <strong className="text-base text-white">{pub.source}</strong>
-                          <div>Độ dài tiêu đề: {pub.avgTitleLength} ký tự</div>
-                          <div>Độ dài bài viết: {pub.avgWordCount} từ</div>
-                          <div>Tỷ lệ Clickbait: {pub.clickbaitRatio}%</div>
-                          <div>Xu hướng cảm xúc: {pub.avgSentimentScore}</div>
+                        <div className="space-y-2 w-48">
+                          <div className="flex justify-between items-center border-b border-gray-700 pb-2">
+                            <strong className="text-base text-white">{pub.source}</strong>
+                            <span className="text-xs text-gray-400">{pub.totalArticles} bài</span>
+                          </div>
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-400">Tiêu đề:</span>
+                            <span className="text-gray-200 font-mono">{Math.round(pub.avgTitleLength)} ký tự</span>
+                          </div>
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-400">Độ dài:</span>
+                            <span className="text-gray-200 font-mono">{Math.round(pub.avgWordCount)} từ</span>
+                          </div>
+                          <div className="flex justify-between text-xs">
+                            <span className="text-gray-400">Clickbait:</span>
+                            <span className={`font-mono font-bold ${pub.clickbaitRatio > 25 ? 'text-red-400' : 'text-green-400'}`}>{pub.clickbaitRatio}%</span>
+                          </div>
                         </div>
                       }
                     >
                       <div
-                        className={`absolute -translate-x-1/2 -translate-y-1/2 px-4 py-2 rounded-full border shadow-lg cursor-pointer transition-all hover:scale-115 hover:z-20 flex items-center gap-2 ${bubbleBg}`}
+                        className={`absolute -translate-x-1/2 -translate-y-1/2 rounded-full border border-${bubbleColor}-400/50 bg-${bubbleColor}-500/20 shadow-[0_0_15px_rgba(var(--tw-colors-${bubbleColor}-500),0.3)] cursor-pointer transition-all duration-300 hover:scale-110 hover:z-20 flex items-center justify-center backdrop-blur-md ${pub.clickbaitRatio > 30 ? 'animate-pulse' : ''}`}
                         style={{
                           left: `${wordPerc}%`,
                           bottom: `${titlePerc}%`,
+                          width: bubbleSize,
+                          height: bubbleSize,
                         }}
                       >
-                        <span className="text-xs font-bold text-white whitespace-nowrap">{pub.source}</span>
-                        <Badge count={`${pub.clickbaitRatio}%`} style={{ backgroundColor: pub.clickbaitRatio > 25 ? "#f5222d" : "#52c41a" }} />
+                        <span className="text-[10px] font-bold text-white text-center leading-tight drop-shadow-md px-1 truncate w-full">{pub.source}</span>
                       </div>
                     </Tooltip>
                   );
                 })}
               </div>
             </div>
-            <div className="text-[11px] text-gray-500 mt-3 flex justify-between">
-              <span>*Hover vào bong bóng để xem phân tích chi tiết.</span>
-              <span>*Dữ liệu được làm giàu tự động bằng Gemini AI.</span>
-            </div>
-          </Card>
+          </div>
         </Col>
 
-        {/* Media Bias Slider / Sentiment Indicator */}
+        {/* Media Bias Spectrum */}
         <Col xs={24} lg={10}>
-          <Card
-            title={<span className="text-white font-semibold">⚖️ Cảm Xúc / Thiên Kiến Truyền Thông (Media Bias Index)</span>}
-            bordered={false}
-            className="bg-gray-950 border border-gray-800 rounded-2xl h-full"
-          >
-            <div className="space-y-6">
-              <Paragraph className="text-gray-400 text-sm">
-                Chỉ số này phản ánh xu hướng đưa tin tích cực hay tiêu cực của mỗi báo đối với toàn thị trường chứng khoán.
-              </Paragraph>
+          <div className="bg-gray-900/40 backdrop-blur-sm border border-gray-800/80 rounded-3xl p-6 h-full">
+            <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">⚖️</span>
+              Market Sentiment Spectrum
+            </h3>
+            <p className="text-gray-400 text-sm mb-6">Trục thiên kiến đánh giá quan điểm đưa tin của tờ báo đối với toàn thị trường.</p>
 
-              <div className="space-y-5">
-                {statsList.map((pub) => {
-                  // Normalize sentiment score (-0.5 to 0.5) to progress percentage (0 to 100)
-                  const score = pub.avgSentimentScore;
-                  const percent = Math.max(0, Math.min(100, ((score + 0.5) / 1) * 100));
+            <div className="space-y-6 mt-8 overflow-y-auto pr-2 custom-scrollbar" style={{ maxHeight: '420px' }}>
+              {statsList.map((pub) => {
+                const score = pub.avgSentimentScore;
+                const percent = Math.max(0, Math.min(100, ((score + 0.5) / 1) * 100));
 
-                  let biasClass = "text-yellow-400";
-                  let biasLabel = "Trung lập";
-                  if (score > 0.08) {
-                    biasClass = "text-green-400";
-                    biasLabel = "Tích cực";
-                  } else if (score < -0.08) {
-                    biasClass = "text-red-400";
-                    biasLabel = "Tiêu cực";
-                  }
+                let biasColor = "yellow";
+                let biasLabel = "Neutral";
+                if (score > 0.08) { biasColor = "emerald"; biasLabel = "Bullish"; }
+                else if (score < -0.08) { biasColor = "rose"; biasLabel = "Bearish"; }
 
-                  return (
-                    <div key={pub.source} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <Text className="text-white font-bold">{pub.source}</Text>
-                        <Text className={`text-xs ${biasClass}`}>{biasLabel} ({score > 0 ? `+${score}` : score})</Text>
-                      </div>
-                      <div className="relative w-full h-3 bg-gray-800 rounded-full overflow-hidden">
-                        {/* Middle anchor */}
-                        <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-600/50 z-10"></div>
-                        <div
-                          className={`absolute top-0 bottom-0 rounded-full transition-all duration-500 ${
-                            score > 0.08
-                              ? "bg-gradient-to-r from-green-500 to-emerald-400"
-                              : score < -0.08
-                              ? "bg-gradient-to-r from-red-600 to-red-400"
-                              : "bg-gradient-to-r from-yellow-500 to-amber-400"
-                          }`}
-                          style={{
-                            left: score >= 0 ? "50%" : `${percent}%`,
-                            width: `${Math.abs(percent - 50)}%`,
-                          }}
-                        ></div>
+                return (
+                  <div key={pub.source} className="group relative bg-gray-950/50 p-4 rounded-2xl border border-gray-800 hover:border-gray-700 transition-colors">
+                    <div className="flex justify-between items-center mb-4">
+                      <Text className="text-white font-bold text-base">{pub.source}</Text>
+                      <div className={`px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider bg-${biasColor}-500/10 text-${biasColor}-400 border border-${biasColor}-500/20`}>
+                        {biasLabel} {score > 0 ? `+${score.toFixed(2)}` : score.toFixed(2)}
                       </div>
                     </div>
-                  );
-                })}
-              </div>
+                    
+                    {/* The Spectrum Gauge */}
+                    <div className="relative w-full h-2 bg-gradient-to-r from-rose-500/30 via-yellow-500/30 to-emerald-500/30 rounded-full">
+                      {/* Zero anchor line */}
+                      <div className="absolute left-1/2 top-[-4px] bottom-[-4px] w-[1px] bg-gray-500/50 z-0"></div>
+                      
+                      {/* The Indicator Diamond */}
+                      <div 
+                        className={`absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 rotate-45 bg-${biasColor}-400 shadow-[0_0_10px_rgba(var(--tw-colors-${biasColor}-500),0.8)] rounded-sm border border-gray-900 z-10 transition-all duration-1000 ease-out`}
+                        style={{ left: `${percent}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-          </Card>
+          </div>
         </Col>
       </Row>
 
-      {/* Main Table Analytics */}
-      <Card
-        title={<span className="text-white font-semibold">📋 Bảng Tổng Hợp Thống Kê Chi Tiết Tờ Báo</span>}
-        bordered={false}
-        className="bg-gray-950 border border-gray-800 rounded-2xl"
-      >
-        <Table
-          dataSource={statsList}
-          columns={columns}
-          rowKey="source"
-          pagination={false}
-          scroll={{ x: true }}
-          className="custom-antd-table"
-        />
-      </Card>
+      {/* Modern Data Table */}
+      <div className="bg-gray-900/40 backdrop-blur-sm border border-gray-800/80 rounded-3xl overflow-hidden mt-8">
+        <div className="p-6 border-b border-gray-800 flex justify-between items-center">
+          <h3 className="text-xl font-bold text-white m-0">📊 Dữ Liệu Báo Chí Chi Tiết</h3>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-sm text-gray-400">
+            <thead className="bg-gray-950/50 border-b border-gray-800 text-xs uppercase text-gray-500 font-semibold tracking-wider">
+              <tr>
+                <th className="px-6 py-4">Nguồn Báo</th>
+                <th className="px-6 py-4">Tổng Bài</th>
+                <th className="px-6 py-4">Tỷ lệ Clickbait</th>
+                <th className="px-6 py-4">Cảm xúc</th>
+                <th className="px-6 py-4">Chủ đề viết nhiều</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-800">
+              {statsList.sort((a, b) => b.totalArticles - a.totalArticles).map((pub) => (
+                <tr key={pub.source} className="hover:bg-gray-800/20 transition-colors">
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="font-bold text-white text-base">{pub.source}</span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="font-mono text-gray-300 bg-gray-800/50 px-2 py-1 rounded">{pub.totalArticles}</span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center gap-3">
+                      <div className="w-24 h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                        <div 
+                          className={`h-full rounded-full ${pub.clickbaitRatio > 25 ? 'bg-rose-500' : 'bg-emerald-500'}`}
+                          style={{ width: `${Math.min(100, pub.clickbaitRatio)}%` }}
+                        ></div>
+                      </div>
+                      <span className={`font-mono text-xs font-bold ${pub.clickbaitRatio > 25 ? 'text-rose-400' : 'text-emerald-400'}`}>{pub.clickbaitRatio.toFixed(1)}%</span>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                     <span className={`px-2 py-1 rounded text-xs font-bold ${pub.avgSentimentScore > 0.05 ? 'text-emerald-400 bg-emerald-500/10' : pub.avgSentimentScore < -0.05 ? 'text-rose-400 bg-rose-500/10' : 'text-sky-400 bg-sky-500/10'}`}>
+                        {pub.avgSentimentScore > 0 ? '+' : ''}{pub.avgSentimentScore.toFixed(2)}
+                     </span>
+                  </td>
+                  <td className="px-6 py-4">
+                    <div className="flex flex-wrap gap-2">
+                      {(pub.topTopics || []).slice(0, 3).map(t => (
+                        <span key={t} className="px-2 py-0.5 rounded text-[10px] uppercase tracking-wider font-semibold bg-gray-800 text-gray-300 border border-gray-700">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <style dangerouslySetInnerHTML={{__html: `
+        .custom-dark-select .ant-select-selector {
+          background-color: rgba(17, 24, 39, 0.7) !important;
+          backdrop-filter: blur(8px);
+          border: 1px solid rgba(55, 65, 81, 0.5) !important;
+          color: white !important;
+          height: 40px !important;
+          display: flex;
+          align-items: center;
+          border-radius: 12px !important;
+        }
+        .custom-dark-select .ant-select-selection-item {
+          color: white !important;
+          font-weight: 600;
+        }
+        .custom-dark-select .ant-select-arrow {
+          color: #9ca3af !important;
+        }
+        .dark-dropdown {
+          background-color: #030712 !important;
+          border: 1px solid #1f2937 !important;
+          padding: 6px !important;
+          border-radius: 16px !important;
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3) !important;
+        }
+        .dark-dropdown .ant-select-item {
+          color: #9ca3af !important;
+          border-radius: 8px !important;
+          margin-bottom: 2px;
+          padding: 8px 12px;
+        }
+        .dark-dropdown .ant-select-item-option-active, 
+        .dark-dropdown .ant-select-item-option-selected {
+          background-color: rgba(59, 130, 246, 0.15) !important;
+          color: #60a5fa !important;
+          font-weight: bold;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #374151;
+          border-radius: 20px;
+        }
+      `}} />
     </div>
   );
 }
