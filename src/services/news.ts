@@ -23,7 +23,7 @@ export const fetchNews = async (params: NewsFilterParams): Promise<NewsListRespo
 export const fetchNewsByTicker = async (
   ticker: string, 
   page = 1, 
-  limit = 20
+  limit = 10
 ): Promise<NewsListResponse> => {
   const response = await apiClient.get<NewsListResponse>(`/news/by-ticker/${ticker}`, {
     params: { page, limit },

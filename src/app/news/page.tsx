@@ -11,7 +11,7 @@ import { NewsFilterParams } from "@/types/news";
 const { Title, Text, Paragraph } = Typography;
 
 export default function NewsFeedPage() {
-  const [params, setParams] = useState<NewsFilterParams>({ page: 1, limit: 20, sort: 'latest' });
+  const [params, setParams] = useState<NewsFilterParams>({ page: 1, limit: 10, sort: 'latest' });
   const { data, isLoading } = useQuery({
     queryKey: ['news', params],
     queryFn: () => fetchNews(params),
