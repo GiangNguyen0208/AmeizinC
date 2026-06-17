@@ -3,34 +3,50 @@
     {
       "symbol": "VRE",
       "companyName": "VRE",
-      "price": 28.1,
-      "change": -0.55,
-      "changePercent": -1.92,
-      "volume": 8168000
+      "price": 28.15,
+      "change": -0.5,
+      "changePercent": -1.75,
+      "volume": 9495300
     },
     {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 190.8,
-      "change": -3.2,
-      "changePercent": -1.65,
-      "volume": 3022500
-    },
-    {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 134.9,
-      "change": -1.6,
-      "changePercent": -1.17,
-      "volume": 6118800
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 22.0,
+      "change": -0.3,
+      "changePercent": -1.35,
+      "volume": 20836600
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 72.5,
-      "change": -0.7,
-      "changePercent": -0.96,
-      "volume": 7539200
+      "price": 72.3,
+      "change": -0.9,
+      "changePercent": -1.23,
+      "volume": 10652200
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 135.0,
+      "change": -1.5,
+      "changePercent": -1.1,
+      "volume": 7336800
+    },
+    {
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 80.9,
+      "change": -0.9,
+      "changePercent": -1.1,
+      "volume": 1031800
+    },
+    {
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 192.0,
+      "change": -2.0,
+      "changePercent": -1.03,
+      "volume": 3936100
     },
     {
       "symbol": "TCB",
@@ -38,40 +54,32 @@
       "price": 31.45,
       "change": -0.3,
       "changePercent": -0.94,
-      "volume": 12077500
-    },
-    {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 22.15,
-      "change": -0.15,
-      "changePercent": -0.67,
-      "volume": 16299800
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 48.85,
-      "change": -0.25,
-      "changePercent": -0.51,
-      "volume": 297700
+      "volume": 16629400
     },
     {
       "symbol": "HPG",
       "companyName": "HPG",
-      "price": 24.15,
-      "change": -0.05,
-      "changePercent": -0.21,
-      "volume": 11676700
+      "price": 24.0,
+      "change": -0.2,
+      "changePercent": -0.83,
+      "volume": 19039000
     },
     {
       "symbol": "MSN",
       "companyName": "MSN",
-      "price": 72.9,
-      "change": -0.1,
-      "changePercent": -0.14,
-      "volume": 1479900
+      "price": 72.5,
+      "change": -0.5,
+      "changePercent": -0.68,
+      "volume": 2463600
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 48.8,
+      "change": -0.3,
+      "changePercent": -0.61,
+      "volume": 423500
     }
   ],
-  "crawledAt": "2026-06-17T06:59:41.286595+00:00"
+  "crawledAt": "2026-06-17T11:46:57.063536+00:00"
 }
