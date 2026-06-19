@@ -1,37 +1,37 @@
 {
   "data": [
     {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 147.0,
-      "change": 2.6,
-      "changePercent": 1.8,
-      "volume": 5856200
-    },
-    {
       "symbol": "STB",
       "companyName": "STB",
-      "price": 71.7,
-      "change": 0.8,
-      "changePercent": 1.13,
-      "volume": 4611100
+      "price": 72.3,
+      "change": 1.4,
+      "changePercent": 1.97,
+      "volume": 7599400
     },
     {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 23.8,
-      "change": 0.15,
-      "changePercent": 0.63,
-      "volume": 8806700
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 145.3,
+      "change": 0.9,
+      "changePercent": 0.62,
+      "volume": 10117600
     },
     {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 48.25,
-      "change": 0.05,
-      "changePercent": 0.1,
-      "volume": 195600
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 61.7,
+      "change": 0.1,
+      "changePercent": 0.16,
+      "volume": 4869000
+    },
+    {
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 205.5,
+      "change": 0.1,
+      "changePercent": 0.05,
+      "volume": 4093100
     }
   ],
-  "crawledAt": "2026-06-19T06:56:42.985526+00:00"
+  "crawledAt": "2026-06-19T11:14:48.761519+00:00"
 }
