@@ -1,77 +1,37 @@
 {
   "data": [
     {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 205.4,
-      "change": 13.4,
-      "changePercent": 6.98,
-      "volume": 6434200
-    },
-    {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 144.4,
-      "change": 9.4,
-      "changePercent": 6.96,
-      "volume": 2390500
+      "price": 147.0,
+      "change": 2.6,
+      "changePercent": 1.8,
+      "volume": 5856200
     },
     {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 30.1,
-      "change": 1.95,
-      "changePercent": 6.93,
-      "volume": 8609200
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 71.7,
+      "change": 0.8,
+      "changePercent": 1.13,
+      "volume": 4611100
     },
     {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 22.4,
-      "change": 0.4,
-      "changePercent": 1.82,
-      "volume": 12557300
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 23.8,
+      "change": 0.15,
+      "changePercent": 0.63,
+      "volume": 8806700
     },
     {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 81.8,
-      "change": 0.9,
-      "changePercent": 1.11,
-      "volume": 949100
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 39.0,
-      "change": 0.35,
-      "changePercent": 0.91,
-      "volume": 1549000
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 59.2,
-      "change": 0.2,
-      "changePercent": 0.34,
-      "volume": 2482800
-    },
-    {
-      "symbol": "MBB",
-      "companyName": "MBB",
-      "price": 25.25,
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 48.25,
       "change": 0.05,
-      "changePercent": 0.2,
-      "volume": 6966700
-    },
-    {
-      "symbol": "BVH",
-      "companyName": "BVH",
-      "price": 67.0,
-      "change": 0.1,
-      "changePercent": 0.15,
-      "volume": 304500
+      "changePercent": 0.1,
+      "volume": 195600
     }
   ],
-  "crawledAt": "2026-06-18T15:30:35.362641+00:00"
+  "crawledAt": "2026-06-19T06:56:42.985526+00:00"
 }
