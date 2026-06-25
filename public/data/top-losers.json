@@ -1,53 +1,69 @@
 {
   "data": [
     {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 16.0,
-      "change": -0.15,
-      "changePercent": -0.93,
-      "volume": 8873700
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 222.7,
+      "change": -7.8,
+      "changePercent": -3.38,
+      "volume": 1604100
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 155.8,
+      "change": -3.8,
+      "changePercent": -2.38,
+      "volume": 1814700
+    },
+    {
+      "symbol": "VRE",
+      "companyName": "VRE",
+      "price": 29.7,
+      "change": -0.6,
+      "changePercent": -1.98,
+      "volume": 2142000
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 37.25,
+      "change": -0.55,
+      "changePercent": -1.46,
+      "volume": 492700
+    },
+    {
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 78.2,
+      "change": -1.1,
+      "changePercent": -1.39,
+      "volume": 265100
     },
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 64.3,
-      "change": -0.6,
-      "changePercent": -0.92,
-      "volume": 448000
-    },
-    {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 71.2,
-      "change": -0.5,
-      "changePercent": -0.7,
-      "volume": 3739700
+      "price": 63.9,
+      "change": -0.4,
+      "changePercent": -0.62,
+      "volume": 129300
     },
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 26.7,
-      "change": -0.15,
-      "changePercent": -0.56,
-      "volume": 10242700
-    },
-    {
-      "symbol": "VCB",
-      "companyName": "VCB",
-      "price": 61.0,
-      "change": -0.3,
-      "changePercent": -0.49,
-      "volume": 2542500
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 58.3,
+      "price": 26.6,
       "change": -0.1,
-      "changePercent": -0.17,
-      "volume": 1532100
+      "changePercent": -0.37,
+      "volume": 3952600
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 71.3,
+      "change": -0.2,
+      "changePercent": -0.28,
+      "volume": 439300
     }
   ],
-  "crawledAt": "2026-06-24T14:36:08.831426+00:00"
+  "crawledAt": "2026-06-25T05:57:55.891591+00:00"
 }
