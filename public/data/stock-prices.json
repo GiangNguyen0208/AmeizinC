@@ -123,13 +123,13 @@
     "VRE": {
       "symbol": "VRE",
       "price": 29.2,
-      "change": -0.8,
-      "changePercent": -2.67,
+      "change": 0.0,
+      "changePercent": 0.0,
       "volume": 5288500,
       "high": 30.0,
       "low": 29.15,
       "open": 30.0,
-      "previousClose": 30.0,
+      "previousClose": 29.2,
       "updatedAt": "2026-06-29"
     },
     "SAB": {
@@ -241,5 +241,5 @@
       "updatedAt": "2026-06-29"
     }
   },
-  "crawledAt": "2026-06-29T11:31:31.209976+00:00"
+  "crawledAt": "2026-06-29T15:51:50.315426+00:00"
 }

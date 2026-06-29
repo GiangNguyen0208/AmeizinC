@@ -9,14 +9,6 @@
       "volume": 3602500
     },
     {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 29.2,
-      "change": -0.8,
-      "changePercent": -2.67,
-      "volume": 5288500
-    },
-    {
       "symbol": "SAB",
       "companyName": "SAB",
       "price": 48.0,
@@ -41,5 +33,5 @@
       "volume": 1470900
     }
   ],
-  "crawledAt": "2026-06-29T11:31:31.210640+00:00"
+  "crawledAt": "2026-06-29T15:51:50.316004+00:00"
 }
