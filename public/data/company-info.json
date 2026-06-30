@@ -383,8 +383,8 @@
       "state_percentage": 0.0,
       "analyst": "Quan Vu",
       "upside_to_target_percent": 0.2603550296,
-      "dividend_per_share_tsr": 700.0,
-      "projected_tsr_percentage": 0.2810650888,
+      "dividend_per_share_tsr": 1400.0,
+      "projected_tsr_percentage": 0.3017751479,
       "target_price": 42600.0,
       "company_profile": "Ngân hàng Thương mại Cổ phần Kỹ thương Việt Nam (TCB) được thành lập vào năm 1993. Ngân hàng hoạt động trong lĩnh vực huy động và kinh doanh vốn, và cung cấp các dịch vụ tài chính liên quan. Techcombank trở thành công ty đại chúng từ năm 2007. Năm 2025, so với cùng kỳ, biên lãi thuần (NIM) ở mức 3.74%, giảm 0.47%. Tỷ lệ nợ xấu ở mức 1.07%, giảm 0.06%. Tỷ lệ bao phủ nợ xấu ở mức 128.05%, tăng 14.11%. Lợi nhuận sau thuế công ty mẹ có giá trị bằng 25,3 nghìn tỷ đồng, tăng 17.5%. Tỷ suất lợi nhuận trên vốn chủ sở hữu (ROE) ở mức 16.03%, tăng 0.42%. Ngày 04/06/2018, TCB chính thức giao dịch trên Sở giao dịch Chứng khoán Thành phố Hồ Chí Minh (HOSE).",
       "in_cu": true,
@@ -901,5 +901,5 @@
       "bank": true
     }
   },
-  "crawledAt": "2026-06-30T10:05:07.894303+00:00"
+  "crawledAt": "2026-06-30T14:29:18.961154+00:00"
 }
