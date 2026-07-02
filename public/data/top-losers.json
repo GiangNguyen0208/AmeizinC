@@ -1,53 +1,69 @@
 {
   "data": [
     {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 148.7,
-      "change": -3.1,
-      "changePercent": -2.04,
-      "volume": 2994000
-    },
-    {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 217.1,
-      "change": -2.9,
-      "changePercent": -1.32,
-      "volume": 1760600
-    },
-    {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 64.0,
-      "change": -0.6,
-      "changePercent": -0.93,
-      "volume": 266100
+      "price": 63.2,
+      "change": -0.8,
+      "changePercent": -1.25,
+      "volume": 192000
     },
     {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 73.2,
-      "change": -0.6,
-      "changePercent": -0.81,
-      "volume": 3050100
-    },
-    {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 28.3,
+      "symbol": "TPB",
+      "companyName": "TPB",
+      "price": 16.55,
       "change": -0.2,
-      "changePercent": -0.7,
-      "volume": 2657500
+      "changePercent": -1.19,
+      "volume": 5105400
     },
     {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 48.35,
-      "change": -0.15,
-      "changePercent": -0.31,
-      "volume": 372900
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 34.0,
+      "change": -0.3,
+      "changePercent": -0.87,
+      "volume": 7938000
+    },
+    {
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 62.5,
+      "change": -0.5,
+      "changePercent": -0.79,
+      "volume": 1150600
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 37.25,
+      "change": -0.2,
+      "changePercent": -0.53,
+      "volume": 371800
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 22.6,
+      "change": -0.05,
+      "changePercent": -0.22,
+      "volume": 5577600
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 72.4,
+      "change": -0.1,
+      "changePercent": -0.14,
+      "volume": 1216900
+    },
+    {
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 77.9,
+      "change": -0.1,
+      "changePercent": -0.13,
+      "volume": 140800
     }
   ],
-  "crawledAt": "2026-07-01T14:41:48.878998+00:00"
+  "crawledAt": "2026-07-02T05:49:11.688355+00:00"
 }
