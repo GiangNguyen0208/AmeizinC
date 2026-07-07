@@ -3,35 +3,75 @@
     {
       "symbol": "HDB",
       "companyName": "HDB",
-      "price": 27.45,
-      "change": 0.25,
-      "changePercent": 0.92,
-      "volume": 13135100
-    },
-    {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 71.3,
+      "price": 27.7,
       "change": 0.5,
-      "changePercent": 0.71,
-      "volume": 1175500
+      "changePercent": 1.84,
+      "volume": 18795400
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 22.25,
-      "change": 0.05,
-      "changePercent": 0.23,
-      "volume": 6446400
+      "price": 22.6,
+      "change": 0.4,
+      "changePercent": 1.8,
+      "volume": 11125100
     },
     {
       "symbol": "MBB",
       "companyName": "MBB",
-      "price": 25.35,
-      "change": 0.05,
-      "changePercent": 0.2,
-      "volume": 4027200
+      "price": 25.75,
+      "change": 0.45,
+      "changePercent": 1.78,
+      "volume": 12368800
+    },
+    {
+      "symbol": "SSI",
+      "companyName": "SSI",
+      "price": 27.15,
+      "change": 0.4,
+      "changePercent": 1.5,
+      "volume": 15256800
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 27.6,
+      "change": 0.15,
+      "changePercent": 0.55,
+      "volume": 8051500
+    },
+    {
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 33.85,
+      "change": 0.1,
+      "changePercent": 0.3,
+      "volume": 7544400
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 73.2,
+      "change": 0.2,
+      "changePercent": 0.27,
+      "volume": 4557200
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 47.25,
+      "change": 0.1,
+      "changePercent": 0.21,
+      "volume": 398900
+    },
+    {
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 61.3,
+      "change": 0.1,
+      "changePercent": 0.16,
+      "volume": 2547200
     }
   ],
-  "crawledAt": "2026-07-07T05:59:21.989304+00:00"
+  "crawledAt": "2026-07-07T09:37:05.141015+00:00"
 }
