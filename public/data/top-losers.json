@@ -3,59 +3,43 @@
     {
       "symbol": "MSN",
       "companyName": "MSN",
-      "price": 68.6,
-      "change": -1.9,
-      "changePercent": -2.7,
-      "volume": 9695900
+      "price": 67.7,
+      "change": -0.9,
+      "changePercent": -1.31,
+      "volume": 5454400
     },
     {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 150.1,
-      "change": -4.0,
-      "changePercent": -2.6,
-      "volume": 3878500
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 72.4,
+      "change": -0.8,
+      "changePercent": -1.09,
+      "volume": 3833200
+    },
+    {
+      "symbol": "HDB",
+      "companyName": "HDB",
+      "price": 27.5,
+      "change": -0.2,
+      "changePercent": -0.72,
+      "volume": 4245000
     },
     {
       "symbol": "VRE",
       "companyName": "VRE",
-      "price": 27.35,
-      "change": -0.35,
-      "changePercent": -1.26,
-      "volume": 2878800
+      "price": 27.2,
+      "change": -0.15,
+      "changePercent": -0.55,
+      "volume": 2532500
     },
     {
-      "symbol": "BVH",
-      "companyName": "BVH",
-      "price": 59.5,
-      "change": -0.5,
-      "changePercent": -0.83,
-      "volume": 528700
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 34.9,
-      "change": -0.2,
-      "changePercent": -0.57,
-      "volume": 2616200
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 55.1,
-      "change": -0.2,
-      "changePercent": -0.36,
-      "volume": 1611400
-    },
-    {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 73.8,
-      "change": -0.2,
-      "changePercent": -0.27,
-      "volume": 648400
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 47.2,
+      "change": -0.05,
+      "changePercent": -0.11,
+      "volume": 172500
     }
   ],
-  "crawledAt": "2026-07-07T14:40:21.552670+00:00"
+  "crawledAt": "2026-07-08T04:58:56.292692+00:00"
 }
