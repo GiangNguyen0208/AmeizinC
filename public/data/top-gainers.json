@@ -33,14 +33,6 @@
       "volume": 2210100
     },
     {
-      "symbol": "MBB",
-      "companyName": "MBB",
-      "price": 26.0,
-      "change": 0.25,
-      "changePercent": 0.97,
-      "volume": 20204000
-    },
-    {
       "symbol": "TPB",
       "companyName": "TPB",
       "price": 16.3,
@@ -79,7 +71,15 @@
       "change": 0.1,
       "changePercent": 0.44,
       "volume": 9270600
+    },
+    {
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 23.2,
+      "change": 0.1,
+      "changePercent": 0.43,
+      "volume": 12499500
     }
   ],
-  "crawledAt": "2026-07-08T09:44:26.463250+00:00"
+  "crawledAt": "2026-07-08T14:14:33.112639+00:00"
 }

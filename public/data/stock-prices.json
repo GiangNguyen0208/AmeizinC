@@ -63,13 +63,13 @@
     "MBB": {
       "symbol": "MBB",
       "price": 26.0,
-      "change": 0.25,
-      "changePercent": 0.97,
+      "change": 0.0,
+      "changePercent": 0.0,
       "volume": 20204000,
       "high": 26.15,
       "low": 25.7,
       "open": 25.75,
-      "previousClose": 25.75,
+      "previousClose": 26.0,
       "updatedAt": "2026-07-08"
     },
     "MSN": {
@@ -241,5 +241,5 @@
       "updatedAt": "2026-07-08"
     }
   },
-  "crawledAt": "2026-07-08T09:44:26.462627+00:00"
+  "crawledAt": "2026-07-08T14:14:33.111927+00:00"
 }
