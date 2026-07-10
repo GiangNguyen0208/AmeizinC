@@ -3,26 +3,18 @@
     {
       "symbol": "VNM",
       "companyName": "VNM",
-      "price": 56.5,
-      "change": 0.8,
-      "changePercent": 1.44,
-      "volume": 3232200
+      "price": 56.6,
+      "change": 0.9,
+      "changePercent": 1.62,
+      "volume": 5573700
     },
     {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 36.3,
-      "change": 0.3,
-      "changePercent": 0.83,
-      "volume": 1227800
-    },
-    {
-      "symbol": "HDB",
-      "companyName": "HDB",
-      "price": 27.4,
-      "change": 0.1,
-      "changePercent": 0.37,
-      "volume": 5470000
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 223.0,
+      "change": 2.0,
+      "changePercent": 0.9,
+      "volume": 3999100
     },
     {
       "symbol": "MBB",
@@ -30,16 +22,8 @@
       "price": 24.65,
       "change": 0.05,
       "changePercent": 0.2,
-      "volume": 2812200
-    },
-    {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 221.3,
-      "change": 0.3,
-      "changePercent": 0.14,
-      "volume": 1196700
+      "volume": 10507600
     }
   ],
-  "crawledAt": "2026-07-10T05:54:03.247490+00:00"
+  "crawledAt": "2026-07-10T09:00:22.259371+00:00"
 }
