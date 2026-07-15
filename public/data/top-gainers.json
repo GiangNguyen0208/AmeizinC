@@ -1,85 +1,29 @@
 {
   "data": [
     {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 78.5,
-      "change": 3.1,
-      "changePercent": 4.11,
-      "volume": 2251800
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 36.8,
-      "change": 1.25,
-      "changePercent": 3.52,
-      "volume": 3602800
-    },
-    {
       "symbol": "STB",
       "companyName": "STB",
-      "price": 70.4,
-      "change": 1.9,
-      "changePercent": 2.77,
-      "volume": 4375100
+      "price": 71.0,
+      "change": 0.6,
+      "changePercent": 0.85,
+      "volume": 981300
     },
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 58.6,
-      "change": 1.1,
-      "changePercent": 1.91,
-      "volume": 327600
-    },
-    {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 22.85,
-      "change": 0.4,
-      "changePercent": 1.78,
-      "volume": 18290500
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 46.8,
-      "change": 0.65,
-      "changePercent": 1.41,
-      "volume": 400600
+      "price": 58.8,
+      "change": 0.2,
+      "changePercent": 0.34,
+      "volume": 250300
     },
     {
       "symbol": "VNM",
       "companyName": "VNM",
-      "price": 56.0,
-      "change": 0.6,
-      "changePercent": 1.08,
-      "volume": 1755100
-    },
-    {
-      "symbol": "MSN",
-      "companyName": "MSN",
-      "price": 68.4,
-      "change": 0.5,
-      "changePercent": 0.74,
-      "volume": 2364800
-    },
-    {
-      "symbol": "VCB",
-      "companyName": "VCB",
-      "price": 59.2,
-      "change": 0.3,
-      "changePercent": 0.51,
-      "volume": 2829200
-    },
-    {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 22.5,
+      "price": 56.1,
       "change": 0.1,
-      "changePercent": 0.45,
-      "volume": 22481900
+      "changePercent": 0.18,
+      "volume": 1075900
     }
   ],
-  "crawledAt": "2026-07-14T13:48:44.936477+00:00"
+  "crawledAt": "2026-07-15T04:40:30.194403+00:00"
 }
