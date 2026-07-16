@@ -3,27 +3,27 @@
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 23.1,
-      "change": 0.25,
-      "changePercent": 1.09,
-      "volume": 23294700
-    },
-    {
-      "symbol": "BVH",
-      "companyName": "BVH",
-      "price": 59.0,
+      "price": 23.5,
       "change": 0.4,
-      "changePercent": 0.68,
-      "volume": 417500
+      "changePercent": 1.73,
+      "volume": 24134700
     },
     {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 56.2,
-      "change": 0.2,
-      "changePercent": 0.36,
-      "volume": 2491200
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 70.7,
+      "change": 0.9,
+      "changePercent": 1.29,
+      "volume": 2587300
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 137.6,
+      "change": 1.6,
+      "changePercent": 1.18,
+      "volume": 1985500
     }
   ],
-  "crawledAt": "2026-07-15T13:47:42.214946+00:00"
+  "crawledAt": "2026-07-16T04:50:48.511176+00:00"
 }
