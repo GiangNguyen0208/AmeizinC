@@ -3,19 +3,19 @@
     {
       "symbol": "SAB",
       "companyName": "SAB",
-      "price": 47.15,
-      "change": 0.25,
-      "changePercent": 0.53,
-      "volume": 274400
+      "price": 47.3,
+      "change": 0.4,
+      "changePercent": 0.85,
+      "volume": 609300
     },
     {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 76.4,
-      "change": 0.2,
-      "changePercent": 0.26,
-      "volume": 247200
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 67.1,
+      "change": 0.1,
+      "changePercent": 0.15,
+      "volume": 7346800
     }
   ],
-  "crawledAt": "2026-07-20T05:30:12.424343+00:00"
+  "crawledAt": "2026-07-20T08:24:58.629320+00:00"
 }
