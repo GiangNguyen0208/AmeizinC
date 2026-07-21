@@ -1,21 +1,85 @@
 {
   "data": [
     {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 47.3,
-      "change": 0.4,
-      "changePercent": 0.85,
-      "volume": 609300
+      "symbol": "SSI",
+      "companyName": "SSI",
+      "price": 23.0,
+      "change": 0.3,
+      "changePercent": 1.32,
+      "volume": 13001200
     },
     {
-      "symbol": "FPT",
-      "companyName": "FPT",
-      "price": 67.1,
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 20.8,
+      "change": 0.2,
+      "changePercent": 0.97,
+      "volume": 17316000
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 25.2,
+      "change": 0.2,
+      "changePercent": 0.8,
+      "volume": 7360300
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 23.0,
+      "change": 0.15,
+      "changePercent": 0.66,
+      "volume": 9004900
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 65.2,
+      "change": 0.4,
+      "changePercent": 0.62,
+      "volume": 2549100
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 73.4,
+      "change": 0.4,
+      "changePercent": 0.55,
+      "volume": 1155200
+    },
+    {
+      "symbol": "VRE",
+      "companyName": "VRE",
+      "price": 23.35,
       "change": 0.1,
-      "changePercent": 0.15,
-      "volume": 7346800
+      "changePercent": 0.43,
+      "volume": 2639900
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 47.5,
+      "change": 0.2,
+      "changePercent": 0.42,
+      "volume": 194800
+    },
+    {
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 22.85,
+      "change": 0.05,
+      "changePercent": 0.22,
+      "volume": 6084800
+    },
+    {
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 56.8,
+      "change": 0.1,
+      "changePercent": 0.18,
+      "volume": 1492000
     }
   ],
-  "crawledAt": "2026-07-20T14:10:17.298607+00:00"
+  "crawledAt": "2026-07-21T04:58:38.711496+00:00"
 }
