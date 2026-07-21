@@ -6,7 +6,7 @@
       "price": 68.0,
       "change": -5.1,
       "changePercent": -6.98,
-      "volume": 4093000
+      "volume": 4293300
     },
     {
       "symbol": "PLX",
@@ -14,72 +14,72 @@
       "price": 32.65,
       "change": -1.65,
       "changePercent": -4.81,
-      "volume": 2954100
-    },
-    {
-      "symbol": "BVH",
-      "companyName": "BVH",
-      "price": 55.9,
-      "change": -2.2,
-      "changePercent": -3.79,
-      "volume": 266800
+      "volume": 3064500
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 64.9,
-      "change": -2.2,
-      "changePercent": -3.28,
-      "volume": 7006300
+      "price": 64.8,
+      "change": -2.3,
+      "changePercent": -3.43,
+      "volume": 7540400
     },
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 215.8,
-      "change": -4.2,
-      "changePercent": -1.91,
-      "volume": 2492100
-    },
-    {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 29.6,
-      "change": -0.35,
-      "changePercent": -1.17,
-      "volume": 9128200
+      "price": 217.3,
+      "change": -2.7,
+      "changePercent": -1.23,
+      "volume": 2839700
     },
     {
       "symbol": "VRE",
       "companyName": "VRE",
-      "price": 23.0,
-      "change": -0.25,
-      "changePercent": -1.08,
-      "volume": 5657900
-    },
-    {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 135.9,
-      "change": -1.0,
-      "changePercent": -0.73,
-      "volume": 2370000
+      "price": 23.05,
+      "change": -0.2,
+      "changePercent": -0.86,
+      "volume": 6002700
     },
     {
       "symbol": "SAB",
       "companyName": "SAB",
-      "price": 47.05,
-      "change": -0.25,
-      "changePercent": -0.53,
-      "volume": 432100
+      "price": 47.0,
+      "change": -0.3,
+      "changePercent": -0.63,
+      "volume": 492300
     },
     {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 22.75,
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 29.8,
+      "change": -0.15,
+      "changePercent": -0.5,
+      "volume": 10138100
+    },
+    {
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 22.7,
       "change": -0.1,
       "changePercent": -0.44,
-      "volume": 14882100
+      "volume": 11291200
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 72.7,
+      "change": -0.3,
+      "changePercent": -0.41,
+      "volume": 4771800
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 136.4,
+      "change": -0.5,
+      "changePercent": -0.37,
+      "volume": 2669700
     }
   ],
-  "crawledAt": "2026-07-21T07:31:00.597995+00:00"
+  "crawledAt": "2026-07-21T10:03:14.736758+00:00"
 }
