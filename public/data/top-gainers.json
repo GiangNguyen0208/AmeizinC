@@ -3,19 +3,19 @@
     {
       "symbol": "VNM",
       "companyName": "VNM",
-      "price": 59.5,
-      "change": 1.1,
-      "changePercent": 1.88,
-      "volume": 10177100
+      "price": 59.1,
+      "change": 0.7,
+      "changePercent": 1.2,
+      "volume": 10506300
     },
     {
       "symbol": "PLX",
       "companyName": "PLX",
-      "price": 32.8,
-      "change": 0.15,
-      "changePercent": 0.46,
-      "volume": 1689100
+      "price": 32.75,
+      "change": 0.1,
+      "changePercent": 0.31,
+      "volume": 1759600
     }
   ],
-  "crawledAt": "2026-07-22T07:32:05.668896+00:00"
+  "crawledAt": "2026-07-22T10:06:26.181977+00:00"
 }
