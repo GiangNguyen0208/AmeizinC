@@ -41,14 +41,6 @@
       "volume": 20862800
     },
     {
-      "symbol": "VCB",
-      "companyName": "VCB",
-      "price": 54.5,
-      "change": -2.2,
-      "changePercent": -3.88,
-      "volume": 9173400
-    },
-    {
       "symbol": "TPB",
       "companyName": "TPB",
       "price": 14.1,
@@ -79,7 +71,15 @@
       "change": -1.7,
       "changePercent": -2.34,
       "volume": 8575100
+    },
+    {
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 57.1,
+      "change": -1.2,
+      "changePercent": -2.06,
+      "volume": 281600
     }
   ],
-  "crawledAt": "2026-07-22T10:06:26.181977+00:00"
+  "crawledAt": "2026-07-22T14:00:25.857515+00:00"
 }
