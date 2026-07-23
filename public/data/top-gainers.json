@@ -1,21 +1,53 @@
 {
   "data": [
     {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 59.1,
-      "change": 0.7,
-      "changePercent": 1.2,
-      "volume": 10506300
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 210.8,
+      "change": 8.7,
+      "changePercent": 4.3,
+      "volume": 2059400
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 129.8,
+      "change": 2.9,
+      "changePercent": 2.29,
+      "volume": 2405500
+    },
+    {
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 65.0,
+      "change": 0.6,
+      "changePercent": 0.93,
+      "volume": 590500
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 71.4,
+      "change": 0.4,
+      "changePercent": 0.56,
+      "volume": 1653900
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 64.7,
+      "change": 0.1,
+      "changePercent": 0.15,
+      "volume": 3005300
     },
     {
       "symbol": "PLX",
       "companyName": "PLX",
-      "price": 32.75,
-      "change": 0.1,
-      "changePercent": 0.31,
-      "volume": 1759600
+      "price": 32.8,
+      "change": 0.05,
+      "changePercent": 0.15,
+      "volume": 679300
     }
   ],
-  "crawledAt": "2026-07-22T14:00:25.857515+00:00"
+  "crawledAt": "2026-07-23T05:15:25.434165+00:00"
 }
