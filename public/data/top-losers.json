@@ -1,12 +1,12 @@
 {
   "data": [
     {
-      "symbol": "VCB",
-      "companyName": "VCB",
-      "price": 52.7,
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 57.8,
       "change": -1.3,
-      "changePercent": -2.41,
-      "volume": 4140900
+      "changePercent": -2.2,
+      "volume": 4827500
     },
     {
       "symbol": "MBB",
@@ -14,15 +14,7 @@
       "price": 22.05,
       "change": -0.3,
       "changePercent": -1.34,
-      "volume": 19802600
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 58.4,
-      "change": -0.7,
-      "changePercent": -1.18,
-      "volume": 4499900
+      "volume": 20982400
     },
     {
       "symbol": "TPB",
@@ -31,15 +23,7 @@
       "change": -0.1,
       "changePercent": -0.71,
       "volume": 15575200
-    },
-    {
-      "symbol": "FPT",
-      "companyName": "FPT",
-      "price": 64.5,
-      "change": -0.1,
-      "changePercent": -0.15,
-      "volume": 5718600
     }
   ],
-  "crawledAt": "2026-07-23T07:45:30.003734+00:00"
+  "crawledAt": "2026-07-23T10:06:18.990612+00:00"
 }

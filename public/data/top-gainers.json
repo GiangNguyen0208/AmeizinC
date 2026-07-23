@@ -6,7 +6,7 @@
       "price": 214.0,
       "change": 11.9,
       "changePercent": 5.89,
-      "volume": 3677300
+      "volume": 4235400
     },
     {
       "symbol": "VHM",
@@ -14,7 +14,7 @@
       "price": 132.0,
       "change": 5.1,
       "changePercent": 4.02,
-      "volume": 4201400
+      "volume": 4573000
     },
     {
       "symbol": "SSI",
@@ -22,7 +22,7 @@
       "price": 23.55,
       "change": 0.9,
       "changePercent": 3.97,
-      "volume": 28930000
+      "volume": 29879100
     },
     {
       "symbol": "GAS",
@@ -54,7 +54,7 @@
       "price": 22.0,
       "change": 0.25,
       "changePercent": 1.15,
-      "volume": 6668700
+      "volume": 7078200
     },
     {
       "symbol": "TCB",
@@ -62,7 +62,7 @@
       "price": 29.25,
       "change": 0.25,
       "changePercent": 0.86,
-      "volume": 16459400
+      "volume": 16985100
     },
     {
       "symbol": "HDB",
@@ -78,8 +78,8 @@
       "price": 20.8,
       "change": 0.1,
       "changePercent": 0.48,
-      "volume": 34462300
+      "volume": 36967600
     }
   ],
-  "crawledAt": "2026-07-23T07:45:30.003734+00:00"
+  "crawledAt": "2026-07-23T10:06:18.990612+00:00"
 }

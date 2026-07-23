@@ -6,7 +6,7 @@
       "price": 20.8,
       "change": 0.1,
       "changePercent": 0.48,
-      "volume": 34462300
+      "volume": 36967600
     },
     {
       "symbol": "SSI",
@@ -14,7 +14,7 @@
       "price": 23.55,
       "change": 0.9,
       "changePercent": 3.97,
-      "volume": 28930000
+      "volume": 29879100
     },
     {
       "symbol": "ACB",
@@ -30,7 +30,7 @@
       "price": 22.05,
       "change": -0.3,
       "changePercent": -1.34,
-      "volume": 19802600
+      "volume": 20982400
     },
     {
       "symbol": "VPB",
@@ -46,7 +46,7 @@
       "price": 29.25,
       "change": 0.25,
       "changePercent": 0.86,
-      "volume": 16459400
+      "volume": 16985100
     },
     {
       "symbol": "TPB",
@@ -65,21 +65,21 @@
       "volume": 11625200
     },
     {
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 54.0,
+      "change": 0.0,
+      "changePercent": 0.0,
+      "volume": 7435600
+    },
+    {
       "symbol": "VRE",
       "companyName": "VRE",
       "price": 22.0,
       "change": 0.25,
       "changePercent": 1.15,
-      "volume": 6668700
-    },
-    {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 72.0,
-      "change": 1.0,
-      "changePercent": 1.41,
-      "volume": 6397700
+      "volume": 7078200
     }
   ],
-  "crawledAt": "2026-07-23T07:45:30.003734+00:00"
+  "crawledAt": "2026-07-23T10:06:18.990612+00:00"
 }
