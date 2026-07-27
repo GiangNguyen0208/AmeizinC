@@ -17,14 +17,6 @@
       "volume": 3707500
     },
     {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 46.6,
-      "change": 0.1,
-      "changePercent": 0.22,
-      "volume": 892500
-    },
-    {
       "symbol": "VIC",
       "companyName": "VIC",
       "price": 213.5,
@@ -33,5 +25,5 @@
       "volume": 2911700
     }
   ],
-  "crawledAt": "2026-07-27T08:59:01.732960+00:00"
+  "crawledAt": "2026-07-27T14:39:30.868921+00:00"
 }
