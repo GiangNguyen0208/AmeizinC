@@ -3,42 +3,26 @@
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 56.4,
-      "change": -1.1,
-      "changePercent": -1.91,
-      "volume": 136700
-    },
-    {
-      "symbol": "VPB",
-      "companyName": "VPB",
-      "price": 24.2,
-      "change": -0.35,
-      "changePercent": -1.43,
-      "volume": 10479600
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 32.65,
-      "change": -0.15,
-      "changePercent": -0.46,
-      "volume": 1610700
-    },
-    {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 72.2,
-      "change": -0.3,
-      "changePercent": -0.41,
-      "volume": 1612400
+      "price": 56.6,
+      "change": -0.9,
+      "changePercent": -1.57,
+      "volume": 156400
     },
     {
       "symbol": "HDB",
       "companyName": "HDB",
-      "price": 25.2,
+      "price": 25.1,
+      "change": -0.2,
+      "changePercent": -0.79,
+      "volume": 11492300
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 32.7,
       "change": -0.1,
-      "changePercent": -0.4,
-      "volume": 10468200
+      "changePercent": -0.3,
+      "volume": 1710200
     },
     {
       "symbol": "VRE",
@@ -46,8 +30,8 @@
       "price": 21.3,
       "change": -0.05,
       "changePercent": -0.23,
-      "volume": 3585900
+      "volume": 3761100
     }
   ],
-  "crawledAt": "2026-07-28T07:32:15.239763+00:00"
+  "crawledAt": "2026-07-28T10:14:25.049237+00:00"
 }
