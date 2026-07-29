@@ -1,37 +1,85 @@
 {
   "data": [
     {
-      "symbol": "BVH",
-      "companyName": "BVH",
-      "price": 56.6,
-      "change": -0.9,
-      "changePercent": -1.57,
-      "volume": 156400
-    },
-    {
       "symbol": "HDB",
       "companyName": "HDB",
-      "price": 25.1,
+      "price": 24.55,
+      "change": -0.55,
+      "changePercent": -2.19,
+      "volume": 3886100
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 24.3,
+      "change": -0.3,
+      "changePercent": -1.22,
+      "volume": 3326600
+    },
+    {
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 28.3,
       "change": -0.2,
-      "changePercent": -0.79,
-      "volume": 11492300
+      "changePercent": -0.7,
+      "volume": 4067000
     },
     {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 32.7,
-      "change": -0.1,
-      "changePercent": -0.3,
-      "volume": 1710200
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 22.0,
+      "change": -0.15,
+      "changePercent": -0.68,
+      "volume": 4752500
     },
     {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 21.3,
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 22.35,
+      "change": -0.15,
+      "changePercent": -0.67,
+      "volume": 5824900
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 65.3,
+      "change": -0.4,
+      "changePercent": -0.61,
+      "volume": 1621900
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 62.7,
+      "change": -0.3,
+      "changePercent": -0.48,
+      "volume": 1727000
+    },
+    {
+      "symbol": "TPB",
+      "companyName": "TPB",
+      "price": 14.0,
       "change": -0.05,
-      "changePercent": -0.23,
-      "volume": 3761100
+      "changePercent": -0.36,
+      "volume": 2848100
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 72.3,
+      "change": -0.2,
+      "changePercent": -0.28,
+      "volume": 1092800
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 43.1,
+      "change": -0.05,
+      "changePercent": -0.12,
+      "volume": 341900
     }
   ],
-  "crawledAt": "2026-07-28T14:11:13.312328+00:00"
+  "crawledAt": "2026-07-29T04:59:16.980989+00:00"
 }
