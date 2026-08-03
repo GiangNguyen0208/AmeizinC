@@ -1,29 +1,29 @@
 {
   "data": [
     {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 214.1,
-      "change": -5.9,
-      "changePercent": -2.68,
-      "volume": 1768200
-    },
-    {
       "symbol": "VNM",
       "companyName": "VNM",
       "price": 60.3,
       "change": -0.9,
       "changePercent": -1.47,
-      "volume": 2340200
+      "volume": 6377600
     },
     {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 22.25,
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 213.0,
+      "change": -1.1,
+      "changePercent": -0.51,
+      "volume": 4179900
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 148.0,
       "change": -0.1,
-      "changePercent": -0.45,
-      "volume": 3219100
+      "changePercent": -0.07,
+      "volume": 5312800
     }
   ],
-  "crawledAt": "2026-08-03T05:31:05.724410+00:00"
+  "crawledAt": "2026-08-03T08:49:14.582834+00:00"
 }
