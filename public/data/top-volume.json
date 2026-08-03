@@ -28,8 +28,8 @@
       "symbol": "FPT",
       "companyName": "FPT",
       "price": 71.7,
-      "change": 4.7,
-      "changePercent": 7.01,
+      "change": 4.6,
+      "changePercent": 6.86,
       "volume": 16279100
     },
     {
@@ -76,10 +76,10 @@
       "symbol": "VCB",
       "companyName": "VCB",
       "price": 60.8,
-      "change": 4.3,
-      "changePercent": 7.61,
+      "change": 1.5,
+      "changePercent": 2.53,
       "volume": 7642500
     }
   ],
-  "crawledAt": "2026-08-03T08:49:14.582834+00:00"
+  "crawledAt": "2026-08-03T14:42:43.361022+00:00"
 }

@@ -4,8 +4,8 @@
       "symbol": "VNM",
       "companyName": "VNM",
       "price": 60.3,
-      "change": -0.9,
-      "changePercent": -1.47,
+      "change": -0.6,
+      "changePercent": -0.99,
       "volume": 6377600
     },
     {
@@ -25,5 +25,5 @@
       "volume": 5312800
     }
   ],
-  "crawledAt": "2026-08-03T08:49:14.582834+00:00"
+  "crawledAt": "2026-08-03T14:42:43.361022+00:00"
 }
