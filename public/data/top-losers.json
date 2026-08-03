@@ -6,80 +6,24 @@
       "price": 214.1,
       "change": -5.9,
       "changePercent": -2.68,
-      "volume": 4372800
+      "volume": 1768200
     },
     {
-      "symbol": "MSN",
-      "companyName": "MSN",
-      "price": 66.1,
-      "change": -1.8,
-      "changePercent": -2.65,
-      "volume": 3736800
-    },
-    {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 14.1,
-      "change": -0.3,
-      "changePercent": -2.08,
-      "volume": 10522700
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 60.3,
+      "change": -0.9,
+      "changePercent": -1.47,
+      "volume": 2340200
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 21.9,
-      "change": -0.45,
-      "changePercent": -2.01,
-      "volume": 15165000
-    },
-    {
-      "symbol": "HDB",
-      "companyName": "HDB",
-      "price": 25.2,
-      "change": -0.5,
-      "changePercent": -1.95,
-      "volume": 8862700
-    },
-    {
-      "symbol": "SSI",
-      "companyName": "SSI",
-      "price": 23.55,
-      "change": -0.45,
-      "changePercent": -1.88,
-      "volume": 17843900
-    },
-    {
-      "symbol": "BVH",
-      "companyName": "BVH",
-      "price": 60.1,
-      "change": -1.0,
-      "changePercent": -1.64,
-      "volume": 720500
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 33.3,
-      "change": -0.55,
-      "changePercent": -1.62,
-      "volume": 3143900
-    },
-    {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 28.95,
-      "change": -0.35,
-      "changePercent": -1.19,
-      "volume": 11594700
-    },
-    {
-      "symbol": "VPB",
-      "companyName": "VPB",
-      "price": 24.8,
-      "change": -0.2,
-      "changePercent": -0.8,
-      "volume": 12104700
+      "price": 22.25,
+      "change": -0.1,
+      "changePercent": -0.45,
+      "volume": 3219100
     }
   ],
-  "crawledAt": "2026-07-31T14:11:28.791841+00:00"
+  "crawledAt": "2026-08-03T05:31:05.724410+00:00"
 }

@@ -1465,678 +1465,678 @@
       "item": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trước những thay đổi về tài sản và vốn lưu động",
       "item_en": "Operating profit/(loss) before changes in Working Capital",
       "item_id": "operating_profit_loss_before_changes_in_working_capital",
+      "2026-Q2": 2527527000000.0,
       "2026-Q1": 2394247000000.0,
       "2025-Q4": 4535699000000.0,
       "2025-Q3": 3555351000000.0,
       "2025-Q2": 2053489000000.0,
       "2025-Q1": 1870090000000.0,
       "2024-Q4": 3815387000000.0,
-      "2024-Q3": 2451583000000.0,
-      "2024-Q2": 2060813000000.0
+      "2024-Q3": 2451583000000.0
     },
     {
       "item": "Thuế thu nhập doanh nghiệp đã trả",
       "item_en": "Corporate income tax paid",
       "item_id": "corporate_income_tax_paid",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Lưu chuyển tiền thuần từ các hoạt động sản xuất kinh doanh",
       "item_en": "Net cash from operating activities",
       "item_id": "net_cash_from_operating_activities",
+      "2026-Q2": -9652957000000.0,
       "2026-Q1": -7280016000000.0,
       "2025-Q4": 28136272000000.0,
       "2025-Q3": 17762025000000.0,
       "2025-Q2": 21755856000000.0,
       "2025-Q1": -41476406000000.0,
       "2024-Q4": 29531040000000.0,
-      "2024-Q3": 5335231000000.0,
-      "2024-Q2": -3761388000000.0
+      "2024-Q3": 5335231000000.0
     },
     {
       "item": "Mua sắm TSCĐ",
       "item_en": "Purchases of fixed assets and other long term assets",
       "item_id": "purchases_of_fixed_assets_and_other_long_term_assets",
+      "2026-Q2": -33014000000.0,
       "2026-Q1": -81784000000.0,
       "2025-Q4": -222356000000.0,
       "2025-Q3": -27885000000.0,
       "2025-Q2": -62441000000.0,
       "2025-Q1": -71757000000.0,
       "2024-Q4": -144776000000.0,
-      "2024-Q3": -31721000000.0,
-      "2024-Q2": -129601000000.0
+      "2024-Q3": -31721000000.0
     },
     {
       "item": "Tiền thu được từ thanh lý, nhượng bán tài sản cố định",
       "item_en": "Proceeds from disposal of fixed assets",
       "item_id": "proceeds_from_disposal_of_fixed_assets",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 182000000.0,
       "2025-Q2": 2000000.0,
       "2025-Q1": 1000000.0,
       "2024-Q4": 137000000.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 114000000.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tiền chi đầu tư, góp vốn vào các đơn vị khác",
       "item_en": "Investments in other entities",
       "item_id": "investments_in_other_entities",
+      "2026-Q2": 0.0,
       "2026-Q1": -13200000000.0,
       "2025-Q4": 2432167000000.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 1000000.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": -1000000.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tiền thu từ đầu tư, góp vốn vào các đơn vị khác",
       "item_en": "Proceeds from divestment in other entities",
       "item_id": "proceeds_from_divestment_in_other_entities",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tiền thu cổ tức và lợi nhuận được chia từ các khoản đầu tư góp vốn dài hạn",
       "item_en": "Dividends and interest received",
       "item_id": "dividends_and_interest_received",
+      "2026-Q2": 205000000.0,
       "2026-Q1": 83000000.0,
       "2025-Q4": -251000000.0,
       "2025-Q3": 372000000.0,
       "2025-Q2": 60000000.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Lưu chuyển tiền thuần từ hoạt động đầu tư",
       "item_en": "Net cash from investing activities",
       "item_id": "net_cash_from_investing_activities",
+      "2026-Q2": -32815000000.0,
       "2026-Q1": -94901000000.0,
       "2025-Q4": 2209560000000.0,
       "2025-Q3": -27331000000.0,
       "2025-Q2": -62379000000.0,
       "2025-Q1": -71756000000.0,
       "2024-Q4": -144638000000.0,
-      "2024-Q3": -31721000000.0,
-      "2024-Q2": -129485000000.0
+      "2024-Q3": -31721000000.0
     },
     {
       "item": "Tăng vốn cổ phần từ góp vốn và/hoặc phát hành cổ phiếu",
       "item_en": "Proceeds from issue of shares",
       "item_id": "proceeds_from_issue_of_shares",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Cổ tức trả cho cổ đông, lợi nhuận đã chia",
       "item_en": "Dividends paid",
       "item_id": "dividends_paid",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": -2641956000000.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": -1100818000000.0,
-      "2024-Q2": 0.0
+      "2024-Q3": -1100818000000.0
     },
     {
       "item": "Lưu chuyển tiền thuần trong kỳ",
       "item_en": "Net Increase/(Decrease) in cash and cash equivalents",
       "item_id": "net_increase_decrease_in_cash_and_cash_equivalents",
+      "2026-Q2": -1471200000000.0,
       "2026-Q1": -192100000000.0,
       "2025-Q4": -958800000000.0,
       "2025-Q3": 1347200000000.0,
       "2025-Q2": 1014444000000.0,
       "2025-Q1": -30000000000.0,
       "2024-Q4": 247683000000.0,
-      "2024-Q3": 320199000000.0,
-      "2024-Q2": 200800000000.0
+      "2024-Q3": 320199000000.0
     },
     {
       "item": "Tiền và các khoản tương đương tiền tài thời điểm đầu kỳ",
       "item_en": "Cash and cash equivalents at the beginning of period",
       "item_id": "cash_and_cash_equivalents_at_the_beginning_of_period",
+      "2026-Q2": 108553424000000.0,
       "2026-Q1": 115747324000000.0,
       "2025-Q4": 86612489000000.0,
       "2025-Q3": 67278398000000.0,
       "2025-Q2": 44780913000000.0,
       "2025-Q1": 86148639000000.0,
       "2024-Q4": 56934421000000.0,
-      "2024-Q3": 50890845000000.0,
-      "2024-Q2": 54587784000000.0
+      "2024-Q3": 50890845000000.0
     },
     {
       "item": "Điều chỉnh ảnh hưởng của thay đổi tỷ giá",
       "item_en": "Effect of foreign exchange differences",
       "item_id": "effect_of_foreign_exchange_differences",
+      "2026-Q2": -373117000000.0,
       "2026-Q1": 373117000000.0,
       "2025-Q4": -252197000000.0,
       "2025-Q3": 252197000000.0,
       "2025-Q2": -210436000000.0,
       "2025-Q1": 210436000000.0,
       "2024-Q4": -419867000000.0,
-      "2024-Q3": 419867000000.0,
-      "2024-Q2": -6866000000.0
+      "2024-Q3": 419867000000.0
     },
     {
       "item": "Tiền và các khoản tương đương tiền tại thời điểm cuối kỳ",
       "item_en": "Cash and cash equivalents at end of the period",
       "item_id": "cash_and_cash_equivalents_at_end_of_the_period",
+      "2026-Q2": 97023335000000.0,
       "2026-Q1": 108553424000000.0,
       "2025-Q4": 115747324000000.0,
       "2025-Q3": 86612489000000.0,
       "2025-Q2": 67278398000000.0,
       "2025-Q1": 44780913000000.0,
       "2024-Q4": 86148639000000.0,
-      "2024-Q3": 56934421000000.0,
-      "2024-Q2": 50890845000000.0
+      "2024-Q3": 56934421000000.0
     },
     {
       "item": "Tiền thuế thu nhập thực nộp trong kỳ",
       "item_en": "Payments for corporate income tax",
       "item_id": "payments_for_corporate_income_tax",
+      "2026-Q2": -112196000000.0,
       "2026-Q1": -1376046000000.0,
       "2025-Q4": -10000000000.0,
       "2025-Q3": -199999000000.0,
       "2025-Q2": -200000000000.0,
       "2025-Q1": -1141958000000.0,
       "2024-Q4": -70572000000.0,
-      "2024-Q3": -99999000000.0,
-      "2024-Q2": -316085000000.0
+      "2024-Q3": -99999000000.0
     },
     {
       "item": "Tiền gửi tại NHNN",
       "item_en": "(Increase)/decrease in compulsory reserves with the SBV",
       "item_id": "increase_decrease_in_compulsory_reserves_with_the_sbv",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tăng/giảm các khoản tiền gửi và cho vay các tổ chức tín dụng khác",
       "item_en": "Increase/(decrease) in placements with and loans to other credit institutions",
       "item_id": "increase_decrease_in_placements_with_and_loans_to_other_credit_institutions",
+      "2026-Q2": -3573716000000.0,
       "2026-Q1": -3619016000000.0,
       "2025-Q4": -7596284000000.0,
       "2025-Q3": 3313083000000.0,
       "2025-Q2": 4475106000000.0,
       "2025-Q1": -365799000000.0,
       "2024-Q4": 4115514000000.0,
-      "2024-Q3": 2163724000000.0,
-      "2024-Q2": 374650000000.0
+      "2024-Q3": 2163724000000.0
     },
     {
       "item": "Tăng/giảm các khoản về kinh doanh chứng khoán",
       "item_en": "Increase/(decrease) in trading securities",
       "item_id": "increase_decrease_in_trading_securities",
+      "2026-Q2": -3182454000000.0,
       "2026-Q1": -6579660000000.0,
       "2025-Q4": 1915899000000.0,
       "2025-Q3": 2941834000000.0,
       "2025-Q2": -233367000000.0,
       "2025-Q1": -433445000000.0,
       "2024-Q4": 4409852000000.0,
-      "2024-Q3": -3042645000000.0,
-      "2024-Q2": 1286705000000.0
+      "2024-Q3": -3042645000000.0
     },
     {
       "item": "Tăng/giảm các công cụ tài chính phái sinh và các tài sản tài chính khác",
       "item_en": "Increase/(decrease) in derivatives and other financial assets",
       "item_id": "increase_decrease_in_derivatives_and_other_financial_assets",
+      "2026-Q2": -89925000000.0,
       "2026-Q1": 162322000000.0,
       "2025-Q4": -221051000000.0,
       "2025-Q3": 58898000000.0,
       "2025-Q2": -115669000000.0,
       "2025-Q1": -55880000000.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tăng/giảm các khoản cho vay khách hàng",
       "item_en": "Increase/(decrease) in loans and advances to customers",
       "item_id": "increase_decrease_in_loans_and_advances_to_customers",
+      "2026-Q2": -21790590000000.0,
       "2026-Q1": -9472335000000.0,
       "2025-Q4": -9067293000000.0,
       "2025-Q3": -10127655000000.0,
       "2025-Q2": -21371218000000.0,
       "2025-Q1": -8776064000000.0,
       "2024-Q4": -10755789000000.0,
-      "2024-Q3": -20774167000000.0,
-      "2024-Q2": -12591091000000.0
+      "2024-Q3": -20774167000000.0
     },
     {
       "item": "(Tăng)/Giảm lãi, phí phải thu",
       "item_en": "(Increase)/decrease in interest receivable",
       "item_id": "increase_decrease_in_interest_receivable",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tăng/giảm nguồn dự phòng để bù đắp tổn thất các khoản",
       "item_en": "Increase/(decrease) in provision for loan losses",
       "item_id": "increase_decrease_in_provision_for_loan_losses",
+      "2026-Q2": -595263000000.0,
       "2026-Q1": -179842000000.0,
       "2025-Q4": -1367659000000.0,
       "2025-Q3": -535435000000.0,
       "2025-Q2": -579057000000.0,
       "2025-Q1": -197735000000.0,
       "2024-Q4": -1228376000000.0,
-      "2024-Q3": -581144000000.0,
-      "2024-Q2": -838314000000.0
+      "2024-Q3": -581144000000.0
     },
     {
       "item": "Tăng/giảm khác về tài sản hoạt động",
       "item_en": "Increase/(decrease) in other operating assets",
       "item_id": "increase_decrease_in_other_operating_assets",
+      "2026-Q2": -2533544000000.0,
       "2026-Q1": -7741415000000.0,
       "2025-Q4": -2120678000000.0,
       "2025-Q3": 16275000000.0,
       "2025-Q2": 549057000000.0,
       "2025-Q1": -1987309000000.0,
       "2024-Q4": -697997000000.0,
-      "2024-Q3": 1524485000000.0,
-      "2024-Q2": -2067859000000.0
+      "2024-Q3": 1524485000000.0
     },
     {
       "item": "Tăng/(Giảm) các khoản nợ chính phủ và NHNN",
       "item_en": "Increase/(decrease) in Loans from the State and SBV",
       "item_id": "increase_decrease_in_loans_from_the_state_and_sbv",
+      "2026-Q2": -8421611000000.0,
       "2026-Q1": 6928134000000.0,
       "2025-Q4": 1379102000000.0,
       "2025-Q3": -5949521000000.0,
       "2025-Q2": 875161000000.0,
       "2025-Q1": 5098631000000.0,
       "2024-Q4": -928721000000.0,
-      "2024-Q3": -559606000000.0,
-      "2024-Q2": 1385814000000.0
+      "2024-Q3": -559606000000.0
     },
     {
       "item": "Tăng/(Giảm) các khoản tiền gửi và vay các TCTD khác",
       "item_en": "Increase/(decrease) in placements and Loans from other credit institutions",
       "item_id": "increase_decrease_in_placements_and_loans_from_other_credit_institutions",
+      "2026-Q2": 9100907000000.0,
       "2026-Q1": 21358313000000.0,
       "2025-Q4": 10744953000000.0,
       "2025-Q3": 12079530000000.0,
       "2025-Q2": 20677172000000.0,
       "2025-Q1": -28909678000000.0,
       "2024-Q4": 12698252000000.0,
-      "2024-Q3": 4515478000000.0,
-      "2024-Q2": -10307589000000.0
+      "2024-Q3": 4515478000000.0
     },
     {
       "item": "Tăng/(Giảm) tiền gửi của khách hàng",
       "item_en": "Increase/(decrease) in deposits from customers",
       "item_id": "increase_decrease_in_deposits_from_customers",
+      "2026-Q2": 21439527000000.0,
       "2026-Q1": -12012095000000.0,
       "2025-Q4": 18804465000000.0,
       "2025-Q3": 13401474000000.0,
       "2025-Q2": 13729666000000.0,
       "2025-Q1": -9691143000000.0,
       "2024-Q4": 17984779000000.0,
-      "2024-Q3": 21823892000000.0,
-      "2024-Q2": 12169761000000.0
+      "2024-Q3": 21823892000000.0
     },
     {
       "item": "Tăng/(Giảm) các công cụ tài chính phái sinh và các khoản nợ tài chính khác",
       "item_en": "Increase/(decrease) in derivatives and other financial liabilities",
       "item_id": "increase_decrease_in_derivatives_and_other_financial_liabilities",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": -131331000000.0,
       "2024-Q4": -23121000000.0,
-      "2024-Q3": -249531000000.0,
-      "2024-Q2": 135634000000.0
+      "2024-Q3": -249531000000.0
     },
     {
       "item": "Tăng/(Giảm) vốn tài trợ, uỷ thác đầu tư của chính phủ và các TCTD khác",
       "item_en": "Increase/(decrease) in funds received from Gov, international and other institutions",
       "item_id": "increase_decrease_in_funds_received_from_gov_international_and_other_institutions",
+      "2026-Q2": 10650000000.0,
       "2026-Q1": 10321000000.0,
       "2025-Q4": 13914000000.0,
       "2025-Q3": 8053000000.0,
       "2025-Q2": 14893000000.0,
       "2025-Q1": 10038000000.0,
       "2024-Q4": 7058000000.0,
-      "2024-Q3": 4889000000.0,
-      "2024-Q2": 6090000000.0
+      "2024-Q3": 4889000000.0
     },
     {
       "item": "Tăng/(Giảm) phát hành giấy tờ có giá",
       "item_en": "Increase/(decrease) in valuable papers issued",
       "item_id": "increase_decrease_in_valuable_papers_issued",
+      "2026-Q2": -4000000000000.0,
       "2026-Q1": 990000000000.0,
       "2025-Q4": 11150000000000.0,
       "2025-Q3": -1000000000000.0,
       "2025-Q2": 1700000000000.0,
       "2025-Q1": 2000000000000.0,
       "2024-Q4": 100044000000.0,
-      "2024-Q3": -1149806000000.0,
-      "2024-Q2": 4001098000000.0
+      "2024-Q3": -1149806000000.0
     },
     {
       "item": "Tăng/(Giảm) lãi, phí phải trả",
       "item_en": "Increase/(decrease) in accrued interest expenses",
       "item_id": "increase_decrease_in_accrued_interest_expenses",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tăng/(Giảm) khác về công nợ hoạt động",
       "item_en": "Increase/(decrease) in other operating liabilities",
       "item_id": "increase_decrease_in_other_operating_liabilities",
+      "2026-Q2": 1455535000000.0,
       "2026-Q1": 481010000000.0,
       "2025-Q4": -34795000000.0,
       "2025-Q3": 138000000.0,
       "2025-Q2": -19377000000.0,
       "2025-Q1": 93219000000.0,
       "2024-Q4": 34158000000.0,
-      "2024-Q3": -791921000000.0,
-      "2024-Q2": 622900000000.0
+      "2024-Q3": -791921000000.0
     },
     {
       "item": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trước thuế thu nhập DN",
       "item_en": "Net cash flows from operating activities before CIT",
       "item_id": "net_cash_flows_from_operating_activities_before_cit",
+      "2026-Q2": -9652957000000.0,
       "2026-Q1": -7280016000000.0,
       "2025-Q4": 28136272000000.0,
       "2025-Q3": 17762025000000.0,
       "2025-Q2": 21755856000000.0,
       "2025-Q1": -41476406000000.0,
       "2024-Q4": 29531040000000.0,
-      "2024-Q3": 5335231000000.0,
-      "2024-Q2": -3761388000000.0
+      "2024-Q3": 5335231000000.0
     },
     {
       "item": "Chi từ các quỹ của TCTD",
       "item_en": "Payment from reserves",
       "item_id": "payment_from_reserves",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Thu được từ nợ khó đòi",
       "item_en": "Bad debt recoveries",
       "item_id": "bad_debt_recoveries",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tiền chi từ thanh lý, nhượng bán TSCĐ",
       "item_en": "Payments on disposal of fixed assets",
       "item_id": "payments_on_disposal_of_fixed_assets",
+      "2026-Q2": -6000000.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 3000000.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Mua sắm Bất động sản đầu tư",
       "item_en": "Purchases of investment properties",
       "item_id": "purchases_of_investment_properties",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tiền thu từ bán, thanh lý bất động sản đầu tư",
       "item_en": "Proceeds from disposal of investment properties",
       "item_id": "proceeds_from_disposal_of_investment_properties",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tiền chi ra do bán, thanh lý bất động sản đầu tư",
       "item_en": "Payments on disposal of investment properties",
       "item_id": "payments_on_disposal_of_investment_properties",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tiền thu từ phát hành giấy tờ có giá dài hạn đủ điều kiện tính vào vốn tự có và các khoản vốn vay dài hạn khác",
       "item_en": "Proceeds from issuance of convertible bonds",
       "item_id": "proceeds_from_issuance_of_convertible_bonds",
+      "2026-Q2": 920000000000.0,
       "2026-Q1": 0.0,
       "2025-Q4": 5567000000000.0,
       "2025-Q3": 2936800000000.0,
       "2025-Q2": 4737200000000.0,
       "2025-Q1": 0.0,
       "2024-Q4": 1767783000000.0,
-      "2024-Q3": 1477817000000.0,
-      "2024-Q2": 200800000000.0
+      "2024-Q3": 1477817000000.0
     },
     {
       "item": "Tiền chi thanh toán giấy tờ có giá dài hạn đủ điều kiện tính vào vốn tự có và các khoản vốn vay dài hạn khác",
       "item_en": "Payments for redemption of convertible bonds",
       "item_id": "payments_for_redemption_of_convertible_bonds",
+      "2026-Q2": -2391200000000.0,
       "2026-Q1": -192100000000.0,
       "2025-Q4": -6525800000000.0,
       "2025-Q3": -1589600000000.0,
       "2025-Q2": -1080800000000.0,
       "2025-Q1": -30000000000.0,
       "2024-Q4": -1520100000000.0,
-      "2024-Q3": -56800000000.0,
-      "2024-Q2": 0.0
+      "2024-Q3": -56800000000.0
     },
     {
       "item": "Tiền chi ra mua cổ phiếu quỹ",
       "item_en": "Purchase of treasury shares",
       "item_id": "purchase_of_treasury_shares",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Tiền thu được do bán cổ phiếu quỹ",
       "item_en": "Proceeds from selling of treasury shares",
       "item_id": "proceeds_from_selling_of_treasury_shares",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Thu nhập lãi và các khoản thu nhập tương tự nhận được",
       "item_en": "Interest and similar receipts",
       "item_id": "interest_and_similar_receipts",
+      "2026-Q2": 9699824000000.0,
       "2026-Q1": 8471388000000.0,
       "2025-Q4": 9226842000000.0,
       "2025-Q3": 8181267000000.0,
       "2025-Q2": 6497786000000.0,
       "2025-Q1": 6286794000000.0,
       "2024-Q4": 7234291000000.0,
-      "2024-Q3": 6151477000000.0,
-      "2024-Q2": 6083362000000.0
+      "2024-Q3": 6151477000000.0
     },
     {
       "item": "Chi phí lãi và các chi phí tương tự đã trả",
       "item_en": "Interest and similar payments",
       "item_id": "interest_and_similar_payments",
+      "2026-Q2": -6669710000000.0,
       "2026-Q1": -4023642000000.0,
       "2025-Q4": -5425195000000.0,
       "2025-Q3": -4181716000000.0,
       "2025-Q2": -4075149000000.0,
       "2025-Q1": -2311646000000.0,
       "2024-Q4": -3842945000000.0,
-      "2024-Q3": -3180789000000.0,
-      "2024-Q2": -3480078000000.0
+      "2024-Q3": -3180789000000.0
     },
     {
       "item": "Thu nhập từ hoạt động dịch vụ nhận được",
       "item_en": "Fees and commission income received",
       "item_id": "fees_and_commission_income_received",
+      "2026-Q2": 1131521000000.0,
       "2026-Q1": 1252429000000.0,
       "2025-Q4": 1224082000000.0,
       "2025-Q3": 1034974000000.0,
       "2025-Q2": 988763000000.0,
       "2025-Q1": 909938000000.0,
       "2024-Q4": 908839000000.0,
-      "2024-Q3": 794465000000.0,
-      "2024-Q2": 945180000000.0
+      "2024-Q3": 794465000000.0
     },
     {
       "item": "Thu nhập thuần từ hoạt động kinh doanh ngoại hối và vàng",
       "item_en": "Net receipts from dealing of foreign currencies, gold",
       "item_id": "net_receipts_from_dealing_of_foreign_currencies_gold",
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
       "2025-Q2": 0.0,
       "2025-Q1": 0.0,
       "2024-Q4": 0.0,
-      "2024-Q3": 0.0,
-      "2024-Q2": 0.0
+      "2024-Q3": 0.0
     },
     {
       "item": "Thu nhập từ hoạt động kinh doanh chứng khoán",
       "item_en": "Net receipts from dealing of securities",
       "item_id": "net_receipts_from_dealing_of_securities",
+      "2026-Q2": 248834000000.0,
       "2026-Q1": -55227000000.0,
       "2025-Q4": 773262000000.0,
       "2025-Q3": -14139000000.0,
       "2025-Q2": 364670000000.0,
       "2025-Q1": 110356000000.0,
       "2024-Q4": 1067583000000.0,
-      "2024-Q3": -69993000000.0,
-      "2024-Q2": -19330000000.0
+      "2024-Q3": -69993000000.0
     },
     {
       "item": "Thu nhập khác",
       "item_en": "Other operating income",
       "item_id": "other_operating_income",
+      "2026-Q2": 19731000000.0,
       "2026-Q1": 32556000000.0,
       "2025-Q4": -151024000000.0,
       "2025-Q3": 41330000000.0,
       "2025-Q2": -7123000000.0,
       "2025-Q1": -15072000000.0,
       "2024-Q4": -88800000000.0,
-      "2024-Q3": -23099000000.0,
-      "2024-Q2": -99464000000.0
+      "2024-Q3": -23099000000.0
     },
     {
       "item": "Tiền chi trả cho nhân viên và hoạt động quản lý, cộng cụ",
       "item_en": "Payments to employees and other operating expenses",
       "item_id": "payments_to_employees_and_other_operating_expenses",
+      "2026-Q2": -1954948000000.0,
       "2026-Q1": -2144747000000.0,
       "2025-Q4": -1275725000000.0,
       "2025-Q3": -1494006000000.0,
       "2025-Q2": -1629114000000.0,
       "2025-Q1": -2088043000000.0,
       "2024-Q4": -1618932000000.0,
-      "2024-Q3": -1278550000000.0,
-      "2024-Q2": -1250397000000.0
+      "2024-Q3": -1278550000000.0
     },
     {
       "item": "Tiền thu các khoản nợ đã được xử lý, xóa, bù đắp bằng nguồn rủi ro",
       "item_en": "Receipts from debts written off or paid off by risk fund",
       "item_id": "receipts_from_debts_written_off_or_paid_off_by_risk_fund",
+      "2026-Q2": 164471000000.0,
       "2026-Q1": 237536000000.0,
       "2025-Q4": 173457000000.0,
       "2025-Q3": 187640000000.0,
       "2025-Q2": 113656000000.0,
       "2025-Q1": 119721000000.0,
       "2024-Q4": 225923000000.0,
-      "2024-Q3": 158071000000.0,
-      "2024-Q2": 197625000000.0
+      "2024-Q3": 158071000000.0
     },
     {
       "item": "Chênh lệch số tiền thực thu/thực chi từ hoạt động kinh doanh",
       "item_en": "Net receipts from foreign currencies, gold and securities trading",
       "item_id": "net_receipts_from_foreign_currencies_gold_and_securities_trading",
+      "2026-Q2": 248834000000.0,
       "2026-Q1": -55227000000.0,
       "2025-Q4": 773262000000.0,
       "2025-Q3": -14139000000.0,
       "2025-Q2": 364670000000.0,
       "2025-Q1": 110356000000.0,
       "2024-Q4": 1067583000000.0,
-      "2024-Q3": -69993000000.0,
-      "2024-Q2": -19330000000.0
+      "2024-Q3": -69993000000.0
     }
   ],
-  "crawledAt": "2026-07-31T14:15:41.856144+00:00"
+  "crawledAt": "2026-08-03T05:35:16.335785+00:00"
 }
