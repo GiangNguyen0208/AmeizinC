@@ -3,10 +3,10 @@
     {
       "symbol": "HPG",
       "companyName": "HPG",
-      "price": 22.2,
-      "change": -0.35,
-      "changePercent": -1.55,
-      "volume": 20850500
+      "price": 22.15,
+      "change": -0.4,
+      "changePercent": -1.77,
+      "volume": 22694000
     },
     {
       "symbol": "MBB",
@@ -14,7 +14,7 @@
       "price": 24.4,
       "change": 0.4,
       "changePercent": 1.67,
-      "volume": 16306800
+      "volume": 16987000
     },
     {
       "symbol": "SSI",
@@ -22,31 +22,31 @@
       "price": 24.55,
       "change": 0.0,
       "changePercent": 0.0,
-      "volume": 13433400
+      "volume": 14130200
     },
     {
       "symbol": "VPB",
       "companyName": "VPB",
-      "price": 25.5,
-      "change": 0.0,
-      "changePercent": 0.0,
-      "volume": 11059600
+      "price": 25.65,
+      "change": 0.15,
+      "changePercent": 0.59,
+      "volume": 11402500
     },
     {
       "symbol": "HDB",
       "companyName": "HDB",
-      "price": 26.4,
-      "change": 0.4,
-      "changePercent": 1.54,
-      "volume": 9947000
+      "price": 26.7,
+      "change": 0.7,
+      "changePercent": 2.69,
+      "volume": 11276100
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 22.3,
-      "change": -0.25,
-      "changePercent": -1.11,
-      "volume": 9844900
+      "price": 22.45,
+      "change": -0.1,
+      "changePercent": -0.44,
+      "volume": 10497900
     },
     {
       "symbol": "VRE",
@@ -54,7 +54,7 @@
       "price": 26.4,
       "change": 1.2,
       "changePercent": 4.76,
-      "volume": 9699100
+      "volume": 10105100
     },
     {
       "symbol": "TCB",
@@ -62,24 +62,24 @@
       "price": 29.65,
       "change": -0.3,
       "changePercent": -1.0,
-      "volume": 8356900
+      "volume": 9310400
     },
     {
       "symbol": "TPB",
       "companyName": "TPB",
-      "price": 14.5,
-      "change": 0.1,
-      "changePercent": 0.69,
-      "volume": 7113200
+      "price": 14.55,
+      "change": 0.15,
+      "changePercent": 1.04,
+      "volume": 7492500
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 71.4,
-      "change": -0.3,
-      "changePercent": -0.42,
-      "volume": 6357100
+      "price": 71.5,
+      "change": -0.2,
+      "changePercent": -0.28,
+      "volume": 6584300
     }
   ],
-  "crawledAt": "2026-08-04T07:31:13.644025+00:00"
+  "crawledAt": "2026-08-04T10:11:40.850045+00:00"
 }

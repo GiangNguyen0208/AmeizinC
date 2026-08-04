@@ -6,47 +6,39 @@
       "price": 63.0,
       "change": -1.3,
       "changePercent": -2.02,
-      "volume": 224500
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 59.2,
-      "change": -1.1,
-      "changePercent": -1.82,
-      "volume": 5284400
-    },
-    {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 22.2,
-      "change": -0.35,
-      "changePercent": -1.55,
-      "volume": 20850500
-    },
-    {
-      "symbol": "VCB",
-      "companyName": "VCB",
-      "price": 59.9,
-      "change": -0.9,
-      "changePercent": -1.48,
-      "volume": 4741600
+      "volume": 255900
     },
     {
       "symbol": "GAS",
       "companyName": "GAS",
-      "price": 70.2,
-      "change": -1.0,
-      "changePercent": -1.4,
-      "volume": 735000
+      "price": 69.9,
+      "change": -1.3,
+      "changePercent": -1.83,
+      "volume": 852900
     },
     {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 22.3,
-      "change": -0.25,
-      "changePercent": -1.11,
-      "volume": 9844900
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 22.15,
+      "change": -0.4,
+      "changePercent": -1.77,
+      "volume": 22694000
+    },
+    {
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 59.5,
+      "change": -0.8,
+      "changePercent": -1.33,
+      "volume": 5531900
+    },
+    {
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 60.0,
+      "change": -0.8,
+      "changePercent": -1.32,
+      "volume": 5093100
     },
     {
       "symbol": "TCB",
@@ -54,24 +46,24 @@
       "price": 29.65,
       "change": -0.3,
       "changePercent": -1.0,
-      "volume": 8356900
+      "volume": 9310400
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 22.45,
+      "change": -0.1,
+      "changePercent": -0.44,
+      "volume": 10497900
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 71.4,
-      "change": -0.3,
-      "changePercent": -0.42,
-      "volume": 6357100
-    },
-    {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 212.8,
+      "price": 71.5,
       "change": -0.2,
-      "changePercent": -0.09,
-      "volume": 4797400
+      "changePercent": -0.28,
+      "volume": 6584300
     }
   ],
-  "crawledAt": "2026-08-04T07:31:13.644025+00:00"
+  "crawledAt": "2026-08-04T10:11:40.850045+00:00"
 }

@@ -6,15 +6,39 @@
       "price": 26.4,
       "change": 1.2,
       "changePercent": 4.76,
-      "volume": 9699100
+      "volume": 10105100
     },
     {
       "symbol": "STB",
       "companyName": "STB",
-      "price": 74.5,
-      "change": 3.0,
-      "changePercent": 4.2,
-      "volume": 4244000
+      "price": 74.1,
+      "change": 2.6,
+      "changePercent": 3.64,
+      "volume": 4940100
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 152.9,
+      "change": 4.9,
+      "changePercent": 3.31,
+      "volume": 6338600
+    },
+    {
+      "symbol": "HDB",
+      "companyName": "HDB",
+      "price": 26.7,
+      "change": 0.7,
+      "changePercent": 2.69,
+      "volume": 11276100
+    },
+    {
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 218.0,
+      "change": 5.0,
+      "changePercent": 2.35,
+      "volume": 5187600
     },
     {
       "symbol": "MBB",
@@ -22,39 +46,31 @@
       "price": 24.4,
       "change": 0.4,
       "changePercent": 1.67,
-      "volume": 16306800
-    },
-    {
-      "symbol": "HDB",
-      "companyName": "HDB",
-      "price": 26.4,
-      "change": 0.4,
-      "changePercent": 1.54,
-      "volume": 9947000
-    },
-    {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 150.2,
-      "change": 2.2,
-      "changePercent": 1.49,
-      "volume": 5633900
+      "volume": 16987000
     },
     {
       "symbol": "TPB",
       "companyName": "TPB",
-      "price": 14.5,
-      "change": 0.1,
-      "changePercent": 0.69,
-      "volume": 7113200
+      "price": 14.55,
+      "change": 0.15,
+      "changePercent": 1.04,
+      "volume": 7492500
     },
     {
       "symbol": "SAB",
       "companyName": "SAB",
-      "price": 45.0,
-      "change": 0.2,
-      "changePercent": 0.45,
-      "volume": 585000
+      "price": 45.1,
+      "change": 0.3,
+      "changePercent": 0.67,
+      "volume": 643600
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 25.65,
+      "change": 0.15,
+      "changePercent": 0.59,
+      "volume": 11402500
     },
     {
       "symbol": "MSN",
@@ -62,16 +78,8 @@
       "price": 68.4,
       "change": 0.2,
       "changePercent": 0.29,
-      "volume": 2855500
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 33.55,
-      "change": 0.05,
-      "changePercent": 0.15,
-      "volume": 720000
+      "volume": 3115600
     }
   ],
-  "crawledAt": "2026-08-04T07:31:13.644025+00:00"
+  "crawledAt": "2026-08-04T10:11:40.850045+00:00"
 }
