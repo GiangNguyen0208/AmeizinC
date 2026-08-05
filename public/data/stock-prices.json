@@ -27,13 +27,13 @@
     "VHM": {
       "symbol": "VHM",
       "price": 153.0,
-      "change": 0.1,
-      "changePercent": 0.07,
+      "change": 0.0,
+      "changePercent": 0.0,
       "volume": 10681100,
       "high": 158.8,
       "low": 153.0,
       "open": 154.2,
-      "previousClose": 152.9,
+      "previousClose": 153.0,
       "updatedAt": "2026-08-05"
     },
     "HPG": {
@@ -241,5 +241,5 @@
       "updatedAt": "2026-08-05"
     }
   },
-  "crawledAt": "2026-08-05T10:15:24.989385+00:00"
+  "crawledAt": "2026-08-05T14:12:45.837496+00:00"
 }
