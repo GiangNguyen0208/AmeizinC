@@ -4,17 +4,17 @@
       "symbol": "VHM",
       "companyName": "VHM",
       "price": 78.0,
-      "change": 1.5,
-      "changePercent": 1.96,
+      "change": 0.9,
+      "changePercent": 1.17,
       "volume": 11942500
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 70.9,
-      "change": 0.6,
-      "changePercent": 0.85,
-      "volume": 2411400
+      "price": 70.8,
+      "change": 0.5,
+      "changePercent": 0.71,
+      "volume": 4461800
     },
     {
       "symbol": "VNM",
@@ -22,32 +22,8 @@
       "price": 59.0,
       "change": 0.4,
       "changePercent": 0.68,
-      "volume": 1598700
-    },
-    {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 70.7,
-      "change": 0.2,
-      "changePercent": 0.28,
-      "volume": 380300
-    },
-    {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 73.3,
-      "change": 0.1,
-      "changePercent": 0.14,
-      "volume": 259600
-    },
-    {
-      "symbol": "VIC",
-      "companyName": "VIC",
-      "price": 220.1,
-      "change": 0.1,
-      "changePercent": 0.05,
-      "volume": 2198300
+      "volume": 3084500
     }
   ],
-  "crawledAt": "2026-08-06T04:55:15.911805+00:00"
+  "crawledAt": "2026-08-06T07:32:49.306879+00:00"
 }
