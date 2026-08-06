@@ -2,18 +2,18 @@
   "data": [
     {
       "name": "VN-Index",
-      "value": 1767.2,
-      "change": -9.26,
-      "changePercent": -0.52,
-      "volume": 536493707,
+      "value": 1764.78,
+      "change": -11.68,
+      "changePercent": -0.66,
+      "volume": 579915937,
       "updatedAt": "2026-08-06"
     },
     {
       "name": "HNX-Index",
-      "value": 295.57,
-      "change": 1.98,
-      "changePercent": 0.67,
-      "volume": 60857623,
+      "value": 292.64,
+      "change": -0.95,
+      "changePercent": -0.32,
+      "volume": 65649317,
       "updatedAt": "2026-08-06"
     },
     {
@@ -21,9 +21,9 @@
       "value": 126.82,
       "change": -0.33,
       "changePercent": -0.26,
-      "volume": 22796431,
+      "volume": 24188222,
       "updatedAt": "2026-08-06"
     }
   ],
-  "crawledAt": "2026-08-06T07:32:00.974714+00:00"
+  "crawledAt": "2026-08-06T10:16:48.016138+00:00"
 }
