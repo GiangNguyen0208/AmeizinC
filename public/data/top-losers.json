@@ -1,85 +1,85 @@
 {
   "data": [
     {
-      "symbol": "MSN",
-      "companyName": "MSN",
-      "price": 67.2,
-      "change": -1.2,
-      "changePercent": -1.75,
-      "volume": 4183900
-    },
-    {
-      "symbol": "FPT",
-      "companyName": "FPT",
-      "price": 70.3,
-      "change": -1.2,
-      "changePercent": -1.68,
-      "volume": 6877600
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 44.4,
-      "change": -0.7,
-      "changePercent": -1.55,
-      "volume": 488100
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 58.6,
+      "symbol": "VRE",
+      "companyName": "VRE",
+      "price": 25.55,
       "change": -0.9,
-      "changePercent": -1.51,
-      "volume": 5288700
+      "changePercent": -3.4,
+      "volume": 3909500
     },
     {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 73.2,
-      "change": -0.9,
-      "changePercent": -1.21,
-      "volume": 2746300
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 62.7,
+      "change": -1.2,
+      "changePercent": -1.88,
+      "volume": 50300
     },
     {
-      "symbol": "VCB",
-      "companyName": "VCB",
-      "price": 59.3,
-      "change": -0.7,
-      "changePercent": -1.17,
-      "volume": 3663100
-    },
-    {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 22.0,
-      "change": -0.15,
-      "changePercent": -0.68,
-      "volume": 27963700
-    },
-    {
-      "symbol": "SSI",
-      "companyName": "SSI",
-      "price": 24.4,
-      "change": -0.15,
-      "changePercent": -0.61,
-      "volume": 16489600
+      "symbol": "TPB",
+      "companyName": "TPB",
+      "price": 14.55,
+      "change": -0.2,
+      "changePercent": -1.36,
+      "volume": 2024200
     },
     {
       "symbol": "VPB",
       "companyName": "VPB",
-      "price": 25.5,
-      "change": -0.15,
-      "changePercent": -0.58,
-      "volume": 13987100
+      "price": 25.2,
+      "change": -0.3,
+      "changePercent": -1.18,
+      "volume": 5043500
     },
     {
-      "symbol": "HDB",
-      "companyName": "HDB",
-      "price": 26.55,
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 44.0,
+      "change": -0.4,
+      "changePercent": -0.9,
+      "volume": 323400
+    },
+    {
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 24.1,
+      "change": -0.2,
+      "changePercent": -0.82,
+      "volume": 3173400
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 66.7,
+      "change": -0.5,
+      "changePercent": -0.74,
+      "volume": 1001500
+    },
+    {
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 29.45,
+      "change": -0.2,
+      "changePercent": -0.67,
+      "volume": 4089800
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 22.3,
       "change": -0.15,
-      "changePercent": -0.56,
-      "volume": 9378200
+      "changePercent": -0.67,
+      "volume": 2573700
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 34.05,
+      "change": -0.2,
+      "changePercent": -0.58,
+      "volume": 954100
     }
   ],
-  "crawledAt": "2026-08-05T14:12:45.839031+00:00"
+  "crawledAt": "2026-08-06T04:55:15.911805+00:00"
 }
