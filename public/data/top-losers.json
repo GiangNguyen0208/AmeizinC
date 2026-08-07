@@ -3,26 +3,26 @@
     {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 73.9,
-      "change": -3.2,
-      "changePercent": -4.15,
-      "volume": 6525200
+      "price": 73.0,
+      "change": -4.1,
+      "changePercent": -5.32,
+      "volume": 9117200
     },
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 214.4,
-      "change": -4.4,
-      "changePercent": -2.01,
-      "volume": 3237600
+      "price": 215.0,
+      "change": -3.8,
+      "changePercent": -1.74,
+      "volume": 5350500
     },
     {
       "symbol": "VRE",
       "companyName": "VRE",
-      "price": 24.8,
-      "change": -0.5,
-      "changePercent": -1.98,
-      "volume": 4964500
+      "price": 24.95,
+      "change": -0.35,
+      "changePercent": -1.38,
+      "volume": 6142900
     },
     {
       "symbol": "VPB",
@@ -30,8 +30,8 @@
       "price": 25.0,
       "change": -0.15,
       "changePercent": -0.6,
-      "volume": 19099300
+      "volume": 24187100
     }
   ],
-  "crawledAt": "2026-08-07T06:59:42.377942+00:00"
+  "crawledAt": "2026-08-07T08:12:27.286575+00:00"
 }

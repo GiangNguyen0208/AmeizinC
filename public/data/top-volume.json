@@ -6,31 +6,15 @@
       "price": 25.0,
       "change": -0.15,
       "changePercent": -0.6,
-      "volume": 19099300
+      "volume": 24187100
     },
     {
       "symbol": "TCB",
       "companyName": "TCB",
-      "price": 29.2,
-      "change": 0.0,
-      "changePercent": 0.0,
-      "volume": 16971700
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 61.9,
-      "change": 2.9,
-      "changePercent": 4.92,
-      "volume": 11923600
-    },
-    {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 22.05,
-      "change": 0.2,
-      "changePercent": 0.92,
-      "volume": 9491800
+      "price": 29.7,
+      "change": 0.5,
+      "changePercent": 1.71,
+      "volume": 22690400
     },
     {
       "symbol": "SSI",
@@ -38,7 +22,31 @@
       "price": 24.45,
       "change": 0.15,
       "changePercent": 0.62,
-      "volume": 9315100
+      "volume": 13285400
+    },
+    {
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 62.0,
+      "change": 3.0,
+      "changePercent": 5.08,
+      "volume": 13239500
+    },
+    {
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 22.0,
+      "change": 0.15,
+      "changePercent": 0.69,
+      "volume": 13018100
+    },
+    {
+      "symbol": "HDB",
+      "companyName": "HDB",
+      "price": 26.55,
+      "change": 0.0,
+      "changePercent": 0.0,
+      "volume": 9863000
     },
     {
       "symbol": "ACB",
@@ -46,40 +54,32 @@
       "price": 22.4,
       "change": 0.25,
       "changePercent": 1.13,
-      "volume": 7686400
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 36.05,
-      "change": 2.35,
-      "changePercent": 6.97,
-      "volume": 6560800
-    },
-    {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 73.9,
-      "change": -3.2,
-      "changePercent": -4.15,
-      "volume": 6525200
+      "volume": 9526200
     },
     {
       "symbol": "MBB",
       "companyName": "MBB",
-      "price": 24.25,
-      "change": 0.35,
-      "changePercent": 1.46,
-      "volume": 6328900
+      "price": 24.15,
+      "change": 0.25,
+      "changePercent": 1.05,
+      "volume": 9472600
     },
     {
-      "symbol": "HDB",
-      "companyName": "HDB",
-      "price": 26.8,
-      "change": 0.25,
-      "changePercent": 0.94,
-      "volume": 5761300
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 73.0,
+      "change": -4.1,
+      "changePercent": -5.32,
+      "volume": 9117200
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 35.95,
+      "change": 2.25,
+      "changePercent": 6.68,
+      "volume": 7027000
     }
   ],
-  "crawledAt": "2026-08-07T06:59:42.377942+00:00"
+  "crawledAt": "2026-08-07T08:12:27.286575+00:00"
 }
