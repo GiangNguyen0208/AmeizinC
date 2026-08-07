@@ -1,21 +1,85 @@
 {
   "data": [
     {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 59.0,
-      "change": 0.4,
-      "changePercent": 0.68,
-      "volume": 3231300
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 36.05,
+      "change": 2.35,
+      "changePercent": 6.97,
+      "volume": 5269600
     },
     {
-      "symbol": "FPT",
-      "companyName": "FPT",
-      "price": 70.7,
-      "change": 0.4,
-      "changePercent": 0.57,
-      "volume": 4629700
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 74.6,
+      "change": 4.8,
+      "changePercent": 6.88,
+      "volume": 1938900
+    },
+    {
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 66.8,
+      "change": 4.0,
+      "changePercent": 6.37,
+      "volume": 880400
+    },
+    {
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 62.6,
+      "change": 3.6,
+      "changePercent": 6.1,
+      "volume": 10512200
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 44.9,
+      "change": 1.2,
+      "changePercent": 2.75,
+      "volume": 488600
+    },
+    {
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 60.3,
+      "change": 1.3,
+      "changePercent": 2.2,
+      "volume": 3740100
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 73.6,
+      "change": 1.4,
+      "changePercent": 1.94,
+      "volume": 1070200
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 22.45,
+      "change": 0.3,
+      "changePercent": 1.35,
+      "volume": 5530300
+    },
+    {
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 24.2,
+      "change": 0.3,
+      "changePercent": 1.26,
+      "volume": 4026600
+    },
+    {
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 22.1,
+      "change": 0.25,
+      "changePercent": 1.14,
+      "volume": 6697100
     }
   ],
-  "crawledAt": "2026-08-06T14:13:52.898088+00:00"
+  "crawledAt": "2026-08-07T04:19:04.722804+00:00"
 }
