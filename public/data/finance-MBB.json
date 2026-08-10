@@ -239,7 +239,7 @@
       "item": "Thu nhập khác",
       "item_en": "Other Income",
       "item_id": "other_income",
-      "2026-Q2": 1069831000000.0,
+      "2026-Q2": 1835146000000.0,
       "2026-Q1": 1090478000000.0,
       "2025-Q4": 2738958000000.0,
       "2025-Q3": 1197659000000.0,
@@ -252,7 +252,7 @@
       "item": "Chi phí khác",
       "item_en": "Other Expenses",
       "item_id": "other_expenses",
-      "2026-Q2": 0.0,
+      "2026-Q2": -765315000000.0,
       "2026-Q1": 0.0,
       "2025-Q4": -1165150000000.0,
       "2025-Q3": 0.0,
@@ -1530,7 +1530,7 @@
       "item": "Tiền chi đầu tư, góp vốn vào các đơn vị khác",
       "item_en": "Investments in other entities",
       "item_id": "investments_in_other_entities",
-      "2026-Q2": -1340000000.0,
+      "2026-Q2": -3300000000.0,
       "2026-Q1": 0.0,
       "2025-Q4": 499973000000.0,
       "2025-Q3": -506943000000.0,
@@ -1543,7 +1543,7 @@
       "item": "Tiền thu từ đầu tư, góp vốn vào các đơn vị khác",
       "item_en": "Proceeds from divestment in other entities",
       "item_id": "proceeds_from_divestment_in_other_entities",
-      "2026-Q2": -490000000.0,
+      "2026-Q2": 1470000000.0,
       "2026-Q1": 490000000.0,
       "2025-Q4": 2409280000000.0,
       "2025-Q3": -57485000000.0,
@@ -2138,5 +2138,5 @@
       "2024-Q3": 664929000000.0
     }
   ],
-  "crawledAt": "2026-08-07T13:09:21.140712+00:00"
+  "crawledAt": "2026-08-10T03:45:34.228382+00:00"
 }
