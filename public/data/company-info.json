@@ -112,10 +112,10 @@
       "maximum_foreign_percentage": 0.5,
       "state_percentage": 0.0,
       "analyst": "Thuc Than",
-      "upside_to_target_percent": 0.0534246575,
+      "upside_to_target_percent": 1.1054794521,
       "dividend_per_share_tsr": 6000.0,
-      "projected_tsr_percentage": 0.1356164383,
-      "target_price": 76900.0,
+      "projected_tsr_percentage": 1.1876712329,
+      "target_price": 153700.0,
       "company_profile": "Công ty Cổ phần Vinhomes (VHM) có tiền thân là Công ty Cổ phần Đô thị BIDV-PP được thành lập năm 2008. Công ty hoạt động trong lĩnh vực phát triển, chuyển nhượng, vận hành và khai thác bất động sản nhà ở phức hợp. VHM là doanh nghiệp lớn nhất Việt Nam trong lĩnh vực phát triển và chuyển nhượng bất động sản nhà ở. Hiện nay, Vinhomes đã đưa vào vận hành và quản lý 32 khu đô thị thị tại 8 tỉnh thành trên cả nước với hơn 168 nghìn căn hộ, biệt thự và nhà phố, phục vụ hơn 650 nghìn cư dân. VHM được niêm yết và giao dịch trên Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh (HOSE) từ tháng 05/2018.",
       "in_cu": true,
       "icb_code_lv2": "8600",
@@ -901,5 +901,5 @@
       "bank": true
     }
   },
-  "crawledAt": "2026-08-10T05:17:35.481931+00:00"
+  "crawledAt": "2026-08-10T06:26:53.875751+00:00"
 }
