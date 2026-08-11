@@ -1,21 +1,69 @@
 {
   "data": [
     {
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 66.3,
+      "change": -1.2,
+      "changePercent": -1.78,
+      "volume": 71200
+    },
+    {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 208.5,
-      "change": -6.5,
-      "changePercent": -3.02,
-      "volume": 4429400
+      "price": 206.1,
+      "change": -2.4,
+      "changePercent": -1.15,
+      "volume": 1160000
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 46.0,
+      "change": -0.5,
+      "changePercent": -1.08,
+      "volume": 215700
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 37.35,
+      "change": -0.15,
+      "changePercent": -0.4,
+      "volume": 639800
+    },
+    {
+      "symbol": "VRE",
+      "companyName": "VRE",
+      "price": 25.45,
+      "change": -0.1,
+      "changePercent": -0.39,
+      "volume": 1331800
+    },
+    {
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 79.5,
+      "change": -0.3,
+      "changePercent": -0.38,
+      "volume": 295400
+    },
+    {
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 31.25,
+      "change": -0.1,
+      "changePercent": -0.32,
+      "volume": 4551400
     },
     {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 71.6,
-      "change": -1.4,
-      "changePercent": -1.92,
-      "volume": 8267400
+      "price": 71.5,
+      "change": -0.1,
+      "changePercent": -0.14,
+      "volume": 2928300
     }
   ],
-  "crawledAt": "2026-08-10T13:12:42.636000+00:00"
+  "crawledAt": "2026-08-11T03:26:21.894028+00:00"
 }

@@ -1,85 +1,85 @@
 {
   "data": [
     {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 31.35,
-      "change": 1.65,
-      "changePercent": 5.56,
-      "volume": 34812900
-    },
-    {
       "symbol": "MBB",
       "companyName": "MBB",
-      "price": 24.25,
-      "change": 0.1,
-      "changePercent": 0.41,
-      "volume": 28450200
+      "price": 20.55,
+      "change": 0.35,
+      "changePercent": 1.73,
+      "volume": 7445900
     },
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 25.1,
-      "change": 0.65,
-      "changePercent": 2.66,
-      "volume": 20351300
+      "price": 25.25,
+      "change": 0.15,
+      "changePercent": 0.6,
+      "volume": 6479500
     },
     {
-      "symbol": "VPB",
-      "companyName": "VPB",
-      "price": 25.85,
-      "change": 0.85,
-      "changePercent": 3.4,
-      "volume": 17881200
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 31.25,
+      "change": -0.1,
+      "changePercent": -0.32,
+      "volume": 4551400
     },
     {
       "symbol": "HPG",
       "companyName": "HPG",
-      "price": 22.1,
-      "change": 0.1,
-      "changePercent": 0.45,
-      "volume": 16732700
+      "price": 22.15,
+      "change": 0.05,
+      "changePercent": 0.23,
+      "volume": 4309300
     },
     {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 14.75,
-      "change": 0.15,
-      "changePercent": 1.03,
-      "volume": 12963800
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 72.3,
+      "change": 0.5,
+      "changePercent": 0.7,
+      "volume": 4149200
+    },
+    {
+      "symbol": "HDB",
+      "companyName": "HDB",
+      "price": 27.05,
+      "change": 0.1,
+      "changePercent": 0.37,
+      "volume": 3341900
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 71.5,
+      "change": -0.1,
+      "changePercent": -0.14,
+      "volume": 2928300
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 25.9,
+      "change": 0.05,
+      "changePercent": 0.19,
+      "volume": 2870700
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
       "price": 22.65,
-      "change": 0.25,
-      "changePercent": 1.12,
-      "volume": 12233400
+      "change": 0.0,
+      "changePercent": 0.0,
+      "volume": 2793400
     },
     {
-      "symbol": "HDB",
-      "companyName": "HDB",
-      "price": 26.95,
-      "change": 0.4,
-      "changePercent": 1.51,
-      "volume": 10622700
-    },
-    {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 71.6,
-      "change": -1.4,
-      "changePercent": -1.92,
-      "volume": 8267400
-    },
-    {
-      "symbol": "FPT",
-      "companyName": "FPT",
-      "price": 71.8,
-      "change": 1.0,
-      "changePercent": 1.41,
-      "volume": 5252100
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 62.8,
+      "change": 0.7,
+      "changePercent": 1.13,
+      "volume": 1903600
     }
   ],
-  "crawledAt": "2026-08-10T13:12:42.636000+00:00"
+  "crawledAt": "2026-08-11T03:26:21.894028+00:00"
 }
