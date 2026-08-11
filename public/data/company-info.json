@@ -112,10 +112,10 @@
       "maximum_foreign_percentage": 0.5,
       "state_percentage": 0.0,
       "analyst": "Thuc Than",
-      "upside_to_target_percent": 1.1466480447,
-      "dividend_per_share_tsr": 6000.0,
-      "projected_tsr_percentage": 1.2304469274,
-      "target_price": 153700.0,
+      "upside_to_target_percent": 0.0740223464,
+      "dividend_per_share_tsr": 0.0,
+      "projected_tsr_percentage": 0.0740223464,
+      "target_price": 76900.0,
       "company_profile": "Công ty Cổ phần Vinhomes (VHM) có tiền thân là Công ty Cổ phần Đô thị BIDV-PP được thành lập năm 2008. Công ty hoạt động trong lĩnh vực phát triển, chuyển nhượng, vận hành và khai thác bất động sản nhà ở phức hợp. VHM là doanh nghiệp lớn nhất Việt Nam trong lĩnh vực phát triển và chuyển nhượng bất động sản nhà ở. Hiện nay, Vinhomes đã đưa vào vận hành và quản lý 32 khu đô thị thị tại 8 tỉnh thành trên cả nước với hơn 168 nghìn căn hộ, biệt thự và nhà phố, phục vụ hơn 650 nghìn cư dân. VHM được niêm yết và giao dịch trên Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh (HOSE) từ tháng 05/2018.",
       "in_cu": true,
       "icb_code_lv2": "8600",
@@ -247,10 +247,10 @@
       "maximum_foreign_percentage": 0.232351,
       "state_percentage": 0.44344919,
       "analyst": "Ngoc Huynh",
-      "upside_to_target_percent": 0.4653283994,
+      "upside_to_target_percent": 0.5494857737,
       "dividend_per_share_tsr": 500.0,
-      "projected_tsr_percentage": 0.4900805683,
-      "target_price": 29600.0,
+      "projected_tsr_percentage": 0.5742379426,
+      "target_price": 31300.0,
       "company_profile": "Ngân hàng Thương mại Cổ phần Quân đội (MBB) được thành lập từ năm 1994 với mục tiêu ban đầu là đáp ứng nhu cầu dịch vụ tài chính cho các Doanh nghiệp Quân đội. Ngân hàng hoạt động trong lĩnh vực huy động vốn, cấp tín dụng và các dịch vụ tài chính liên quan. Bên cạnh thị trường truyền thống ban đầu, Ngân hàng đã phát triển và đa dạng hóa nhiều sản phẩm dịch vụ tài chính để đáp ứng cho các đối tượng khách hàng khác nhau. Năm 2025, so với cùng kỳ, biên lãi thuần (NIM) ở mức 3.87%, giảm 0.21%. Tỷ lệ nợ xấu ở mức 1.29%, giảm 0.33%. Tỷ lệ bao phủ nợ xấu ở mức 93.75%, tăng 1.5%. Lợi nhuận sau thuế công ty mẹ có giá trị bằng 26,8 nghìn tỷ đồng, tăng 18.31%. Tỷ suất lợi nhuận trên vốn chủ sở hữu (ROE) ở mức 21.57%, giảm 0.52%.",
       "in_cu": true,
       "icb_code_lv2": "8300",
@@ -473,8 +473,8 @@
       "state_percentage": 0.0,
       "analyst": "Thuc Than",
       "upside_to_target_percent": 0.3385518591,
-      "dividend_per_share_tsr": 1000.0,
-      "projected_tsr_percentage": 0.3776908023,
+      "dividend_per_share_tsr": 0.0,
+      "projected_tsr_percentage": 0.3385518591,
       "target_price": 34200.0,
       "company_profile": "Công ty Cổ phần Vincom Retail (VRE) có tiền thân là Công ty TNHH Vincom Retail được thành lập vào năm 2012. Công ty hoạt động trong lĩnh vực cho thuê các trung tâm thương mại bán lẻ và các dịch vụ liên quan, cũng như đầu tư phát triển và kinh doanh các loại hình bất động sản. Vincom là thương hiệu bất động sản bán lẻ hàng đầu Việt Nam, giữ vị thế số 1 tại thị trường Việt Nam về mạng lưới và độ phủ với 90 trung tâm thương mại tại 31/34 tỉnh thành, được phát triển theo bốn mô hình sản phẩm: Vincom Center, Vincom Mega Mall, Vincom Plaza và Vincom+. Hệ thống của doanh nghiệp bao gồm nhiều mô hình TTTM từ cao cấp, quy mô lớn đến mô hình địa phương, trong đó Vincom Plaza chiếm tỷ trọng lớn nhất về số lượng và diện tích. Doanh nghiệp duy trì mạng lưới gần 1.000 thương hiệu trong và ngoài nước, đồng thời tiếp tục mở rộng các mô hình flagship, concept mới và nâng cấp tài sản hiện hữu. VRE được niêm yết và giao dịch trên Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh (HOSE) từ cuối năm 2017.",
       "in_cu": true,
@@ -901,5 +901,5 @@
       "bank": true
     }
   },
-  "crawledAt": "2026-08-11T09:47:25.058101+00:00"
+  "crawledAt": "2026-08-11T13:16:24.204545+00:00"
 }
