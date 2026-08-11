@@ -1,53 +1,29 @@
 {
   "data": [
     {
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 20.35,
+      "change": 0.15,
+      "changePercent": 0.74,
+      "volume": 18715600
+    },
+    {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 72.2,
-      "change": 0.6,
-      "changePercent": 0.84,
-      "volume": 6047400
+      "price": 72.1,
+      "change": 0.5,
+      "changePercent": 0.7,
+      "volume": 8286300
     },
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 25.3,
-      "change": 0.2,
-      "changePercent": 0.8,
-      "volume": 12752600
-    },
-    {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 14.85,
-      "change": 0.1,
-      "changePercent": 0.68,
-      "volume": 4352600
-    },
-    {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 22.15,
+      "price": 25.15,
       "change": 0.05,
-      "changePercent": 0.23,
-      "volume": 9915000
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 62.2,
-      "change": 0.1,
-      "changePercent": 0.16,
-      "volume": 3388900
-    },
-    {
-      "symbol": "FPT",
-      "companyName": "FPT",
-      "price": 71.9,
-      "change": 0.1,
-      "changePercent": 0.14,
-      "volume": 6030100
+      "changePercent": 0.2,
+      "volume": 22669000
     }
   ],
-  "crawledAt": "2026-08-11T06:45:56.566255+00:00"
+  "crawledAt": "2026-08-11T07:57:13.466760+00:00"
 }
