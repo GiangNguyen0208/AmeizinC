@@ -1,4 +1,37 @@
 {
-  "data": [],
-  "crawledAt": "2026-08-12T05:23:51.906445+00:00"
+  "data": [
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 36.35,
+      "change": -0.25,
+      "changePercent": -0.68,
+      "volume": 2014100
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 45.45,
+      "change": -0.2,
+      "changePercent": -0.44,
+      "volume": 460700
+    },
+    {
+      "symbol": "TPB",
+      "companyName": "TPB",
+      "price": 14.65,
+      "change": -0.05,
+      "changePercent": -0.34,
+      "volume": 2187900
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 71.0,
+      "change": -0.2,
+      "changePercent": -0.28,
+      "volume": 2704000
+    }
+  ],
+  "crawledAt": "2026-08-12T06:50:53.794769+00:00"
 }
