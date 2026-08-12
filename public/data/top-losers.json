@@ -1,37 +1,37 @@
 {
   "data": [
     {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 36.35,
-      "change": -0.25,
-      "changePercent": -0.68,
-      "volume": 2014100
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 45.45,
-      "change": -0.2,
-      "changePercent": -0.44,
-      "volume": 460700
-    },
-    {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 14.65,
-      "change": -0.05,
-      "changePercent": -0.34,
-      "volume": 2187900
-    },
-    {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 71.0,
+      "price": 70.8,
+      "change": -0.4,
+      "changePercent": -0.56,
+      "volume": 3685600
+    },
+    {
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 61.8,
       "change": -0.2,
-      "changePercent": -0.28,
-      "volume": 2704000
+      "changePercent": -0.32,
+      "volume": 2755600
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 74.1,
+      "change": -0.2,
+      "changePercent": -0.27,
+      "volume": 1566500
+    },
+    {
+      "symbol": "VCB",
+      "companyName": "VCB",
+      "price": 59.7,
+      "change": -0.1,
+      "changePercent": -0.17,
+      "volume": 2384500
     }
   ],
-  "crawledAt": "2026-08-12T06:50:53.794769+00:00"
+  "crawledAt": "2026-08-12T08:09:10.334328+00:00"
 }
