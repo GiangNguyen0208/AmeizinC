@@ -1,21 +1,4 @@
 {
-  "data": [
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 36.45,
-      "change": -0.15,
-      "changePercent": -0.41,
-      "volume": 776600
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 45.6,
-      "change": -0.05,
-      "changePercent": -0.11,
-      "volume": 200400
-    }
-  ],
-  "crawledAt": "2026-08-12T03:54:56.190121+00:00"
+  "data": [],
+  "crawledAt": "2026-08-12T05:23:51.906445+00:00"
 }

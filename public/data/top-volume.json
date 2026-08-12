@@ -6,23 +6,31 @@
       "price": 22.2,
       "change": 0.15,
       "changePercent": 0.68,
-      "volume": 8137900
+      "volume": 9201200
     },
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 25.2,
-      "change": 0.05,
-      "changePercent": 0.2,
-      "volume": 5121300
+      "price": 25.3,
+      "change": 0.15,
+      "changePercent": 0.6,
+      "volume": 6924400
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 22.75,
+      "change": 0.1,
+      "changePercent": 0.44,
+      "volume": 5846300
     },
     {
       "symbol": "TCB",
       "companyName": "TCB",
-      "price": 31.05,
-      "change": 0.05,
-      "changePercent": 0.16,
-      "volume": 4830700
+      "price": 31.2,
+      "change": 0.2,
+      "changePercent": 0.65,
+      "volume": 5592200
     },
     {
       "symbol": "HDB",
@@ -30,7 +38,7 @@
       "price": 27.05,
       "change": 0.15,
       "changePercent": 0.56,
-      "volume": 4476300
+      "volume": 5151500
     },
     {
       "symbol": "VPB",
@@ -38,23 +46,15 @@
       "price": 25.6,
       "change": 0.1,
       "changePercent": 0.39,
-      "volume": 4146500
-    },
-    {
-      "symbol": "ACB",
-      "companyName": "ACB",
-      "price": 22.7,
-      "change": 0.05,
-      "changePercent": 0.22,
-      "volume": 3632000
+      "volume": 4514100
     },
     {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 73.8,
-      "change": 1.7,
-      "changePercent": 2.36,
-      "volume": 3273100
+      "price": 74.0,
+      "change": 1.9,
+      "changePercent": 2.64,
+      "volume": 3786600
     },
     {
       "symbol": "MBB",
@@ -62,7 +62,7 @@
       "price": 20.4,
       "change": 0.05,
       "changePercent": 0.25,
-      "volume": 2790600
+      "volume": 3642400
     },
     {
       "symbol": "VRE",
@@ -70,16 +70,16 @@
       "price": 25.8,
       "change": 0.35,
       "changePercent": 1.38,
-      "volume": 1909300
+      "volume": 2164100
     },
     {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 62.1,
-      "change": 0.1,
-      "changePercent": 0.16,
-      "volume": 1496500
+      "symbol": "VIC",
+      "companyName": "VIC",
+      "price": 214.0,
+      "change": 5.5,
+      "changePercent": 2.64,
+      "volume": 1942700
     }
   ],
-  "crawledAt": "2026-08-12T03:54:56.190121+00:00"
+  "crawledAt": "2026-08-12T05:23:51.906445+00:00"
 }
