@@ -1,29 +1,21 @@
 {
   "data": [
     {
-      "symbol": "MSN",
-      "companyName": "MSN",
-      "price": 67.8,
-      "change": 0.6,
-      "changePercent": 0.89,
-      "volume": 4193100
-    },
-    {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 62.3,
-      "change": 0.5,
-      "changePercent": 0.81,
-      "volume": 3408200
-    },
-    {
       "symbol": "TCB",
       "companyName": "TCB",
-      "price": 31.75,
-      "change": 0.25,
-      "changePercent": 0.79,
-      "volume": 24790300
+      "price": 31.7,
+      "change": 0.2,
+      "changePercent": 0.63,
+      "volume": 33919400
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 67.6,
+      "change": 0.4,
+      "changePercent": 0.6,
+      "volume": 5681100
     }
   ],
-  "crawledAt": "2026-08-13T07:03:15.125252+00:00"
+  "crawledAt": "2026-08-13T08:42:43.887356+00:00"
 }
