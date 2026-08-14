@@ -1,21 +1,53 @@
 {
   "data": [
     {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 31.7,
-      "change": 0.2,
-      "changePercent": 0.63,
-      "volume": 33919400
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 62.2,
+      "change": 0.6,
+      "changePercent": 0.97,
+      "volume": 1062600
     },
     {
-      "symbol": "MSN",
-      "companyName": "MSN",
-      "price": 67.6,
-      "change": 0.4,
-      "changePercent": 0.6,
-      "volume": 5681100
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 66.1,
+      "change": 0.6,
+      "changePercent": 0.92,
+      "volume": 129300
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 46.2,
+      "change": 0.35,
+      "changePercent": 0.76,
+      "volume": 277500
+    },
+    {
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 31.9,
+      "change": 0.2,
+      "changePercent": 0.63,
+      "volume": 5500300
+    },
+    {
+      "symbol": "MBB",
+      "companyName": "MBB",
+      "price": 20.2,
+      "change": 0.05,
+      "changePercent": 0.25,
+      "volume": 3476600
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 69.3,
+      "change": 0.1,
+      "changePercent": 0.14,
+      "volume": 2085600
     }
   ],
-  "crawledAt": "2026-08-13T13:15:14.143300+00:00"
+  "crawledAt": "2026-08-14T03:54:55.845077+00:00"
 }
