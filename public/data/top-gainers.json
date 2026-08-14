@@ -1,21 +1,13 @@
 {
   "data": [
     {
-      "symbol": "VNM",
-      "companyName": "VNM",
-      "price": 61.8,
-      "change": 0.2,
-      "changePercent": 0.32,
-      "volume": 2035300
-    },
-    {
       "symbol": "TCB",
       "companyName": "TCB",
-      "price": 31.8,
-      "change": 0.1,
-      "changePercent": 0.32,
-      "volume": 9457100
+      "price": 32.0,
+      "change": 0.3,
+      "changePercent": 0.95,
+      "volume": 15485400
     }
   ],
-  "crawledAt": "2026-08-14T06:51:22.998299+00:00"
+  "crawledAt": "2026-08-14T08:07:25.353158+00:00"
 }
