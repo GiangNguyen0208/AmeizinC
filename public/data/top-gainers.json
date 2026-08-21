@@ -3,50 +3,66 @@
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 20.0,
-      "change": 0.6,
-      "changePercent": 3.09,
-      "volume": 14798100
+      "price": 20.05,
+      "change": 0.65,
+      "changePercent": 3.35,
+      "volume": 16447200
     },
     {
       "symbol": "MSN",
       "companyName": "MSN",
-      "price": 69.0,
-      "change": 0.9,
-      "changePercent": 1.32,
-      "volume": 2635100
+      "price": 69.2,
+      "change": 1.1,
+      "changePercent": 1.62,
+      "volume": 3203400
     },
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 70.6,
-      "change": 0.8,
-      "changePercent": 1.15,
-      "volume": 1270600
+      "price": 70.8,
+      "change": 1.0,
+      "changePercent": 1.43,
+      "volume": 2176000
+    },
+    {
+      "symbol": "VRE",
+      "companyName": "VRE",
+      "price": 24.45,
+      "change": 0.3,
+      "changePercent": 1.24,
+      "volume": 1247300
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 22.1,
-      "change": 0.15,
-      "changePercent": 0.68,
-      "volume": 1490300
+      "price": 22.15,
+      "change": 0.2,
+      "changePercent": 0.91,
+      "volume": 2112900
     },
     {
       "symbol": "VCB",
       "companyName": "VCB",
-      "price": 58.1,
-      "change": 0.3,
-      "changePercent": 0.52,
-      "volume": 624500
+      "price": 58.3,
+      "change": 0.5,
+      "changePercent": 0.87,
+      "volume": 1139800
     },
     {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 69.7,
-      "change": 0.2,
-      "changePercent": 0.29,
-      "volume": 626900
+      "price": 70.0,
+      "change": 0.5,
+      "changePercent": 0.72,
+      "volume": 1147900
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 25.0,
+      "change": 0.1,
+      "changePercent": 0.4,
+      "volume": 3041300
     },
     {
       "symbol": "HPG",
@@ -54,8 +70,16 @@
       "price": 21.2,
       "change": 0.05,
       "changePercent": 0.24,
-      "volume": 4288100
+      "volume": 5604500
+    },
+    {
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 31.05,
+      "change": 0.05,
+      "changePercent": 0.16,
+      "volume": 2129600
     }
   ],
-  "crawledAt": "2026-08-21T03:41:54.369128+00:00"
+  "crawledAt": "2026-08-21T04:22:54.347843+00:00"
 }
