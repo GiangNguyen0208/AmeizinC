@@ -165,7 +165,7 @@
       "2026-Q1": 1277909840913.0,
       "2025-Q4": 817461309800.0,
       "2025-Q3": 1475127883911.0,
-      "2025-Q2": 969506698143.0,
+      "2025-Q2": 862323860211.0,
       "2025-Q1": 843994524895.0,
       "2024-Q4": 296936415120.0,
       "2024-Q3": 794515584118.0
@@ -854,7 +854,7 @@
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
-      "2025-Q2": 0.0,
+      "2025-Q2": 107182837932.0,
       "2025-Q1": 0.0,
       "2024-Q4": 130801751312.0,
       "2024-Q3": 0.0
@@ -4403,7 +4403,7 @@
       "item": "Tiền thu bán chứng khoán môi giới cho khách hàng",
       "item_en": "Cash inflow from securities sales broking",
       "item_id": "cash_inflow_from_securities_sales_broking",
-      "2026-Q2": 137131920775920.0,
+      "2026-Q2": 137131920775911.0,
       "2026-Q1": 172842757876050.0,
       "2025-Q4": 186617368373204.0,
       "2025-Q3": 257223870928914.0,
@@ -4598,7 +4598,7 @@
       "item": "Lưu chuyển tiền hoạt động môi giới, ủy thác của khách hàng",
       "item_en": "Net cash inflows/(outflows) from brokerage and trust activities",
       "item_id": "net_cash_inflows_outflows_from_brokerage_and_trust_activities",
-      "2026-Q2": -2056112340809.0,
+      "2026-Q2": -2056112340818.0,
       "2026-Q1": 1594655117914.0,
       "2025-Q4": -3735177627543.0,
       "2025-Q3": 3239674390782.0,
@@ -4767,7 +4767,7 @@
       "item": "TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN CUỐI KỲ CỦA KHÁCH HÀNG",
       "item_en": "CASH AND CASH EQUIVALENTS OF CUSTOMERS AT THE END OF PERIOD",
       "item_id": "cash_and_cash_equivalents_of_customers_at_the_end_of_period",
-      "2026-Q2": 7932338000432.0,
+      "2026-Q2": 7932338000423.0,
       "2026-Q1": 9988450341241.0,
       "2025-Q4": 8393795223327.0,
       "2025-Q3": 12128972850870.0,
@@ -4910,7 +4910,7 @@
       "item": "Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ",
       "item_en": "Effect of changes in foreign currency exchange rates",
       "item_id": "effect_of_changes_in_foreign_currency_exchange_rates",
-      "2026-Q2": 9.0,
+      "2026-Q2": 0.0,
       "2026-Q1": 0.0,
       "2025-Q4": 0.0,
       "2025-Q3": 0.0,
@@ -5661,5 +5661,5 @@
       "2024-Q3": 0.0
     }
   ],
-  "crawledAt": "2026-08-14T13:13:58.676591+00:00"
+  "crawledAt": "2026-08-21T02:57:20.970455+00:00"
 }

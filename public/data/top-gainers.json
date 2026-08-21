@@ -1,13 +1,37 @@
 {
   "data": [
     {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 32.0,
+      "symbol": "SSI",
+      "companyName": "SSI",
+      "price": 20.1,
+      "change": 0.7,
+      "changePercent": 3.61,
+      "volume": 11928100
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 68.4,
       "change": 0.3,
-      "changePercent": 0.95,
-      "volume": 15485400
+      "changePercent": 0.44,
+      "volume": 511900
+    },
+    {
+      "symbol": "ACB",
+      "companyName": "ACB",
+      "price": 22.0,
+      "change": 0.05,
+      "changePercent": 0.23,
+      "volume": 833600
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 69.9,
+      "change": 0.1,
+      "changePercent": 0.14,
+      "volume": 462100
     }
   ],
-  "crawledAt": "2026-08-14T13:10:03.606565+00:00"
+  "crawledAt": "2026-08-21T02:54:38.566473+00:00"
 }

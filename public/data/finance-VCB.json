@@ -1465,7 +1465,7 @@
       "item": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trước những thay đổi về tài sản và vốn lưu động",
       "item_en": "Operating profit/(loss) before changes in Working Capital",
       "item_id": "operating_profit_loss_before_changes_in_working_capital",
-      "2026-Q2": 17526772000000.0,
+      "2026-Q2": 17526769000000.0,
       "2026-Q1": 11599797000000.0,
       "2025-Q4": 12110627000000.0,
       "2025-Q3": 13260522000000.0,
@@ -1491,7 +1491,7 @@
       "item": "Lưu chuyển tiền thuần từ các hoạt động sản xuất kinh doanh",
       "item_en": "Net cash from operating activities",
       "item_id": "net_cash_from_operating_activities",
-      "2026-Q2": 95598249000000.0,
+      "2026-Q2": 95598248000000.0,
       "2026-Q1": 35398194000000.0,
       "2025-Q4": 9947262000000.0,
       "2025-Q3": 81546582000000.0,
@@ -1647,7 +1647,7 @@
       "item": "Tiền và các khoản tương đương tiền tại thời điểm cuối kỳ",
       "item_en": "Cash and cash equivalents at end of the period",
       "item_id": "cash_and_cash_equivalents_at_end_of_the_period",
-      "2026-Q2": 672039664000000.0,
+      "2026-Q2": 672039663000000.0,
       "2026-Q1": 576792888000000.0,
       "2025-Q4": 541688802000000.0,
       "2025-Q3": 536179105000000.0,
@@ -1660,7 +1660,7 @@
       "item": "Tiền thuế thu nhập thực nộp trong kỳ",
       "item_en": "Payments for corporate income tax",
       "item_id": "payments_for_corporate_income_tax",
-      "2026-Q2": -2287609000000.0,
+      "2026-Q2": -2287612000000.0,
       "2026-Q1": -2975744000000.0,
       "2025-Q4": -79928000000.0,
       "2025-Q3": -2637573000000.0,
@@ -1868,7 +1868,7 @@
       "item": "Tăng/(Giảm) khác về công nợ hoạt động",
       "item_en": "Increase/(decrease) in other operating liabilities",
       "item_id": "increase_decrease_in_other_operating_liabilities",
-      "2026-Q2": -2289975000000.0,
+      "2026-Q2": -2289973000000.0,
       "2026-Q1": 4605112000000.0,
       "2025-Q4": -8075249000000.0,
       "2025-Q3": 2517751000000.0,
@@ -1881,7 +1881,7 @@
       "item": "Lưu chuyển tiền thuần từ hoạt động kinh doanh trước thuế thu nhập DN",
       "item_en": "Net cash flows from operating activities before CIT",
       "item_id": "net_cash_flows_from_operating_activities_before_cit",
-      "2026-Q2": 95969227000000.0,
+      "2026-Q2": 95969226000000.0,
       "2026-Q1": 36728415000000.0,
       "2025-Q4": 10426399000000.0,
       "2025-Q3": 81932953000000.0,
@@ -2138,5 +2138,5 @@
       "2024-Q3": 967211000000.0
     }
   ],
-  "crawledAt": "2026-08-14T13:13:12.871438+00:00"
+  "crawledAt": "2026-08-21T02:56:56.874254+00:00"
 }
