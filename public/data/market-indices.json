@@ -5,7 +5,7 @@
       "value": 1768.12,
       "change": 33.88,
       "changePercent": 1.95,
-      "volume": 777638119,
+      "volume": 783548119,
       "updatedAt": "2026-08-21"
     },
     {
@@ -13,17 +13,17 @@
       "value": 284.07,
       "change": 5.52,
       "changePercent": 1.98,
-      "volume": 71452161,
+      "volume": 71754061,
       "updatedAt": "2026-08-21"
     },
     {
       "name": "UPCOM-Index",
-      "value": 127.99,
-      "change": 0.75,
-      "changePercent": 0.59,
-      "volume": 36296898,
+      "value": 127.52,
+      "change": 0.28,
+      "changePercent": 0.22,
+      "volume": 36786410,
       "updatedAt": "2026-08-21"
     }
   ],
-  "crawledAt": "2026-08-21T07:57:22.583413+00:00"
+  "crawledAt": "2026-08-21T08:32:14.972424+00:00"
 }
