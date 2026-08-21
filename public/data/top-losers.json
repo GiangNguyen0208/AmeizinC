@@ -3,43 +3,35 @@
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 65.2,
-      "change": -1.4,
-      "changePercent": -2.1,
-      "volume": 271200
-    },
-    {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 82.4,
-      "change": -1.1,
-      "changePercent": -1.32,
-      "volume": 460500
+      "price": 65.4,
+      "change": -1.2,
+      "changePercent": -1.8,
+      "volume": 335600
     },
     {
       "symbol": "PLX",
       "companyName": "PLX",
-      "price": 37.75,
-      "change": -0.45,
-      "changePercent": -1.18,
-      "volume": 1022900
+      "price": 37.6,
+      "change": -0.6,
+      "changePercent": -1.57,
+      "volume": 1692700
+    },
+    {
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 82.5,
+      "change": -1.0,
+      "changePercent": -1.2,
+      "volume": 688500
     },
     {
       "symbol": "VNM",
       "companyName": "VNM",
-      "price": 63.6,
-      "change": -0.4,
-      "changePercent": -0.62,
-      "volume": 1165800
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 46.7,
-      "change": -0.1,
-      "changePercent": -0.21,
-      "volume": 319300
+      "price": 63.7,
+      "change": -0.3,
+      "changePercent": -0.47,
+      "volume": 1817700
     }
   ],
-  "crawledAt": "2026-08-21T05:46:59.802437+00:00"
+  "crawledAt": "2026-08-21T06:26:38.090449+00:00"
 }
