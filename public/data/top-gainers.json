@@ -3,18 +3,18 @@
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 214.0,
-      "change": 9.0,
-      "changePercent": 4.39,
-      "volume": 2258500
+      "price": 214.5,
+      "change": 9.5,
+      "changePercent": 4.63,
+      "volume": 3170400
     },
     {
-      "symbol": "VPB",
-      "companyName": "VPB",
-      "price": 26.35,
-      "change": 0.65,
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 22.25,
+      "change": 0.55,
       "changePercent": 2.53,
-      "volume": 13889900
+      "volume": 27272600
     },
     {
       "symbol": "SSI",
@@ -22,64 +22,64 @@
       "price": 21.25,
       "change": 0.5,
       "changePercent": 2.41,
-      "volume": 24990700
-    },
-    {
-      "symbol": "GAS",
-      "companyName": "GAS",
-      "price": 85.2,
-      "change": 1.7,
-      "changePercent": 2.04,
-      "volume": 2157800
+      "volume": 31310700
     },
     {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 72.7,
-      "change": 1.0,
-      "changePercent": 1.39,
-      "volume": 3674000
+      "price": 73.4,
+      "change": 1.7,
+      "changePercent": 2.37,
+      "volume": 5538700
     },
     {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 38.4,
-      "change": 0.45,
-      "changePercent": 1.19,
-      "volume": 4150300
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 26.3,
+      "change": 0.6,
+      "changePercent": 2.33,
+      "volume": 18878700
     },
     {
-      "symbol": "HPG",
-      "companyName": "HPG",
-      "price": 21.95,
-      "change": 0.25,
-      "changePercent": 1.15,
-      "volume": 14007300
+      "symbol": "GAS",
+      "companyName": "GAS",
+      "price": 84.9,
+      "change": 1.4,
+      "changePercent": 1.68,
+      "volume": 2577100
     },
     {
       "symbol": "HDB",
       "companyName": "HDB",
-      "price": 27.6,
-      "change": 0.3,
-      "changePercent": 1.1,
-      "volume": 11269900
+      "price": 27.4,
+      "change": 0.1,
+      "changePercent": 0.37,
+      "volume": 13717800
     },
     {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 14.95,
-      "change": 0.15,
-      "changePercent": 1.01,
-      "volume": 8574300
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 74.9,
+      "change": 0.2,
+      "changePercent": 0.27,
+      "volume": 1209200
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 38.05,
+      "change": 0.1,
+      "changePercent": 0.26,
+      "volume": 5217800
     },
     {
       "symbol": "VCB",
       "companyName": "VCB",
-      "price": 59.6,
-      "change": 0.5,
-      "changePercent": 0.85,
-      "volume": 3839400
+      "price": 59.2,
+      "change": 0.1,
+      "changePercent": 0.17,
+      "volume": 4617100
     }
   ],
-  "crawledAt": "2026-08-24T06:35:44.338998+00:00"
+  "crawledAt": "2026-08-24T07:43:55.975677+00:00"
 }
