@@ -6,7 +6,7 @@
       "price": 22.5,
       "change": -0.25,
       "changePercent": -1.1,
-      "volume": 977100
+      "volume": 1977800
     },
     {
       "symbol": "SAB",
@@ -14,15 +14,7 @@
       "price": 46.35,
       "change": -0.45,
       "changePercent": -0.96,
-      "volume": 109800
-    },
-    {
-      "symbol": "FPT",
-      "companyName": "FPT",
-      "price": 71.8,
-      "change": -0.2,
-      "changePercent": -0.28,
-      "volume": 1341100
+      "volume": 228700
     },
     {
       "symbol": "TCB",
@@ -30,7 +22,7 @@
       "price": 31.6,
       "change": -0.05,
       "changePercent": -0.16,
-      "volume": 2308800
+      "volume": 4344800
     },
     {
       "symbol": "BVH",
@@ -38,8 +30,8 @@
       "price": 65.8,
       "change": -0.1,
       "changePercent": -0.15,
-      "volume": 80000
+      "volume": 245400
     }
   ],
-  "crawledAt": "2026-08-24T02:55:31.570858+00:00"
+  "crawledAt": "2026-08-24T03:44:36.806781+00:00"
 }
