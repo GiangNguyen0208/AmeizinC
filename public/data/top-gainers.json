@@ -3,26 +3,26 @@
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 212.9,
-      "change": 7.9,
-      "changePercent": 3.85,
-      "volume": 1611500
+      "price": 213.0,
+      "change": 8.0,
+      "changePercent": 3.9,
+      "volume": 1616700
     },
     {
       "symbol": "GAS",
       "companyName": "GAS",
-      "price": 86.3,
-      "change": 2.8,
-      "changePercent": 3.35,
-      "volume": 1917000
+      "price": 86.4,
+      "change": 2.9,
+      "changePercent": 3.47,
+      "volume": 1917900
     },
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 21.25,
-      "change": 0.5,
-      "changePercent": 2.41,
-      "volume": 20746200
+      "price": 21.2,
+      "change": 0.45,
+      "changePercent": 2.17,
+      "volume": 20766100
     },
     {
       "symbol": "PLX",
@@ -30,7 +30,7 @@
       "price": 38.7,
       "change": 0.75,
       "changePercent": 1.98,
-      "volume": 3450600
+      "volume": 3455300
     },
     {
       "symbol": "VPB",
@@ -38,15 +38,7 @@
       "price": 26.15,
       "change": 0.45,
       "changePercent": 1.75,
-      "volume": 8559900
-    },
-    {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 72.8,
-      "change": 1.1,
-      "changePercent": 1.53,
-      "volume": 2763000
+      "volume": 8635500
     },
     {
       "symbol": "HDB",
@@ -54,7 +46,15 @@
       "price": 27.7,
       "change": 0.4,
       "changePercent": 1.47,
-      "volume": 9943800
+      "volume": 9995700
+    },
+    {
+      "symbol": "VHM",
+      "companyName": "VHM",
+      "price": 72.7,
+      "change": 1.0,
+      "changePercent": 1.39,
+      "volume": 2768500
     },
     {
       "symbol": "VCB",
@@ -62,7 +62,7 @@
       "price": 59.6,
       "change": 0.5,
       "changePercent": 0.85,
-      "volume": 3156100
+      "volume": 3173700
     },
     {
       "symbol": "HPG",
@@ -70,7 +70,7 @@
       "price": 21.85,
       "change": 0.15,
       "changePercent": 0.69,
-      "volume": 10575700
+      "volume": 10673000
     },
     {
       "symbol": "VRE",
@@ -78,8 +78,8 @@
       "price": 25.4,
       "change": 0.1,
       "changePercent": 0.4,
-      "volume": 2497800
+      "volume": 2501000
     }
   ],
-  "crawledAt": "2026-08-24T04:29:28.847933+00:00"
+  "crawledAt": "2026-08-24T05:11:45.484538+00:00"
 }

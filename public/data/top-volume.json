@@ -3,10 +3,10 @@
     {
       "symbol": "SSI",
       "companyName": "SSI",
-      "price": 21.25,
-      "change": 0.5,
-      "changePercent": 2.41,
-      "volume": 20746200
+      "price": 21.2,
+      "change": 0.45,
+      "changePercent": 2.17,
+      "volume": 20766100
     },
     {
       "symbol": "HPG",
@@ -14,7 +14,7 @@
       "price": 21.85,
       "change": 0.15,
       "changePercent": 0.69,
-      "volume": 10575700
+      "volume": 10673000
     },
     {
       "symbol": "HDB",
@@ -22,7 +22,7 @@
       "price": 27.7,
       "change": 0.4,
       "changePercent": 1.47,
-      "volume": 9943800
+      "volume": 9995700
     },
     {
       "symbol": "VPB",
@@ -30,7 +30,7 @@
       "price": 26.15,
       "change": 0.45,
       "changePercent": 1.75,
-      "volume": 8559900
+      "volume": 8635500
     },
     {
       "symbol": "MBB",
@@ -38,7 +38,7 @@
       "price": 20.9,
       "change": 0.05,
       "changePercent": 0.24,
-      "volume": 5789800
+      "volume": 5797100
     },
     {
       "symbol": "TCB",
@@ -46,7 +46,7 @@
       "price": 31.65,
       "change": 0.0,
       "changePercent": 0.0,
-      "volume": 5162400
+      "volume": 5167400
     },
     {
       "symbol": "PLX",
@@ -54,7 +54,7 @@
       "price": 38.7,
       "change": 0.75,
       "changePercent": 1.98,
-      "volume": 3450600
+      "volume": 3455300
     },
     {
       "symbol": "VCB",
@@ -62,7 +62,7 @@
       "price": 59.6,
       "change": 0.5,
       "changePercent": 0.85,
-      "volume": 3156100
+      "volume": 3173700
     },
     {
       "symbol": "TPB",
@@ -70,16 +70,16 @@
       "price": 14.75,
       "change": -0.05,
       "changePercent": -0.34,
-      "volume": 2962400
+      "volume": 2963400
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 22.5,
-      "change": -0.25,
-      "changePercent": -1.1,
-      "volume": 2803700
+      "price": 22.55,
+      "change": -0.2,
+      "changePercent": -0.88,
+      "volume": 2842300
     }
   ],
-  "crawledAt": "2026-08-24T04:29:28.847933+00:00"
+  "crawledAt": "2026-08-24T05:11:45.484538+00:00"
 }
