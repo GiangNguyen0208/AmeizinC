@@ -6,7 +6,7 @@
       "price": 214.5,
       "change": 9.5,
       "changePercent": 4.63,
-      "volume": 3170400
+      "volume": 3586200
     },
     {
       "symbol": "HPG",
@@ -14,7 +14,15 @@
       "price": 22.25,
       "change": 0.55,
       "changePercent": 2.53,
-      "volume": 27272600
+      "volume": 28790200
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 26.35,
+      "change": 0.65,
+      "changePercent": 2.53,
+      "volume": 19279300
     },
     {
       "symbol": "SSI",
@@ -22,7 +30,7 @@
       "price": 21.25,
       "change": 0.5,
       "changePercent": 2.41,
-      "volume": 31310700
+      "volume": 32450300
     },
     {
       "symbol": "VHM",
@@ -30,23 +38,15 @@
       "price": 73.4,
       "change": 1.7,
       "changePercent": 2.37,
-      "volume": 5538700
-    },
-    {
-      "symbol": "VPB",
-      "companyName": "VPB",
-      "price": 26.3,
-      "change": 0.6,
-      "changePercent": 2.33,
-      "volume": 18878700
+      "volume": 6124500
     },
     {
       "symbol": "GAS",
       "companyName": "GAS",
-      "price": 84.9,
-      "change": 1.4,
-      "changePercent": 1.68,
-      "volume": 2577100
+      "price": 85.0,
+      "change": 1.5,
+      "changePercent": 1.8,
+      "volume": 2691300
     },
     {
       "symbol": "HDB",
@@ -54,7 +54,15 @@
       "price": 27.4,
       "change": 0.1,
       "changePercent": 0.37,
-      "volume": 13717800
+      "volume": 14298600
+    },
+    {
+      "symbol": "MSN",
+      "companyName": "MSN",
+      "price": 70.0,
+      "change": 0.2,
+      "changePercent": 0.29,
+      "volume": 4715100
     },
     {
       "symbol": "STB",
@@ -62,7 +70,7 @@
       "price": 74.9,
       "change": 0.2,
       "changePercent": 0.27,
-      "volume": 1209200
+      "volume": 1338500
     },
     {
       "symbol": "PLX",
@@ -70,16 +78,8 @@
       "price": 38.05,
       "change": 0.1,
       "changePercent": 0.26,
-      "volume": 5217800
-    },
-    {
-      "symbol": "VCB",
-      "companyName": "VCB",
-      "price": 59.2,
-      "change": 0.1,
-      "changePercent": 0.17,
-      "volume": 4617100
+      "volume": 5303300
     }
   ],
-  "crawledAt": "2026-08-24T07:43:55.975677+00:00"
+  "crawledAt": "2026-08-24T08:26:13.879545+00:00"
 }

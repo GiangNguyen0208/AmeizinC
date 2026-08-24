@@ -6,7 +6,15 @@
       "price": 64.5,
       "change": -1.4,
       "changePercent": -2.12,
-      "volume": 888500
+      "volume": 974700
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 46.1,
+      "change": -0.7,
+      "changePercent": -1.5,
+      "volume": 1184800
     },
     {
       "symbol": "TPB",
@@ -14,15 +22,7 @@
       "price": 14.6,
       "change": -0.2,
       "changePercent": -1.35,
-      "volume": 12479100
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 46.2,
-      "change": -0.6,
-      "changePercent": -1.28,
-      "volume": 1139800
+      "volume": 13007700
     },
     {
       "symbol": "ACB",
@@ -30,15 +30,7 @@
       "price": 22.5,
       "change": -0.25,
       "changePercent": -1.1,
-      "volume": 5657600
-    },
-    {
-      "symbol": "MSN",
-      "companyName": "MSN",
-      "price": 69.1,
-      "change": -0.7,
-      "changePercent": -1.0,
-      "volume": 4137300
+      "volume": 6381200
     },
     {
       "symbol": "VNM",
@@ -46,7 +38,7 @@
       "price": 63.2,
       "change": -0.6,
       "changePercent": -0.94,
-      "volume": 3027100
+      "volume": 3332500
     },
     {
       "symbol": "FPT",
@@ -54,7 +46,7 @@
       "price": 71.4,
       "change": -0.6,
       "changePercent": -0.83,
-      "volume": 4227900
+      "volume": 4611900
     },
     {
       "symbol": "TCB",
@@ -62,7 +54,7 @@
       "price": 31.45,
       "change": -0.2,
       "changePercent": -0.63,
-      "volume": 9304000
+      "volume": 10086100
     },
     {
       "symbol": "MBB",
@@ -70,16 +62,8 @@
       "price": 20.75,
       "change": -0.1,
       "changePercent": -0.48,
-      "volume": 10396900
-    },
-    {
-      "symbol": "VRE",
-      "companyName": "VRE",
-      "price": 25.25,
-      "change": -0.05,
-      "changePercent": -0.2,
-      "volume": 4454200
+      "volume": 11070400
     }
   ],
-  "crawledAt": "2026-08-24T07:43:55.975677+00:00"
+  "crawledAt": "2026-08-24T08:26:13.879545+00:00"
 }
