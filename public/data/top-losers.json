@@ -3,18 +3,34 @@
     {
       "symbol": "GAS",
       "companyName": "GAS",
-      "price": 83.2,
-      "change": -1.8,
-      "changePercent": -2.12,
-      "volume": 1184000
+      "price": 83.0,
+      "change": -2.0,
+      "changePercent": -2.35,
+      "volume": 1230400
     },
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 63.7,
-      "change": -0.8,
-      "changePercent": -1.24,
-      "volume": 261200
+      "price": 63.6,
+      "change": -0.9,
+      "changePercent": -1.4,
+      "volume": 285300
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 37.55,
+      "change": -0.5,
+      "changePercent": -1.31,
+      "volume": 2432900
+    },
+    {
+      "symbol": "SAB",
+      "companyName": "SAB",
+      "price": 45.65,
+      "change": -0.45,
+      "changePercent": -0.98,
+      "volume": 284000
     },
     {
       "symbol": "HPG",
@@ -22,15 +38,7 @@
       "price": 22.05,
       "change": -0.2,
       "changePercent": -0.9,
-      "volume": 9179400
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 45.7,
-      "change": -0.4,
-      "changePercent": -0.87,
-      "volume": 271300
+      "volume": 9537300
     },
     {
       "symbol": "MSN",
@@ -38,32 +46,32 @@
       "price": 69.6,
       "change": -0.4,
       "changePercent": -0.57,
-      "volume": 1839500
+      "volume": 1962600
     },
     {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 37.85,
-      "change": -0.2,
-      "changePercent": -0.53,
-      "volume": 2391800
-    },
-    {
-      "symbol": "TPB",
-      "companyName": "TPB",
-      "price": 14.55,
-      "change": -0.05,
-      "changePercent": -0.34,
-      "volume": 1506400
+      "symbol": "HDB",
+      "companyName": "HDB",
+      "price": 27.3,
+      "change": -0.1,
+      "changePercent": -0.36,
+      "volume": 5308500
     },
     {
       "symbol": "VNM",
       "companyName": "VNM",
-      "price": 63.1,
-      "change": -0.1,
-      "changePercent": -0.16,
-      "volume": 1521800
+      "price": 63.0,
+      "change": -0.2,
+      "changePercent": -0.32,
+      "volume": 1546200
+    },
+    {
+      "symbol": "FPT",
+      "companyName": "FPT",
+      "price": 71.2,
+      "change": -0.2,
+      "changePercent": -0.28,
+      "volume": 2143900
     }
   ],
-  "crawledAt": "2026-08-25T05:46:13.958325+00:00"
+  "crawledAt": "2026-08-25T06:04:58.882046+00:00"
 }

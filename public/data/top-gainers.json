@@ -3,67 +3,59 @@
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 224.6,
-      "change": 10.1,
-      "changePercent": 4.71,
-      "volume": 5496300
+      "price": 223.5,
+      "change": 9.0,
+      "changePercent": 4.2,
+      "volume": 5601100
     },
     {
       "symbol": "VHM",
       "companyName": "VHM",
-      "price": 74.9,
-      "change": 1.5,
-      "changePercent": 2.04,
-      "volume": 5936500
+      "price": 75.1,
+      "change": 1.7,
+      "changePercent": 2.32,
+      "volume": 6210100
     },
     {
       "symbol": "VRE",
       "companyName": "VRE",
-      "price": 25.55,
-      "change": 0.25,
-      "changePercent": 0.99,
-      "volume": 4015900
+      "price": 25.6,
+      "change": 0.3,
+      "changePercent": 1.19,
+      "volume": 4197500
     },
     {
       "symbol": "VCB",
       "companyName": "VCB",
-      "price": 59.7,
-      "change": 0.5,
-      "changePercent": 0.84,
-      "volume": 3545800
-    },
-    {
-      "symbol": "VPB",
-      "companyName": "VPB",
-      "price": 26.55,
-      "change": 0.2,
-      "changePercent": 0.76,
-      "volume": 7490100
-    },
-    {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 31.55,
-      "change": 0.1,
-      "changePercent": 0.32,
-      "volume": 7517800
+      "price": 59.6,
+      "change": 0.4,
+      "changePercent": 0.68,
+      "volume": 3737500
     },
     {
       "symbol": "MBB",
       "companyName": "MBB",
-      "price": 20.8,
-      "change": 0.05,
-      "changePercent": 0.24,
-      "volume": 4462000
+      "price": 20.85,
+      "change": 0.1,
+      "changePercent": 0.48,
+      "volume": 4633200
     },
     {
-      "symbol": "SSI",
-      "companyName": "SSI",
-      "price": 21.3,
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 31.6,
+      "change": 0.15,
+      "changePercent": 0.48,
+      "volume": 7693600
+    },
+    {
+      "symbol": "VPB",
+      "companyName": "VPB",
+      "price": 26.4,
       "change": 0.05,
-      "changePercent": 0.24,
-      "volume": 11713700
+      "changePercent": 0.19,
+      "volume": 8077200
     }
   ],
-  "crawledAt": "2026-08-25T05:46:13.958325+00:00"
+  "crawledAt": "2026-08-25T06:04:58.882046+00:00"
 }
