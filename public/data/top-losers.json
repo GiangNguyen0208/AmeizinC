@@ -6,56 +6,8 @@
       "price": 73.0,
       "change": -0.6,
       "changePercent": -0.82,
-      "volume": 3183400
-    },
-    {
-      "symbol": "VPB",
-      "companyName": "VPB",
-      "price": 26.25,
-      "change": -0.15,
-      "changePercent": -0.57,
-      "volume": 4883100
-    },
-    {
-      "symbol": "HDB",
-      "companyName": "HDB",
-      "price": 26.85,
-      "change": -0.15,
-      "changePercent": -0.56,
-      "volume": 5945600
-    },
-    {
-      "symbol": "SAB",
-      "companyName": "SAB",
-      "price": 45.95,
-      "change": -0.15,
-      "changePercent": -0.33,
-      "volume": 235100
-    },
-    {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 31.2,
-      "change": -0.1,
-      "changePercent": -0.32,
-      "volume": 5632500
-    },
-    {
-      "symbol": "MBB",
-      "companyName": "MBB",
-      "price": 20.6,
-      "change": -0.05,
-      "changePercent": -0.24,
-      "volume": 5866300
-    },
-    {
-      "symbol": "STB",
-      "companyName": "STB",
-      "price": 74.1,
-      "change": -0.1,
-      "changePercent": -0.13,
-      "volume": 1468800
+      "volume": 4609600
     }
   ],
-  "crawledAt": "2026-08-26T06:28:57.040522+00:00"
+  "crawledAt": "2026-08-26T07:25:29.543095+00:00"
 }

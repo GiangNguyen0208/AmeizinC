@@ -2,28 +2,28 @@
   "data": [
     {
       "name": "VN-Index",
-      "value": 1796.76,
-      "change": 5.35,
-      "changePercent": 0.3,
-      "volume": 349920645,
+      "value": 1811.12,
+      "change": 19.71,
+      "changePercent": 1.1,
+      "volume": 637009344,
       "updatedAt": "2026-08-26"
     },
     {
       "name": "HNX-Index",
-      "value": 282.13,
-      "change": -0.52,
-      "changePercent": -0.18,
-      "volume": 21002821,
+      "value": 282.39,
+      "change": -0.26,
+      "changePercent": -0.09,
+      "volume": 41916043,
       "updatedAt": "2026-08-26"
     },
     {
       "name": "UPCOM-Index",
-      "value": 126.79,
-      "change": 0.01,
-      "changePercent": 0.01,
-      "volume": 9428941,
+      "value": 126.78,
+      "change": 0.0,
+      "changePercent": 0.0,
+      "volume": 14061775,
       "updatedAt": "2026-08-26"
     }
   ],
-  "crawledAt": "2026-08-26T06:28:01.961764+00:00"
+  "crawledAt": "2026-08-26T07:24:33.662567+00:00"
 }
