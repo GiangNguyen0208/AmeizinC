@@ -3,58 +3,74 @@
     {
       "symbol": "FPT",
       "companyName": "FPT",
-      "price": 72.0,
-      "change": 1.3,
-      "changePercent": 1.84,
-      "volume": 3260500
+      "price": 72.2,
+      "change": 1.5,
+      "changePercent": 2.12,
+      "volume": 4484100
     },
     {
       "symbol": "GAS",
       "companyName": "GAS",
-      "price": 84.9,
-      "change": 1.4,
-      "changePercent": 1.68,
-      "volume": 724800
+      "price": 84.6,
+      "change": 1.1,
+      "changePercent": 1.32,
+      "volume": 819300
     },
     {
       "symbol": "VIC",
       "companyName": "VIC",
-      "price": 222.9,
-      "change": 2.4,
-      "changePercent": 1.09,
-      "volume": 1550900
-    },
-    {
-      "symbol": "PLX",
-      "companyName": "PLX",
-      "price": 37.9,
-      "change": 0.4,
-      "changePercent": 1.07,
-      "volume": 2618400
+      "price": 222.5,
+      "change": 2.0,
+      "changePercent": 0.91,
+      "volume": 2498400
     },
     {
       "symbol": "VCB",
       "companyName": "VCB",
-      "price": 60.0,
-      "change": 0.6,
-      "changePercent": 1.01,
-      "volume": 2725800
+      "price": 59.9,
+      "change": 0.5,
+      "changePercent": 0.84,
+      "volume": 3449800
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 37.7,
+      "change": 0.2,
+      "changePercent": 0.53,
+      "volume": 3092600
     },
     {
       "symbol": "BVH",
       "companyName": "BVH",
-      "price": 64.1,
-      "change": 0.5,
-      "changePercent": 0.79,
-      "volume": 204600
+      "price": 63.9,
+      "change": 0.3,
+      "changePercent": 0.47,
+      "volume": 243600
+    },
+    {
+      "symbol": "HPG",
+      "companyName": "HPG",
+      "price": 21.9,
+      "change": 0.1,
+      "changePercent": 0.46,
+      "volume": 6886000
     },
     {
       "symbol": "ACB",
       "companyName": "ACB",
-      "price": 22.25,
-      "change": 0.05,
-      "changePercent": 0.23,
-      "volume": 2030100
+      "price": 22.3,
+      "change": 0.1,
+      "changePercent": 0.45,
+      "volume": 3183000
+    },
+    {
+      "symbol": "VNM",
+      "companyName": "VNM",
+      "price": 62.8,
+      "change": 0.2,
+      "changePercent": 0.32,
+      "volume": 883900
     },
     {
       "symbol": "SAB",
@@ -62,8 +78,8 @@
       "price": 46.2,
       "change": 0.1,
       "changePercent": 0.22,
-      "volume": 147700
+      "volume": 181600
     }
   ],
-  "crawledAt": "2026-08-26T03:45:16.909144+00:00"
+  "crawledAt": "2026-08-26T04:25:30.161272+00:00"
 }
