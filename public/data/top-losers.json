@@ -6,23 +6,23 @@
       "price": 72.6,
       "change": -1.0,
       "changePercent": -1.36,
-      "volume": 2582800
-    },
-    {
-      "symbol": "TCB",
-      "companyName": "TCB",
-      "price": 31.05,
-      "change": -0.25,
-      "changePercent": -0.8,
-      "volume": 4437500
+      "volume": 2640800
     },
     {
       "symbol": "VPB",
       "companyName": "VPB",
-      "price": 26.2,
+      "price": 26.15,
+      "change": -0.25,
+      "changePercent": -0.95,
+      "volume": 3640200
+    },
+    {
+      "symbol": "TCB",
+      "companyName": "TCB",
+      "price": 31.1,
       "change": -0.2,
-      "changePercent": -0.76,
-      "volume": 3522200
+      "changePercent": -0.64,
+      "volume": 4763700
     },
     {
       "symbol": "MBB",
@@ -30,7 +30,7 @@
       "price": 20.55,
       "change": -0.1,
       "changePercent": -0.48,
-      "volume": 4351600
+      "volume": 4489800
     },
     {
       "symbol": "MSN",
@@ -38,7 +38,7 @@
       "price": 69.3,
       "change": -0.2,
       "changePercent": -0.29,
-      "volume": 920700
+      "volume": 1064600
     },
     {
       "symbol": "SSI",
@@ -46,7 +46,7 @@
       "price": 21.2,
       "change": -0.05,
       "changePercent": -0.24,
-      "volume": 6656900
+      "volume": 6787600
     },
     {
       "symbol": "HDB",
@@ -54,8 +54,16 @@
       "price": 26.95,
       "change": -0.05,
       "changePercent": -0.19,
-      "volume": 4866400
+      "volume": 4926900
+    },
+    {
+      "symbol": "STB",
+      "companyName": "STB",
+      "price": 74.1,
+      "change": -0.1,
+      "changePercent": -0.13,
+      "volume": 1334000
     }
   ],
-  "crawledAt": "2026-08-26T04:25:30.161272+00:00"
+  "crawledAt": "2026-08-26T05:02:51.473426+00:00"
 }
