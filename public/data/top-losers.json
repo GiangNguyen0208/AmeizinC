@@ -1,13 +1,21 @@
 {
   "data": [
     {
-      "symbol": "VHM",
-      "companyName": "VHM",
-      "price": 73.0,
+      "symbol": "BVH",
+      "companyName": "BVH",
+      "price": 63.0,
       "change": -0.6,
-      "changePercent": -0.82,
-      "volume": 4609600
+      "changePercent": -0.94,
+      "volume": 668400
+    },
+    {
+      "symbol": "PLX",
+      "companyName": "PLX",
+      "price": 37.4,
+      "change": -0.1,
+      "changePercent": -0.27,
+      "volume": 5518700
     }
   ],
-  "crawledAt": "2026-08-26T07:25:29.543095+00:00"
+  "crawledAt": "2026-08-26T08:06:35.546933+00:00"
 }
